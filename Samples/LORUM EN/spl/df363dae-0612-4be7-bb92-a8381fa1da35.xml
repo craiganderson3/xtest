@@ -75,7 +75,7 @@
                 <code code="12345678" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM TABLETS</name>
-                <formCode code="85" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -143,7 +143,7 @@
                   <containerPackagedProduct>
                     <code code="ABC-1234"/>
                     <!--company defined pack code-->
-                    <formCode code="5" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="BOTTLE"
+                    <formCode code="30008000" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="BOTTLE"
                     />
                   </containerPackagedProduct>
                   <subjectOf>
@@ -169,8 +169,8 @@
                   <containerPackagedProduct>
                     <code code="ABC-5678"/>
                     <!--company defined pack code-->
-                    <formCode code="4" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="BLISTER PACK"/>
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
                     <asContent>
                       <quantity>
                         <numerator value="4" unit="1"/>
@@ -178,8 +178,8 @@
                       </quantity>
                       <containerPackagedProduct>
                         <code code="ABC-6789"/>
-                        <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="CARTON"/>
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
                       </containerPackagedProduct>
                       <subjectOf>
                         <marketingAct>
@@ -301,7 +301,7 @@
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="56" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL"/>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -312,7 +312,7 @@
                 <code code="45612322" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM CAPSULE</name>
-                <formCode code="5" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="CAPSULE"/>
+                <formCode code="10210000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="CAPSULE, HARD"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -380,8 +380,8 @@
                   <containerPackagedProduct>
                     <code code="ABC-5678"/>
                     <!--company defined pack code-->
-                    <formCode code="4" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="BLISTER PACK"/>
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
                     <asContent>
                       <quantity>
                         <numerator value="4" unit="1"/>
@@ -389,8 +389,8 @@
                       </quantity>
                       <containerPackagedProduct>
                         <code code="ABC-6789"/>
-                        <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="CARTON"/>
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
                       </containerPackagedProduct>
                       <subjectOf>
                         <marketingAct>
@@ -521,7 +521,7 @@
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="56" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL"/>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -532,8 +532,8 @@
                 <code code="65432551" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM POWDER</name>
-                <formCode code="56" codeSystem="2.16.840.1.113883.2.20.6.3"
-                  displayName="POWDER FOR SOLUTION"/>
+                <formCode code="10110000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                  displayName="POWDER FOR ORAL SOLUTION"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -601,8 +601,8 @@
                   <containerPackagedProduct>
                     <code/>
                     <!--company defined pack code-->
-                    <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="VIAL, GLASS"/>
+                    <formCode code="30069000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="VIAL"/>
                     <asContent>
                       <quantity>
                         <numerator value="2" unit="1"/>
@@ -611,7 +611,7 @@
                       <containerPackagedProduct>
                         <code/>
                         <!--company defined pack code-->
-                        <formCode code="50" codeSystem="2.16.840.1.113883.2.20.6.32"
+                        <formCode code="C53438" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="TRAY"/>
                         <asContent>
                           <quantity>
@@ -621,8 +621,8 @@
                           <containerPackagedProduct>
                             <code code="1212"/>
                             <!--company defined pack code-->
-                            <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                              displayName="CARTON"/>
+                            <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                              displayName="BOX"/>
                           </containerPackagedProduct>
                           <subjectOf>
                             <marketingAct>
@@ -711,8 +711,8 @@
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="65" codeSystem="2.16.840.1.113883.2.20.6.7"
-                    displayName="SUBCUTANEOUS"/>
+                  <routeCode code="20066000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                    displayName="SUBCUTANEOUS USE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -723,7 +723,7 @@
                 <code code="61325884" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM KIT</name>
-                <formCode code="32" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="KIT"/>
+                <formCode code="C43197" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="KIT"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -736,8 +736,8 @@
                   </quantity>
                   <containerPackagedProduct>
                     <code code="1111"/>
-                    <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="CARTON"/>
+                    <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BOX"/>
                   </containerPackagedProduct>
 				   <subjectOf>
                     <marketingAct>
@@ -762,8 +762,8 @@
                     <code code="02490064" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                     <!-- DIN Number -->
                     <name>LORUM IPSUM KIT POWDER</name>
-                    <formCode code="56" codeSystem="2.16.840.1.113883.2.20.6.3"
-                      displayName="POWDER FOR SOLUTION"/>
+                    <formCode code="10110000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                      displayName="POWDER FOR ORAL SOLUTION"/>
                     <asEntityWithGeneric>
                       <genericMedicine>
                         <name>acetaminophen</name>
@@ -831,8 +831,8 @@
                       <containerPackagedProduct>
                         <code code="1212"/>
                         <!--company defined pack code-->
-                        <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="VIAL, GLASS"/>
+                        <formCode code="30069000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="VIAL"/>
                       </containerPackagedProduct>
                     </asContent>
                   </partProduct>
@@ -894,8 +894,8 @@
                   </subjectOf>
                   <consumedIn>
                     <substanceAdministration>
-                      <routeCode code="49" codeSystem="2.16.840.1.113883.2.20.6.7"
-                        displayName="INTRAVENOUS"/>
+                      <routeCode code="20045000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                        displayName="INTRAVENOUS USE"/>
                     </substanceAdministration>
                   </consumedIn>
                 </part>
@@ -908,7 +908,7 @@
                     <code code="02490065" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                     <!-- DIN Number -->
                     <name>WATER</name>
-                    <formCode code="34" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="LIQUID"/>
+                    <formCode code="10104000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="ORAL LIQUID"/>
                     <asEntityWithGeneric>
                       <genericMedicine>
                         <name>Sodium chloride, water for injections</name>
@@ -941,8 +941,8 @@
                       <containerPackagedProduct>
                         <code code="1234"/>
                         <!--company defined pack code-->
-                        <formCode code="45" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="SYRINGE"/>
+                        <formCode code="30029000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="INJECTION SYRINGE"/>
                       </containerPackagedProduct>
                     </asContent>
                   </partProduct>
@@ -1006,8 +1006,8 @@
                   </subjectOf>
                   <consumedIn>
                     <substanceAdministration>
-                      <routeCode code="49" codeSystem="2.16.840.1.113883.2.20.6.7"
-                        displayName="INTRAVENOUS"/>
+                      <routeCode code="20045000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                        displayName="INTRAVENOUS USE"/>
                     </substanceAdministration>
                   </consumedIn>
                 </part>
@@ -1037,7 +1037,247 @@
               </subjectOf>
             </manufacturedProduct>
           </subject>
-        </section>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="12345678" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>LORUM IPSUM CELLS RANGE</name>
+                <formCode code="11201000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="SOLUTION FOR INJECTION"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>acetaminophen</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator xsi:type="URG_PQ">
+					<low value="2000000" unit="CELLS"/>
+					<high value="60000000" unit="CELLS"/>
+					</numerator>
+					<denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ACETAMINOPHEN"/>
+                    <name>ACETAMINOPHEN</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="362O9ITL9D" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="ACETAMINOPHEN"/>
+                        <name>ACETAMINOPHEN</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="EWQ57Q8I5X" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="LACTOSE MONOHYDRATE"/>
+                    <name>LACTOSE MONOHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="OP1R32D61U" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="MICROCRYSTALLINE CELLULOSE"/>
+                    <name>MICROCRYSTALLINE CELLULOSE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="2S7830E561" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="CROSPOVIDONE"/>
+                    <name>CROSPOVIDONE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="70097M6I30" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="MAGNESIUM STEARATE"/>
+                    <name>MAGNESIUM STEARATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TITANIUM DIOXIDE"/>
+                    <name>TITANIUM DIOXIDE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="30" unit="1"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="ABC-1234"/>
+                    <!--company defined pack code-->
+                    <formCode code="30008000" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="BOTTLE"
+                    />
+                  </containerPackagedProduct>
+                  <subjectOf>
+                    <marketingAct>
+                      <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                      <statusCode code="ACTIVE"/>
+                      <effectiveTime>
+                        <!-- regulatory status of this package -->
+                        <low value="20170102"/>
+                        <!-- Date of initial approval -->
+                        <high value="20180101"/>
+                        <!-- Date of cancellation -->
+                      </effectiveTime>
+                    </marketingAct>
+                  </subjectOf>
+                </asContent>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="10" unit="1"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="ABC-5678"/>
+                    <!--company defined pack code-->
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
+                    <asContent>
+                      <quantity>
+                        <numerator value="4" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="ABC-6789"/>
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+                      <subjectOf>
+                        <marketingAct>
+                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11"
+                            displayName="APPROVED"/>
+                          <statusCode code="ACTIVE"/>
+                          <effectiveTime>
+                            <!-- regulatory status of this package -->
+                            <low value="20170101"/>
+                            <!-- Date of initial approval -->
+                          </effectiveTime>
+                        </marketingAct>
+                      </subjectOf>
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="123456" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="SNDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20170101"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.53"
+                    displayName="PHARMACEUTICAL" xsi:type="CV">
+                    <originalText>PHARMACEUTICAL</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="WHITE"
+                    xsi:type="CV">
+                    <originalText>white to off white</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="3" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SHAPE"/>
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.25" displayName="BULLET"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="4" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SIZE"/>
+                  <value value="10" unit="mm" xsi:type="PQ"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
+                  <value code="0" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="NO SCORE"
+                    xsi:type="CV"> </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINT"/>
+                  <value xsi:type="ST">A;45</value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="7" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="FLAVOUR"/>
+                  <value code="3" codeSystem="2.16.840.1.113883.2.20.6.26" displayName="APPLE"
+                    xsi:type="CV"> </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="7" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="USP"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="THYROID AGENTS"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+		  </section>
       </component>
       <component>
         <!--Title Page section-->
@@ -2069,8 +2309,8 @@
             <section ID="f6693e7a-21c9-492f-833b-4e8f3911d3a5">
               <id root="be74b6e6-c431-4a5f-a18e-ed321b381446"/>
               <code code="60077" codeSystem="2.16.840.1.113883.2.20.6.60"
-                displayName="IF YOU WANT MORE INFORMATION ABOUT MEDICATION:"/>
-              <title>IF YOU WANT MORE INFORMATION ABOUT MEDICATION:</title>
+                displayName="IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:"/>
+              <title>IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:</title>
               <text>
                 <paragraph> sample text </paragraph>
               </text>
@@ -2302,8 +2542,8 @@
             <section ID="A20">
               <id root="6da2357c-5011-479c-ac47-7d78664395d7"/>
               <code code="60077" codeSystem="2.16.840.1.113883.2.20.6.60"
-                displayName="IF YOU WANT MORE INFORMATION ABOUT MEDICATION:"/>
-              <title>IF YOU WANT MORE INFORMATION ABOUT MEDICATION:</title>
+                displayName="IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:"/>
+              <title>IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:</title>
               <text>
                 <paragraph> sample text </paragraph>
               </text>
