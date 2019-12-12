@@ -230,11 +230,21 @@
 								<xsl:value-of select="v3:quantity/v3:numerator/@value"/>								
 							</xsl:otherwise>
 						</xsl:choose>						
-						&#160;<xsl:if test="normalize-space(v3:quantity/v3:numerator/@unit)!='1'"><xsl:value-of select="v3:quantity/v3:numerator/@unit"/></xsl:if>
+						&#160;
+						<xsl:choose>
+							<xsl:when test="normalize-space(v3:quantity/v3:numerator/@unit)!='1'">
+								<xsl:value-of select="v3:quantity/v3:numerator/@unit"/>
+							</xsl:when>
+							<xsl:when test="normalize-space(v3:quantity/v3:numerator/v3:low/@unit)!='1'">
+								<xsl:value-of select="v3:quantity/v3:numerator/v3:low/@unit"/>
+							</xsl:when>
+							<xsl:when test="normalize-space(v3:quantity/v3:numerator/v3:high/@unit)!='1'">
+								<xsl:value-of select="v3:quantity/v3:numerator/v3:high/@unit"/>
+							</xsl:when>
+						</xsl:choose>
 						<xsl:if test="(v3:quantity/v3:denominator/@value and normalize-space(v3:quantity/v3:denominator/@value)!='1') 
-													or (v3:quantity/v3:denominator/@unit and normalize-space(v3:quantity/v3:denominator/@unit)!='1')"> <xsl:value-of select="$labels/inConnective[@lang = $lang]"/><xsl:value-of select="v3:quantity/v3:denominator/@value"
-													/>&#160;<xsl:if test="normalize-space(v3:quantity/v3:denominator/@unit)!='1'"><xsl:value-of select="v3:quantity/v3:denominator/@unit"/>
-							</xsl:if></xsl:if>
+													or (v3:quantity/v3:denominator/@unit and normalize-space(v3:quantity/v3:denominator/@unit)!='1')"> <xsl:value-of select="$labels/inConnective[@lang = $lang]"/><xsl:value-of select="v3:quantity/v3:denominator/@value"/>&#160;<xsl:if test="normalize-space(v3:quantity/v3:denominator/@unit)!='1'"><xsl:value-of select="v3:quantity/v3:denominator/@unit"/>
+						</xsl:if></xsl:if>
 					</td>
 				</tr>
 			</xsl:for-each>
