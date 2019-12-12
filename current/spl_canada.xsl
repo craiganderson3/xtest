@@ -219,7 +219,18 @@
 						</td>
 					</xsl:for-each>
 					<td class="formItem">
-						<xsl:value-of select="v3:quantity/v3:numerator/@value"/>&#160;<xsl:if test="normalize-space(v3:quantity/v3:numerator/@unit)!='1'"><xsl:value-of select="v3:quantity/v3:numerator/@unit"/></xsl:if>
+						<!-- extra logic required for URG_PQ or IVL_PQ -->
+						<xsl:choose>
+							<xsl:when test="v3:quantity/v3:numerator/v3:low and v3:quantity/v3:numerator/v3:high">
+								<xsl:value-of select="v3:quantity/v3:numerator/v3:low/@value"/>					
+								<xsl:value-of select="$labels/toConnective[@lang = $lang]"/>
+								<xsl:value-of select="v3:quantity/v3:numerator/v3:high/@value"/>								
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="v3:quantity/v3:numerator/@value"/>								
+							</xsl:otherwise>
+						</xsl:choose>						
+						&#160;<xsl:if test="normalize-space(v3:quantity/v3:numerator/@unit)!='1'"><xsl:value-of select="v3:quantity/v3:numerator/@unit"/></xsl:if>
 						<xsl:if test="(v3:quantity/v3:denominator/@value and normalize-space(v3:quantity/v3:denominator/@value)!='1') 
 													or (v3:quantity/v3:denominator/@unit and normalize-space(v3:quantity/v3:denominator/@unit)!='1')"> <xsl:value-of select="$labels/inConnective[@lang = $lang]"/><xsl:value-of select="v3:quantity/v3:denominator/@value"
 													/>&#160;<xsl:if test="normalize-space(v3:quantity/v3:denominator/@unit)!='1'"><xsl:value-of select="v3:quantity/v3:denominator/@unit"/>

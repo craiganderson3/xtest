@@ -56,6 +56,7 @@
 		<inConnective lang="en">&#160;in&#160;</inConnective>
 		<andConnective lang="en">&#160;and&#160;</andConnective>
 		<ofConnective lang="en">&#160;of&#160;</ofConnective>
+		<toConnective lang="en">&#160;-&#160;</toConnective>
 		<!-- French Labels -->
 		<tableOfContents lang="fr">TABLE DES MATIÈRES</tableOfContents>
 		<productDetails lang="fr">DÉTAILS SUR LE PRODUIT</productDetails>
@@ -110,6 +111,7 @@
 		<inConnective lang="fr">&#160;dans&#160;</inConnective>
 		<andConnective lang="fr">&#160;et&#160;</andConnective>
 		<ofConnective lang="fr">&#160;de&#160;</ofConnective>
+		<toConnective lang="fr">&#160;-&#160;</toConnective>
 	</my:texts>
 	<xsl:variable name="labels" select="document('')/*/my:texts"/>
 	
