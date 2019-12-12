@@ -226,8 +226,6 @@
 					color: #4D5D6C;
 				}
 				
-				<!-- this french language reduction reduces only the top level navigation -->
-				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 				
 				.sticky {
 				  position: -webkit-sticky;
@@ -282,16 +280,27 @@
 					.spl .formHeadingReg {				border: 1px solid #CCCCCC !important;	}
 					.spl .formLabel {					border: 1px solid #CCCCCC !important;	}
 					.spl .formItem {					border: 1px solid #CCCCCC !important;	}
-				}
-				
+
+					/* table of contents? */
+					@page {
+						margin: 1cm;
+					}
+
+				}	
+	
 				@media screen {
 					.hide-in-screen { display: none; }
 					#side { max-width: 420px; min-width: 420px; }
+					#main { max-width: 1000px; }
 					#navigation-sidebar li { padding-left: 10px !important; }
 					#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
 					.Section > h1 {display: none; }					
 				}
 				
+			</style>
+			<style>
+				<!-- this french language reduction reduces only the top level navigation -->
+				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 			</style>
 		</head>
 	</xsl:template>	

@@ -5,7 +5,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" 
 	exclude-result-prefixes="exsl msxsl v3 xsl xsi str">
-	<xsl:import href="FDA spl_stylesheet_6_2/spl-common.xsl"/>
+	<xsl:import href="http://www.accessdata.fda.gov/spl/stylesheet/spl-common.xsl"/>
+<!--	<xsl:import href="FDA spl_stylesheet_6_2/spl-common.xsl"/> -->
 	<xsl:import href="spl_canada_screen.xsl"/>
 	<xsl:import href="spl_canada_i18n.xsl"/>
 	
@@ -89,7 +90,7 @@
 						<div><xsl:value-of select="$labels/partyEmail[@lang = $lang]"/><xsl:text>: </xsl:text>
 						<xsl:value-of select="substring-after(., 'mailto:')"/></div>
 					</xsl:for-each>
-					<xsl:for-each select="v3:telecom/@value[starts-with(.,'http:')]">
+					<xsl:for-each select="v3:telecom/@value[starts-with(.,'http:') or starts-with(.,'https:')]">
 						<div><xsl:value-of select="$labels/partyWeb[@lang = $lang]"/><xsl:text>: </xsl:text>
 						<xsl:value-of select="."/></div>
 					</xsl:for-each>
@@ -665,87 +666,89 @@
 	<!-- This is the main page content, which renders for both screen, with Product Details in front, and print, withe Product Details at end -->	
 	<xsl:template match="v3:structuredBody" mode="main-document">
 		<main class="col">
-			<div class="row position-relative">
-				<div class="col">
-					<xsl:for-each select="v3:component/v3:section">
-						<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
-						<xsl:variable name="tri-code-value" select="substring(v3:code/@code, string-length(v3:code/@code)-2)"/>
-						<xsl:choose>
-							<xsl:when test="v3:code[@code='1']|v3:code[@code='MP']">
-								<!-- PRODUCT DETAIL -->
-								<section class="card mb-2 hide-in-print" id="{$unique-section-id}">
-									<h5 class="card-header text-white bg-aurora-accent1">
-										<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
-									</h5>
-									<!-- Company Details and Product Details Accordion Cards -->
-									<div id="product-accordion">
-										<xsl:apply-templates select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization" mode="card"/>
-										<xsl:apply-templates select="v3:subject/v3:manufacturedProduct" mode="card"/>
-									</div>
-								</section>
-							</xsl:when>
-							<xsl:when test="$tri-code-value = '001'">
-								<!-- TITLE PAGE - Note: force-page-break here does not work on FireFox -->
-								<section class="card mb-2 force-page-break" id="{$unique-section-id}">
-									<h5 class="card-header text-white bg-aurora-accent1">
-										<xsl:value-of select="v3:code/@displayName"/>
-									</h5>
-									<div class="spl TitlePage p-3">
-										<xsl:for-each select="v3:component[1]/v3:section">
-											<xsl:apply-templates select="v3:title"/>
-											<xsl:apply-templates select="v3:text"/>
-										</xsl:for-each>
-									</div>
-									<div class="spl container p-5">
-										<div class="row">
-											<div class="col-6">
-												<xsl:for-each select="v3:component[2]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
-											</div>
-											<div class="col-6">
-												<xsl:for-each select="v3:component[3]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
-												<xsl:for-each select="v3:component[4]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
-												<xsl:for-each select="v3:component[5]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
+			<div class="container-fluid" id="main">
+				<div class="row position-relative">
+					<div class="col">
+						<xsl:for-each select="v3:component/v3:section">
+							<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
+							<xsl:variable name="tri-code-value" select="substring(v3:code/@code, string-length(v3:code/@code)-2)"/>
+							<xsl:choose>
+								<xsl:when test="v3:code[@code='1']|v3:code[@code='MP']">
+									<!-- PRODUCT DETAIL -->
+									<section class="card mb-2 hide-in-print" id="{$unique-section-id}">
+										<h5 class="card-header text-white bg-aurora-accent1">
+											<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
+										</h5>
+										<!-- Company Details and Product Details Accordion Cards -->
+										<div id="product-accordion">
+											<xsl:apply-templates select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization" mode="card"/>
+											<xsl:apply-templates select="v3:subject/v3:manufacturedProduct" mode="card"/>
+										</div>
+									</section>
+								</xsl:when>
+								<xsl:when test="$tri-code-value = '001'">
+									<!-- TITLE PAGE - Note: force-page-break here does not work on FireFox -->
+									<section class="card mb-2 force-page-break" id="{$unique-section-id}">
+										<h5 class="card-header text-white bg-aurora-accent1">
+											<xsl:value-of select="v3:code/@displayName"/>
+										</h5>
+										<div class="spl TitlePage p-3">
+											<xsl:for-each select="v3:component[1]/v3:section">
+												<xsl:apply-templates select="v3:title"/>
+												<xsl:apply-templates select="v3:text"/>
+											</xsl:for-each>
+										</div>
+										<div class="spl container p-5">
+											<div class="row">
+												<div class="col-6">
+													<xsl:for-each select="v3:component[2]/v3:section">
+														<xsl:apply-templates select="v3:title"/>
+														<xsl:apply-templates select="v3:text"/>
+													</xsl:for-each>
+												</div>
+												<div class="col-6">
+													<xsl:for-each select="v3:component[3]/v3:section">
+														<xsl:apply-templates select="v3:title"/>
+														<xsl:apply-templates select="v3:text"/>
+													</xsl:for-each>
+													<xsl:for-each select="v3:component[4]/v3:section">
+														<xsl:apply-templates select="v3:title"/>
+														<xsl:apply-templates select="v3:text"/>
+													</xsl:for-each>
+													<xsl:for-each select="v3:component[5]/v3:section">
+														<xsl:apply-templates select="v3:title"/>
+														<xsl:apply-templates select="v3:text"/>
+													</xsl:for-each>
+												</div>
 											</div>
 										</div>
-									</div>
-								</section>
-							</xsl:when>
-							<xsl:otherwise>
-								<!-- NAVIGATION FOR DIFFERENT PARTS -->								
-								<section class="card mb-2" id="{$unique-section-id}">
-									<h5 class="card-header text-white bg-aurora-accent1">
-										<xsl:value-of select="v3:code/@displayName"/>
-									</h5>
-									<div class="spl">
-										<xsl:apply-templates select="."/>
-									</div>
-								</section>
-							</xsl:otherwise>
-						</xsl:choose>
-					</xsl:for-each>
-					<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
-					<section class="hide-in-screen card" id="print-product-details">
-						<h5 class="card-header text-white">
-							<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
-						</h5>
-						<div class="spl">
-							<xsl:apply-templates mode="print" select="v3:author/v3:assignedEntity/v3:representedOrganization"/>
-							<xsl:apply-templates mode="print" select="//v3:subject/v3:manufacturedProduct"/>
-						</div>
-					</section>
-				</div>
+									</section>
+								</xsl:when>
+								<xsl:otherwise>
+									<!-- NAVIGATION FOR DIFFERENT PARTS -->								
+									<section class="card mb-2" id="{$unique-section-id}">
+										<h5 class="card-header text-white bg-aurora-accent1">
+											<xsl:value-of select="v3:code/@displayName"/>
+										</h5>
+										<div class="spl">
+											<xsl:apply-templates select="."/>
+										</div>
+									</section>
+								</xsl:otherwise>
+							</xsl:choose>
+						</xsl:for-each>
+						<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
+						<section class="hide-in-screen card" id="print-product-details">
+							<h5 class="card-header text-white">
+								<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
+							</h5>
+							<div class="spl">
+								<xsl:apply-templates mode="print" select="v3:author/v3:assignedEntity/v3:representedOrganization"/>
+								<xsl:apply-templates mode="print" select="//v3:subject/v3:manufacturedProduct"/>
+							</div>
+						</section>
+					</div>
+				</div>				
 			</div>
 		</main>	
 	</xsl:template>
@@ -779,7 +782,7 @@
 				<div class="bg-aurora-accent1 hide-in-print">
 					<h2 class="text-white text-center p-2"><xsl:copy-of select="v3:title/node()"/></h2>
 				</div>
-				<div class="container-fluid position-relative" id="content">
+					<div class="container-fluid position-relative" id="content">
 					<div class="row h-100">
 						<xsl:apply-templates select="v3:component/v3:structuredBody" mode="sidebar-navigation"/>
 						<xsl:apply-templates select="v3:component/v3:structuredBody" mode="main-document"/>
