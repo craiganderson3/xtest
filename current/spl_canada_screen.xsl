@@ -53,10 +53,37 @@
 		<xsl:for-each select="v3:ingredient[starts-with(@classCode,'ACTI')]">
 			<xsl:if test="position() > 1">/ </xsl:if>
 			<xsl:value-of select="v3:ingredientSubstance/v3:activeMoiety/v3:activeMoiety/v3:code/@displayName"/>&#160;
-			<xsl:value-of select="v3:quantity/v3:numerator/@value"/>&#160;
-			<xsl:value-of select="v3:quantity/v3:numerator/@unit"/>&#160;
+<!--			<xsl:value-of select="v3:quantity/v3:numerator/@value"/>&#160;
+			<xsl:value-of select="v3:quantity/v3:numerator/@unit"/> -->
+			<xsl:apply-templates select="v3:quantity/v3:numerator"/>&#160;
 		</xsl:for-each>
 		<xsl:value-of select="v3:formCode[@codeSystem='2.16.840.1.113883.2.20.6.3']/@displayName"/>
+	</xsl:template>
+	
+	<!-- extra logic required for URG_PQ or IVL_PQ -->
+	<xsl:template match="v3:quantity/v3:numerator">
+		<xsl:choose>
+			<xsl:when test="v3:low and v3:high">
+				<xsl:value-of select="v3:low/@value"/>					
+				<xsl:value-of select="$labels/toConnective[@lang = $lang]"/>
+				<xsl:value-of select="v3:high/@value"/>								
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="@value"/>								
+			</xsl:otherwise>
+		</xsl:choose>						
+		&#160;
+		<xsl:choose>
+			<xsl:when test="normalize-space(@unit)!='1'">
+				<xsl:value-of select="@unit"/>
+			</xsl:when>
+			<xsl:when test="normalize-space(v3:low/@unit)!='1'">
+				<xsl:value-of select="v3:low/@unit"/>
+			</xsl:when>
+			<xsl:when test="normalize-space(v3:high/@unit)!='1'">
+				<xsl:value-of select="v3:high/@unit"/>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>
 
 	<!-- This is a fairly decent navigation sidebar menu -->
