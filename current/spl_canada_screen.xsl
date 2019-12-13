@@ -74,15 +74,15 @@
 		</xsl:choose>						
 		&#160;
 		<xsl:choose>
-			<xsl:when test="normalize-space(@unit)!='1'">
-				<xsl:value-of select="@unit"/>
-			</xsl:when>
-			<xsl:when test="normalize-space(v3:low/@unit)!='1'">
+			<xsl:when test="v3:low/@unit">
 				<xsl:value-of select="v3:low/@unit"/>
 			</xsl:when>
-			<xsl:when test="normalize-space(v3:high/@unit)!='1'">
+			<xsl:when test="v3:high/@unit">
 				<xsl:value-of select="v3:high/@unit"/>
 			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="@unit"/>
+			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
