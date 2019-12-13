@@ -142,6 +142,7 @@
 		</tr>
 	</xsl:template>
 	
+	<!-- Overide FDA Ingredients - this is a helper template to simplify header generation -->
 	<xsl:template name="IngredientHeader">
 		<xsl:param name="title-label">
 			<xsl:value-of select="$labels/activeIngredients[@lang = $lang]"/>
@@ -165,29 +166,12 @@
 				<xsl:value-of select="$labels/strength[@lang = $lang]"/>
 			</th>
 		</tr>		
-	</xsl:template>
+	</xsl:template>	
 	
-	<!-- Overide FDA Ingredients -->
 	<!-- display the ingredient information (both active and inactive) -->
 	<xsl:template name="ActiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 			<xsl:call-template name="IngredientHeader"/>
-<!--			<tr>
-				<td colspan="3" class="formHeadingTitle">	
-					<xsl:value-of select="$labels/activeIngredients[@lang = $lang]"/>
-				</td>
-			</tr>
-			<tr>
-				<th class="formTitle" scope="col">
-					<xsl:value-of select="$labels/ingredientName[@lang = $lang]"/>
-				</th>
-				<th class="formTitle" scope="col">
-					<xsl:value-of select="$labels/basisOfStrength[@lang = $lang]"/>
-				</th>
-				<th class="formTitle" scope="col">
-					<xsl:value-of select="$labels/strength[@lang = $lang]"/>
-				</th>
-			</tr> -->
 			<!-- this will never get called unless it is hoisted outside this template
 			<xsl:if test="not(v3:ingredient[starts-with(@classCode, 'ACTI')]|v3:activeIngredient)">
 				<tr>
@@ -265,19 +249,6 @@
 				</xsl:with-param>
 				<xsl:with-param name="column-count">2</xsl:with-param>
 			</xsl:call-template>
-<!--			<tr>
-				<td colspan="2" class="formHeadingTitle">
-					<xsl:value-of select="$labels/inactiveIngredients[@lang = $lang]"/>
-				</td>
-			</tr>
-			<tr>
-				<th class="formTitle" scope="col">
-					<xsl:value-of select="$labels/ingredientName[@lang = $lang]"/>
-				</th>
-				<th class="formTitle" scope="col">
-					<xsl:value-of select="$labels/strength[@lang = $lang]"/>
-				</th>
-			</tr> -->
 			<!-- this will never get called unless it gets hoisted outside this template
 			<xsl:if test="not(v3:ingredient[@classCode='IACT']|v3:inactiveIngredient)">
 				<tr>
