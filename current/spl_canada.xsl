@@ -434,13 +434,13 @@
 					<xsl:with-param name="number" select="position()"/>
 				</xsl:call-template>
 			</xsl:for-each>
-			<xsl:if test="not($path/v3:asContent)">
+<!--			<xsl:if test="not($path/v3:asContent)">
 				<tr>
 					<td colspan="4" class="formTitle">
 						<strong><xsl:value-of select="$labels/noPackageFound[@lang = $lang]"/></strong>
 					</td>
 				</tr>
-			</xsl:if>
+			</xsl:if> -->
 		</table>
 	</xsl:template>
 

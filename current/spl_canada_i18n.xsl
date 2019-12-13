@@ -20,8 +20,8 @@
 		<din lang="en">Drug Identification Number (DIN)</din>
 		<adminRoute lang="en">Route of Administration</adminRoute>
 		<dosageForm lang="en">Dosage Form</dosageForm>
-		<activeIngredients lang="en">Active Ingredient/Active Moiety</activeIngredients>
-		<inactiveIngredients lang="en">Inactive Ingredients</inactiveIngredients>
+<!--		<activeIngredients lang="en">Active Ingredient/Active Moiety</activeIngredients>
+		<inactiveIngredients lang="en">Inactive Ingredients</inactiveIngredients> -->
 		<ingredientName lang="en">Ingredient Name</ingredientName>
 		<strength lang="en">Strength</strength>
 		<basisOfStrength lang="en">Basis of Strength</basisOfStrength>
@@ -52,7 +52,7 @@
 		<part lang="en">Part&#160;</part>
 		<pkgQuantity lang="en">Package Quantity</pkgQuantity>
 		<ttlProdQty lang="en">Total Product Quantity</ttlProdQty>
-		<noPackageFound lang="en">Package Information Not Applicable</noPackageFound>
+<!--		<noPackageFound lang="en">Package Information Not Applicable</noPackageFound> -->
 		<inConnective lang="en">&#160;in&#160;</inConnective>
 		<andConnective lang="en">&#160;and&#160;</andConnective>
 		<ofConnective lang="en">&#160;of&#160;</ofConnective>
@@ -80,8 +80,8 @@
 		<ingredientName lang="fr">Nom d’ingrédient</ingredientName>
 		<strength lang="fr">Concentration</strength>
 		<basisOfStrength lang="fr">Base de la concentration</basisOfStrength>
-		<noActiveFound lang="fr">(francais) No Active Ingredients Found</noActiveFound>
-		<noInactiveFound lang="fr">(francais) No Inactive Ingredients Found</noInactiveFound>
+<!--		<noActiveFound lang="fr">(francais) No Active Ingredients Found</noActiveFound>
+		<noInactiveFound lang="fr">(francais) No Inactive Ingredients Found</noInactiveFound> -->
 		<productType lang="fr">Type de produit</productType>
 		<productCharacteristics lang="fr">Caractéristiques du produit</productCharacteristics>
 		<color lang="fr">Couleur</color>
@@ -107,7 +107,7 @@
 		<part lang="fr">Élément&#160;</part>
 		<pkgQuantity lang="fr">Nombre d’emballages</pkgQuantity>
 		<ttlProdQty lang="fr">Quantité de produit totale</ttlProdQty>
-		<noPackageFound lang="fr">(francais) Package Information Not Applicable</noPackageFound>
+<!--		<noPackageFound lang="fr">(francais) Package Information Not Applicable</noPackageFound> -->
 		<inConnective lang="fr">&#160;dans&#160;</inConnective>
 		<andConnective lang="fr">&#160;et&#160;</andConnective>
 		<ofConnective lang="fr">&#160;de&#160;</ofConnective>
