@@ -171,8 +171,8 @@
 	<!-- display the ingredient information (both active and inactive) -->
 	<xsl:template name="ActiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
-<!--			<xsl:call-template name="IngredientHeader"/> -->
-			<tr>
+			<xsl:call-template name="IngredientHeader"/>
+<!--			<tr>
 				<td colspan="3" class="formHeadingTitle">	
 					<xsl:value-of select="$labels/activeIngredients[@lang = $lang]"/>
 				</td>
@@ -187,7 +187,7 @@
 				<th class="formTitle" scope="col">
 					<xsl:value-of select="$labels/strength[@lang = $lang]"/>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- this will never get called unless it is hoisted outside this template
 			<xsl:if test="not(v3:ingredient[starts-with(@classCode, 'ACTI')]|v3:activeIngredient)">
 				<tr>
