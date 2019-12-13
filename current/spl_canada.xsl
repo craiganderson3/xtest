@@ -259,13 +259,13 @@
 
 	<xsl:template name="InactiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
-<!--			<xsl:call-template name="IngredientHeader">
+			<xsl:call-template name="IngredientHeader">
 				<xsl:with-param name="title-label">
 					<xsl:value-of select="$labels/inactiveIngredients[@lang = $lang]"/>					
 				</xsl:with-param>
 				<xsl:with-param name="column-count">2</xsl:with-param>
-			</xsl:call-template> -->
-			<tr>
+			</xsl:call-template>
+<!--			<tr>
 				<td colspan="2" class="formHeadingTitle">
 					<xsl:value-of select="$labels/inactiveIngredients[@lang = $lang]"/>
 				</td>
@@ -277,7 +277,7 @@
 				<th class="formTitle" scope="col">
 					<xsl:value-of select="$labels/strength[@lang = $lang]"/>
 				</th>
-			</tr>
+			</tr> -->
 			<!-- this will never get called unless it gets hoisted outside this template
 			<xsl:if test="not(v3:ingredient[@classCode='IACT']|v3:inactiveIngredient)">
 				<tr>
