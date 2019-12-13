@@ -64,13 +64,12 @@
 			<xsl:when test="v3:low and v3:high">
 				<xsl:value-of select="v3:low/@value"/>					
 				<xsl:value-of select="$labels/toConnective[@lang = $lang]"/>
-				<xsl:value-of select="v3:high/@value"/>								
+				<xsl:value-of select="v3:high/@value"/>&#160;								
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="@value"/>								
+				<xsl:value-of select="@value"/>&#160;
 			</xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>&#160;</xsl:text>
 		<xsl:choose>
 			<xsl:when test="v3:low/@unit">
 				<xsl:value-of select="v3:low/@unit"/>
