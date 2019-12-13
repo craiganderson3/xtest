@@ -70,7 +70,7 @@
 				<xsl:value-of select="@value"/>								
 			</xsl:otherwise>
 		</xsl:choose>
-<!--		&#160; -->
+		<xsl:text> </xsl:text><!--		&#160; -->
 		<xsl:choose>
 			<xsl:when test="v3:low/@unit">
 				<xsl:value-of select="v3:low/@unit"/>
