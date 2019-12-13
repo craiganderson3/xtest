@@ -32,6 +32,7 @@ be represented
 	margin-left: 1em;
 	margin-right: 1em;
 }
+
 }
 							
 @media print {
@@ -45,6 +46,18 @@ be represented
 	orphans:4; 
 	widows:2;
 }
+
+/*
+ * Tests Print Styles added to support Canadian Aurora version
+ */
+.hide-in-print { display: none !important; }		
+.force-page-break { page-break-after: always; }
+.suppress-page-break { page-break-after: avoid; }
+.card { border-width: 0 !important; }
+.card-header { display: none !important; }
+/*
+ * End of Print Styles added to support Canadian Aurora version
+ */
 
 .spl {
 	font-family: "Times New Roman", Times, serif;
