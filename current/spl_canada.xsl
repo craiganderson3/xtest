@@ -143,7 +143,7 @@
 	</xsl:template>
 	
 	<xsl:template name="IngredientHeader">
-		<xsl:param nam="title-label">
+		<xsl:param name="title-label">
 			<xsl:value-of select="$labels/activeIngredients[@lang = $lang]"/>
 		</xsl:param>
 		<xsl:param name="column-count">3</xsl:param>
