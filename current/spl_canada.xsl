@@ -149,7 +149,7 @@
 		</xsl:param>
 		<xsl:param name="column-count">3</xsl:param>
 		<tr>
-			<td colspan="$column-count" class="formHeadingTitle">	
+			<td colspan="{$column-count}" class="formHeadingTitle">	
 				<xsl:value-of select="$title-label"/>
 			</td>
 		</tr>
