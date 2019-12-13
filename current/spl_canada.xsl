@@ -142,7 +142,7 @@
 		</tr>
 	</xsl:template>
 	
-<!--	<xsl:template name="IngredientHeader">
+	<xsl:template name="IngredientHeader">
 		<xsl:param name="title-label">
 			<xsl:value-of select="$labels/activeIngredients[@lang = $lang]"/>
 		</xsl:param>
@@ -165,7 +165,7 @@
 				<xsl:value-of select="$labels/strength[@lang = $lang]"/>
 			</th>
 		</tr>		
-	</xsl:template> -->
+	</xsl:template>
 	
 	<!-- Overide FDA Ingredients -->
 	<!-- display the ingredient information (both active and inactive) -->
