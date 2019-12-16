@@ -66,14 +66,15 @@
         <section ID="f6ac9de5-be91-442c-9579-5bc9ebd36902">
           <id root="bdeefc11-4315-41e3-8c56-83e8bf4f770b"/>
           <code code="MP" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="PRODUIT FABRIQUÉ"/>
-          <effectiveTime value="20170101"/>
+          <title>PRODUIT FABRIQUÉ</title>
+		  <effectiveTime value="20170101"/>
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
                 <code code="12345623" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM COMPRIMÉS</name>
-                <formCode code="85" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="COMPRIMÉ"/>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="COMPRIMÉ"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -141,7 +142,7 @@
                   <containerPackagedProduct>
                     <code code="ABC-1234"/>
                     <!--company defined pack code-->
-                    <formCode code="5" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="BOUTEILLE"
+                    <formCode code="30008000" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="FLACON"
                     />
                   </containerPackagedProduct>
                   <subjectOf>
@@ -168,8 +169,8 @@
                   <containerPackagedProduct>
                     <code code="ABC-5678"/>
                     <!--company defined pack code-->
-                    <formCode code="4" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="PLAQUETTES ALVÉOLAIRES"/>
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="PLAQUETTE"/>
                     <asContent>
                       <quantity>
                         <numerator value="4" unit="1"/>
@@ -177,8 +178,8 @@
                       </quantity>
                       <containerPackagedProduct>
                         <code code="ABC-6789"/>
-                        <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="CARTON"/>
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOÎTE"/>
                       </containerPackagedProduct>
                       <subjectOf>
                         <marketingAct>
@@ -264,7 +265,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINER"/>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="EMPREINTE"/>
                   <value xsi:type="ST">A;45</value>
                 </characteristic>
               </subjectOf>
@@ -285,7 +286,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PROGRAMME"/>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="ANNEXE"/>
                   <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
                     xsi:type="CV"/>
                 </characteristic>
@@ -293,14 +294,14 @@
               <subjectOf>
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                    displayName="CLASSE THERAPEUTIQUE"/>
+                    displayName="CLASSE THÉRAPEUTIQUE"/>
                   <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="ANALGÉSIQUE"
                     xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="56" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORALE"/>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="VOIE ORALE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -311,7 +312,7 @@
                 <code code="45612300" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM CAPSULE</name>
-                <formCode code="5" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="CAPSULE"/>
+                <formCode code="10210000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="GÉLULE"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -379,8 +380,8 @@
                   <containerPackagedProduct>
                     <code code="ABC-5678"/>
                     <!--company defined pack code-->
-                    <formCode code="4" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="PLAQUETTES ALVÉOLAIRES"/>
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="PLAQUETTE"/>
                     <asContent>
                       <quantity>
                         <numerator value="4" unit="1"/>
@@ -388,8 +389,8 @@
                       </quantity>
                       <containerPackagedProduct>
                         <code code="ABC-6789"/>
-                        <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="CARTON"/>
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOÎTE"/>
                       </containerPackagedProduct>
                       <subjectOf>
                         <marketingAct>
@@ -484,7 +485,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRIMER"/>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="EMPREINTE"/>
                   <value xsi:type="ST">L;200</value>
                 </characteristic>
               </subjectOf>
@@ -505,7 +506,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PROGRAMME"/>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="ANNEXE"/>
                   <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
                     xsi:type="CV"/>
                 </characteristic>
@@ -513,14 +514,14 @@
               <subjectOf>
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                    displayName="CLASSE THERAPEUTIQUE"/>
+                    displayName="CLASSE THÉRAPEUTIQUE"/>
                   <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="ANALGÉSIQUE"
                     xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="56" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORALE"/>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="VOIE ORALE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -531,8 +532,8 @@
                 <code code="65432122" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM POUDRE</name>
-                <formCode code="126" codeSystem="2.16.840.1.113883.2.20.6.3"
-                  displayName="POUDRE POUR SOLUTION"/>
+                <formCode code="10110000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                  displayName="POUDRE POUR SOLUTION BUVABLE"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -600,8 +601,8 @@
                   <containerPackagedProduct>
                     <code code="1212"/>
                     <!--company defined pack code-->
-                    <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="VIALE, VERRE"/>
+                    <formCode code="30069000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="FLACON"/>
                     <asContent>
                       <quantity>
                         <numerator value="2" unit="1"/>
@@ -610,7 +611,7 @@
                       <containerPackagedProduct>
                         <code code="1212"/>
                         <!--company defined pack code-->
-                        <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
+                        <formCode code="C53438" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="PLATEAU"/>
                         <asContent>
                           <quantity>
@@ -620,8 +621,8 @@
                           <containerPackagedProduct>
                             <code code="1212"/>
                             <!--company defined pack code-->
-                            <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
-                              displayName="CARTON"/>
+                            <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                              displayName="BOÎTE"/>
                           </containerPackagedProduct>
                           <subjectOf>
                             <marketingAct>
@@ -695,7 +696,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PROGRAMME"/>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="ANNEXE"/>
                   <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
                     xsi:type="CV"/>
                 </characteristic>
@@ -703,15 +704,15 @@
               <subjectOf>
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                    displayName="CLASSE THERAPEUTIQUE"/>
+                    displayName="CLASSE THÉRAPEUTIQUE"/>
                   <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="ANALGESIC"
                     xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="65" codeSystem="2.16.840.1.113883.2.20.6.7"
-                    displayName="SOUS-CUTANÉE"/>
+                  <routeCode code="20066000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                    displayName="VOIE SOUS-CUTANÉE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -722,7 +723,7 @@
                 <code code="61325422" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM TROUSSE</name>
-                <formCode code="32" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TROUSSES"/>
+                <formCode code="C43197" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TROUSSES"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -735,8 +736,8 @@
                   </quantity>
                   <containerPackagedProduct>
                     <code code="1111"/>
-                    <formCode code="19" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="CARTON"/>
+                    <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BOÎTE"/>
                   </containerPackagedProduct>
                 </asContent>
                 <part>
@@ -748,8 +749,8 @@
                     <code code="02490064" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                     <!-- DIN Number -->
                     <name>LORUM IPSUM TROUSSE POUDRE</name>
-                    <formCode code="56" codeSystem="2.16.840.1.113883.2.20.6.3"
-                      displayName="POUDRE POUR SOLUTION"/>
+                    <formCode code="10110000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                      displayName="POUDRE POUR SOLUTION BUVABLE"/>
                     <asEntityWithGeneric>
                       <genericMedicine>
                         <name>acetaminophen</name>
@@ -817,8 +818,8 @@
                       <containerPackagedProduct>
                         <code code="1212"/>
                         <!--company defined pack code-->
-                        <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
-                          displayName="VIALE, VERRE"/>
+                        <formCode code="30069000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="FLACON"/>
                       </containerPackagedProduct>
                     </asContent>
                   </partProduct>
@@ -867,7 +868,7 @@
                   <subjectOf>
                     <characteristic>
                       <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="PROGRAMME"/>
+                        displayName="ANNEXE"/>
                       <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2"
                         displayName="PRESCRIPTION" xsi:type="CV"/>
                     </characteristic>
@@ -875,15 +876,15 @@
                   <subjectOf>
                     <characteristic>
                       <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="CLASSE THERAPEUTIQUE"/>
+                        displayName="CLASSE THÉRAPEUTIQUE"/>
                       <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6"
                         displayName="ANALGÉSIQUE" xsi:type="CV"/>
                     </characteristic>
                   </subjectOf>
                   <consumedIn>
                     <substanceAdministration>
-                      <routeCode code="49" codeSystem="2.16.840.1.113883.2.20.6.7"
-                        displayName="INTRAVEINEUSE"/>
+                      <routeCode code="20045000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                        displayName="VOIE INTRAVEINEUSE"/>
                     </substanceAdministration>
                   </consumedIn>
                 </part>
@@ -896,7 +897,7 @@
                     <code code="02490064" codeSystem="2.16.840.1.113883.2.20.6.42"/>
                     <!-- DIN Number -->
                     <name>EAU</name>
-                    <formCode code="34" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="LIQUIDE"/>
+                    <formCode code="10104000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="LIQUIDE ORAL"/>
                     <asEntityWithGeneric>
                       <genericMedicine>
                         <name>CHLORURE DE SODIUM, EAU POUR INJECTIONS</name>
@@ -929,7 +930,7 @@
                       <containerPackagedProduct>
                         <code code="1234"/>
                         <!--company defined pack code-->
-                        <formCode code="45" codeSystem="2.16.840.1.113883.2.20.6.32"
+                        <formCode code="30029000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="SERINGUE"/>
                       </containerPackagedProduct>
                       <subjectOf>
@@ -991,7 +992,7 @@
                   <subjectOf>
                     <characteristic>
                       <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="PROGRAMME"/>
+                        displayName="ANNEXE"/>
                       <value code="5" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="EN VENTE LIBRE"
                         xsi:type="CV"/>
                     </characteristic>
@@ -999,15 +1000,15 @@
                   <subjectOf>
                     <characteristic>
                       <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="CLASSE THERAPEUTIQUE"/>
+                        displayName="CLASSE THÉRAPEUTIQUE"/>
                       <value code="43385" codeSystem="2.16.840.1.113883.2.20.6.6"
                         displayName="ANALGÉSIQUE" xsi:type="CV"/>
                     </characteristic>
                   </subjectOf>
                   <consumedIn>
                     <substanceAdministration>
-                      <routeCode code="49" codeSystem="2.16.840.1.113883.2.20.6.7"
-                        displayName="INTRAVEINEUSE"/>
+                      <routeCode code="20045000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                        displayName="VOIE INTRAVEINEUSE"/>
                     </substanceAdministration>
                   </consumedIn>
                 </part>
@@ -1079,7 +1080,7 @@
               <id root="e5f1dea3-d907-4664-b46f-e1d9736d47af"/>
               <code code="60004" codeSystem="2.16.840.1.113883.2.20.6.60"
                 displayName="DATE D'APPROBATION INITIALE"/>
-              <title>DATE D'APPROBATION</title>
+              <title>DATE D'APPROBATION INITIALE</title>
               <text>
                 <paragraph>20170101</paragraph>
               </text>
@@ -1091,7 +1092,7 @@
               <id root="ad78301c-29a9-41af-96f8-d58815fed296"/>
               <code code="60005" codeSystem="2.16.840.1.113883.2.20.6.60"
                 displayName="DATE DE RÉVISION"/>
-              <title>INITIALE DATE DE REVISION</title>
+              <title>DATE DE RÉVISION</title>
               <text>
                 <paragraph>20180101</paragraph>
               </text>
@@ -1454,8 +1455,7 @@
                   <id root="a473c162-e146-44d0-b797-2b7b6cf00e43"/>
                   <code code="60031" codeSystem="2.16.840.1.113883.2.20.6.60"
                     displayName="8.3 EFFETS INDÉSIRABLES PEU COURANTS (NON FRÉQUENTS) IDENTIFIÉS LORS DES ESSAIS CLINIQUES"/>
-                  <title>8.3 EFFETS INDÉSIRABLES PEU COURANTS (NON FRÉQUENTS) IDENTIFIÉS LORS DES
-                    ESSAIS CLINIQUES</title>
+                  <title>8.3 EFFETS INDÉSIRABLES PEU COURANTS (NON FRÉQUENTS) IDENTIFIÉS LORS DES ESSAIS CLINIQUES</title>
                   <text>
                     <paragraph>exemple de texte</paragraph>
                   </text>
@@ -1479,7 +1479,7 @@
                   <id root="a473c162-e176-44c0-b797-2b7b6cf00e43"/>
                   <code code="60033" codeSystem="2.16.840.1.113883.2.20.6.60"
                     displayName="8.5 EFFETS INDÉSIRABLE OBSERVÉS DANS LES ESSAIS CLINIQUES (ENFANTS)"/>
-                  <title>8.5 EFFETS INDÉSIRABLE OBSERVÉS DANS LES ESSAIS CLINIQUES (ENFANTS) </title>
+                  <title>8.5 EFFETS INDÉSIRABLE OBSERVÉS DANS LES ESSAIS CLINIQUES (ENFANTS)</title>
                   <text>
                     <paragraph>exemple de texte</paragraph>
                   </text>
@@ -1515,7 +1515,7 @@
                   <id root="b9db4be0-3f46-437a-bd7b-4a3e01fadaad"/>
                   <code code="60036" codeSystem="2.16.840.1.113883.2.20.6.60"
                     displayName="9.1 BOÎTE D'INTERACTIONS MÉDICAMENTEUSES GRAVES"/>
-                  <title>99.1 BOÎTE D'INTERACTIONS MÉDICAMENTEUSES GRAVES</title>
+                  <title>9.1 BOÎTE D'INTERACTIONS MÉDICAMENTEUSES GRAVES</title>
                   <text>
                     <paragraph>exemple de texte</paragraph>
                   </text>
@@ -2110,8 +2110,8 @@
             <section ID="A3">
               <id root="2494b727-e7a1-4cd3-b62f-b89c2e5bfa0c"/>
               <code code="60060" codeSystem="2.16.840.1.113883.2.20.6.60"
-                displayName="NOM DU PRODUIT SOUS SA FORME POSOLOGIQUE FINALE"/>
-              <title>NOM DU PRODUIT SOUS SA FORME POSOLOGIQUE FINALE</title>
+                displayName="NOM PROPRE DANS LES FORMES POSOLOGIQUES FINALES"/>
+              <title>NOM PROPRE DANS LES FORMES POSOLOGIQUES FINALES</title>
               <text>
                 <paragraph>exemple de texte</paragraph>
               </text>
@@ -2252,8 +2252,8 @@
           <component>
             <section ID="A15">
               <id root="40d4d5a8-15ef-4031-ac1b-2d4f0c5d09e0"/>
-              <code code="60072" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="SURDOSAGE:"/>
-              <title>SURDOSAGE:</title>
+              <code code="60072" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="SURDOSE:"/>
+              <title>SURDOSE:</title>
               <text>
                 <paragraph>exemple de texte</paragraph>
               </text>
