@@ -1,0 +1,2136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/cease353/xtest/master/Development/spl_canada.xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 https://raw.githubusercontent.com/HealthCanada/HPFB/master/Structured-Product-Labeling-(SPL)/Schema/current/SPL.xsd">
+  <templateId extension="NDS" root="2.16.840.1.113883.2.20.6.37"/>
+  <id root="deb4ec67-8764-4b72-b7a5-0bae88db11a3"/>
+  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.10"
+    displayName="2016 PRODUCT MONOGRAPH TEMPLATE - SCHEDULE D - BIOSIMILAR BIOLOGIC DRUG"/>
+  <title>HADLIMA, HADLIMA PushTouch</title>
+  <effectiveTime value="20180101">
+    <originalText description="Date of Initial Approval">20190313</originalText>
+  </effectiveTime>
+  <languageCode code="1" codeSystem="2.16.840.1.113883.2.20.6.29" displayName="ENGLISH"/>
+  <setId root="abc4ec67-4564-4b72-b7c3-0bae811b11a3"/>
+  <versionNumber value="1"/>
+  <author>
+    <!--Organization Information-->
+    <time/>
+    <assignedEntity>
+      <representedOrganization>
+        <!--Market Authorization Holder-->
+        <id extension="16797" root="2.16.840.1.113883.2.20.6.31"/>
+        <name>SAMSUNG BIOEPIS CO., LTD</name>
+        <contactParty>
+          <addr>
+            <streetAddressLine>107 Cheomdan-daero</streetAddressLine>
+            <city>Yeonsu-gu</city>
+            <state>Incheon</state>
+            <postalCode>21987</postalCode>
+            <country code="KOR" codeSystem="2.16.840.1.113883.2.20.6.17"
+              displayName="KOREA (THE REPUBLIC OF)"/>
+          </addr>
+          <telecom value="tel:+12345678910"/>
+          <telecom value="mailto:test@canada.ca"/>
+          <telecom value="https://www.test.ca"/>
+          <contactPerson/>
+        </contactParty>
+        <assignedEntity>
+          <assignedOrganization>
+            <!-- Importer/Distributor -->
+            <id extension="12250" root="2.16.840.1.113883.2.20.6.31"/>
+            <name>MERCK CANADA INC</name>
+            <contactParty>
+              <addr>
+                <streetAddressLine>Street address#2</streetAddressLine>
+                <city>Kirkland</city>
+                <state>Quebec</state>
+                <postalCode>H9H 4M7</postalCode>
+                <country code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17" displayName="CANADA"/>
+              </addr>
+              <telecom value="tel:+15678929988"/>
+              <telecom value="mailto:test.2@canada.ca"/>
+              <telecom value="https://www.test.ca"/>
+              <contactPerson/>
+            </contactParty>
+          </assignedOrganization>
+        </assignedEntity>
+      </representedOrganization>
+    </assignedEntity>
+  </author>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Manufactured Product Information -->
+        <section ID="f6ac9de5-be91-442c-9579-5bc9ebd36902">
+          <id root="bdeefc11-4315-41e3-8c56-83e8bf4f770b"/>
+          <code code="MP" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="MANUFACTURED PRODUCT"/>
+		  <title>MANUFACTURED PRODUCT</title>
+          <effectiveTime value="20190313"/>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="12345612" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>HADLIMA PUSHTOUCH</name>
+                <formCode code="11201000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                  displayName="SOLUTION FOR INJECTION"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>ADALIMUMAB</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator value="50" unit="mg"/>
+                    <denominator value="1" unit="mL"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ADALIMUMAB"/>
+                    <name>ADALIMUMAB</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="ingredient#2"/>
+                        <name>ADALIMUMAB</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="2968PHW8QP" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="CITRIC ACID MONOHYDRATE"/>
+                    <name>CITRIC ACID MONOHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="B22547B95K" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TRISODIUM CITRATE DIHYDRATE"/>
+                    <name>TRISODIUM CITRATE DIHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="4QD397987E" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="HISTIDINE"/>
+                    <name>HISTIDINE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="X573657P6P" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="HISTIDINE MONOHYDROCHLORIDE MONOHYDRATE"/>
+                    <name>HISTIDINE MONOHYDROCHLORIDE MONOHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="506T60A25R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="SORBITOL"/>
+                    <name>SORBITOL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="7T1F30V5YH" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="POLYSORBATE 20"/>
+                    <name>POLYSORBATE 20</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="WATER"/>
+                    <name>WATER</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="1" unit="mL"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <!--company defined pack code-->
+                    <formCode code="30051000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="PRE-FILLED SYRINGE"/>
+                    <asContent>
+                      <!-- Packaging -->
+                      <quantity>
+                        <numerator value="2" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <!--company defined pack code-->
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+                      <subjectOf>
+                        <marketingAct>
+                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11"
+                            displayName="APPROVED"/>
+                          <statusCode code="ACTIVE"/>
+                          <effectiveTime>
+                            <!-- regulatory status of this package -->
+                            <low value="20190313"/>
+                          </effectiveTime>
+                        </marketingAct>
+                      </subjectOf>
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="222615" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20190313"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.53" displayName="BIOLOGIC"
+                    xsi:type="CV">
+                    <originalText>BIOLOGIC</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="CLEAR"
+                    xsi:type="CV">
+                    <originalText>Colourless</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="7" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="USP"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="94797" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="DISEASE-MODIFYING ANTIRHEUMATIC AGENTS" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20066000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                    displayName="SUBCUTANEOUS USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="12343356" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>HADLIMA</name>
+                <formCode code="11201000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                  displayName="SOLUTION FOR INJECTION"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>ADALIMUMAB</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator value="50" unit="mg"/>
+                    <denominator value="1" unit="mL"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ADALIMUMAB"/>
+                    <name>ADALIMUMAB</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="ingredient#2"/>
+                        <name>ADALIMUMAB</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="2968PHW8QP" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="CITRIC ACID MONOHYDRATE"/>
+                    <name>CITRIC ACID MONOHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="B22547B95K" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TRISODIUM CITRATE DIHYDRATE"/>
+                    <name>TRISODIUM CITRATE DIHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="4QD397987E" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="HISTIDINE"/>
+                    <name>HISTIDINE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="X573657P6P" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="HISTIDINE MONOHYDROCHLORIDE MONOHYDRATE"/>
+                    <name>HISTIDINE MONOHYDROCHLORIDE MONOHYDRATE</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="506T60A25R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="SORBITOL"/>
+                    <name>SORBITOL</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="7T1F30V5YH" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="POLYSORBATE 20"/>
+                    <name>POLYSORBATE 20</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="WATER"/>
+                    <name>WATER</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="1" unit="mL"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <!--company defined pack code-->
+                    <formCode code="30051000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="PRE-FILLED SYRINGE"/>
+                    <asContent>
+                      <!-- Packaging -->
+                      <quantity>
+                        <numerator value="2" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <!--company defined pack code-->
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+                      <subjectOf>
+                        <marketingAct>
+                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11"
+                            displayName="APPROVED"/>
+                          <statusCode code="ACTIVE"/>
+                          <effectiveTime>
+                            <!-- regulatory status of this package -->
+                            <low value="20190313"/>
+                          </effectiveTime>
+                        </marketingAct>
+                      </subjectOf>
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="222615" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20190313"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.53" displayName="BIOLOGIC"
+                    xsi:type="CV">
+                    <originalText>BIOLOGIC</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="CLEAR"
+                    xsi:type="CV">
+                    <originalText>Colourless</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="7" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="USP"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="94797" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="DISEASE-MODIFYING ANTIRHEUMATIC AGENTS" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20066000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                    displayName="SUBCUTANEOUS USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+        </section>
+      </component>
+      <component>
+        <!--Title Page section-->
+        <section ID="cd8d3086-e343-48f4-9cec-524834b3803b">
+          <id root="eed00b53-cdb2-4aa6-9e82-88b7d793b208"/>
+          <code code="65001" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="TITLE PAGE"/>
+          <title>TITLE PAGE</title>
+          <effectiveTime value="20190313"/>
+          <component>
+            <section ID="be75cfb9-3131-4903-800b-267427388a13">
+              <id root="b9db4be0-3146-437a-bd7b-4a3e010adaad"/>
+              <code code="65002" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="TITLE"/>
+              <title>TITLE</title>
+              <text>
+                <paragraph><sup>Pr</sup>HADLIMA<sup>TM</sup><br/><br/> Adalimumab
+                  injection<br/><br/> 40 mg in 0.8 mL sterile solution (50 mg/mL), pre-filled
+                  syringe for subcutaneous injection<br/><br/>
+                  <sup>Pr</sup>HADLIMA<sup>TM</sup><br/><br/> Adalimumab injection<br/><br/> 40 mg
+                  in 0.8 mL sterile solution (50 mg/mL), auto-injector for subcutaneous
+                  injection<br/><br/><br/> HADLIMA<sup>TM</sup> (adalimumab injection) is a
+                  biosimilar biologic drug (biosimilar) to Humira®.<br/><br/> Biological Response
+                  Modifier <br/><br/><br/>
+                  <content styleCode="bold">HADLIMA<sup>TM</sup> or HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup> (adalimumab injection) treatment should be initiated
+                    and supervised by specialist physicians experienced in the diagnosis and
+                    treatment of rheumatoid arthritis, polyarticular juvenile idiopathic arthritis,
+                    psoriatic arthritis, ankylosing spondylitis, adult Crohn’s disease, ulcerative
+                    colitis, adult hidradenitis suppurativa, plaque psoriasis or adult uveitis, and
+                    familiar with the HADLIMA<sup>TM</sup> or HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup> efficacy and safety profile. </content></paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="f187daf9-5e75-425a-9de6-f6ce1af2a965">
+              <id root="ac26f58c-721a-4c51-8bbc-c9dddb1f1233"/>
+              <code code="65003" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="COMPANY NAME AND ADDRESS"/>
+              <title>COMPANY NAME AND ADDRESS</title>
+              <text>
+                <paragraph>SAMSUNG BIOEPIS<br/> 107, Cheomdan-daero, Yeonsu-gu, Incheon, 21987,<br/>
+                  Republic of Korea<br/><br/> Distributed by:<br/> Merck Canada Inc.<br/> Kirkland
+                  QC Canada H9H 4M7 </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bf2dab4e-fd04-4ec9-9cdc-247188622d0f">
+              <id root="b5f1dea3-d907-4664-b46f-e1d9736d47af"/>
+              <code code="65004" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="DATE OF INITIAL APPROVAL"/>
+              <title>DATE OF INITIAL APPROVAL</title>
+              <text>
+                <paragraph>20190313</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ebc3f3dc-71be-422f-91ef-8aca8c138b21">
+              <id root="efd8c4c1-d0cd-434d-b1c2-4daa18752fa8"/>
+              <code code="65005" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="DATE OF REVISION"/>
+              <title>DATE OF REVISION</title>
+              <text>
+                <paragraph>20191210</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+		  <component>
+            <section ID="ebc3f3dc-71ce-424f-91ef-8aca8c138b21">
+              <id root="efd8c4c1-d0dd-414d-b1c2-4daa18752fa8"/>
+              <code code="65006" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="CONTROL NUMBER"/>
+              <title>CONTROL NUMBER</title>
+              <text>
+                <paragraph>123456</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+		  <component>
+            <section ID="ebc3f3dc-71be-424f-91ef-8aca8c138b21">
+              <id root="efd8c4c1-d0dd-434d-b132-4daa18752fa8"/>
+              <code code="65007" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="RECENT MAJOR LABEL CHANGES"/>
+              <title>RECENT MAJOR LABEL CHANGES</title>
+              <text>
+                <paragraph>example text</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <!-- PART I: HEALTH PROFESSIONAL INFORMATION -->
+        <section ID="a16a94eb-e2be-45c0-8b2e-15d0d0eebea8">
+          <id root="e6bb83b9-2602-4f96-9077-b8b9535c254e"/>
+          <code code="65008" codeSystem="2.16.840.1.113883.2.20.6.65"
+            displayName="PART I: HEALTH PROFESSIONAL INFORMATION"/>
+          <title>PART I: HEALTH PROFESSIONAL INFORMATION</title>
+          <effectiveTime value="20190313"/>
+          <component>
+            <section ID="c2ea4fad-2b79-4dbc-8d99-6843adc2dec8">
+              <id root="9a3f869a-7734-425a-85d8-b8bd4d3500a5"/>
+              <code code="65009" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="1 INDICATIONS"/>
+              <title>1 INDICATIONS</title>
+              <text>
+                <paragraph>Indications have been granted on the basis of similarity between
+                    HADLIMA<sup>TM</sup> and the reference biologic drug Humira®.<br/><br/>
+                  <content styleCode="bold">HADLIMA<sup>TM</sup> or HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup> (adalimumab injection) treatment should be initiated
+                    and supervised by specialist physicians experienced in the diagnosis and
+                    treatment of rheumatoid arthritis (RA), polyarticular juvenile idiopathic
+                    arthritis (JIA), psoriatic arthritis (PsA), ankylosing spondylitis (AS), adult
+                    Crohn’s disease (CD), ulcerative colitis (UC), adult hidradenitis suppurativa
+                    (HS), plaque psoriasis or adult uveitis, and familiar with the
+                      HADLIMA<sup>TM</sup> or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup> efficacy
+                    and safety profile.</content><br/><br/> HADLIMA<sup>TM</sup> (adalimumab
+                  injection in pre-filled syringe) and HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>
+                  (adalimumab injection in auto-injector) are indicated for:<br/><br/>
+                  <content styleCode="bold"><content styleCode="underline">Rheumatoid
+                      Arthritis</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item>reducing the signs and symptoms, inducing major clinical response and
+                    clinical remission, inhibiting the progression of structural damage and
+                    improving physical function in adult patients with moderately to severely active
+                    rheumatoid arthritis. HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup>) can be used alone or in combination with methotrexate
+                    (MTX) or other disease-modifying anti-rheumatic drugs (DMARDs).</item>
+                </list>
+                <paragraph> When used as first-line treatment in recently diagnosed patients who
+                  have not been previously treated with MTX, HADLIMA<sup>TM</sup> (or
+                    HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) should be given in combination with
+                  methotrexate.<br/> HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                    PushTouch<sup>TM</sup>) can be given as monotherapy in case of intolerance to
+                  methotrexate or when treatment with MTX is contraindicated.<br/><br/>
+                  <content styleCode="bold"><content styleCode="underline">Polyarticular Juvenile
+                      Idiopathic Arthritis</content></content>
+                </paragraph><br/>
+                <list listType="unordered">
+                  <item>in combination with MTX, reducing signs and symptoms of moderately to
+                    severely active polyarticular juvenile idiopathic arthritis in patients, 4 years
+                    of age and older, who have had an inadequate response to one or more
+                    disease-modifying anti-rheumatic drugs (DMARDs). HADLIMA<sup>TM</sup> (or
+                      HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) can be used as monotherapy in
+                    case of intolerance to methotrexate or when continued treatment with
+                    methotrexate is not appropriate (see <content styleCode="bold">CLINICAL TRIALS –
+                      REFERENCE BIOLOGIC DRUG, Pediatric</content>, <content styleCode="underline"
+                      >Polyarticular Juvenile Idiopathic Arthritis</content>, <content
+                      styleCode="bold"><content styleCode="underline">Study
+                      Results</content></content>). Adalimumab injection has not been studied in
+                    pediatric patients with polyarticular juvenile idiopathic arthritis aged less
+                    than 2 years. </item>
+                  <item>HADLIMA<sup>TM</sup> and HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup> are
+                    available for pediatric polyarticular juvenile idiopathic arthritis patients who
+                    require the full 40 mg dosage based on body weight and height (See <content
+                      styleCode="bold">DOSAGE AND ADMINISTRATION, Recommended Dose and Dosage
+                      Adjustment, Pediatrics</content>, <content styleCode="underline">Polyarticular
+                      Juvenile Idiopathic Arthritis</content>). </item>
+                </list>
+                <paragraph>
+                  <content styleCode="bold"><content styleCode="underline">Psoriatic
+                      Arthritis</content></content>
+                </paragraph><br/>
+                <list>
+                  <item>reducing the signs and symptoms of active arthritis and inhibiting the
+                    progression of structural damage and improving the physical function in adult
+                    psoriatic arthritis patients. HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup>) can be used in combination with methotrexate (MTX) in
+                    patients who do not respond adequately to methotrexate alone.</item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="underline">Ankylosing
+                      Spondylitis</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item>reducing signs and symptoms in patients with active ankylosing spondylitis
+                    who have had an inadequate response to conventional therapy. </item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="underline">Adult Crohn’s
+                      Disease</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item>reducing signs and symptoms and inducing and maintaining clinical remission
+                    in adult patients with moderately to severely active Crohn’s disease who have
+                    had an inadequate response to conventional therapy, including corticosteroids
+                    and/or immunosuppressants. HADLIMA<sup>TM</sup> and HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup> are indicated for reducing signs and symptoms and
+                    inducing clinical remission in these patients if they have also lost response to
+                    or are intolerant to infliximab. </item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="underline">Ulcerative
+                      Colitis</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item>treatment of adult patients with moderately to severely active ulcerative
+                    colitis (UC) who have had an inadequate response to conventional therapy
+                    including corticosteroids and/or azathioprine or 6-mercaptopurine (6-MP) or who
+                    are intolerant to such therapies. The efficacy of adalimumab injection in
+                    patients who have lost response to or were intolerant to TNF blockers has not
+                    been established.</item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="underline">Hidradenitis
+                      Suppurativa</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item> treatment of active moderate to severe hidradenitis suppurativa in adult
+                    patients, who have not responded to conventional therapy (including systemic
+                    antibiotics).</item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="underline">Plaque
+                      Psoriasis</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item>treatment of adult patients with chronic moderate to severe plaque psoriasis
+                    who are candidates for systemic therapy. For patients with chronic moderate
+                    plaque psoriasis, HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                      PushTouch<sup>TM</sup>) should be used after phototherapy has been shown to be
+                    ineffective or inappropriate.</item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="underline">Adult
+                      Uveitis</content></content></paragraph><br/>
+                <list listType="unordered">
+                  <item>treatment of non-infectious uveitis (intermediate, posterior and panuveitis)
+                    in adult patients with inadequate response to corticosteroids or as
+                    corticosteroid sparing treatment in corticosteroid-dependent patients.</item>
+                </list>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="f2aa7e0e-2042-4a4c-a783-9ad4e8717a32">
+                  <id root="b9db4be0-3f06-437a-bd7b-4a3e010adaad"/>
+                  <code code="65010" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="1.1 PEDIATRICS"/>
+                  <title>1.1 PEDIATRICS</title>
+                  <text>
+                    <paragraph><content styleCode="underline">Polyarticular JIA</content><br/>
+                      Adalimumab injection has not been studied in pediatric patients with
+                      polyarticular JIA less than 2 years of age or in pediatric patients with a
+                      weight below 10 kg.<br/><br/> HADLIMA<sup>TM</sup> and HADLIMA<sup>TM</sup>
+                        PushTouch<sup>TM</sup> are available for pediatric polyarticular juvenile
+                      idiopathic arthritis patients who require the full 40 mg dose based on body
+                      weight and height (See <content styleCode="bold">DOSAGE AND
+                        ADMINISTRATION</content>, <content styleCode="bold"><content
+                          styleCode="underline">Recommended Dosage and Dosage Adjustment,
+                          Pediatrics</content></content>, <content styleCode="underline"
+                        >Polyarticular Juvenile Idiopathic Arthritis)</content>.<br/><br/> The
+                      auto-injector and pre-filled syringe are not designed to deliver a portion of
+                      the full 40 mg dose and must not be used in pediatric patients who require
+                      &lt; 40 mg dose.</paragraph>
+                  </text>
+                  <effectiveTime value="20180822"/>
+                </section>
+              </component>
+              <component>
+                <section ID="be75cfb9-3132-4903-800b-267427388a13">
+                  <id root="b9db4be0-3f46-437a-bd7b-4a3e010adaad"/>
+                  <code code="65011" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="1.2 GERIATRICS"/>
+                  <title>1.2 GERIATRICS</title>
+                  <text>
+                    <paragraph>Evidence from clinical studies and experience suggests that use of
+                      adalimumab injection in the geriatric population is not associated with
+                      differences in effectiveness. A brief discussion can be found under (<content
+                        styleCode="bold">WARNINGS AND PRECAUTIONS</content>, <content
+                        styleCode="bold"><content styleCode="underline">Special
+                          Populations</content></content>, <content styleCode="bold">Geriatrics
+                        (&gt; 65 years of age))</content>.</paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="be75cfb9-3131-4903-800b-367427388a13">
+              <id root="b9db4be0-3f16-437a-bd7b-4a3e010adaad"/>
+              <code code="65012" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="2 CONTRAINDICATIONS"/>
+              <title>2 CONTRAINDICATIONS</title>
+              <text>
+                <list listType="unordered">
+                  <item>HADLIMA<sup>TM</sup> and HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup> are
+                    contraindicated in patients who are hypersensitive to this drug or to any
+                    ingredient in the formulation, including any non- medicinal ingredient, or
+                    component of the container. For a complete listing, see DOSAGE FORMS, STRENGTHS,
+                    COMPOSITION AND PACKAGING.</item>
+                  <item>Patients with severe infections such as sepsis, tuberculosis and
+                    opportunistic infections. See (SERIOUS WARNINGS AND PRECAUTIONS BOX, Serious
+                    Warnings and Precautions, Infections).</item>
+                  <item>Patients with moderate to severe heart failure (NYHA class III/IV). See
+                    (WARNINGS AND PRECAUTIONS, Cardiovascular, Patients with Congestive Heart
+                    Failure).</item>
+                </list>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="cbe75cfb-3131-4903-800b-267427398a13">
+              <id root="b9db4be0-3f46-436a-bd7b-4a3e010adaad"/>
+              <code code="65013" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="3 SERIOUS WARNINGS AND PRECAUTIONS BOX"/>
+              <title>3 SERIOUS WARNINGS AND PRECAUTIONS BOX</title>
+              <text>
+                <table ID="t1" border="0" cellpadding="1" width="80%">
+                  <caption>Serious Warnings and Precautions</caption>
+                  <colgroup>
+                    <col span="3"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule"><content styleCode="bold"><content
+                            styleCode="underline">Hepatosplenic T-Cell
+                        Lymphoma</content></content><br/><br/> Very rare post-marketing reports of
+                        hepatosplenic T-cell lymphoma (HSTCL), a rare aggressive lymphoma that is
+                        often fatal, have been identified in patients treated with adalimumab
+                        injection. Most of the patients had prior infliximab therapy as well as
+                        concomitant azathioprine or 6- mercaptopurine use for Crohn’s disease. The
+                        potential risk with the combination of azathioprine or 6-mercaptopurine and
+                        adalimumab injection should be carefully considered. The causal association
+                        of HSTCL with adalimumab injection is not clear.<br/><br/>
+                        <content styleCode="bold"><content styleCode="underline"
+                            >Infections</content></content><br/><br/> Serious infections due to
+                        bacterial, mycobacterial, invasive fungal (disseminated or extrapulmonary
+                        histoplasmosis, aspergillosis, coccidiodomycosis), viral, parasitic, or
+                        other opportunistic infections have been reported in patients receiving
+                        tumor necrosis factor (TNF)- blocking agents. Sepsis, rare cases of
+                        tuberculosis, candidiasis, listeriosis, legionellosis and pneumocystis have
+                        also been reported with the use of TNF-blocking agents, including adalimumab
+                        injection. Other serious infections seen in clinical trials include
+                        pneumonia, pyelonephritis, septic arthritis and septicemia. Hospitalization
+                        or fatal outcomes associated with infections have been reported. Many of the
+                        serious infections have occurred in patients on concomitant
+                        immunosuppressive therapy that, in addition to their underlying disease,
+                        could predispose them to infections.<br/><br/> Treatment with
+                          HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup> )
+                        should not be initiated in patients with active infections, including
+                        chronic or localized infections, until infections are controlled. In
+                        patients who have been exposed to tuberculosis, and patients who have
+                        travelled in areas of high risk of tuberculosis or endemic mycoses, such as
+                        histoplasmosis, coccidioidomycosis, or blastomycosis, the risk and benefits
+                        of treatment with HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                          PushTouch<sup>TM</sup>) should be considered prior to initiating therapy.
+                        See (<content styleCode="bold">WARNINGS AND PRECAUTIONS</content>, <content
+                          styleCode="bold"><content styleCode="underline"
+                          >Infections</content></content>, <content styleCode="bold">Other
+                          Opportunistic Infections</content>).<br/><br/> As with other TNF-blockers,
+                        patients should be monitored closely for infections (including tuberculosis)
+                        before, during and after treatment with HADLIMA<sup>TM</sup> (or
+                          HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>).<br/><br/> Patients who
+                        develop a new infection while undergoing treatment with HADLIMA<sup>TM</sup>
+                        (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) should be monitored closely
+                        and undergo a complete diagnostic evaluation. Administration of
+                          HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)
+                        should be discontinued if a patient develops a serious infection or sepsis,
+                        and appropriate antimicrobial or antifungal therapy should be
+                        initiated.<br/><br/> Physicians should exercise caution when considering the
+                        use of HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)
+                        in patients with a history of recurrent infection or with underlying
+                        conditions which may predispose them to infections, or patients who have
+                        resided in regions where tuberculosis and histoplasmosis are endemic. See
+                          (<content styleCode="bold">WARNINGS AND PRECAUTIONS</content>, <content
+                          styleCode="bold"><content styleCode="underline"
+                          >Infections</content></content>, <content styleCode="bold"
+                          >Tuberculosis</content>) and (<content styleCode="bold">ADVERSE
+                          REACTIONS</content>, <content styleCode="bold"><content
+                            styleCode="underline">Adverse Reaction Overview</content></content>,
+                          <content styleCode="bold">Infections</content>). The benefits and risks of
+                        treatment with HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                          PushTouch<sup>TM</sup>) should be carefully considered before initiating therapy.<br/><br/>
+                        <content styleCode="bold"><content styleCode="underline">Pediatric
+                            Malignancy</content></content><br/><br/> Lymphoma and other
+                        malignancies, some fatal, have been reported in children and adolescent
+                        patients treated with TNF-blockers, including adalimumab injection. See
+                          (<content styleCode="bold">WARNINGS AND PRECAUTIONS</content>, <content
+                          styleCode="bold"><content styleCode="underline"
+                          >Malignancies</content></content>, <content styleCode="bold">Malignancies
+                          in Pediatric Patients and Young Adults)</content>. </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="dbe75cfb-3131-4903-800b-267727398a13">
+              <id root="b9db4be0-3f46-437a-bd7b-4a3e011adaad"/>
+              <code code="65014" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="4 DOSAGE AND ADMINISTRATION"/>
+              <title>4 DOSAGE AND ADMINISTRATION</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="be75cfb9-3131-4103-800b-267727398a13">
+                  <id root="b9db4be0-3f46-437a-bd7b-4a3e010ddaad"/>
+                  <code code="65015" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="4.1 DOSING CONSIDERATIONS"/>
+                  <title>4.1 DOSING CONSIDERATIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="b3d876c1-c36c-4ed5-8993-c507e3ab9f2e">
+                  <id root="da2d22a3-b5c2-4a62-b138-9594dd0491bb"/>
+                  <code code="65016" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="4.2 RECOMMENDED DOSE AND DOSAGE ADJUSTMENT"/>
+                  <title>4.2 RECOMMENDED DOSE AND DOSAGE ADJUSTMENT</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f3a">
+                  <id root="a473c162-e176-4430-b797-2b7b6cf00e43"/>
+                  <code code="65017" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="4.3 ADMINISTRATION"/>
+                  <title>4.3 ADMINISTRATION</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f4a">
+                  <id root="a473c162-e176-47d0-b797-2b7b6cf00e43"/>
+                  <code code="65018" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="4.4 RECONSTITUTION"/>
+                  <title>4.4 RECONSTITUTION</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f5a">
+                  <id root="a473c162-e176-44d0-b797-2b7becf00e43"/>
+                  <code code="65019" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="4.5 MISSED DOSE"/>
+                  <title>4.5 MISSED DOSE</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f6a">
+              <id root="a473c162-e176-44d0-b797-2b7b1cf00e43"/>
+              <code code="65020" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="5 OVERDOSAGE"/>
+              <title>5 OVERDOSAGE</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f7a">
+              <id root="a473c162-e176-44d0-b797-2b7b6ff00e43"/>
+              <code code="65021" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="6 DOSAGE FORMS, STRENGTHS, COMPOSITION AND PACKAGING"/>
+              <title>6 DOSAGE FORMS, STRENGTHS, COMPOSITION AND PACKAGING</title>
+              <text>
+                <paragraph>sample text</paragraph>
+                <table ID="t5" border="0" cellpadding="1" width="80%">
+                  <caption> Table - Dosage Forms, Strengths, Composition and Packaging</caption>
+                  <colgroup>
+                    <col span="3"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule"><content styleCode="bold">Route of
+                          Administration</content></td>
+                      <td styleCode="Toprule Botrule Lrule Rrule"><content styleCode="bold">Dosage
+                          Form / Strength/Composition</content></td>
+                      <td styleCode="Toprule Botrule Lrule Rrule"><content styleCode="bold"
+                          >Non-medicinal Ingredients</content></td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Subcutaneous injection (s.c.)</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Sterile solution (in either
+                        auto-injector or pre-filled syringe) /40 mg adalimumab injection in 0.8 mL
+                        (50 mg/mL)</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">citric acid monohydrate, sodium
+                        citrate dihydrate, L-histidine, L-histidine hydrochloride monohydrate,
+                        sorbitol, polysorbate 20, and water for injection</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <paragraph> HADLIMA<sup>TM</sup> or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>
+                  (adalimumab injection) is supplied as a sterile solution for subcutaneous
+                  administration in the following packaging configurations:<br/><br/>
+                  <content styleCode="bold"><content styleCode="underline"
+                    >Auto-injector</content></content><br/><br/> HADLIMA<sup>TM</sup>
+                    PushTouch<sup>TM</sup> is available as an auto-injector in a carton containing
+                  two dose trays. Each dose tray contains a single-use auto-injector containing a 1
+                  mL pre-filled glass syringe with a fixed 29 gauge 1⁄2 inch needle, providing 40 mg
+                  of adalimumab injection dissolved in 0.8 mL sterile solution (50 mg/mL). All
+                  contents of the auto-injector carton (including auto-injector, accessories and
+                  packaging) are latex-free.<br/><br/>
+                  <content styleCode="bold"><content styleCode="underline">Pre-Filled
+                      Syringe</content></content><br/><br/> HADLIMA<sup>TM</sup> is also available
+                  as a pre-filled syringe in a carton containing two dose trays. Each dose tray
+                  contains a single-use, 1 mL pre-filled glass syringe with a fixed 29 gauge 1⁄2
+                  inch needle, providing 40 mg of adalimumab injection dissolved in 0.8 mL sterile
+                  solution (50 mg/mL). All contents of the pre-filled syringe carton (including
+                  syringe, accessories and packaging) are latex-free. </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-a12dba115f7a">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf01e43"/>
+              <code code="65022" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="7 DESCRIPTION"/>
+              <title>7 DESCRIPTION</title>
+              <text>
+                <paragraph>HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)
+                  (adalimumab injection) is a recombinant human immunoglobulin (IgG1) monoclonal
+                  antibody. Adalimumab injection has fully human heavy and light chain variable
+                  regions, which confer specificity to human tumor necrosis factor (TNF), and human
+                  IgG1 heavy chain and kappa light chain sequences. Adalimumab injection binds with
+                  high affinity and specificity to soluble tumor necrosis factor (TNF-alpha) but not
+                  lymphotoxin (TNF-beta). Adalimumab injection is produced by recombinant DNA
+                  technology in a mammalian cell expression system. It consists of 1,330 amino acids
+                  and has a molecular weight of approximately 148 kilodaltons.</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-a12dba115f8a">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf00ee3"/>
+              <code code="65023" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="8 WARNINGS AND PRECAUTIONS"/>
+              <title>8 WARNINGS AND PRECAUTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dbc115f7a">
+                  <id root="a473c162-e176-34d0-b797-2b7b6cf00e43"/>
+                  <code code="65024" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="8.1 SPECIAL POPULATIONS"/>
+                  <title>8.1 SPECIAL POPULATIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                  <component>
+                    <section ID="da63c33a-e08a-472c-b8a2-b12dbc115f7a">
+                      <id root="a473c162-e176-41d0-b797-2b7b6cf00e43"/>
+                      <code code="65025" codeSystem="2.16.840.1.113883.2.20.6.65"
+                        displayName="8.1.1 PREGNANT WOMEN"/>
+                      <title>8.1.1 PREGNANT WOMEN</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20190313"/>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="a63c33a5-e08a-472c-b8a2-b12dbd115f7a">
+                      <id root="a473c162-e176-44c0-b797-2b7b6cf00e43"/>
+                      <code code="65026" codeSystem="2.16.840.1.113883.2.20.6.65"
+                        displayName="8.1.2 BREAST-FEEDING"/>
+                      <title>8.1.2 BREAST-FEEDING</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20190313"/>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="a63c33a5-e08a-472c-b8c2-b12dbc115f7a">
+                      <id root="a473c162-e176-44d0-b197-2b7b6cf00e43"/>
+                      <code code="65027" codeSystem="2.16.840.1.113883.2.20.6.65"
+                        displayName="8.1.3 PEDIATRICS"/>
+                      <title>8.1.3 PEDIATRICS</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20190313"/>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="a63c33a5-e08a-472c-b8d2-b12dbc115f7a">
+                      <id root="a473c162-e176-44d0-b797-2e7b6cf00e43"/>
+                      <code code="65028" codeSystem="2.16.840.1.113883.2.20.6.65"
+                        displayName="8.1.4 GERIATRICS"/>
+                      <title>8.1.4 GERIATRICS</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20190313"/>
+                    </section>
+                  </component>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-b22dbc115f7a">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf10e43"/>
+              <code code="65029" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="9 ADVERSE REACTIONS"/>
+              <title>9 ADVERSE REACTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="a63c63a5-e08a-472c-b8a2-b12dbd215f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6ca02e43"/>
+                  <code code="65030" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="9.1 ADVERSE REACTION OVERVIEW"/>
+                  <title>9.1 ADVERSE REACTION OVERVIEW</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b12dbd215f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6cf11e43"/>
+                  <code code="65031" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="9.2 CLINICAL TRIAL ADVERSE REACTIONS"/>
+                  <title>9.2 CLINICAL TRIAL ADVERSE REACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c34a5-e08a-473c-b8a2-b12dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6cf03e43"/>
+                  <code code="65032" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="9.3 LESS COMMON CLINICAL TRIAL ADVERSE REACTIONS"/>
+                  <title>9.3 LESS COMMON CLINICAL TRIAL ADVERSE REACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b22dbd215f7a">
+                  <id root="a473c162-e176-44d0-b797-2b706cf00e43"/>
+                  <code code="65033" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="9.4 ABNORMAL LABORATORY FINDINGS: HEMATOLOGIC, CLINICAL CHEMISTRY AND OTHER QUANTITATIVE DATA"/>
+                  <title>9.4 ABNORMAL LABORATORY FINDINGS: HEMATOLOGIC, CLINICAL CHEMISTRY AND OTHER QUANTITATIVE DATA</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b32dbd215f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6df00e43"/>
+                  <code code="65034" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="9.5 CLINICAL TRIAL ADVERSE REACTIONS (PEDIATRICS)"/>
+                  <title>9.5 CLINICAL TRIAL ADVERSE REACTIONS (PEDIATRICS)</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b14dbd215f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6ce00e43"/>
+                  <code code="65035" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="9.6 POST-MARKET ADVERSE REACTIONS"/>
+                  <title>9.6 POST-MARKET ADVERSE REACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-483c-b8a2-b22dbd215f7a">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf06e43"/>
+              <code code="65036" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="10 DRUG INTERACTIONS"/>
+              <title>10 DRUG INTERACTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="be75cfb9-3131-4903-800b-267527398a13">
+                  <id root="b9db4be0-3fa6-437a-bd7b-4a3e010adaad"/>
+                  <code code="65037" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.1 SERIOUS DRUG INTERACTIONS BOX"/>
+                  <title>10.1 SERIOUS DRUG INTERACTIONS BOX</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b14dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-267b6cf00e43"/>
+                  <code code="65038" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.2 OVERVIEW"/>
+                  <title>10.2 OVERVIEW</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8d2-b14dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b64f00e43"/>
+                  <code code="65039" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.3 DRUG-DRUG INTERACTIONS"/>
+                  <title>10.3 DRUG-DRUG INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e0aa-473c-b8a2-b14dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b1cf08e43"/>
+                  <code code="65040" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.4 DRUG-FOOD INTERACTIONS"/>
+                  <title>10.4 DRUG-FOOD INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-47bc-b8d2-b14dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6ca00e43"/>
+                  <code code="65041" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.5 DRUG-HERB INTERACTIONS"/>
+                  <title>10.5 DRUG-HERB INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="be78cfb9-3131-4903-800b-267527398a13">
+                  <id root="b93b4be0-3f46-437a-bd7b-4a3e010adaad"/>
+                  <code code="65042" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.6 DRUG-LABORATORY TEST INTERACTIONS"/>
+                  <title>10.6 DRUG-LABORATORY TEST INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e0aa-473c-b8a2-b14dcd315f7a">
+                  <id root="a473c762-e176-44d0-b797-2b7b6cf00e43"/>
+                  <code code="65043" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="10.7 DRUG-LIFESTYLE INTERACTIONS"/>
+                  <title>10.7 DRUG-LIFESTYLE INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="fa324c26-b939-4c3a-901d-516ccc314522">
+              <id root="dc0d2dd9-1c53-39dc-bad3-d6b420d064e9"/>
+              <code code="65044" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="11 ACTION AND CLINICAL PHARMACOLOGY"/>
+              <title>11 ACTION AND CLINICAL PHARMACOLOGY</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="aa324c26-b939-4c3a-901e-516ccc314522">
+                  <id root="dc0d2dd9-1c53-49dc-bcd3-d6b420d064e9"/>
+                  <code code="65045" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="11.1 MECHANISM OF ACTION"/>
+                  <title>11.1 MECHANISM OF ACTION</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="aa324c26-b939-4d3a-901e-516ccc314522">
+                  <id root="ec0d2dd9-1c53-49dc-bad3-d6b420d061e9"/>
+                  <code code="65046" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="11.2 PHARMACODYNAMICS"/>
+                  <title>11.2 PHARMACODYNAMICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="fa324c26-b939-4d4a-901e-516ccc314522">
+                  <id root="dc0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
+                  <code code="65047" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="11.3 PHARMACOKINETICS"/>
+                  <title>11.3 PHARMACOKINETICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="ca324d26-c939-443a-901e-526dcc314522">
+              <id root="ec0d2dd9-1c23-49dc-bad3-d6b420d064e9"/>
+              <code code="65048" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="12 STORAGE, STABILITY AND DISPOSAL"/>
+              <title>12 STORAGE, STABILITY AND DISPOSAL</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ba325d26-c939-443a-901e-526dcc314522">
+              <id root="cc0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
+              <code code="65049" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="13 SPECIAL HANDLING INSTRUCTIONS"/>
+              <title>13 SPECIAL HANDLING INSTRUCTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <!-- Part II: Scientific Information -->
+        <section ID="d6a947eb-e2be-45c0-8b2e-15d0d0eebed8">
+          <id root="d91389e0-c234-44d9-8327-91b121723a8f"/>
+          <code code="65050" codeSystem="2.16.840.1.113883.2.20.6.65"
+            displayName="PART II: SCIENTIFIC INFORMATION"/>
+          <title>PART II: SCIENTIFIC INFORMATION</title>
+          <effectiveTime value="20190313"/>
+          <component>
+            <section ID="e3287527-8229-4c12-919e-827854dcd76a">
+              <id root="f134d52c-f9d4-4691-a082-84b29ee3d95a"/>
+              <code code="65051" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="14 PHARMACEUTICAL INFORMATION"/>
+              <title>14 PHARMACEUTICAL INFORMATION</title>
+              <text>
+                <table ID="t2" border="0" cellpadding="10" width="80%">
+                  <colgroup>
+                    <col width="25%" align="left"/>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td valign="top">Proper name:</td>
+                      <td>adalimumab injection<br/><br/> Chemical name: Not applicable. Adalimumab
+                        injection is not a chemical. It is an immunoglobulin (recombinant human IgG1
+                        monoclonal antibody).<br/><br/> Molecular formula and molecular mass:
+                        Adalimumab injection consists of 1,330 amino acids and has an apparent
+                        molecular weight of approximately 148 kilodaltons (kDa).</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">Chemical Name:</td>
+                      <td>Not applicable. Adalimumab injection is not a chemical. It is an
+                        immunoglobulin (recombinant human IgG1 monoclonal antibody).<br/><br/>
+                        Molecular formula and molecular mass: Adalimumab injection consists of 1,330
+                        amino acids and has an apparent molecular weight of approximately 148
+                        kilodaltons (kDa).</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">Molecular formula and molecular mass:</td>
+                      <td>Adalimumab injection consists of 1,330 amino acids and has an apparent
+                        molecular weight of approximately 148 kilodaltons (kDa).</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">Structural formula:</td>
+                      <td><renderMultiMedia referencedObject="m1"/></td>
+                    </tr>
+                    <tr>
+                      <td valign="top">Physicochemical properties:</td>
+                      <td>HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) is a
+                        clear and colorless, sterile, preservative free solution. Each single-dose
+                          HADLIMA<sup>TM</sup> and HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>
+                        contains a 40 mg/0.8 mL solution of adalimumab injection, with citric acid
+                        monohydrate, sodium citrate dihydrate, L-histidine, L-histidine
+                        hydrochloride monohydrate, sorbitol, polysorbate 20, and water for
+                        injection.</td>
+                    </tr>
+                    <tr>
+                      <td valign="top">Product characteristics:</td>
+                      <td>HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)
+                        (adalimumab injection) is a recombinant human immunoglobulin (IgG1)
+                        monoclonal antibody specific for human tumor necrosis factor (TNF).
+                        Adalimumab injection is an antibody with human derived heavy and light chain
+                        variable regions and human IgG1:<sub>k</sub> constant regions. Adalimumab
+                        injection is produced by recombinant DNA technology in a mammalian cell
+                        expression system and is purified by a process that includes specific viral
+                        inactivation and removal steps. It consists of 1,330 amino acids and has a
+                        molecular weight of approximately 148 kDa.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <observationMedia ID="m1">
+                  <text>structure</text>
+                  <value xsi:type="ED" mediaType="image/jpeg">
+                    <reference value="mab.jpg"/>
+                  </value>
+                </observationMedia>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="d3285272-8229-4c12-919e-827854ddd76a">
+              <id root="c134d52c-f9d4-4698-a082-84b29ef3d95a"/>
+              <code code="65052" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="15 COMPARATIVE CLINICAL TRIALS"/>
+              <title>15 COMPARATIVE CLINICAL TRIALS</title>
+              <text>
+                <paragraph> Sample Text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="e2875272-8229-4c12-919e-827854ddd78a">
+                  <id root="c134d52c-f9d4-4698-a082-84b29ae3d95a"/>
+                  <code code="65053" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="15.1 COMPARATIVE TRIAL DESIGN AND STUDY DEMOGRAPHICS"/>
+                  <title>15.1 COMPARATIVE TRIAL DESIGN AND STUDY DEMOGRAPHICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="d4285272-8229-4c12-919e-827854ddd78a">
+                  <id root="d134d52c-f1d4-4698-a082-84b29ee3d95a"/>
+                  <code code="65054" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="15.2 COMPARATIVE STUDY RESULTS"/>
+                  <title>15.2 COMPARATIVE STUDY RESULTS</title>
+                  <text>
+                    <paragraph>Sample Text</paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                  <component>
+                    <section ID="f7fcee6a-9032-4542-87c9-c1ef85f89cc5">
+                      <id root="d134d52c-f9d4-4690-a082-84b29ee3d95a"/>
+                      <code code="65055" codeSystem="2.16.840.1.113883.2.20.6.65"
+                        displayName="15.2.1 COMPARATIVE BIOAVAILABILITY STUDIES"/>
+                      <title>15.2.1 COMPARATIVE BIOAVAILABILITY STUDIES</title>
+                      <text>
+                        <paragraph>Sample Text</paragraph>
+                      </text>
+                      <effectiveTime value="20190313"/>
+                      <component>
+                        <section ID="cd0a0cf9-6e8f-4be6-806b-a61f36d22275">
+                          <id root="d134d52c-f9d4-4698-a081-84b29ee3d95a"/>
+                          <code code="65056" codeSystem="2.16.840.1.113883.2.20.6.65"
+                            displayName="15.2.1.1 PHARMACOKINETICS"/>
+                          <title>15.2.1.1 PHARMACOKINETICS</title>
+                          <text>
+                            <paragraph>Sample Text</paragraph>
+                          </text>
+                          <effectiveTime value="20190313"/>
+                        </section>
+                      </component>
+                      <component>
+                        <section ID="a5058286-7a07-4962-9cf1-b231f113c23a">
+                          <id root="b132d52c-f9d4-4698-a082-84b29ee3d95a"/>
+                          <code code="65057" codeSystem="2.16.840.1.113883.2.20.6.65"
+                            displayName="15.2.1.2 PHARMACODYNAMICS"/>
+                          <title>15.2.1.2 PHARMACODYNAMICS</title>
+                          <text>
+                            <paragraph>Sample Text</paragraph>
+                          </text>
+                          <effectiveTime value="20190313"/>
+                        </section>
+                      </component>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="b590bc92-c8c8-446e-aad6-5e101daf19b9">
+                      <id root="f134d52c-f9d4-4698-a082-84b29ee3d95a"/>
+                      <code code="65058" codeSystem="2.16.840.1.113883.2.20.6.65"
+                        displayName="15.2.2 COMPARATIVE SAFETY AND EFFICACY"/>
+                      <title>15.2.2 COMPARATIVE SAFETY AND EFFICACY</title>
+                      <text>
+                        <paragraph>Sample Text</paragraph>
+                      </text>
+                      <effectiveTime value="20190313"/>
+                      <component>
+                        <section ID="a6d874a7-ad06-4d7a-93f4-a43c87036126">
+                          <id root="c134d52c-f9d4-4698-a082-84b291e3d95a"/>
+                          <code code="65059" codeSystem="2.16.840.1.113883.2.20.6.65"
+                            displayName="15.2.2.1 EFFICACY"/>
+                          <title>15.2.2.1 EFFICACY</title>
+                          <text>
+                            <paragraph>Sample Text</paragraph>
+                          </text>
+                          <effectiveTime value="20190313"/>
+                        </section>
+                      </component>
+                      <component>
+                        <section ID="cd273a04-9711-442a-8267-95224bf00483">
+                          <id root="a134d52c-f9d4-1698-a082-84b29ee3d95a"/>
+                          <code code="65060" codeSystem="2.16.840.1.113883.2.20.6.65"
+                            displayName="15.2.2.2 SAFETY"/>
+                          <title>15.2.2.2 SAFETY</title>
+                          <text>
+                            <paragraph>Sample Text</paragraph>
+                          </text>
+                          <effectiveTime value="20190313"/>
+                        </section>
+                      </component>
+                      <component>
+                        <section ID="fa8f6ab0-7182-4506-a910-90aca6c84436">
+                          <id root="e134d52c-f9d4-4698-a082-84b29ee3d95a"/>
+                          <code code="65061" codeSystem="2.16.840.1.113883.2.20.6.65"
+                            displayName="15.2.2.3 IMMUNOGENICITY"/>
+                          <title>15.2.2.3 IMMUNOGENICITY</title>
+                          <text>
+                            <paragraph>Sample Text</paragraph>
+                          </text>
+                          <effectiveTime value="20190313"/>
+                        </section>
+                      </component>
+                    </section>
+                  </component>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a2875272-8229-4c12-a19e-827954ddd78a">
+              <id root="d134d52c-f914-4698-a082-84b29ee3d95a"/>
+              <code code="65062" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="16 COMPARATIVE NON-CLINICAL PHARMACOLOGY AND TOXICOLOGY"/>
+              <title>16 COMPARATIVE NON-CLINICAL PHARMACOLOGY AND TOXICOLOGY</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+              <component>
+                <section ID="d49e689f-111c-4ef8-bb69-c68d02665d8a">
+                  <id root="d134d52c-f9d4-4198-a082-84b29ee3d95a"/>
+                  <code code="65063" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="16.1 COMPARATIVE NON-CLINICAL PHARMACODYNAMICS"/>
+                  <title>16.1 COMPARATIVE NON-CLINICAL PHARMACODYNAMICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+              <component>
+                <section ID="c49b8074-0cff-4d2d-bfc0-ce07f2f47bc3">
+                  <id root="a134d52c-f9d4-4698-a082-84129ee3d95a"/>
+                  <code code="65064" codeSystem="2.16.840.1.113883.2.20.6.65"
+                    displayName="16.2 COMPARATIVE TOXICOLOGY"/>
+                  <title>16.2 COMPARATIVE TOXICOLOGY</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20190313"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="d42a7527-8229-4c12-a19e-827954ddd78a">
+              <id root="c134d52c-f9d4-4698-a082-84b19ee3d95a"/>
+              <code code="65065" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="17 CLINICAL TRIALS - REFERENCE BIOLOGIC DRUG"/>
+              <title>17 CLINICAL TRIALS - REFERENCE BIOLOGIC DRUG</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="b8a4d498-0fc3-4e44-b4b6-550140d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b3a1456"/>
+              <code code="65066" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="18 NON-CLINICAL TOXICOLOGY - REFERENCE BIOLOGIC DRUG"/>
+              <title>18 NON-CLINICAL TOXICOLOGY - REFERENCE BIOLOGIC DRUG</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="e2ab1d1d-17ac-4ee9-a432-dd8f06a958e4">
+              <id root="be74b6e6-c431-4a5f-a18e-e2321b381456"/>
+              <code code="65067" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="19 SUPPORTING PRODUCT MONOGRAPHS"/>
+              <title>19 SUPPORTING PRODUCT MONOGRAPHS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <!-- Part III: Patient Medication Information -->
+        <section ID="baa4d498-0fc3-4e44-b4b6-550140d4de5d">
+          <id root="be74b6e6-c431-4a5f-a18e-ed321f381456"/>
+          <code code="65068" codeSystem="2.16.840.1.113883.2.20.6.65"
+            displayName="PART III: PATIENT MEDICATION INFORMATION"/>
+          <title>PART III: PATIENT MEDICATION INFORMATION</title>
+          <effectiveTime value="20190313"/>
+          <component>
+            <section ID="baa4d498-0fc3-4e44-b4b6-550140dde5d">
+              <id root="be74b6e6-c431-4a5f-a18a-ed321b381456"/>
+              <code code="65069" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="BRAND NAME"/>
+              <title>BRAND NAME</title>
+              <text>
+                <paragraph>HADLIMA<sup>TM</sup> (pronounced) &lt; HAD-lee-mah &gt; Adalimumab injection 40
+                  mg/0.8 mL subcutaneous injection (Pre-filled syringe) HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>
+                  Adalimumab injection 40 mg/0.8 mL subcutaneous injection
+                  (Auto-injector)</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="daa40d49-0fc3-4e44-b4b6-550140d4e5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed3212381456"/>
+              <code code="65070" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="PROPER NAME IN FINAL DOSAGE FORMS"/>
+              <title>PROPER NAME IN FINAL DOSAGE FORMS</title>
+              <text>
+                <paragraph>Read this carefully before you/your child start taking HADLIMA<sup>TM</sup> (or
+                  HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) and each time you/your child get a refill. This leaflet is
+                  a summary and will not tell you/your child everything about this drug. Talk to
+                  your/your child’s healthcare professional about your/your child’s medical
+                  condition and treatment and ask if there is any new information about HADLIMA<sup>TM</sup>
+                  (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>).<br/><br/> HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) is a
+                  biosimilar biologic drug (biosimilar) to the reference biologic drug Humira®. A
+                  biosimilar is authorized based on its similarity to a reference biologic drug that
+                  was already authorized for sale.</paragraph>
+                <table ID="t3" width="80%">
+                  <caption>Serious Warnings and Precautions</caption>
+                  <tbody>
+                    <tr>
+                      <td><paragraph>Before starting, during and after treatment with HADLIMA<sup>TM</sup> (or
+                          HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>), you/your child should be checked for active or
+                          inactive tuberculosis infection with a tuberculin skin test. Any medicine
+                          can have side effects. Like all medicines that affect your/your child’s
+                          immune system, HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) can cause serious side
+                          effects. The possible serious side effects include:<br/><br/></paragraph>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline">Allergic
+                                reactions:</content></content> If you/your child develop a severe
+                            rash, swollen face or difficulty breathing while taking HADLIMA<sup>TM</sup> (or
+                            HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>), call your/your child’s doctor right away.
+                          </item>
+                        </list>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline"
+                                >Hepatosplenic T-cell lymphoma:</content></content> Very rare
+                            reports of hepatosplenic T-cell lymphoma (HSTCL), a rare serious
+                            lymphoma that is often fatal, have been identified in patients treated
+                            with adalimumab injection. Most patients had also been treated with
+                            other medications for Crohn’s disease and the majority were in
+                            adolescent and young adult males. The link between HSTCL and adalimumab
+                            injection is not clear.</item>
+                        </list>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline">Other
+                                cancers:</content></content> There have been very rare cases of
+                            certain kinds of cancer in patients taking adalimumab injection or other
+                            TNF-blockers. Some patients receiving adalimumab injection have
+                            developed types of cancer called non-melanoma skin cancer. Tell
+                            your/your child’s doctor if you/your child have a bump or open sore that
+                            does not heal. People with more serious rheumatoid arthritis that have
+                            had the disease for a long time may have a higher than average risk of
+                            getting a kind of cancer that affects the lymph system, called lymphoma.
+                            If you/your child take HADLIMA<sup>TM</sup>, HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>, or other TNF-
+                            blockers, your/your child’s risk may increase. There have been cases of
+                            lymphoma and other cancers, including unusual types, in children,
+                            adolescents and young adults taking TNF-blocking agents, including
+                            adalimumab injection, which sometimes resulted in death. For children
+                            and adults taking TNF-blocker medicines, the chances of developing
+                            lymphoma or other cancers may increase.</item>
+                        </list>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline">Lupus-like
+                                symptoms:</content></content> Some patients have developed
+                            lupus-like symptoms that got better after their treatment was stopped.
+                            If you/your child have chest pains that do not go away, shortness of
+                            breath, joint pain or a rash on your/your child’s cheeks or arms that
+                            gets worse in the sun, call your/your child’s doctor right away.
+                            Your/your child’s doctor may decide to stop your/your child’s
+                            treatment.</item>
+                        </list>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline">Nervous
+                                system diseases:</content></content> There have been rare cases of
+                            disorders that affect the nervous system of people taking adalimumab
+                            injection or other TNF-blockers. Signs that you/your child could be
+                            experiencing a problem affecting your/your child’s nervous system
+                            include: numbness or tingling, problems with your/your child’s vision,
+                            weakness in your/your child’s legs, and dizziness.</item>
+                        </list>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline">Serious
+                                infections:</content></content> There have been rare cases where
+                            patients taking adalimumab injection or other TNF-blocking agents have
+                            developed serious infections. Some of these cases have been
+                            life-threatening. Such infections include tuberculosis, infections
+                            caused by bacteria or fungi, and bacterial infections that have spread
+                            throughout the body (sepsis). Infection causes include tuberculosis,
+                            legionellosis (a serious form of bacterial pneumonia), listeriosis (an
+                            infection that usually develops after eating food contaminated by
+                            bacteria called listeria), and very rare cases of hepatitis B infection
+                            relapse.</item>
+                        </list>
+                        <list>
+                          <item><content styleCode="bold"><content styleCode="underline">Blood
+                                problems:</content></content> In some instances, patients treated
+                            with TNF-blocking agents may develop low blood counts, such as anemia
+                            (low red blood cells) or low platelets. If you/your child develop
+                            symptoms such as persistent fever, bleeding, or bruising, you should
+                            contact your/your child’s doctor right away</item>
+                        </list>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="baa4d498-08c3-4e44-bcb6-550140d4de5d">
+              <id root="be74b6e6-c431-4a5f-a11e-ed321b381456"/>
+              <code code="65071" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="WHAT IS THIS MEDICATION USED FOR?"/>
+              <title>WHAT IS THIS MEDICATION USED FOR?</title>
+              <text>
+                <paragraph>HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) treatment should be started and
+                  supervised by specialist physicians experienced in the diagnosis and treatment of
+                  rheumatoid arthritis (RA), polyarticular juvenile idiopathic arthritis (JIA),
+                  psoriatic arthritis (PsA), ankylosing spondylitis (AS), adult Crohn’s disease
+                  (CD), ulcerative colitis (UC), adult hidradenitis suppurativa (HS), psoriasis (Ps)
+                  or adult uveitis, and familiar with the HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)
+                  efficacy and safety profile.<br/><br/> HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) is a
+                  medicine that is used in:</paragraph>
+                <list>
+                  <item>adults with rheumatoid arthritis, which is an inflammatory disease of the
+                    joints.</item>
+                  <item>adults with psoriatic arthritis, which is an inflammatory disease of the
+                    joints and skin.</item>
+                  <item>adults with ankylosing spondylitis, which is a form of arthritis.</item>
+                  <item>adults with Crohn’s disease, which is an inflammatory disease of the
+                    digestive tract.</item>
+                  <item>pediatrics with polyarticular juvenile idiopathic arthritis who are 4 years
+                    of age and older and require a full 40 mg dose based on body weight and
+                    height.</item>
+                  <item>adults with ulcerative colitis, which is an inflammatory disease of the
+                    bowel (colon).</item>
+                  <item>adults with moderate to severe hidradenitis suppurativa (HS) who have not
+                    responded to antibiotics. HS is a painful, progressive, chronic inflammatory
+                    skin disease that causes nodules, abscesses, sinus tracts and fistulas under the
+                    breasts, underarms, buttocks and groin.</item>
+                  <item>adults with psoriasis, which is an inflammatory disease of the skin. The
+                    doctor prescribed HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) to reduce the signs and
+                    symptoms of your plaque psoriasis.</item>
+                  <item>adults with uveitis, which is an inflammatory disease of the eye.</item>
+                </list>
+                <paragraph> Patients with rheumatoid arthritis, polyarticular juvenile idiopathic
+                  arthritis, psoriatic arthritis, ankylosing spondylitis, hidradenitis suppurativa,
+                  psoriasis, or uveitis may be given other medicines for their disease before they
+                  are given HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>). If you have ulcerative colitis or
+                  Crohn’s disease, you will first be given other medicines. If you do not respond
+                  well enough to these medicines, you will be given HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                  PushTouch<sup>TM</sup>) to reduce the signs and symptoms of your disease. </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4d498-0gc3-4e44-bcb6-550140d4de5d">
+              <id root="be74b6e6-c431-4a5f-a15e-ed321b381456"/>
+              <code code="65072" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="HOW DOES THIS MEDICATION WORK?"/>
+              <title>HOW DOES THIS MEDICATION WORK?</title>
+              <text>
+                <paragraph>HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) is a fully human monoclonal antibody
+                  produced by cultured cells. Monoclonal antibodies are proteins that recognize and
+                  bind to other unique proteins. HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) binds to a
+                  specific protein called TNF- alpha (also known as tumor necrosis factor). People
+                  with rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn’s
+                  disease, ulcerative colitis, hidradenitis suppurativa or psoriasis have too much
+                  of TNF-alpha in their bodies. The extra TNF-alpha in your/your child’s body can
+                  attack normal healthy body tissues and cause inflammation, especially in the
+                  tissues of your /your child’s bones, cartilage, joints, digestive tract and skin.
+                  By binding to TNF-alpha, HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) decreases the
+                  inflammation process of these diseases.<br/><br/> HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                  PushTouch<sup>TM</sup>) helps reduce the signs and symptoms of rheumatoid arthritis,
+                  polyarticular juvenile idiopathic arthritis and psoriatic arthritis (such as pain
+                  and swollen joints), may help improve your/your child’s ability to perform daily
+                  activities (such as getting dressed, walking and climbing stairs), and may help
+                  prevent further damage to your/your child’s bones and joints. In addition,
+                  HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) helps reduce the signs and symptoms of
+                  ankylosing spondylitis (back pain and morning stiffness), and adult Crohn’s
+                  disease or ulcerative colitis (abdominal pain and diarrhea).<br/><br/> HADLIMA<sup>TM</sup>
+                  (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) is also used to treat inflammatory lesions (nodules and
+                  abscesses) in adult patients with hidradenitis suppurativa.<br/><br/> HADLIMA<sup>TM</sup>
+                  (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) also helps reduce the signs and symptoms of psoriasis
+                  (such as pain, itching and scaly patches on skin).<br/><br/> HADLIMA<sup>TM</sup> (or
+                  HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) helps control uveitis by reducing the risk of inflammation
+                  and loss of vision in adult patients.<br/><br/> HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                  PushTouch<sup>TM</sup>), however, can also lower your/your child’s body’s ability to fight
+                  infections. Taking HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) can make you/your child
+                  more prone to getting infections or make any infection you/your child have
+                  worse.<br/><br/>
+                </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4d498-0gc3-4e44-bcb6-55013024de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed3c1b381456"/>
+              <code code="65073" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="WHAT ARE THE INGREDIENTS IN THIS MEDICATION?"/>
+              <title>WHAT ARE THE INGREDIENTS IN THIS MEDICATION?</title>
+              <text>
+                <paragraph>Medicinal ingredients: adalimumab injection<br/> Non-medicinal
+                  ingredients: citric acid monohydrate, sodium citrate dihydrate, L-histidine, L-
+                  histidine hydrochloride monohydrate, sorbitol, polysorbate 20, water for
+                  injection</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4d498-0gc3-4e54-bcb6-550130d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed32cb381456"/>
+              <code code="65074" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="THIS MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:"/>
+              <title>THIS MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:</title>
+              <text>
+                <list>
+                  <item>Single-use, 1 mL auto-injector containing 40 mg adalimumab injection
+                    dissolved in 0.8 mL sterile solution (50 mg/mL)</item>
+                  <item>Single-use, 1 mL pre-filled glass syringe containing 40 mg adalimumab
+                    injection dissolved in 0.8 mL sterile solution (50 mg/mL)</item>
+                </list>
+                <paragraph> All packaging components are latex-free.</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4c498-0gc3-4e44-bcb6-550134d4de5d">
+              <id root="be74b6e6-c431-4a5f-a78e-ed321b381456"/>
+              <code code="65075" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="DO NOT USE THIS MEDICATION IF:"/>
+              <title>DO NOT USE THIS MEDICATION IF:</title>
+              <text>
+                <paragraph>You/your child should not take HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) if
+                  you/your child have:</paragraph>
+                <list>
+                  <item>an allergy to any of the ingredients in HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)
+                    (see <content styleCode="bold">What are the ingredients in HADLIMA<sup>TM</sup> (or
+                      HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>)</content>? section).</item>
+                  <item>a serious infection such as tuberculosis, infections caused by bacteria or
+                    fungi, and bacterial infections that have spread throughout the body
+                    (sepsis).</item>
+                  <item>moderate to severe heart failure (NYHA class III/IV).</item>
+                </list>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="b6b37351-bbc9-46d9-b148-27ba3cb0a75e">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321a381456"/>
+              <code code="65076" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="TO HELP AVOID SIDE EFFECTS AND ENSURE PROPER USE, TALK TO YOUR HEALTHCARE PROFESSIONAL BEFORE YOU TAKE THIS MEDICATION. TALK ABOUT ANY HEALTH CONDITIONS OR PROBLEMS YOU MAY HAVE, INCLUDING IF YOU:"/>
+              <title>TO HELP AVOID SIDE EFFECTS AND ENSURE PROPER USE, TALK TO YOUR HEALTHCARE PROFESSIONAL BEFORE YOU TAKE THIS MEDICATION. TALK ABOUT ANY HEALTH CONDITIONS OR PROBLEMS YOU MAY HAVE, INCLUDING IF YOU:</title>
+              <text>
+                <list>
+                  <item>you/your child have or have had any kind of infection including an infection
+                    that is in only one place in your/your child’s body (such as an open cut or
+                    sore), or an infection that is in your/your child’s whole body (such as the
+                    flu). Having an infection could put you/your child at risk for serious side
+                    effects from HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>). If you are unsure, ask
+                    your/your child’s doctor.</item>
+                  <item>you/your child have a history of infections that keep coming back or other
+                    conditions that might increase your/your child’s risk of infections, including
+                    fungal infections.</item>
+                  <item>you/your child have ever had tuberculosis, or if you/your child have been in
+                    close contact with someone who has had tuberculosis. If you/your child develop
+                    any of the symptoms of tuberculosis (a dry cough that doesn't go away, weight
+                    loss, fever, night sweats) call your/your child’s doctor right away. Your/your
+                    child’s doctor will need to examine you/your child for tuberculosis and perform
+                    a skin test.</item>
+                  <item>you/your child resided or travelled to areas where there is a greater risk
+                    for certain kinds of infections such as tuberculosis, histoplasmosis,
+                    coccidioidomycosis, blastomycosis, or parasitic infections. These infections are
+                    caused by a bacteria or a fungus that can affect the lungs or other parts of
+                    your/your child’s body. If you/your child take HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                    PushTouch<sup>TM</sup>) these may become active or more severe. If you don’t know if
+                    you/your child have lived in or travelled to an area where these infections are
+                    common, ask your/your child’s doctor.</item>
+                  <item>you/your child have ever had liver injury or hepatitis B virus infection or
+                    are at risk of developing this infection. Signs and symptoms include the
+                    following: yellowing of the skin or eyes (jaundice), feeling of sickness,
+                    tiredness, loss of appetite, joint pain, fever, dark brown-colored urine,
+                    vomiting, and abdominal pain. If you/your child experience any of these signs
+                    and symptoms, contact your/your child’s doctor immediately. These symptoms may
+                    occur several months after starting therapy with HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                    PushTouch<sup>TM</sup>).</item>
+                  <item>you/your child experience any numbness or tingling or have ever had a
+                    disease that affects your/your child’s nervous system like multiple sclerosis or
+                    Guillain-Barré syndrome.</item>
+                  <item>you/your child have or have had heart failure.</item>
+                  <item>you/your child are scheduled to have major surgery or dental
+                    procedures.</item>
+                  <item>you/your child are scheduled to be vaccinated for anything. It is
+                    recommended that pediatric patients, if possible, be brought up to date with all
+                    immunizations according to current guidelines before starting HADLIMA<sup>TM</sup> (or
+                    HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>).</item>
+                  <item>you/your child are taking other medicines for your/your child’s rheumatoid
+                    arthritis, polyarticular juvenile idiopathic arthritis, psoriatic arthritis,
+                    ankylosing spondylitis, Crohn’s disease, psoriasis, or other conditions.
+                    You/your child can take other medicines provided your/your child’s doctor has
+                    prescribed them or has told you/your child it is acceptable that you/your child
+                    take them while you/your child are taking HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>).
+                    It is important that you tell your/your child’s doctor about any other medicines
+                    you/your child are taking for other conditions (for example, high blood pressure
+                    medicine) before you/your child start taking HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                    PushTouch<sup>TM</sup>).</item>
+                  <item>you/your child are taking any over-the-counter drugs, herbal medicines and
+                    vitamin and mineral supplements.</item>
+                  <item>you/your child are pregnant or could become pregnant</item>
+                  <item>you/your child are breast-feeding or plan to breast-feed.</item>
+                </list>
+                <paragraph><content styleCode="bold"><content styleCode="italics">If you/your child
+                      are not sure or have any questions about any of this information, ask
+                      your/your child’s doctor.</content></content></paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="edac0d6f-3c91-48b5-99c0-e0f940925d37">
+              <id root="be74b6e6-c431-4a5f-a19e-ed321b391456"/>
+              <code code="65077" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="OTHER WARNINGS YOU SHOULD KNOW ABOUT:"/>
+              <title>OTHER WARNINGS YOU SHOULD KNOW ABOUT:</title>
+              <text>
+                <paragraph>If you/your child received HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) while
+                  pregnant, your/her baby may be at higher risk for getting an infection for up to
+                  approximately five months after the last dose of HADLIMA<sup>TM</sup> (or HADLIMA<sup>TM</sup>
+                  PushTouch<sup>TM</sup>) received during pregnancy. It is important that you/she tell your/her
+                  baby's doctors and other healthcare professionals about your/her HADLIMA<sup>TM</sup> (or
+                  HADLIMA<sup>TM</sup> PushTouch<sup>TM</sup>) use during pregnancy so they can decide when your/her baby
+                  should receive any vaccine.</paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="f040bb1e-8989-42c8-82dc-53a855e88f0f">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b381256"/>
+              <code code="65078" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="TELL YOUR HEALTHCARE PROFESSIONAL ABOUT ALL THE MEDICINES YOU TAKE, INCLUDING ANY DRUGS, VITAMINS, MINERALS, NATURAL SUPPLEMENTS OR ALTERNATIVE MEDICINES"/>
+              <title>TELL YOUR HEALTHCARE PROFESSIONAL ABOUT ALL THE MEDICINES YOU TAKE, INCLUDING ANY DRUGS, VITAMINS, MINERALS, NATURAL SUPPLEMENTS OR ALTERNATIVE MEDICINES</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4c498-0ec3-4e44-bcb6-550134d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b361456"/>
+              <code code="65079" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="THE FOLLOWING MAY INTERACT WITH THIS MEDICATION:"/>
+              <title>THE FOLLOWING MAY INTERACT WITH THIS MEDICATION:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="e23321cd-5111-4aa3-b650-74f93bcda261">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b391456"/>
+              <code code="65080" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="HOW TO TAKE THIS MEDICATION:"/>
+              <title>HOW TO TAKE THIS MEDICATION:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="cd0892a2-0e32-4fb7-9cc9-1bbfff60dee7">
+              <id root="be74b6e6-c411-4a5f-a11e-ed321b381456"/>
+              <code code="65081" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="USUAL DOSE:"/>
+              <title>USUAL DOSE:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="beaaa5b8-6693-4d4c-a897-fa5c9562b1be">
+              <id root="be74b1e6-c431-4a5f-a18e-ed321b381456"/>
+              <code code="65082" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="OVERDOSE:"/>
+              <title>OVERDOSE:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ffd59b8d-fe66-4d86-a54f-0613d4168199">
+              <id root="be74b6e6-c431-4a5f-a18e-ee321f381456"/>
+              <code code="65083" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="MISSED DOSE:"/>
+              <title>MISSED DOSE:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="cb61f530-b95a-4047-b8ea-861c5a7a05e8">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b381d56"/>
+              <code code="65084" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="WHAT ARE POSSIBLE SIDE EFFECTS FROM USING THIS MEDICATION?"/>
+              <title>WHAT ARE POSSIBLE SIDE EFFECTS FROM USING THIS MEDICATION?</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ee37dfa5-6d8c-4490-b4a5-c6f2d73aa041">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321ba81456"/>
+              <code code="65085" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="SERIOUS SIDE EFFECTS AND WHAT TO DO ABOUT THEM"/>
+              <title>SERIOUS SIDE EFFECTS AND WHAT TO DO ABOUT THEM</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="fc829524-2519-45eb-b534-7553da2270ed">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b391356"/>
+              <code code="65086" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="REPORTING SIDE EFFECTS"/>
+              <title>REPORTING SIDE EFFECTS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="fc829574-2519-45eb-b134-7553da2270ed">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321ba91456"/>
+              <code code="65087" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="REPORTING SUSPECTED SIDE EFFECTS"/>
+              <title>REPORTING SUSPECTED SIDE EFFECTS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="fc829574-2519-45eb-b534-7553ca2270ed">
+              <id root="be74b6e3-c431-4a5f-a18e-ed321c391456"/>
+              <code code="65088" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="FOR THE GENERAL PUBLIC:"/>
+              <title>FOR THE GENERAL PUBLIC:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="fc829574-2519-45eb-b534-7553da2270ed">
+              <id root="be74b6e3-c431-4a5d-a18e-ed311b391456"/>
+              <code code="65089" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="FOR HEALTHCARE PROFESSIONALS:"/>
+              <title>FOR HEALTHCARE PROFESSIONALS:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="c9d75711-2ce9-451e-aa51-91026ec1555e">
+              <id root="be74b6e6-c431-445f-a18e-ed321b34c456"/>
+              <code code="65090" codeSystem="2.16.840.1.113883.2.20.6.65" displayName="STORAGE:"/>
+              <title>STORAGE:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+          <component>
+            <section ID="f6693e7a-21c9-492f-833b-4e8f3911d3a5">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b33c456"/>
+              <code code="65091" codeSystem="2.16.840.1.113883.2.20.6.65"
+                displayName="IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:"/>
+              <title>IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20190313"/>
+            </section>
+          </component>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</document>
