@@ -11,8 +11,9 @@
 	<xsl:import href="spl_canada_i18n.xsl"/>
 	
 	<!-- This is the CSS link put into the output -->
-	<xsl:param name="css">http://www.accessdata.fda.gov/spl/stylesheet/spl.css</xsl:param>
+<!--	<xsl:param name="css">http://www.accessdata.fda.gov/spl/stylesheet/spl.css</xsl:param> -->
 <!--	<xsl:param name="css">http://raw.githubusercontent.com/cease353/xtest/master/current/spl_canada.css</xsl:param> -->
+	<xsl:param name="css">http://phollott.github.io/hc-spm/current/spl_canada.css</xsl:param>
 	<xsl:variable name="lang">
 		<xsl:choose>
 			<xsl:when test="v3:document/v3:languageCode[@code='1']">en</xsl:when>
