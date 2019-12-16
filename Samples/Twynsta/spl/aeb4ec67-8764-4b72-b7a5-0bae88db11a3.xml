@@ -1,0 +1,2609 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/cease353/xtest/master/Development/spl_canada.xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 https://raw.githubusercontent.com/HealthCanada/HPFB/master/Structured-Product-Labeling-(SPL)/Schema/current/SPL.xsd">
+  <templateId extension="NDS" root="2.16.840.1.113883.2.20.6.37"/>
+  <id root="aeb4ec67-8764-4b72-b7a5-0bae88db11a3"/>
+  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.10"
+    displayName="2016 PRODUCT MONOGRAPH TEMPLATE - STANDARD"/>
+  <title>Twynsta (Telmisartan / Amlodipine (as Amlodipine Besylate)) Tablets</title>
+  <effectiveTime value="20170101">
+    <!-- Date of Last Revision -->
+    <originalText description="Date of Initial Approval">20190807</originalText>
+  </effectiveTime>
+  <languageCode code="1" codeSystem="2.16.840.1.113883.2.20.6.29" displayName="ENGLISH"/>
+  <setId root="dd76ec67-9064-4b72-b7a5-0bae88db11a3"/>
+  <versionNumber value="1"/>
+  <author>
+    <!--Organization Information-->
+    <time/>
+    <assignedEntity>
+      <representedOrganization>
+        <!--Market Authorization Holder-->
+        <id extension="3617" root="2.16.840.1.113883.2.20.6.31"/>
+        <name>BOEHRINGER INGELHEIM (CANADA) LTD LTEE</name>
+        <contactParty>
+          <addr>
+            <streetAddressLine>5180 South Service Road</streetAddressLine>
+            <city>Burlington</city>
+            <state>Ontario</state>
+            <postalCode>L7L 5H4</postalCode>
+            <country code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17" displayName="CANADA"/>
+          </addr>
+          <telecom value="tel:+18002635103"/>
+          <telecom value="mailto:test@boehringer.ca"/>
+          <telecom value="https://www.boehringer-ingelheim.ca"/>
+          <contactPerson/>
+          <!-- How to capture without contactPerson?-->
+        </contactParty>
+      </representedOrganization>
+    </assignedEntity>
+  </author>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Manufactured Product Information -->
+        <section ID="f6ac9de5-be91-442c-9579-5bc9ebd36902">
+          <id root="bdeefc11-4315-41e3-8c56-83e8bf4f770b"/>
+          <code code="MP" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="MANUFACTURED PRODUCT"/>
+		  <title>MANUFACTURED PRODUCT</title>
+          <effectiveTime value="20170101"/>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="02371022" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>Twynsta</name>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>telmisartan/amlodipine</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator value="40" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TELMISARTAN"/>
+                    <name>TELMISARTAN</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="TELMISARTAN"/>
+                        <name>TELMISARTAN</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="ACTIM">
+                  <quantity>
+                    <numerator value="5" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="1223" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="AMLODIPINE BESYLATE"/>
+                    <name>AMLODIPINE BESYLATE</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11344" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="AMLODIPINE"/>
+                        <name>AMLODIPINE</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="colloidal anhydrous silica"/>
+                    <name>colloidal anhydrous silica</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="FD&amp;C blue No 1"/>
+                    <name>FD&amp;C blue No 1</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="aluminium lake (E 133)"/>
+                    <name>aluminium lake (E 133)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="erric oxide black (E172)"/>
+                    <name>erric oxide black (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ferric oxide yellow (E172)"/>
+                    <name>ferric oxide yellow (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="magnesium stearate"/>
+                    <name>magnesium stearate</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="maize starch"/>
+                    <name>maize starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14" displayName="meglumine"/>
+                    <name>meglumine</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="microcrystalline cellulose"/>
+                    <name>microcrystalline cellulose</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="povidone K25"/>
+                    <name>povidone K25</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="pregelatinized starch"/>
+                    <name>pregelatinized starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sodium hydroxide"/>
+                    <name>sodium hydroxide</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sorbitol (E420)"/>
+                    <name>sorbitol (E420)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="7" unit="1"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <!--company defined pack code-->
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
+                    <asContent>
+                      <quantity>
+                        <numerator value="4" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <!--company defined pack code-->
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+                      <subjectOf>
+                        <marketingAct>
+                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                          <!-- regulatory status of this package -->
+                          <statusCode code="ACTIVE"/>
+                          <effectiveTime>
+                            <low value="20190807"/>
+                            <!-- Date of initial approval -->
+                          </effectiveTime>
+                        </marketingAct>
+                      </subjectOf>					  
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20190807"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.53"
+                    displayName="PHARMACEUTICAL" xsi:type="CV">
+                    <originalText>PHARMACEUTICAL</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="WHITE"
+                    xsi:type="CV">
+                    <originalText>white to off-white</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="BLUE"
+                    xsi:type="CV">
+                    <originalText>Blue</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="3" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SHAPE"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.25" displayName="OVAL"
+                    xsi:type="CV">
+                    <originalText>Oval</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="4" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SIZE"/>
+                  <value xsi:type="PQ" value="14" unit="mm"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
+                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+				  xsi:type="CV">
+				  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINT"/>
+                  <value xsi:type="ST">A1</value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="8" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="COMBINATION PRODUCT"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.8" xsi:type="CV"
+                    displayName="NOT A COMBINATION PRODUCT"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="4" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="MFR"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="ANGIOTENSIN II RECEPTOR ANTAGONISTS" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="02371030" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>Twynsta</name>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>telmisartan/amlodipine</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator value="40" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TELMISARTAN"/>
+                    <name>TELMISARTAN</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="TELMISARTAN"/>
+                        <name>TELMISARTAN</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="ACTIM">
+                  <quantity>
+                    <numerator value="10" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="1223" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="AMLODIPINE BESYLATE"/>
+                    <name>AMLODIPINE BESYLATE</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11344" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="AMLODIPINE"/>
+                        <name>AMLODIPINE</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="colloidal anhydrous silica"/>
+                    <name>colloidal anhydrous silica</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="FD&amp;C blue No 1"/>
+                    <name>FD&amp;C blue No 1</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="aluminium lake (E 133)"/>
+                    <name>aluminium lake (E 133)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="erric oxide black (E172)"/>
+                    <name>erric oxide black (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ferric oxide yellow (E172)"/>
+                    <name>ferric oxide yellow (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="magnesium stearate"/>
+                    <name>magnesium stearate</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="maize starch"/>
+                    <name>maize starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14" displayName="meglumine"/>
+                    <name>meglumine</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="microcrystalline cellulose"/>
+                    <name>microcrystalline cellulose</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="povidone K25"/>
+                    <name>povidone K25</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="pregelatinized starch"/>
+                    <name>pregelatinized starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sodium hydroxide"/>
+                    <name>sodium hydroxide</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sorbitol (E420)"/>
+                    <name>sorbitol (E420)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="7" unit="1"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="2" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <!--company defined pack code-->
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
+                    <asContent>
+                      <quantity>
+                        <numerator value="4" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <!--company defined pack code-->
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+	                  <subjectOf>
+                         <marketingAct>
+                         <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                         <!-- regulatory status of this package -->
+                         <statusCode code="ACTIVE"/>
+                            <effectiveTime>
+                               <low value="20190807"/>
+                               <!-- Date of initial approval -->
+                            </effectiveTime>
+                         </marketingAct>
+                      </subjectOf>				  
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20190807"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.53"
+                    displayName="PHARMACEUTICAL" xsi:type="CV">
+                    <originalText>PHARMACEUTICAL</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="WHITE"
+                    xsi:type="CV">
+                    <originalText>white to off-white</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="BLUE"
+                    xsi:type="CV">
+                    <originalText>Blue</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="3" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SHAPE"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.25" displayName="OVAL"
+                    xsi:type="CV">
+                    <originalText>Oval</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="4" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SIZE"/>
+                  <value xsi:type="PQ" value="14" unit="mm"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
+                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+				  xsi:type="CV">
+				  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINT"/>
+                  <value xsi:type="ST">A2</value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="8" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="COMBINATION PRODUCT"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.8" xsi:type="CV"
+                    displayName="NOT A COMBINATION PRODUCT"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="4" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="MFR"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="ANGIOTENSIN II RECEPTOR ANTAGONISTS" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="02371049" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>Twynsta</name>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>telmisartan/amlodipine</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator value="80" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TELMISARTAN"/>
+                    <name>TELMISARTAN</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="TELMISARTAN"/>
+                        <name>TELMISARTAN</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="ACTIM">
+                  <quantity>
+                    <numerator value="5" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="1223" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="AMLODIPINE BESYLATE"/>
+                    <name>AMLODIPINE BESYLATE</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11344" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="AMLODIPINE"/>
+                        <name>AMLODIPINE</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="colloidal anhydrous silica"/>
+                    <name>colloidal anhydrous silica</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="FD&amp;C blue No 1"/>
+                    <name>FD&amp;C blue No 1</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="aluminium lake (E 133)"/>
+                    <name>aluminium lake (E 133)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="erric oxide black (E172)"/>
+                    <name>erric oxide black (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ferric oxide yellow (E172)"/>
+                    <name>ferric oxide yellow (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="magnesium stearate"/>
+                    <name>magnesium stearate</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="maize starch"/>
+                    <name>maize starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14" displayName="meglumine"/>
+                    <name>meglumine</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="microcrystalline cellulose"/>
+                    <name>microcrystalline cellulose</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="povidone K25"/>
+                    <name>povidone K25</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="pregelatinized starch"/>
+                    <name>pregelatinized starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sodium hydroxide"/>
+                    <name>sodium hydroxide</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sorbitol (E420)"/>
+                    <name>sorbitol (E420)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="7" unit="1"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="3" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <!--company defined pack code-->
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
+                    <asContent>
+                      <quantity>
+                        <numerator value="4" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <!--company defined pack code-->
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+	                  <subjectOf>
+                         <marketingAct>
+                         <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                         <!-- regulatory status of this package -->
+                         <statusCode code="ACTIVE"/>
+                            <effectiveTime>
+                               <low value="20190807"/>
+                               <!-- Date of initial approval -->
+                            </effectiveTime>
+                         </marketingAct>
+                      </subjectOf>				  
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20190807"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.53"
+                    displayName="PHARMACEUTICAL" xsi:type="CV">
+                    <originalText>PHARMACEUTICAL</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="WHITE"
+                    xsi:type="CV">
+                    <originalText>white to off-white</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="BLUE"
+                    xsi:type="CV">
+                    <originalText>Blue</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="3" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SHAPE"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.25" displayName="OVAL"
+                    xsi:type="CV">
+                    <originalText>Oval</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="4" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SIZE"/>
+                  <value xsi:type="PQ" value="14" unit="mm"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
+                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+				  xsi:type="CV">
+				  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINT"/>
+                  <value xsi:type="ST">A3</value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="8" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="COMBINATION PRODUCT"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.8" xsi:type="CV"
+                    displayName="NOT A COMBINATION PRODUCT"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="4" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="MFR"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="96447" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="ANGIOTENSIN II RECEPTOR ANTAGONISTS" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+          <subject>
+            <manufacturedProduct>
+              <manufacturedProduct>
+                <code code="02371057" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <!-- DIN Number -->
+                <name>Twynsta</name>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
+                <asEntityWithGeneric>
+                  <genericMedicine>
+                    <name>telmisartan/amlodipine</name>
+                  </genericMedicine>
+                </asEntityWithGeneric>
+                <ingredient classCode="ACTIB">
+                  <quantity>
+                    <numerator value="80" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="TELMISARTAN"/>
+                    <name>TELMISARTAN</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11907" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="TELMISARTAN"/>
+                        <name>TELMISARTAN</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="ACTIM">
+                  <quantity>
+                    <numerator value="10" unit="mg"/>
+                    <denominator value="1" unit="1"/>
+                  </quantity>
+                  <ingredientSubstance>
+                    <code code="1223" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="AMLODIPINE BESYLATE"/>
+                    <name>AMLODIPINE BESYLATE</name>
+                    <activeMoiety>
+                      <activeMoiety>
+                        <code code="11344" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="AMLODIPINE"/>
+                        <name>AMLODIPINE</name>
+                      </activeMoiety>
+                    </activeMoiety>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="colloidal anhydrous silica"/>
+                    <name>colloidal anhydrous silica</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="FD&amp;C blue No 1"/>
+                    <name>FD&amp;C blue No 1</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="aluminium lake (E 133)"/>
+                    <name>aluminium lake (E 133)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="erric oxide black (E172)"/>
+                    <name>erric oxide black (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="ferric oxide yellow (E172)"/>
+                    <name>ferric oxide yellow (E172)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="magnesium stearate"/>
+                    <name>magnesium stearate</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="maize starch"/>
+                    <name>maize starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14" displayName="meglumine"/>
+                    <name>meglumine</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="microcrystalline cellulose"/>
+                    <name>microcrystalline cellulose</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="povidone K25"/>
+                    <name>povidone K25</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="pregelatinized starch"/>
+                    <name>pregelatinized starch</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sodium hydroxide"/>
+                    <name>sodium hydroxide</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <ingredient classCode="IACT">
+                  <ingredientSubstance>
+                    <code code="xx" codeSystem="2.16.840.1.113883.2.20.6.14"
+                      displayName="sorbitol (E420)"/>
+                    <name>sorbitol (E420)</name>
+                  </ingredientSubstance>
+                </ingredient>
+                <asContent>
+                  <!-- Packaging -->
+                  <quantity>
+                    <numerator value="7" unit="1"/>
+                    <denominator value="1"/>
+                  </quantity>
+                  <containerPackagedProduct>
+                    <code code="4" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <!--company defined pack code-->
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="BLISTER"/>
+                    <asContent>
+                      <quantity>
+                        <numerator value="4" unit="1"/>
+                        <denominator value="1"/>
+                      </quantity>
+                      <containerPackagedProduct>
+                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <!--company defined pack code-->
+                        <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                          displayName="BOX"/>
+                      </containerPackagedProduct>
+	                  <subjectOf>
+                         <marketingAct>
+                         <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                         <!-- regulatory status of this package -->
+                         <statusCode code="ACTIVE"/>
+                            <effectiveTime>
+                               <low value="20190807"/>
+                               <!-- Date of initial approval -->
+                            </effectiveTime>
+                         </marketingAct>
+                      </subjectOf>				  
+                    </asContent>
+                  </containerPackagedProduct>
+                </asContent>
+              </manufacturedProduct>
+              <subjectOf>
+                <!--Regulatory Activity associated with this products status-->
+                <approval>
+                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <!-- Control Number -->
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
+                  <author>
+                    <territorialAuthority>
+                      <territory>
+                        <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
+                          displayName="CANADA"/>
+                      </territory>
+                    </territorialAuthority>
+                  </author>
+                </approval>
+              </subjectOf>
+              <subjectOf>
+                <!--Regulatory status of this product-->
+                <marketingAct>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
+                  <statusCode code="ACTIVE"/>
+                  <effectiveTime>
+                    <low value="20190807"/>
+                    <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
+                  </effectiveTime>
+                </marketingAct>
+              </subjectOf>
+              <!--Characteristics of this product-->
+              <subjectOf>
+                <characteristic>
+                  <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PRODUCT TYPE"/>
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.53"
+                    displayName="PHARMACEUTICAL" xsi:type="CV">
+                    <originalText>PHARMACEUTICAL</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="WHITE"
+                    xsi:type="CV">
+                    <originalText>white to off-white</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="2" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="COLOUR"/>
+                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.24" displayName="BLUE"
+                    xsi:type="CV">
+                    <originalText>Blue</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="3" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SHAPE"/>
+                  <value code="11" codeSystem="2.16.840.1.113883.2.20.6.25" displayName="OVAL"
+                    xsi:type="CV">
+                    <originalText>Oval</originalText>
+                  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="4" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SIZE"/>
+                  <value xsi:type="PQ" value="14" unit="mm"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
+                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+				  xsi:type="CV">
+				  </value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINT"/>
+                  <value xsi:type="ST">A4</value>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="8" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="COMBINATION PRODUCT"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.8" xsi:type="CV"
+                    displayName="NOT A COMBINATION PRODUCT"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="9" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="PHARMACEUTICAL STANDARD"/>
+                  <value code="4" codeSystem="2.16.840.1.113883.2.20.6.5" displayName="MFR"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="SCHEDULE"/>
+                  <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
+                    xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="96447" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="ANGIOTENSIN II RECEPTOR ANTAGONISTS" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <subjectOf>
+                <characteristic>
+                  <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
+                    displayName="THERAPEUTIC CLASS"/>
+                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                </characteristic>
+              </subjectOf>
+              <consumedIn>
+                <substanceAdministration>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORAL USE"/>
+                </substanceAdministration>
+              </consumedIn>
+            </manufacturedProduct>
+          </subject>
+        </section>
+      </component>
+      <component>
+        <!--Title Page section-->
+        <section ID="d8d30d86-e343-48f4-9cec-524834b3803b">
+          <id root="eed00b53-cdb2-4aa6-9e82-88b7d793b208"/>
+          <code code="60001" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="TITLE PAGE"/>
+          <title>TITLE PAGE</title>
+          <effectiveTime value="20180101"/>
+          <component>
+            <section ID="be75cfb9-3131-4903-800b-267427388a13">
+              <id root="b9db4be0-3f46-437a-bd7b-4a33010adaad"/>
+              <code code="60002" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="TITLE"/>
+              <title>TITLE</title>
+              <text>
+                <paragraph>
+                  <sup>Pr</sup>Twynsta<sup>®</sup>
+                  <br/> Telmisartan / Amlodipine (as Amlodipine Besylate) Tablets <br/> Tablets 40/5
+                  mg, 40/10 mg, 80/5 mg, 80/10 mg <br/> Angiotensin II AT1 Receptor Blocker /
+                  Calcium Channel Blocker </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="f187daf9-5e75-425a-9de6-f6ce1af2a965">
+              <id root="ac26f58c-721a-4c51-8bbc-c9dddb1f1233"/>
+              <code code="60003" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="COMPANY NAME AND ADDRESS"/>
+              <title>COMPANY NAME AND ADDRESS</title>
+              <text>
+                <paragraph> Boehringer Ingelheim (Canada) Ltd. <br/> 5180 South Service Road <br/>
+                  Burlington, Ontario <br/> L7L 5H4 </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bf2dab4e-fd04-4ec9-9cdc-247188622d0f">
+              <id root="a5f1dea3-d907-4664-b46f-e1d9736d47af"/>
+              <code code="60004" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="DATE OF INITIAL APPROVAL"/>
+              <title>DATE OF INITIAL APPROVAL</title>
+              <text>
+                <paragraph>20170101</paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="b0184119-8fd7-4378-af77-b227c39e8445">
+              <id root="ad78301c-29a9-41af-96f8-d58815fed296"/>
+              <code code="60005" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="DATE OF REVISION"/>
+              <title>DATE OF REVISION</title>
+              <text>
+                <paragraph>20190807</paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ebc3f3dc-71be-424f-91ef-8aca8c138b21">
+              <id root="efd8c4c1-d0dd-434d-b1c2-4daa18752fa8"/>
+              <code code="60006" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="CONTROL NUMBER"/>
+              <title>CONTROL NUMBER</title>
+              <text>
+                <paragraph>125785</paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <!-- Recent Major Changes -->
+        <section ID="a7cee5c8-7ee9-4fd2-884e-7a50c06b27e1">
+          <id root="dd1e1c43-f0d3-4ba8-b1f5-ad009a5dd5a8"/>
+          <code code="60007" codeSystem="2.16.840.1.113883.2.20.6.60"
+            displayName="RECENT MAJOR LABEL CHANGES"/>
+          <title>RECENT MAJOR LABEL CHANGES</title>
+          <text>
+            <paragraph> Section Heading, Subsection heading (Section or Subsection number), yyyymmdd
+            </paragraph>
+          </text>
+          <effectiveTime value="20180101"/>
+        </section>
+      </component>
+      <component>
+        <!-- Part I: Health Professional Information -->
+        <section ID="c16a947e-e2be-45c0-8b2e-15d0d0eebea8">
+          <id root="e6bb83b9-2602-4f96-9077-b8b9535c254e"/>
+          <code code="60008" codeSystem="2.16.840.1.113883.2.20.6.60"
+            displayName="PART I: HEALTH PROFESSIONAL INFORMATION"/>
+          <title>PART I: HEALTH PROFESSIONAL INFORMATION</title>
+          <effectiveTime value="20180101"/>
+          <component>
+            <section ID="a52ea4fa-2b79-4dbc-8d99-6843adc2dec8">
+              <id root="9a3f869a-7734-425a-85d8-b8bd4d3500a5"/>
+              <code code="60009" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="1 INDICATIONS"/>
+              <title>1 INDICATIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+              <component>
+                <section ID="f2aa7e0e-2042-4a4c-a783-9ad4e8717a32">
+                  <id root="b9d44be0-3f46-437a-bd7b-4a3e010adaad"/>
+                  <code code="60010" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="1.1 PEDIATRICS"/>
+                  <title>1.1 PEDIATRICS</title>
+                  <text>
+                    <paragraph> TWYNSTA (telmisartan/amlodipine besylate) is indicated for treatment
+                      of mild to moderate essential hypertension for whom combination therapy is
+                      appropriate. <br/>
+                      <br/> TWYNSTA is not indicated for initial therapy (see <linkHtml href="#be75cfb9-3131-4903-800b-267727398a13">DOSAGE AND
+                        ADMINISTRATION).</linkHtml><br/>
+                      <br/> Patients should be titrated on individual drugs. If the fixed dose
+                      combination represents the dose and dosing frequency determined by this
+                      titration, the use of TWYNSTA may be more convenient in the management of
+                      patients. If during maintenance therapy dosage adjustment is necessary, it is
+                      advisable to use the individual drugs. <br/>
+                      <br/>
+                      <content styleCode="bold">Geriatrics:</content>
+                      <br/> No dose adjustment is necessary for elderly patients. It should be
+                      recognized, however, that greater sensitivity in some older individuals cannot
+                      be ruled out. <br/>
+                      <br/>
+                      <content styleCode="bold">Pediatrics (&lt; 18 years of age):</content><br/>
+                      TWYNSTA is not recommended for use in patients aged below 18 years due to a
+                      lack of data on safety and efficacy. </paragraph>
+                  </text>
+                  <effectiveTime value="20180822"/>
+                </section>
+              </component>
+              <component>
+                <section ID="be75cfb9-3132-4903-800b-267427388a13">
+                  <id root="b9db4be0-3f46-447a-bd7b-4a3e010adaad"/>
+                  <code code="60011" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="1.2 GERIATRICS"/>
+                  <title>1.2 GERIATRICS</title>
+                  <text>
+                    <paragraph>sample text</paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="be75cfb9-3132-4903-801b-267427388a13">
+              <id root="b9db4be0-3f46-437a-bd7b-4a3e070adaad"/>
+              <code code="60012" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="2 CONTRAINDICATIONS"/>
+              <title>2 CONTRAINDICATIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="be75cfb9-3131-4903-800b-267427398a13">
+              <id root="b9db4be0-3746-437a-bd7b-4a3e010adaad"/>
+              <code code="60013" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="3 SERIOUS WARNINGS AND PRECAUTIONS BOX"/>
+              <title>3 SERIOUS WARNINGS AND PRECAUTIONS BOX</title>
+              <text>
+                <table ID="t4" border="1" cellpadding="6" cellspacing="1" width="80%">
+                  <caption>Serious Warnings and Precautions</caption>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <content styleCode="bold">When used in pregnancy, angiotensin receptor (AT1)
+                          blockers (ARB) can cause injury or even death of the developing fetus.
+                          When pregnancy is detected, TWYNSTA should be discontinued as soon as
+                          possible (see WARNINGS AND PRECAUTIONS, Special Populations).</content>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <paragraph>
+                  <content styleCode="bold">
+                    <content styleCode="underline"> General </content>
+                  </content><br/>A case of rare but fatal angioedema had occurred in a patient who
+                  had been medicated for about 6 months with telmisartan, one of the active
+                  components of TWYNSTA. The Autopsy Report described evidence of edema of the
+                  laryngeal mucosa, with terminal respiratory and circulatory failure. This is in
+                  the context of approximately 5.2 million patient-years exposure to telmisartan
+                  annually. <br/><br/> If laryngeal stridor or angioedema of the face, extremities,
+                  lips, tongue, or glottis occurs, TWYNSTA should be discontinued immediately, the
+                  patient treated appropriately in accordance with accepted medical care, and
+                  carefully observed until the swelling disappears. In instances where swelling is
+                  confined to the face and lips, the condition generally resolves without treatment,
+                  although antihistamines may be useful in relieving symptoms. Where there is
+                  involvement of tongue, glottis, or larynx, likely to cause airway obstruction,
+                  appropriate therapy (including, but not limited to 0.3 to 0.5 ml of subcutaneous
+                  epinephrine solution 1:1000) should be administered promptly (see <linkHtml
+                    href="#c2b713f2-cc40-11e9-a32f-2a2ae2dbcce4">ADVERSE REACTIONS - Post Marketing
+                    Adverse Drug Reactions; Telmisartan</linkHtml>). <br/><br/> Patients with a
+                  known hypersensitivity (anaphylaxis) or angioedema to ARBs should not be treated
+                  with TWYNSTA (see <linkHtml href="#a63c33a5-e08a-473c-b8a2-b32dbd215f7a">ADVERSE
+                    REACTIONS, Clinical Trial Adverse Drug Reactions - Unknown Frequencies, Immune
+                    System Disorders, Angioedema</linkHtml> and <linkHtml href="#c2b713f2-cc40-11e9-a32f-2a2ae2dbcce4">ADVERSE REACTIONS - Post
+                      Marketing Adverse Drug Reactions; Telmisartan).</linkHtml> <br/><br/>
+                  <content styleCode="bold">Beta-blocker withdrawal:</content> TWYNSTA gives no
+                  protection against the dangers of abrupt beta- blocker withdrawal and such
+                  withdrawal should be done by the gradual reduction of the dose of beta-blocker.
+                </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="be75cfb9-3131-4903-800b-267727398a13">
+              <id root="b9db4be0-3f46-437a-bd7b-4a3ee10adaad"/>
+              <code code="60014" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="4 DOSAGE AND ADMINISTRATION"/>
+              <title>4 DOSAGE AND ADMINISTRATION</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+              <component>
+                <section ID="be75cfb9-3131-4103-800b-267727398a13">
+                  <id root="b9db1be0-3f46-437a-bd7b-4a3e010adaad"/>
+                  <code code="60015" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="4.1 DOSING CONSIDERATIONS"/>
+                  <title>4.1 DOSING CONSIDERATIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="b3d876c1-c36c-4ed5-8993-c507e3ab9f2e">
+                  <id root="da2d22a3-b5c2-4a62-b138-9594dd0491bb"/>
+                  <code code="60016" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="4.2 RECOMMENDED DOSE AND DOSAGE ADJUSTMENT"/>
+                  <title>4.2 RECOMMENDED DOSE AND DOSAGE ADJUSTMENT</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f3a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6cf00343"/>
+                  <code code="60017" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="4.3 ADMINISTRATION"/>
+                  <title>4.3 ADMINISTRATION</title>
+                  <text>
+				  <paragraph>sample text</paragraph>				  
+				  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f4a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6c100e43"/>
+                  <code code="60018" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="4.4 RECONSTITUTION"/>
+                  <title>4.4 RECONSTITUTION</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f5a">
+                  <id root="a473c162-e276-44d0-b797-2b7b6cf00e43"/>
+                  <code code="60019" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="4.5 MISSED DOSE"/>
+                  <title>4.5 MISSED DOSE</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f6a">
+              <id root="a473c162-e176-44d0-b797-2b7b6ce00e43"/>
+              <code code="60020" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="5 OVERDOSAGE"/>
+              <title>5 OVERDOSAGE</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f7a">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf08e43"/>
+              <code code="60021" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="6 DOSAGE FORMS, STRENGTHS, COMPOSITION AND PACKAGING"/>
+              <title>6 DOSAGE FORMS, STRENGTHS, COMPOSITION AND PACKAGING</title>
+              <text>
+			  <paragraph>sample text</paragraph>
+			  </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="a47ddb1b-4d6c-4f0b-97d7-7feb718963e1">
+              <id root="a473c162-e176-44d0-b797-2b7b6cfa0e43"/>
+              <code code="60022" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="7 WARNINGS AND PRECAUTIONS"/>
+              <title>7 WARNINGS AND PRECAUTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+              <component>
+                <section ID="e7f348e6-c9c4-43d5-950e-2a754092a1fa">
+                  <id root="a473d162-e176-44d0-b797-2b7b6cf00e43"/>
+                  <code code="60023" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="7.1 SPECIAL POPULATIONS"/>
+                  <title>7.1 SPECIAL POPULATIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                  <component>
+                    <section ID="e94dc526-7275-40e3-8386-c43f0018b303">
+                      <id root="a473c162-e176-44d0-b297-2b7b6cf00e43"/>
+                      <code code="60024" codeSystem="2.16.840.1.113883.2.20.6.60"
+                        displayName="7.1.1 PREGNANT WOMEN"/>
+                      <title>7.1.1 PREGNANT WOMEN</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20180101"/>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="a63c33a5-e08a-472c-b8a2-b12dbd115f7a">
+                      <id root="a473c162-e176-44d0-b797-2b7c6cf00e43"/>
+                      <code code="60025" codeSystem="2.16.840.1.113883.2.20.6.60"
+                        displayName="7.1.2 BREAST-FEEDING"/>
+                      <title>7.1.2 BREAST-FEEDING</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20180101"/>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="db71c420-7743-43da-8386-5463a89b0f93">
+                      <id root="a423c162-e176-44d0-b797-2b7b6cf00e43"/>
+                      <code code="60026" codeSystem="2.16.840.1.113883.2.20.6.60"
+                        displayName="7.1.3 PEDIATRICS"/>
+                      <title>7.1.3 PEDIATRICS</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20180101"/>
+                    </section>
+                  </component>
+                  <component>
+                    <section ID="ee781ef0-be0c-406f-95f9-1122d8bf9968">
+                      <id root="a473c162-e176-44d0-b797-2b7b6c000e43"/>
+                      <code code="60027" codeSystem="2.16.840.1.113883.2.20.6.60"
+                        displayName="7.1.4 GERIATRICS"/>
+                      <title>7.1.4 GERIATRICS</title>
+                      <text>
+                        <paragraph> sample text </paragraph>
+                      </text>
+                      <effectiveTime value="20180101"/>
+                    </section>
+                  </component>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="fa8186fe-cc41-11e9-a32f-2a2ae2dbcce4">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf00e73"/>
+              <code code="60028" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="8 ADVERSE REACTIONS"/>
+              <title>8 ADVERSE REACTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+              <component>
+                <section ID="b238395c-cc41-11e9-a32f-2a2ae2dbdce4">
+                  <id root="a473c162-e176-44d0-c797-2b7b6cf00e43"/>
+                  <code code="60029" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="8.1 ADVERSE REACTION OVERVIEW"/>
+                  <title>8.1 ADVERSE REACTION OVERVIEW</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a98b942a-cc41-11e9-a32f-2a2ae2dbcce4">
+                  <id root="a473c162-e176-4ad0-b797-2b7b6cf00e43"/>
+                  <code code="60030" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="8.2 CLINICAL TRIAL ADVERSE REACTIONS"/>
+                  <title>8.2 CLINICAL TRIAL ADVERSE REACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a0065926-cc41-11e9-a32f-2a2ae2dbcce4">
+                  <id root="a4a3c162-e176-44d0-b797-2b7b6cf00e43"/>
+                  <code code="60031" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="8.3 LESS COMMON CLINICAL TRIAL ADVERSE REACTIONS"/>
+                  <title>8.3 LESS COMMON CLINICAL TRIAL ADVERSE REACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a6d30f16-cc41-11e9-a32f-2a2ae2dbcce4">
+                  <id root="a463c162-e176-44d0-b797-2b7b6cf00e43"/>
+                  <code code="60032" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="8.4 ABNORMAL LABORATORY FINDINGS: HEMATOLOGIC"/>
+                  <title>8.4 ABNORMAL LABORATORY FINDINGS: HEMATOLOGIC</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b32dbd215f7a">
+                  <id root="a473e162-e176-44d0-b797-2b7b6cf00e43"/>
+                  <code code="60033" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="8.5 CLINICAL TRIAL ADVERSE REACTIONS (PEDIATRICS)"/>
+                  <title>8.5 CLINICAL TRIAL ADVERSE REACTIONS (PEDIATRICS)</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="c2b713f2-cc40-11e9-a32f-2a2ae2dbcce4">
+                  <id root="a473c162-e176-44d0-b797-3b7b6cf00e43"/>
+                  <code code="60034" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="8.6 POST-MARKET ADVERSE REACTIONS"/>
+                  <title>8.6 POST-MARKET ADVERSE REACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="f3daf956-cc41-11e9-a32f-2a2ae2dbcce4">
+              <id root="a473c162-e176-44d0-b797-2b7b6cf0d343"/>
+              <code code="60035" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="9 DRUG INTERACTIONS"/>
+              <title>9 DRUG INTERACTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+              <component>
+                <section ID="be75cfb9-3131-4903-800b-267527398a13">
+                  <id root="b8db4be0-3f46-437a-bd7b-4a3e010adaad"/>
+                  <code code="60036" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.1 SERIOUS DRUG INTERACTIONS BOX"/>
+                  <title>9.1 SERIOUS DRUG INTERACTIONS BOX</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8a2-b14dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7bfcf00e43"/>
+                  <code code="60037" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.2 OVERVIEW"/>
+                  <title>9.2 OVERVIEW</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-473c-b8d2-b14dbd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6cf00e33"/>
+                  <code code="60038" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.3 DRUG-DRUG INTERACTIONS"/>
+                  <title>9.3 DRUG-DRUG INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e0aa-473c-b8a2-b14dbd315f7a">
+                  <id root="d473c162-e176-44d0-b797-2b7b6cf00e43"/>
+                  <code code="60039" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.4 DRUG-FOOD INTERACTIONS"/>
+                  <title>9.4 DRUG-FOOD INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e08a-47bc-b8d2-b14dbd315f7a">
+                  <id root="a473c162-e176-94d0-b797-2b7b6cf00e43"/>
+                  <code code="60040" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.5 DRUG-HERB INTERACTIONS"/>
+                  <title>9.5 DRUG-HERB INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="be78cfb9-3131-4903-800b-267527398a13">
+                  <id root="b9db4be0-3f46-437a-be7b-4a3e010adaad"/>
+                  <code code="60041" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.6 DRUG-LABORATORY TEST INTERACTIONS"/>
+                  <title>9.6 DRUG-LABORATORY TEST INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a63c33a5-e0aa-473c-b8a2-b14dcd315f7a">
+                  <id root="a473c162-e176-44d0-b797-2b7b6af00e43"/>
+                  <code code="60042" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="9.7 DRUG-LIFESTYLE INTERACTIONS"/>
+                  <title>9.7 DRUG-LIFESTYLE INTERACTIONS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="fa324c26-b939-4c3a-901d-516ccc314522">
+              <id root="dc0d2dd9-1c53-49dc-bbd3-d6b420d064e9"/>
+              <code code="60043" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="10 ACTION AND CLINICAL PHARMACOLOGY"/>
+              <title>10 ACTION AND CLINICAL PHARMACOLOGY</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+              <component>
+                <section ID="aa324c26-b939-4c3a-901e-516ccc314522">
+                  <id root="dc0d2dd9-1c53-49dc-cad3-d6b420d064e9"/>
+                  <code code="60044" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="10.1 MECHANISM OF ACTION"/>
+                  <title>10.1 MECHANISM OF ACTION</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="da324c26-b939-4d3a-901e-516ccc314522">
+                  <id root="dc0d2dd9-1c53-49dc-bad4-d6b420d064e9"/>
+                  <code code="60045" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="10.2 PHARMACODYNAMICS"/>
+                  <title>10.2 PHARMACODYNAMICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="ba324c26-b939-4d4a-901e-516ccc314522">
+                  <id root="dc0d2dd9-1c53-49dc-bad3-d6b420d004e9"/>
+                  <code code="60046" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="10.3 PHARMACOKINETICS"/>
+                  <title>10.3 PHARMACOKINETICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20180101"/>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="aa324d26-c939-443a-901e-526dcc314522">
+              <id root="ec0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
+              <code code="60047" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="11 STORAGE, STABILITY AND DISPOSAL"/>
+              <title>11 STORAGE, STABILITY AND DISPOSAL</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="aa325d26-c939-443a-901e-526dcc314522">
+              <id root="cc0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
+              <code code="60048" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="12 SPECIAL HANDLING INSTRUCTIONS"/>
+              <title>12 SPECIAL HANDLING INSTRUCTIONS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20180101"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <!-- Part II: Scientific Information -->
+        <section ID="b6a947eb-e2be-45c0-8b2e-15d0d0eebed8">
+          <id root="d91389e0-c234-44d9-8327-91b121723a8f"/>
+          <code code="60049" codeSystem="2.16.840.1.113883.2.20.6.60"
+            displayName="PART II: SCIENTIFIC INFORMATION"/>
+          <title>PART II: SCIENTIFIC INFORMATION</title>
+          <effectiveTime value="20170101"/>
+          <component>
+            <section ID="c2875272-8229-4c12-919e-827854dcd76a">
+              <id root="a134d52c-f9d4-4698-a082-84b29ee3d95a"/>
+              <code code="60050" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="13 PHARMACEUTICAL INFORMATION"/>
+              <title>13 PHARMACEUTICAL INFORMATION</title>
+              <text>
+                <paragraph>
+                  <content styleCode="bold">Drug Substance – Telmisartan</content>
+                  <br/><br/> Proper name: telmisartan<br/><br/> Chemical name:
+                  [1,1'-Biphenyl]-2-carboxylic acid, 4'-[(1,4'- dimethyl-2'- propyl[2,6'-
+                  bi-1H-benzimidazol]-1'-yl)methyl] <br/><br/>Molecular formula and molecular mass:
+                    C<sub>33</sub>H<sub>30</sub>N<sub>4</sub>O<sub>2</sub>, 514.63 <br/><br/>
+                  Structural formula: <br/><br/>
+                  <renderMultiMedia referencedObject="m1"/>
+                  <br/><br/> Physicochemical properties: <br/><br/> Description: <br/> Telmisartan
+                  is a white to off-white, odorless crystalline powder. It is practically insoluble
+                  in water and in the pH range of 3 to 9, sparingly soluble in strong acid (except
+                  HCl) and soluble in strong base. <br/><br/> Polymorphism: <br/> Exhibits two
+                  different polymorphic modifications, Form A (thermodynamically more stable) and
+                  form B, and a third pseudo polymorphic form. <br/><br/> Melting Point: <br/>269 ±
+                  1oC (polymorphic Form A) <br/> 183 ± 1oC (polymorphic Form B) <br/><br/>
+                  <content styleCode="bold">Drug Substance – Amlodipine Besylate</content>
+                  <br/><br/> Proper name: amlodipine besylate <br/><br/> 3-Ethyl 5-methyl
+                  (4RS)-2[(2-aminoethoxy)methyl]-4-(2-
+                  chlorophenyl)-6-methyl-1,4-dihydropyridine-3,5-dicarboxylate benzenesulphonate
+                  <br/><br/>Molecular formula and molecular mass:
+                    C<sub>20</sub>H<sub>25</sub>IN<sub>2</sub>O<sub>5</sub>.C<sub>6</sub>H<sub>6</sub>O<sub>3</sub>S,
+                  514.63 <br/><br/> Structural formula: <br/><br/>
+                  <renderMultiMedia referencedObject="m2"/>
+                  <br/><br/> Physicochemical properties: <br/><br/> Physical Form:<br/> Amlodipine
+                  besylate is a white crystalline substance.<br/><br/> Polymorphism: <br/> Exhibits
+                  two different polymorphic modifications, Form A (thermodynamically more stable)
+                  and form B, and a third pseudo polymorphic form. <br/><br/> Solubility: <br/>
+                  Amlodipine besylate is slightly soluble in water and sparingly soluble in ethanol,
+                  M.P.= 203 C with decomposition. <br/> pKa = 9.02 at 23.5<sup>o</sup>C.
+                </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+              <component>
+                <observationMedia ID="m1">
+                  <text>telmisartan structure</text>
+                  <value xsi:type="ED" mediaType="image/jpeg">
+                    <reference value="telmisartan-struct.jpg"/>
+                  </value>
+                </observationMedia>
+              </component>
+              <component>
+                <observationMedia ID="m2">
+                  <text>amlodipine structure</text>
+                  <value xsi:type="ED" mediaType="image/jpeg">
+                    <reference value="amlodipine-struct.jpg"/>
+                  </value>
+                </observationMedia>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a3287527-8229-4c12-919e-827854ddd76a">
+              <id root="f134d52c-f9d4-4698-a082-84b29ee3d95a"/>
+              <code code="60051" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="14 CLINICAL TRIALS"/>
+              <title>14 CLINICAL TRIALS</title>
+              <text>
+                <paragraph> In a single 8-week multicenter, randomised, double-blind,
+                  placebo-controlled, parallel group factorial study, 1461 patients with mean seated
+                  diastolic blood pressure ≥95 and &lt;119 mmHg in which subjects were treated with
+                  combination doses of TWYNSTA (telmisartan [T] and amlodipine [A] or its
+                  monotherapy components, including T/A doses of T40+A5, T40+A10, T80+A5, and
+                  T80+A10 mg), the combination treatments showed significant dose related reductions
+                  in systolic and diastolic blood pressure from baseline values. Limited data was
+                  available in subjects with severe hypertension.<br/><br/>
+                  <content styleCode="bold">Study demographics and trial design</content><br/><br/>
+                  Overall, 737 (50.4%) patients were male; 1160 (79.4%) Caucasian, 237 (16.2%)
+                  black, and 64 (4.4%) Asian. The overall mean age was 53.1 years with 205 (14.0%)
+                  of patients ≥65 years old. The majority of patients had a duration of hypertension
+                  >5 years [&lt;1 year: 206 (14.1%), 1-5 years: 446 (30.5%), &gt;5 years: 806
+                  (55.2%), missing: 3 (0.2%)] with 307 (21.0%) not being previously prescribed
+                  antihypertensive medication, 531 (36.3%) previously treated with antihypertensive
+                  monotherapy, and 623 (42.6%) previously treated with combination therapy of ≥2
+                  antihypertensive medications. The overall mean body mass index (BMI) was 31.3
+                  kg/m2 with 238 (16.3%) of patients being diabetic and 12 (0.8%) with renal
+                  impairment. <br/><br/> The primary endpoint of this study was the change from
+                  baseline in the in-clinic seated trough cuff diastolic blood pressure (DBP) after
+                  8 weeks of treatment. <br/><br/>
+                  <content styleCode="bold">Results</content><br/><br/> Treatment with each
+                  combination dose of TWYNSTA resulted in significantly greater diastolic and
+                  systolic blood pressure reductions and higher control rates compared to the
+                  respective monotherapy components. The telmisartan/amlodipine combinations showed
+                  dose-related reductions in systolic/diastolic blood pressure (SBP/DBP) across the
+                  therapeutic dose range versus telmisartan monotherapy or amlodipine monotherapy: </paragraph>
+                <table ID="t12842122" border="0" cellpadding="1" cellspacing="0" width="80%">
+                  <caption>Table 5: Placebo-Subtracted Mean Change from Baseline in Seated
+                    Systolic/Diastolic Blood Pressure (mmHg): Combination Therapy vs Monotherapy
+                    Components</caption>
+                  <tbody>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule" rowspan="2" valign="top"
+                        >Amlodipine, mg</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule" colspan="3">Telmisartan, mg</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule">0</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">40</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">80</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule">0</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">—</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-12.1/-7.2</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-11.8/-7.8</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule">5</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-12.9/-7.2</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-19.3/-10.3</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-19.6/-12.0</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule">10</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-18.2/-10.9</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-22.2/-14.0</td>
+                      <td styleCode="Toprule Rrule Lrule Botrule">-23.9/-13.9</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table ID="t5" border="0" width="80%" frame="void" rules="none">
+                  <caption>Table 6: Effect on Seated Systolic/Diastolic Blood Pressure: Combination
+                    Therapy vs Monotherapy</caption>
+                  <colgroup>
+                    <col span="4"/>
+                  </colgroup>
+                  <tfoot>
+                    <tr>
+                      <td colspan="4">*p&lt;0.05<br/>
+                        <sup>1</sup>Mean change from baseline at Week 8 in seated systolic/diastolic
+                        blood pressure</td>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Treatment Group</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Mean Change<sup>1</sup>
+                      </td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Difference from amlodipine 5
+                        mg</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Difference from amlodipine 10
+                        mg</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Twynsta 40/5 mg; n=270</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-13.6 / -9.4</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-7.4* / -3.6*</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-2.4* / -1.4*</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Twynsta 80/5 mg; n=271</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-15.0 / -10.6</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-8.8* / -4.9*</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-3.9* / -2.7*</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Botrule Lrule Rrule">Amlodipine 5 mg; n=255</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-6.2 / -5.7</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">----</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">----</td>
+                    </tr>
+                    <tr>
+                      <td styleCode="Toprule Lrule Rrule Botrule" align="left">Amlodipine 10 mg;
+                        n=261</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">-11.1 / -8.0</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">----</td>
+                      <td styleCode="Toprule Botrule Lrule Rrule">----</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+              <effectiveTime value="20170101"/>
+              <component>
+                <section ID="e3287527-8229-4c12-919e-827854ddd78a">
+                  <id root="0134d52c-f9d4-4698-a082-84b29ee3d93a"/>
+                  <code code="60052" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="14.1 TRIAL DESIGN AND STUDY DEMOGRAPHICS"/>
+                  <title>14.1 TRIAL DESIGN AND STUDY DEMOGRAPHICS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20170101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a2875272-8229-4c12-919e-827854ddd78a">
+                  <id root="0134a52c-f9d4-4698-a082-84b29ee3d95a"/>
+                  <code code="60053" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="14.2 STUDY RESULTS"/>
+                  <title>14.2 STUDY RESULTS</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20170101"/>
+                </section>
+              </component>
+              <component>
+                <section ID="a4287527-8229-4c12-919e-827954ddd78a">
+                  <id root="c134d52c-f9d4-4698-a082-14b29ee3d95a"/>
+                  <code code="60054" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    displayName="14.3 COMPARATIVE BIOAVAILABILITY STUDIES"/>
+                  <title>14.3 COMPARATIVE BIOAVAILABILITY STUDIES</title>
+                  <text>
+                    <paragraph> sample text </paragraph>
+                  </text>
+                  <effectiveTime value="20170101"/>
+                  <component>
+                    <observationMedia ID="e7927268-5176-4ab0-b46e-46b6a6a26bb4">
+                      <text>Chemical structure</text>
+                      <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="chem.jpg"/>
+                      </value>
+                    </observationMedia>
+                  </component>
+                </section>
+              </component>
+            </section>
+          </component>
+          <component>
+            <section ID="a2875272-8229-4c12-a19e-827954ddd78a">
+              <id root="c134d52c-f9d4-4698-a082-84b29eeed95a"/>
+              <code code="60055" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="15 MICROBIOLOGY"/>
+              <title>15 MICROBIOLOGY</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="a42a7527-8229-4c12-a19e-827954ddd78a">
+              <id root="d134d52c-f9d4-4698-a082-84b29ee3d95a"/>
+              <code code="60056" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="16 NON-CLINICAL TOXICOLOGY"/>
+              <title>16 NON-CLINICAL TOXICOLOGY</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="b8a4d498-0fc3-4e44-b4b6-550140d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321a381456"/>
+              <code code="60057" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="17 SUPPORTING PRODUCT MONOGRAPHS"/>
+              <title>17 SUPPORTING PRODUCT MONOGRAPHS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <!-- Part III: Patient Medication Information -->
+        <section ID="baa4d498-0fc3-4e44-b4b6-550140d4de5d">
+          <id root="be74b5e6-c431-4a5f-a18e-ed321b381456"/>
+          <code code="60058" codeSystem="2.16.840.1.113883.2.20.6.60"
+            displayName="PART III: PATIENT MEDICATION INFORMATION"/>
+          <title>PART III: PATIENT MEDICATION INFORMATION</title>
+          <effectiveTime value="20170101"/>
+          <component>
+            <section ID="baa4d498-0fc3-4e44-b4b6-550140dde5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ede21b381456"/>
+              <code code="60059" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="BRAND NAME"/>
+              <title>BRAND NAME</title>
+              <text>
+                <paragraph>
+                  <sup>Pr</sup> Twynsta <sup>®</sup><br/>(Telmisartan/Amlodipine (as Amlodipine
+                  Besylate)) Tablets<br/><br/> Read this carefully before you start taking TWYNSTA
+                  and each time you get a refill. This leaflet is a summary and will not tell you
+                  everything about TWYNSTA. Talk to your doctor, nurse, or pharmacist about your
+                  medical condition and treatment and ask if there is any new information about
+                  TWYNSTA.</paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="baa4d498-0fc3-4e44-b4b6-550140d4e5d">
+              <id root="be7476e6-c431-4a5f-a18e-ed321b381456"/>
+              <code code="60060" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="PROPER NAME IN FINAL DOSAGE FORMS"/>
+              <title>PROPER NAME IN FINAL DOSAGE FORMS</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="baa4d498-0gc3-4e44-bcb6-550140d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b321456"/>
+              <code code="60061" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="WHAT IS THIS MEDICATION USED FOR?"/>
+              <title>WHAT IS THIS MEDICATION USED FOR?</title>
+              <text>
+                <paragraph>TWYNSTA is used to treat high blood pressure in patients who already
+                  receive telmisartan and amlodipine from separate tablets and who wish to take
+                  instead the same doses in one tablet for convenience.</paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4d498-0gc3-4e44-bcb6-550140d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-fd321b381456"/>
+              <code code="60062" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="HOW DOES THIS MEDICATION WORK?"/>
+              <title>HOW DOES THIS MEDICATION WORK?</title>
+              <text>
+                <paragraph> TWYNSTA contains a combination of 2 drugs, telmisartan and amlodipine: </paragraph>
+                <list listType="unordered">
+                  <item>Telmisartan is an angiotensin receptor blocker (ARB). You can recognize an
+                    ARB because its medicinal ingredient ends in <content styleCode="bold"
+                      >“-SARTAN”.</content></item>
+                  <item>Amlodipine is a calcium channel blocker.</item>
+                </list>
+                <paragraph> These medicinal ingredients work together to lower blood pressure. This
+                  medicine does not cure your disease. It helps to control it. Therefore, it is
+                  important to continue taking TWYNSTA regularly even if you feel fine. </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4d498-0gc3-4e44-bcb6-55013024de5d">
+              <id root="be74b6e6-c431-4a1f-a18e-ed321b381456"/>
+              <code code="60063" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="WHAT ARE THE INGREDIENTS IN THIS MEDICATION?"/>
+              <title>WHAT ARE THE INGREDIENTS IN THIS MEDICATION?</title>
+              <text>
+                <paragraph> Telmisartan and amlodipine (as amlodipine besylate)<br/><br/> colloidal
+                  anhydrous silica, FD&amp;C blue No 1 aluminium lake, ferric oxide black, ferric
+                  oxide yellow, magnesium stearate, maize starch, meglumine, microcrystalline
+                  cellulose, povidone K25, pregelatinized starch, sodium hydroxide, sorbitol.
+                </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4d498-0gc3-4e54-bcb6-550130d4de5d">
+              <id root="be74b6e6-c431-4a5f-a18e-ed32bb381456"/>
+              <code code="60064" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:"/>
+              <title>MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:</title>
+              <text>
+                <paragraph>Tablets: 40/5 mg, 40/10 mg, 80/5 mg, 80/10 mg.</paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca4c498-0gc3-4e44-bcb6-550134d4de5d">
+              <id root="be74b6e6-c431-445f-a18e-ed321b381456"/>
+              <code code="60065" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="DO NOT USE THIS MEDICATION IF:"/>
+              <title>DO NOT USE THIS MEDICATION IF:</title>
+              <text>
+                <table ID="t1" border="1" cellpadding="6" cellspacing="1" width="80%">
+                  <caption>Serious Warnings and Precautions - Pregnancy</caption>
+                  <tbody>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule" rowspan="2" valign="top"> TWYNSTA
+                        should not be used during pregnancy. If you discover that you are pregnant
+                        while taking TWYNSTA, stop the medication and contact your doctor, nurse, or
+                        pharmacist as soon as possible.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <list listType="unordered">
+                  <item> Have experienced an allergic reaction to any drug used to lower blood
+                    pressure. </item>
+                  <item> Have renal artery stenosis (narrowing of the blood vessels to one or both
+                    kidneys). </item>
+                  <item> Have swelling of your legs. </item>
+                  <item> Have raised aldosterone levels (water and salt retention in the body along
+                    with imbalance of various blood minerals). </item>
+                  <item> Are taking a medicine that contains aliskiren, such as Rasilez, used to
+                    lower high blood pressure. The combination with TWYNSTA is not recommended. </item>
+                  <item> Are taking an angiotensin-converting-enzyme inhibitor (ACEI). </item>
+                  <item> Have angina, narrowing of a heart valve or blood vessel, heart or blood
+                    vessel disease. </item>
+                  <item> Have diabetes mellitus, liver or kidney disease. </item>
+                  <item> Are dehydrated or suffer from excessive vomiting, diarrhea, or sweating. </item>
+                  <item> Are on a low-salt diet. </item>
+                  <item> Are taking a salt substitute that contains potassium, potassium
+                    supplements, or a potassium-sparing diuretic (a specific kind of “water pill”
+                    that makes your body keep potassium). </item>
+                  <item> Are less than 18 years old. </item>
+                </list>
+                <paragraph> In case of surgery or anaesthesia, you should tell your doctor that you
+                  are taking TWYNSTA.<br/><br/> If you take TWYNSTA together with a drug known as
+                  betablockers (e.g. acebutolol, atenolol, metoprolol, nadolol), do not suddenly
+                  stop using the beta-blocker. If your doctor advises you to discontinue use of the
+                  beta-blocker, your dose should be decreased slowly, as recommended by your doctor,
+                  before stopping it completely. <br/><br/>
+                  <content styleCode="bold">Sorbitol:</content><br/> Sorbitol is a source of
+                  fructose. TWYNSTA tablets 40/5 mg and 40/10 mg contain 168.64 mg sorbitol in each
+                  tablet. <br/><br/>
+                  <content styleCode="bold">Driving and using machines:</content><br/> Before you
+                  perform tasks which may require special attention, wait until you know how you
+                  respond to TWYNSTA. Dizziness, lightheadedness, or fainting can especially occur
+                  after the first dose and when the dose is increased. </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="b6b37351-bbc9-46d9-b148-27ba3cb0a75e">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b281456"/>
+              <code code="60066" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="TO HELP AVOID SIDE EFFECTS AND ENSURE PROPER USE, TALK TO YOUR HEALTHCARE PROFESSIONAL BEFORE YOU TAKE MEDICATION. TALK ABOUT ANY HEALTH CONDITIONS OR PROBLEMS YOU MAY HAVE, INCLUDING IF YOU:"/>
+              <title>TO HELP AVOID SIDE EFFECTS AND ENSURE PROPER USE, TALK TO YOUR HEALTHCARE PROFESSIONAL BEFORE YOU TAKE MEDICATION. TALK ABOUT ANY HEALTH CONDITIONS OR PROBLEMS YOU MAY HAVE, INCLUDING IF YOU:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="edac0d6f-3c91-48b5-99c0-e0f940925d37">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b181456"/>
+              <code code="60067" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="OTHER WARNINGS YOU SHOULD KNOW ABOUT:"/>
+              <title>OTHER WARNINGS YOU SHOULD KNOW ABOUT:</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="f040bb1e-8989-42c8-82dc-53a855e88f0f">
+              <id root="be74b6e6-d431-4a5f-a18e-ed321b301456"/>
+              <code code="60068" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="TELL YOUR HEALTHCARE PROFESSIONAL ABOUT ALL THE MEDICINES YOU TAKE, INCLUDING ANY DRUGS, VITAMINS, MINERALS, NATURAL SUPPLEMENTS OR ALTERNATIVE MEDICINES."/>
+              <title>TELL YOUR HEALTHCARE PROFESSIONAL ABOUT ALL THE MEDICINES YOU TAKE, INCLUDING ANY DRUGS, VITAMINS, MINERALS, NATURAL SUPPLEMENTS OR ALTERNATIVE MEDICINES.</title>
+              <text>
+                <paragraph>Sample text</paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="bca40498-0gc3-4e44-bcb6-550134d4de5d">
+              <id root="be74b6e6-c431-4a5f-a13e-ed321b301456"/>
+              <code code="60069" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="THE FOLLOWING MAY INTERACT WITH THIS MEDICATION:"/>
+              <title>THE FOLLOWING MAY INTERACT WITH THIS MEDICATION:</title>
+              <text>
+                <paragraph> As with most medicines, interactions with other drugs are possible. Tell
+                  your doctor, nurse, or pharmacist about all the medicines you take, including
+                  drugs prescribed by other doctors, vitamins, minerals, natural supplements, or
+                  alternative medicines. <br/><br/>The following may interact with TWYNSTA: </paragraph>
+                <list listType="unordered">
+                  <item>Agents increasing serum potassium, such as a salt substitute that contains
+                    potassium, potassium supplements, or a potassium-sparing diuretic (a specific
+                    kind of “water pill”);</item>
+                  <item>Blood pressure lowering drugs, including diuretics (“water</item>
+                  <item>pills”), aliskiren-containing products (e.g. Rasilez), or
+                    angiotensin-converting-enzyme inhibitors (ACEI);</item>
+                  <item>Clarithromycin and Erythromycin, antibiotics used to treat
+                    infections;</item>
+                  <item>Lithium used to treat bipolar disease;</item>
+                  <item>Nonsteroidal anti-inflammatory drugs (NSAIDs), used to reduce pain and
+                    swelling. Examples include ASA (Aspirin), ibuprofen, naproxen, and
+                    celecoxib;</item>
+                  <item>Corticosteroids taken by mouth or injection;</item>
+                  <item>Digoxin to treat heart conditions;</item>
+                  <item>Warfarin used to prevent blood clots (blood thinner);</item>
+                  <item>Anticonvulsant agents. Examples include carbamazepine, phenobarbital,
+                    phenytoin, fosphenytoin, primidone;</item>
+                  <item>Rifampicin, an antibiotic used to treat infections;</item>
+                  <item>Medicines used to treat HIV/AIDS. An example is ritonavir;</item>
+                  <item>Medicines used to treat fungal infections. Examples include ketoconazole,
+                    itraconazole;</item>
+                  <item>Atorvastatin and simvastatin used to lower cholesterol;</item>
+                  <item>Sildenafil (Viagra);</item>
+                  <item>St. John’s Wort;</item>
+                  <item>Beta-blockers;</item>
+                  <item>Diltiazem;</item>
+                  <item>Mechanistic Target of Rapamycin (mTOR) inhibitors, such as sirolimus,
+                    temsirolimus and everolimus;</item>
+                  <item>Immunosuppressants, such as cyclosporine and tacrolimus.</item>
+                </list>
+                <paragraph> Lower than normal blood pressure may occur when TWYNSTA is given with
+                  the following: </paragraph>
+                <list listType="unordered">
+                  <item> alcohol; </item>
+                  <item> antidepressants; </item>
+                  <item> barbiturates (sleeping pills); </item>
+                  <item> narcotics (strong pain medications); </item>
+                  <item> nitroglycerin or other nitrates. </item>
+                </list>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="e23321cd-5111-4aa3-b650-74f93bcda261">
+              <id root="be74b6e6-c431-4a5f-a18e-ed324b381456"/>
+              <code code="60070" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="HOW TO TAKE THIS MEDICATION:"/>
+              <title>HOW TO TAKE THIS MEDICATION:</title>
+              <text>
+                <paragraph> Take TWYNSTA exactly as prescribed. It is recommended to swallow your
+                  dose whole with water at about the same time everyday, preferably in the
+                  morning.<br/><br/> Take TWYNSTA with or without food, but it should be taken the
+                  same way each day.<br/><br/> Remove your TWYNSTA tablet from the blister just
+                  prior to intake. </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="cd0892a2-0e32-4fb7-9cc9-1bbfff60dee7">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b371456"/>
+              <code code="60071" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="USUAL DOSE:"/>
+              <title>USUAL DOSE:</title>
+              <text>
+                <paragraph> The usual dose of TWYNSTA is one tablet once a day. <br/><br/> If your
+                  liver is not working properly, the usual dose should not exceed 40/5 mg or 40/10
+                  mg once daily. </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="beaaa5b8-6693-4d4c-a897-fa5c9562b1be">
+              <id root="be74b6e6-c431-4aaf-a18e-ed321b381456"/>
+              <code code="60072" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="OVERDOSE:"/>
+              <title>OVERDOSE:</title>
+              <text>
+                <table ID="t2" border="1" cellpadding="6" cellspacing="1" width="80%">
+                  <caption>Overdose</caption>
+                  <tbody>
+                    <tr>
+                      <td styleCode="Toprule Rrule Lrule Botrule" rowspan="2" valign="top"> If you
+                        think you have taken too much TWYNSTA contact your doctor, nurse,
+                        pharmacist, hospital emergency department or regional Poison Control Centre
+                        immediately, even if there are no symptoms.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ffd59b8d-fe66-4d86-a54f-0613d4168199">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b3b1456"/>
+              <code code="60073" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="MISSED DOSE:"/>
+              <title>MISSED DOSE:</title>
+              <text>
+                <paragraph> If you have forgotten to take your dose during the day, carry on with
+                  the next one at the usual time. Do not double dose. </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="cb61f530-b95a-4047-b8ea-861c5a7a05e8">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b301456"/>
+              <code code="60074" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="WHAT ARE POSSIBLE SIDE EFFECTS FROM USING MEDICATION?"/>
+              <title>WHAT ARE POSSIBLE SIDE EFFECTS FROM USING MEDICATION?</title>
+              <text>
+                <paragraph> Side effects may include: </paragraph>
+                <list listType="unordered">
+                  <item>dizziness, vertigo (feeling of spinning);</item>
+                  <item>drowsiness, insomnia, fatigue;</item>
+                  <item>urge to urinate during the night;</item>
+                  <item>rash, eczema, redness of skin, skin eruptions, itching, hives (urticaria),
+                    scaling of the skin (dermatitis exfoliative), increased sweating, drug rash,
+                    hair loss, skin discolouration, photosensitivity reaction;</item>
+                  <item>toxic epidermal necrolysis;</item>
+                  <item>diarrhea, vomiting, constipation, nausea, upset stomach, abdominal pain,
+                    flatulence, change of bowel habit;</item>
+                  <item>taste abnormalities, enlarged gums;</item>
+                  <item>dry mouth;</item>
+                  <item>headache, migraine, anxiety, mood altered, ringing in the ears;</item>
+                  <item>sleepiness, sleeplessness, tiredness;</item>
+                  <item>back or leg pain, muscle cramps, joint pain, muscle spasms, joint swelling,
+                    hypertonia;</item>
+                  <item>visual impairment, double vision (diplopia);</item>
+                  <item>upper respiratory tract infections (e.g. sore throat, inflamed sinuses,
+                    common cold), flu-like illness, cough, sneezing, runny nose, shortness of
+                    breath;</item>
+                  <item>inability to obtain an erection;</item>
+                  <item>enlarging of male breasts;</item>
+                  <item>weight increased, weight decreased.</item>
+                </list>
+                <paragraph> If any of these affects you severely, tell your doctor, nurse or pharmacist.<br/><br/>
+                  <content styleCode="bold">TWYNSTA can cause abnormal blood test results. Your
+                    doctor will decide when to perform blood tests and will interpret the
+                    results.</content>
+                </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="ee37dfa5-6d8c-4490-b4a5-c6f2d73aa041">
+              <id root="be74b6e6-c431-4a5f-a18e-eda21b381456"/>
+              <code code="60075" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="SERIOUS SIDE EFFECTS AND WHAT TO DO ABOUT THEM"/>
+              <title>SERIOUS SIDE EFFECTS AND WHAT TO DO ABOUT THEM</title>
+              <text>
+                <paragraph> sample text </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="c9d75711-2ce9-451e-aa51-91026ec1555e">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321ba81456"/>
+              <code code="60076" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="STORAGE:"/>
+              <title>STORAGE:</title>
+              <text>
+                <paragraph>Keep out of reach and sight of children. <br/><br/> Do not use TWYNSTA
+                  after the expiry date which is stated on the carton. The expiry date refers to the
+                  last day of that month. <br/><br/> Store in the original package in order to
+                  protect from moisture and light. <br/><br/> Store at 15 - 30°C.
+                  <br/><br/>Medicines should not be disposed of via wastewater or household waste.
+                  Ask your pharmacist how to dispose of medicines no longer required. These measures
+                  will help to protect the environment. </paragraph>
+                <table ID="t3" border="1" cellpadding="6" cellspacing="1" width="80%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <content styleCode="bold">Reporting Side Effects</content>
+                        <br/><br/> You can report any suspected side effects associated with the use
+                        of health products to Health Canada by: <list listType="unordered">
+                          <item>Visiting the Web page on Adverse Reaction Reporting
+                            (https://www.canada.ca/en/health-canada/services/drugs-
+                            health-products/medeffect-canada.html) for information on how to report
+                            online, by mail or by fax; or </item>
+                          <item> Calling toll-free at 1-866-234-2345. </item>
+                        </list>
+                        <content styleCode="italics">NOTE: Contact your health professional if you
+                          need information about how to manage your side effects. The Canada
+                          Vigilance Program does not provide medical advice. </content></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+          <component>
+            <section ID="f6693e7a-21c9-492f-833b-4e8f3911d3a5">
+              <id root="be74b6e6-c431-4a5f-a18e-ed321b380456"/>
+              <code code="60077" codeSystem="2.16.840.1.113883.2.20.6.60"
+                displayName="IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:"/>
+              <title>IF YOU WANT MORE INFORMATION ABOUT THIS MEDICATION:</title>
+              <text>
+                <paragraph>
+                  <content styleCode="bold">If you want more information about TWYNSTA:</content>
+                </paragraph>
+                <list listType="unordered">
+                  <item> Talk to your healthcare professional. </item>
+                  <item> Find the full product monograph that is prepared for healthcare
+                    professionals and includes this Consumer Information by visiting the Health
+                    Canada website (https://www.canada.ca/en/health-canada/services/drugs-
+                    health-products/drug-products/drug-product-database.html), the manufacturer’s
+                    website (https://www.boehringer- ingelheim.ca), or by calling the manufacturer,
+                    Boehringer Ingelheim (Canada) Ltd., at: 1-800-263-5103, ext. 84633. </item>
+                </list>
+                <paragraph> This leaflet was prepared by Boehringer Ingelheim (Canada) Ltd. The
+                  information in this leaflet is current up to the time of the last revision date
+                  shown below, but more current information may be available from the
+                  manufacturer.<br/><br/> Last revised: August 7, 2019 </paragraph>
+              </text>
+              <effectiveTime value="20170101"/>
+            </section>
+          </component>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</document>
