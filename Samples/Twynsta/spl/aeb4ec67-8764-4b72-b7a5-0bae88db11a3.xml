@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/cease353/xtest/master/Development/spl_canada.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/cease353/xtest/master/current/spl_canada.xsl"?>
 <document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="urn:hl7-org:v3 https://raw.githubusercontent.com/HealthCanada/HPFB/master/Structured-Product-Labeling-(SPL)/Schema/current/SPL.xsd">
   <templateId extension="NDS" root="2.16.840.1.113883.2.20.6.37"/>
@@ -193,7 +193,7 @@
                     <denominator value="1"/>
                   </quantity>
                   <containerPackagedProduct>
-                    <code code="1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <code code="1234"/>
                     <!--company defined pack code-->
                     <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
                       displayName="BLISTER"/>
@@ -203,7 +203,7 @@
                         <denominator value="1"/>
                       </quantity>
                       <containerPackagedProduct>
-                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <code code="4567"/>
                         <!--company defined pack code-->
                         <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="BOX"/>
@@ -296,7 +296,7 @@
               <subjectOf>
                 <characteristic>
                   <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
-                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
 				  xsi:type="CV">
 				  </value>
                 </characteristic>
@@ -335,7 +335,7 @@
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
                     displayName="THERAPEUTIC CLASS"/>
-                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                  <value code="96447" codeSystem="2.16.840.1.113883.2.20.6.6"
                     displayName="ANGIOTENSIN II RECEPTOR ANTAGONISTS" xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
@@ -343,8 +343,8 @@
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
                     displayName="THERAPEUTIC CLASS"/>
-                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
-                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                  <value code="61287" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="MISCELLANEOUS CALCIUM-CHANNEL BLOCKING AGENTS" xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
@@ -499,7 +499,7 @@
                     <denominator value="1"/>
                   </quantity>
                   <containerPackagedProduct>
-                    <code code="2" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <code code="2"/>
                     <!--company defined pack code-->
                     <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
                       displayName="BLISTER"/>
@@ -509,7 +509,7 @@
                         <denominator value="1"/>
                       </quantity>
                       <containerPackagedProduct>
-                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <code code="4567"/>
                         <!--company defined pack code-->
                         <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="BOX"/>
@@ -602,7 +602,7 @@
               <subjectOf>
                 <characteristic>
                   <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
-                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
 				  xsi:type="CV">
 				  </value>
                 </characteristic>
@@ -641,7 +641,7 @@
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
                     displayName="THERAPEUTIC CLASS"/>
-                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
+                  <value code="96447" codeSystem="2.16.840.1.113883.2.20.6.6"
                     displayName="ANGIOTENSIN II RECEPTOR ANTAGONISTS" xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
@@ -649,8 +649,8 @@
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
                     displayName="THERAPEUTIC CLASS"/>
-                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
-                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                  <value code="61287" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="MISCELLANEOUS CALCIUM-CHANNEL BLOCKING AGENTS" xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
@@ -805,7 +805,7 @@
                     <denominator value="1"/>
                   </quantity>
                   <containerPackagedProduct>
-                    <code code="3" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <code code="3"/>
                     <!--company defined pack code-->
                     <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
                       displayName="BLISTER"/>
@@ -815,7 +815,7 @@
                         <denominator value="1"/>
                       </quantity>
                       <containerPackagedProduct>
-                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <code code="4567"/>
                         <!--company defined pack code-->
                         <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="BOX"/>
@@ -908,7 +908,7 @@
               <subjectOf>
                 <characteristic>
                   <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
-                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
 				  xsi:type="CV">
 				  </value>
                 </characteristic>
@@ -955,8 +955,8 @@
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
                     displayName="THERAPEUTIC CLASS"/>
-                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
-                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                  <value code="61287" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="MISCELLANEOUS CALCIUM-CHANNEL BLOCKING AGENTS" xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
@@ -1111,7 +1111,7 @@
                     <denominator value="1"/>
                   </quantity>
                   <containerPackagedProduct>
-                    <code code="4" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <code code="4"/>
                     <!--company defined pack code-->
                     <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
                       displayName="BLISTER"/>
@@ -1121,7 +1121,7 @@
                         <denominator value="1"/>
                       </quantity>
                       <containerPackagedProduct>
-                        <code code="4567" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <code code="4567"/>
                         <!--company defined pack code-->
                         <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="BOX"/>
@@ -1214,7 +1214,7 @@
               <subjectOf>
                 <characteristic>
                   <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="SCORE"/>
-                  <value code="8571" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="1"
 				  xsi:type="CV">
 				  </value>
                 </characteristic>
@@ -1261,8 +1261,8 @@
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
                     displayName="THERAPEUTIC CLASS"/>
-                  <value code="xx" codeSystem="2.16.840.1.113883.2.20.6.6"
-                    displayName="CALCIUM CHANNEL BLOCKER" xsi:type="CV"/>
+                  <value code="61287" codeSystem="2.16.840.1.113883.2.20.6.6"
+                    displayName="MISCELLANEOUS CALCIUM-CHANNEL BLOCKING AGENTS" xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
