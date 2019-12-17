@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/cease353/xtest/master/Development/spl_canada.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/cease353/xtest/master/current/spl_canada.xsl"?>
 <document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="urn:hl7-org:v3 https://raw.githubusercontent.com/HealthCanada/HPFB/master/Structured-Product-Labeling-(SPL)/Schema/current/SPL.xsd">
   <templateId extension="NDS" root="2.16.840.1.113883.2.20.6.37"/>
@@ -32,7 +32,7 @@
           </addr>
           <telecom value="tel:+12345678910"/>
           <telecom value="mailto:test@canada.ca"/>
-          <telecom value="https://www.test.ca"/>
+          <telecom value="https://www.samsungbioepis.com"/>
           <contactPerson/>
         </contactParty>
         <assignedEntity>
@@ -50,7 +50,7 @@
               </addr>
               <telecom value="tel:+15678929988"/>
               <telecom value="mailto:test.2@canada.ca"/>
-              <telecom value="https://www.test.ca"/>
+              <telecom value="https://www.merck.ca/en/home/"/>
               <contactPerson/>
             </contactParty>
           </assignedOrganization>
@@ -86,13 +86,13 @@
                     <denominator value="1" unit="mL"/>
                   </quantity>
                   <ingredientSubstance>
-                    <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="13356" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="ADALIMUMAB"/>
                     <name>ADALIMUMAB</name>
                     <activeMoiety>
                       <activeMoiety>
-                        <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
-                          displayName="ingredient#2"/>
+                        <code code="13356" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="ADALIMUMAB"/>
                         <name>ADALIMUMAB</name>
                       </activeMoiety>
                     </activeMoiety>
@@ -114,7 +114,7 @@
                 </ingredient>
                 <ingredient classCode="IACT">
                   <ingredientSubstance>
-                    <code code="4QD397987E" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="10237" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="HISTIDINE"/>
                     <name>HISTIDINE</name>
                   </ingredientSubstance>
@@ -128,7 +128,7 @@
                 </ingredient>
                 <ingredient classCode="IACT">
                   <ingredientSubstance>
-                    <code code="506T60A25R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="9192" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="SORBITOL"/>
                     <name>SORBITOL</name>
                   </ingredientSubstance>
@@ -142,7 +142,7 @@
                 </ingredient>
                 <ingredient classCode="IACT">
                   <ingredientSubstance>
-                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="8826" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="WATER"/>
                     <name>WATER</name>
                   </ingredientSubstance>
@@ -154,7 +154,7 @@
                     <denominator value="1"/>
                   </quantity>
                   <containerPackagedProduct>
-                    <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <code code="ABC-1234"/>
                     <!--company defined pack code-->
                     <formCode code="30051000" codeSystem="2.16.840.1.113883.2.20.6.32"
                       displayName="PRE-FILLED SYRINGE"/>
@@ -165,7 +165,7 @@
                         <denominator value="1"/>
                       </quantity>
                       <containerPackagedProduct>
-                        <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <code code="ABC-1234"/>
                         <!--company defined pack code-->
                         <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="BOX"/>
@@ -281,13 +281,13 @@
                     <denominator value="1" unit="mL"/>
                   </quantity>
                   <ingredientSubstance>
-                    <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="13356" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="ADALIMUMAB"/>
                     <name>ADALIMUMAB</name>
                     <activeMoiety>
                       <activeMoiety>
-                        <code code="FYS6T7F842" codeSystem="2.16.840.1.113883.2.20.6.14"
-                          displayName="ingredient#2"/>
+                        <code code="13356" codeSystem="2.16.840.1.113883.2.20.6.14"
+                          displayName="ADALIMUMAB"/>
                         <name>ADALIMUMAB</name>
                       </activeMoiety>
                     </activeMoiety>
@@ -309,7 +309,7 @@
                 </ingredient>
                 <ingredient classCode="IACT">
                   <ingredientSubstance>
-                    <code code="4QD397987E" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="10237" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="HISTIDINE"/>
                     <name>HISTIDINE</name>
                   </ingredientSubstance>
@@ -323,7 +323,7 @@
                 </ingredient>
                 <ingredient classCode="IACT">
                   <ingredientSubstance>
-                    <code code="506T60A25R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="9192" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="SORBITOL"/>
                     <name>SORBITOL</name>
                   </ingredientSubstance>
@@ -337,7 +337,7 @@
                 </ingredient>
                 <ingredient classCode="IACT">
                   <ingredientSubstance>
-                    <code code="059QF0KO0R" codeSystem="2.16.840.1.113883.2.20.6.14"
+                    <code code="8826" codeSystem="2.16.840.1.113883.2.20.6.14"
                       displayName="WATER"/>
                     <name>WATER</name>
                   </ingredientSubstance>
@@ -349,7 +349,7 @@
                     <denominator value="1"/>
                   </quantity>
                   <containerPackagedProduct>
-                    <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                    <code code="ABC-1234"/>
                     <!--company defined pack code-->
                     <formCode code="30051000" codeSystem="2.16.840.1.113883.2.20.6.32"
                       displayName="PRE-FILLED SYRINGE"/>
@@ -360,7 +360,7 @@
                         <denominator value="1"/>
                       </quantity>
                       <containerPackagedProduct>
-                        <code code="ABC-1234" codeSystem="2.16.840.1.113883.2.20.6.56"/>
+                        <code code="ABC-1234"/>
                         <!--company defined pack code-->
                         <formCode code="30009000" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="BOX"/>
