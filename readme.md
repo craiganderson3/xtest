@@ -5,7 +5,8 @@ Samples from Dropbox
  - current/spl_canada.xsl
  - current/spl_canada_screen.xsl
  - current/spl_canada_i18n.xsl
- - current/FDA spl_stylesheet_6_2
+ - current/FDA spl_stylesheet_6_2/...
+ - current/spl_canada.css
  
 The spl_canada.xsl stylesheet references its siblings, spl_canada_screen.xsl, and spl_canada_i18n.xsl,
 and it also relies on the templates in FDA spl_stylesheet_6_2. The spl_canada.xsl stylesheet contains the 
@@ -14,11 +15,11 @@ The other two stylesheets provide templates for onscreen navigation and bilingua
 
 2. This should be the only processing instruction referenced in the SPM XML:
 
-<?xml-stylesheet type="text/xsl" href="../../../current/spl_canada.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://cease353.github.io/xtest/current/spl_canada.xsl"?>
 
 Once you change the stylesheet processing instruction in one of the SPM XML files, 
-you should be able to open it in Internet Explorer or Edge, and it will transform 
-and render. You may have to accept an ActiveX control to get it to work.
+you should be able to transform it into HTML using Oxygen or a similar XML tool, and then render it 
+using your local browser.
 
 3. Aurora and FDA Stylesheets
 
@@ -59,9 +60,10 @@ be internationalized. These are necessary for any fields that are Required but n
    currently using BS4. They provide different kinds of compatability with modern and older browsers.
    
  - We are currently importing the FDA XSL into our transformation, and we may eventually no longer
-   require any of the common FDA elements.
+   require any of the common FDA elements. These should be decoupled.
    
- - We are currently referencing FDA, Bootstrap and some local CSS. In the final version, there will 
+ - We are currently referencing a copy of the FDA spl.css, called spl_canada.css, the Bootstrap CSS,
+   and some local CSS. The local CSS will be merged into spl_canada.css. In the final version, there will 
    only be a requirement for two CSS files, the bootstrap.css, and a separate spl_canada.css file, 
    which blends .spl classes with aurora classes and some scaffolding for our screen and print views.
    
@@ -72,9 +74,9 @@ be internationalized. These are necessary for any fields that are Required but n
 
  - Print TOC does not exist.
  - There is a minor problem with responsive resizing at some screen resolutions which causes content to render under the navigation sidebar.
- - Print Tables render oddly because some of the styling in the FDA is white - this is fixed, but perhaps not ideally.
  
- If we host our XSL on Github Pages, there is a limitation for Chrome, because Chrome serves XSL as application/xml,
- rather than text/xml, as described at the bottom of this thread:
+ There are limitations with client-side rendering on each of the major browsers, which is why we recommend 
+ using Oxygen or a similar tool. If we host our XSL on Github Pages, there is a limitation for Chrome, 
+ because Chrome serves XSL as application/xml,rather than text/xml, as described at the bottom of this thread:
  https://stackoverflow.com/questions/2981524/how-can-i-make-xslt-work-in-chrome
  
