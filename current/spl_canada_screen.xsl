@@ -251,9 +251,8 @@
 				}
 				
 				
-				.spl table.formTablePetite {
+				.spl tr.formTablePetite {
 				margin-top: 1ex !important;
-				margin-bottom: 1ex !important;	
 				}
 				
 				
