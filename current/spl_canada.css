@@ -861,8 +861,12 @@ be represented
 	.TitlePage h3 { text-align: center !important; }
 	
 @media screen {
-	.Section h1 {display: none; }
-	/* this may resolve issue for sections but not title page */					
+	.hide-in-screen { display: none; }
+	.Section h1 {display: none; } /* hide top level section headings on screen */
+	#side { max-width: 420px; min-width: 420px; }
+	#main { max-width: 1000px; }
+	#navigation-sidebar li { padding-left: 10px !important; }
+	#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
 }
 
 
