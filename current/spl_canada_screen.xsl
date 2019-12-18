@@ -318,8 +318,8 @@
 					#main { max-width: 1000px; }
 					#navigation-sidebar li { padding-left: 10px !important; }
 					#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
-					.Section h1 {display: none; }
-					/* this may resolve issue for sections but not title page */					
+					/* this may resolve issue for sections but not title page, moved to css
+					.Section h1 {display: none; } */
 				}
 				
 			</style>

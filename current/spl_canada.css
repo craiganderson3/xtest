@@ -859,4 +859,10 @@ be represented
 	.TitlePage h1 { text-align: center !important; }
 	.TitlePage h2 { text-align: center !important; }
 	.TitlePage h3 { text-align: center !important; }
+	
+@media screen {
+	.Section h1 {display: none; }
+	/* this may resolve issue for sections but not title page */					
+}
+
 
