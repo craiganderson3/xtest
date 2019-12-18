@@ -238,7 +238,7 @@
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
 			<link rel="stylesheet" type="text/css" href="{$css}"/>
 			<style>
-				/* ScrollSpy and Stickiness/Affix */
+				/* ScrollSpy, Stickiness/Affix, and French Navigation Reduction */
 			  
 				html {
 					scroll-behavior: smooth;
@@ -249,8 +249,7 @@
 					position: sticky;
 					top: 0;
 				}
-			</style>
-			<style>
+
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 			</style>
