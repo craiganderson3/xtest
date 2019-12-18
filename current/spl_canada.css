@@ -875,11 +875,11 @@ img { max-width: 100%; height: auto; }
 				
 }
 
-/* TODO - are these still necessary with the new Title Page format? */
+/* TODO - are these still necessary with the new Title Page format?
 	.TitlePage p  { text-align: center !important; }
 	.TitlePage h1 { text-align: center !important; }
 	.TitlePage h2 { text-align: center !important; }
-	.TitlePage h3 { text-align: center !important; }
+	.TitlePage h3 { text-align: center !important; } */
 	
 	/* FDA fonts override - temporary
 	.spl {
