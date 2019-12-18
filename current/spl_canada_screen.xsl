@@ -285,9 +285,10 @@
 					font-family: 'Rubik', sans-serif;
 				} */
 
+/* THESE HAVE ALL BEEN MOVED TO CSS AND SHOULD BE REMOVED!!! */
+
 				/* TODO I wonder why my mockup does not require !important to suppress a blank first page?
 				 * This is partly due to trying to put the first section on its own page.
-				 */
 				@media print {	
 
 					.hide-in-print { display: none !important; }		
@@ -296,7 +297,7 @@
 					.card { border-width: 0 !important; }
 					.card-header { display: none !important; }
 					
-					/* overriding FDA tables so they look nicer in print */
+					/ * overriding FDA tables so they look nicer in print * /
 					.spl .formTable { 					border: 1px solid #CCCCCC !important;	}
 					.spl .formTablePetite {				border: 1px solid #CCCCCC !important;	}
 					.spl .formTableMorePetite {			border: 1px solid #CCCCCC !important;	}
@@ -305,7 +306,7 @@
 					.spl .formLabel {					border: 1px solid #CCCCCC !important;	}
 					.spl .formItem {					border: 1px solid #CCCCCC !important;	}
 
-					/* table of contents? */
+					/ * table of contents? * /
 					@page {
 						margin: 1cm;
 					}
@@ -318,9 +319,8 @@
 					#main { max-width: 1000px; }
 					#navigation-sidebar li { padding-left: 10px !important; }
 					#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
-					/* this may resolve issue for sections but not title page, moved to css
-					.Section h1 {display: none; } */
 				}
+				*/
 				
 			</style>
 			<style>
