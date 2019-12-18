@@ -851,6 +851,9 @@ be represented
  * The Aurora Swatches should really be called bg-aurora-primary and bg-aurora-accent1
  */
 
+.title-page p  { text-align: center !important; }
+.title-page h2 { text-align: center !important; }
+
 /* Image Fix - the FDA breaks out when images are too large */
 img { max-width: 100%; height: auto; }					
 
@@ -874,12 +877,6 @@ img { max-width: 100%; height: auto; }
 #navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
 				
 }
-
-/* TODO - are these still necessary with the new Title Page format?
-	.TitlePage p  { text-align: center !important; }
-	.TitlePage h1 { text-align: center !important; }
-	.TitlePage h2 { text-align: center !important; }
-	.TitlePage h3 { text-align: center !important; } */
 	
 	/* FDA fonts override - temporary
 	.spl {
