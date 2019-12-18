@@ -249,6 +249,14 @@
 					position: sticky;
 					top: 0;
 				}
+				
+				
+				.spl tr.contentTablePetite {
+				margin-top: 1ex !important;
+				margin-bottom: 1ex !important;	
+				}
+				
+				
 
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
