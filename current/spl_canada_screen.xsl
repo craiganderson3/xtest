@@ -238,26 +238,17 @@
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
 			<link rel="stylesheet" type="text/css" href="{$css}"/>
 			<style>
-				/* ScrollSpy and Navigation */
+				/* ScrollSpy and Stickiness/Affix */
 			  
 				html {
 					scroll-behavior: smooth;
 				}
-				
-				#side .nav-link.active,
-				#side .nav-link:hover,
-				#side .nav-link:focus{
-					color: #4D5D6C;
-				}
-				
-				
+								
 				.sticky {
-				  position: -webkit-sticky;
-				  position: sticky;
-				  top: 0;
+					position: -webkit-sticky;
+					position: sticky;
+					top: 0;
 				}
-				img { max-width: 100%; height: auto; }					
-
 			</style>
 			<style>
 				<!-- this french language reduction reduces only the top level navigation -->

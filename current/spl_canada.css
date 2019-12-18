@@ -847,9 +847,12 @@ be represented
 	font-weight: normal;
 }
 
-/* Aurora Swatches 
- * These should really be called bg-aurora-primary and bg-aurora-accent1
+/* Health Canade and Aurora Styles
+ * The Aurora Swatches should really be called bg-aurora-primary and bg-aurora-accent1
  */
+
+/* Image Fix - the FDA breaks out when images are too large */
+img { max-width: 100%; height: auto; }					
 
 @media screen {
 
@@ -857,13 +860,19 @@ be represented
 .bg-aurora-accent2 { background-color: #4D5D6C;	}
 .bg-aurora-light   { background-color: #CECECE;	}
 
+#side .nav-link.active,
+#side .nav-link:hover,
+#side .nav-link:focus{
+	color: #4D5D6C;
+}
+
 .hide-in-screen { display: none; }
 .Section h1 {display: none; } /* hide top level section headings on screen */
-#side { max-width: 420px; min-width: 420px; }
 #main { max-width: 1000px; }
+#side { max-width: 420px; min-width: 420px; }
 #navigation-sidebar li { padding-left: 10px !important; }
 #navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
-
+				
 }
 
 /* TODO - are these still necessary with the new Title Page format? */
