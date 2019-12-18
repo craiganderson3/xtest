@@ -251,8 +251,7 @@
 				}
 				
 				
-				.spl tr.formTablePetite {
-				margin-top: 1ex !important;
+				.spl table.formTablePetite tr {
 				background-color: red !important;
 				}
 				
