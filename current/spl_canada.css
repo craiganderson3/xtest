@@ -846,3 +846,17 @@ be represented
 .spl .Nobold {	
 	font-weight: normal;
 }
+
+	/* Aurora Swatches 
+	 * These should really be called bg-aurora-primary and bg-aurora-accent1
+	 */
+
+	.bg-aurora-accent1 { background-color: #002D42;	}
+	.bg-aurora-accent2 { background-color: #4D5D6C;	}
+	.bg-aurora-light   { background-color: #CECECE;	}
+
+	.TitlePage p  { text-align: center !important; }
+	.TitlePage h1 { text-align: center !important; }
+	.TitlePage h2 { text-align: center !important; }
+	.TitlePage h3 { text-align: center !important; }
+

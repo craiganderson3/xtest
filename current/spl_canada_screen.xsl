@@ -260,7 +260,7 @@
 
 				/* Aurora Swatches 
 				 * These should really be called bg-aurora-primary and bg-aurora-accent1
-				 */
+				 * / move these into main stylesheet
 
 				.bg-aurora-accent1 { background-color: #002D42;	}
 				.bg-aurora-accent2 { background-color: #4D5D6C;	}
@@ -270,7 +270,7 @@
 				.TitlePage h1 { text-align: center !important; }
 				.TitlePage h2 { text-align: center !important; }
 				.TitlePage h3 { text-align: center !important; }
-
+*/
 				/* FDA fonts override - temporary
 				.spl {
 					font-family: 'Rubik, sans-serif;
