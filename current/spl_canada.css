@@ -26,7 +26,6 @@ be represented
 @media screen {
 .spl {
 	font-family: "Rubik", sans-serif;
-/*     font-family: "Times New Roman", Times, serif; */
 	font-size: 12pt;	
 	background-color: rgba(255,255,255,0);
 	color: #000000;
@@ -49,7 +48,6 @@ be represented
 
 .spl {
 	font-family: "Rubik", sans-serif;
-/*     font-family: "Times New Roman", Times, serif; */
 	font-size: 12pt;	
 	color: #000000;
 	margin-left: 0in;
@@ -121,7 +119,6 @@ be represented
 	margin-bottom: 0ex;
 	text-align: left;
 	font-family: "Rubik", sans-serif;
-/*     font-family: "Times New Roman", Times, serif; */
 }
 
 .spl div.Warning h1 {
@@ -136,7 +133,6 @@ be represented
 	margin-bottom: 0ex;
 	text-align: left;
 	font-family: "Rubik", sans-serif;
-/*     font-family: "Times New Roman", Times, serif; */
 	color:black;
 }
 
@@ -762,7 +758,10 @@ be represented
 	background-color: #FFFFFF;
 }
 .spl .formTableRowAlt {
-	background-color: #F2F2F2;
+	background-color: #FFFFFF;
+/* pmh - removed the banding the FDA was using for this
+ *  background-color: #F2F2F2;
+ */
 }
 .spl .formLabel {
 	border: 1px solid #FFFFFF;

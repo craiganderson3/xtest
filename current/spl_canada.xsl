@@ -10,7 +10,6 @@
 	<xsl:import href="spl_canada_i18n.xsl"/>
 	
 	<!-- This is the CSS link put into the output -->
-<!--	<xsl:param name="css">http://www.accessdata.fda.gov/spl/stylesheet/spl.css</xsl:param> -->
 	<xsl:param name="css">http://cease353.github.io/xtest/current/spl_canada.css</xsl:param>
 	<xsl:variable name="lang">
 		<xsl:choose>
