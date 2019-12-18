@@ -872,6 +872,21 @@ be represented
 	.TitlePage h2 { text-align: center !important; }
 	.TitlePage h3 { text-align: center !important; }
 	
+	/* FDA fonts override - temporary
+	.spl {
+		font-family: 'Rubik, sans-serif;
+	}
+	.spl div.Section h1 {	
+		font-family: 'Rubik', sans-serif;
+	}
+	.spl h2 {	
+		font-family: 'Rubik', sans-serif;
+	}
+	.spl div.Highlights {
+		font-family: 'Rubik', sans-serif;
+	} */
+
+
 /* TODO I wonder why my mockup does not require !important to suppress a blank first page?
  * This is partly due to trying to put the first section on its own page.
  */
