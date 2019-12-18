@@ -25,7 +25,8 @@ be represented
 
 @media screen {
 .spl {
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Rubik", sans-serif;
+/*     font-family: "Times New Roman", Times, serif; */
 	font-size: 12pt;	
 	background-color: rgba(255,255,255,0);
 	color: #000000;
@@ -47,7 +48,8 @@ be represented
 }
 
 .spl {
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Rubik", sans-serif;
+/*     font-family: "Times New Roman", Times, serif; */
 	font-size: 12pt;	
 	color: #000000;
 	margin-left: 0in;
@@ -118,7 +120,8 @@ be represented
 	margin-top:4ex;
 	margin-bottom: 0ex;
 	text-align: left;
-	font-family:"Times New Roman", Times, serif;
+	font-family: "Rubik", sans-serif;
+/*     font-family: "Times New Roman", Times, serif; */
 }
 
 .spl div.Warning h1 {
@@ -132,7 +135,8 @@ be represented
 	margin-top: 2.2ex;
 	margin-bottom: 0ex;
 	text-align: left;
-	font-family:"Times New Roman", Times, serif;
+	font-family: "Rubik", sans-serif;
+/*     font-family: "Times New Roman", Times, serif; */
 	color:black;
 }
 
@@ -800,7 +804,8 @@ be represented
 
 .spl div.Highlights {
 	font-size: 80%; 
-    font-family: "Times New Roman", Times, serif;
+	font-family: "Rubik", sans-serif;
+/*     font-family: "Times New Roman", Times, serif; */
 }
 
 .spl div.HighlightsDisclaimer {
