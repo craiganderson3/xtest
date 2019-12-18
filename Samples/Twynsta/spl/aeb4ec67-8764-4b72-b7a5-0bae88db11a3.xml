@@ -2269,8 +2269,8 @@
             <section ID="bca4d498-0gc3-4e54-bcb6-550130d4de5d">
               <id root="be74b6e6-c431-4a5f-a18e-ed32bb381456"/>
               <code code="60064" codeSystem="2.16.840.1.113883.2.20.6.60"
-                displayName="MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:"/>
-              <title>MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:</title>
+                displayName="THIS MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:"/>
+              <title>THIS MEDICATION COMES IN THE FOLLOWING DOSAGE FORMS:</title>
               <text>
                 <paragraph>Tablets: 40/5 mg, 40/10 mg, 80/5 mg, 80/10 mg.</paragraph>
               </text>
@@ -2490,8 +2490,8 @@
             <section ID="cb61f530-b95a-4047-b8ea-861c5a7a05e8">
               <id root="be74b6e6-c431-4a5f-a18e-ed321b301456"/>
               <code code="60074" codeSystem="2.16.840.1.113883.2.20.6.60"
-                displayName="WHAT ARE POSSIBLE SIDE EFFECTS FROM USING MEDICATION?"/>
-              <title>WHAT ARE POSSIBLE SIDE EFFECTS FROM USING MEDICATION?</title>
+                displayName="WHAT ARE POSSIBLE SIDE EFFECTS FROM USING THIS MEDICATION?"/>
+              <title>WHAT ARE POSSIBLE SIDE EFFECTS FROM USING THIS MEDICATION?</title>
               <text>
                 <paragraph> Side effects may include: </paragraph>
                 <list listType="unordered">
