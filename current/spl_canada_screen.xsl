@@ -250,10 +250,16 @@
 					top: 0;
 				}
 				
-				
-				.spl table.formTablePetite tr {
-				background-color: red !important;
-				}
+
+.spl table.formTablePetite {
+margin-top: 3ex;
+margin-bottom: 0ex;
+}
+
+.spl table.formTablePetite:lastchild {
+margin-top: 3ex;
+margin-bottom: 3ex;
+}
 				
 				
 
