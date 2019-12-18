@@ -20,8 +20,8 @@
 		<din lang="en">Drug Identification Number (DIN)</din>
 		<adminRoute lang="en">Route of Administration</adminRoute>
 		<dosageForm lang="en">Dosage Form</dosageForm>
-<!--		<activeIngredients lang="en">Active Ingredient/Active Moiety</activeIngredients>
-		<inactiveIngredients lang="en">Inactive Ingredients</inactiveIngredients> -->
+		<activeIngredients lang="en">Active Ingredient/Active Moiety</activeIngredients>
+		<inactiveIngredients lang="en">Inactive Ingredients</inactiveIngredients>
 		<ingredientName lang="en">Ingredient Name</ingredientName>
 		<strength lang="en">Strength</strength>
 		<basisOfStrength lang="en">Basis of Strength</basisOfStrength>
