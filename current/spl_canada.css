@@ -847,26 +847,53 @@ be represented
 	font-weight: normal;
 }
 
-	/* Aurora Swatches 
-	 * These should really be called bg-aurora-primary and bg-aurora-accent1
-	 */
+/* Aurora Swatches 
+ * These should really be called bg-aurora-primary and bg-aurora-accent1
+ */
 
-	.bg-aurora-accent1 { background-color: #002D42;	}
-	.bg-aurora-accent2 { background-color: #4D5D6C;	}
-	.bg-aurora-light   { background-color: #CECECE;	}
+@media screen {
 
+.bg-aurora-accent1 { background-color: #002D42;	}
+.bg-aurora-accent2 { background-color: #4D5D6C;	}
+.bg-aurora-light   { background-color: #CECECE;	}
+
+.hide-in-screen { display: none; }
+.Section h1 {display: none; } /* hide top level section headings on screen */
+#side { max-width: 420px; min-width: 420px; }
+#main { max-width: 1000px; }
+#navigation-sidebar li { padding-left: 10px !important; }
+#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
+
+}
+
+/* TODO - are these still necessary with the new Title Page format? */
 	.TitlePage p  { text-align: center !important; }
 	.TitlePage h1 { text-align: center !important; }
 	.TitlePage h2 { text-align: center !important; }
 	.TitlePage h3 { text-align: center !important; }
 	
-@media screen {
-	.hide-in-screen { display: none; }
-	.Section h1 {display: none; } /* hide top level section headings on screen */
-	#side { max-width: 420px; min-width: 420px; }
-	#main { max-width: 1000px; }
-	#navigation-sidebar li { padding-left: 10px !important; }
-	#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
-}
+/* TODO I wonder why my mockup does not require !important to suppress a blank first page?
+ * This is partly due to trying to put the first section on its own page.
+ */
+@media print {	
 
+.hide-in-print { display: none !important; }		
+.force-page-break { page-break-after: always; }
+.suppress-page-break { page-break-after: avoid; }
+.card { border-width: 0 !important; }
+.card-header { display: none !important; }
+	
+	/* overriding FDA tables so they look nicer in print */
+	.spl .formTable { 					border: 1px solid #CCCCCC !important;	}
+	.spl .formTablePetite {				border: 1px solid #CCCCCC !important;	}
+	.spl .formTableMorePetite {			border: 1px solid #CCCCCC !important;	}
+	.spl .formTitle {					border: 1px solid #CCCCCC !important;	}
+	.spl .formHeadingReg {				border: 1px solid #CCCCCC !important;	}
+	.spl .formLabel {					border: 1px solid #CCCCCC !important;	}
+	.spl .formItem {					border: 1px solid #CCCCCC !important;	}
 
+	/* table of contents? */
+	@page {
+		margin: 1cm;
+	}
+}	
