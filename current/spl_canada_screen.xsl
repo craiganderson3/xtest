@@ -251,7 +251,7 @@
 				}
 				
 				
-				.spl tr.contentTablePetite {
+				.spl .contentTablePetite {
 				margin-top: 1ex !important;
 				margin-bottom: 1ex !important;	
 				}
