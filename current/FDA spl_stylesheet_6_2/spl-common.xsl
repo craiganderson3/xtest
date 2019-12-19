@@ -31,9 +31,9 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 							 exclude-result-prefixes="exsl msxsl v3 xsl xsi str v">
 	<xsl:import href="xml-verbatim.xsl"/>
-	<xsl:import href="mixin.xsl"/>
-	<xsl:import href="substance.xsl"/>
-	<xsl:import href="pesticide.xsl"/>
+<!--	<xsl:import href="mixin.xsl"/> -->
+<!--	<xsl:import href="substance.xsl"/>
+	<xsl:import href="pesticide.xsl"/> -->
 	<xsl:param name="show-subjects-xml" select="1"/>
 	<xsl:param name="show-data" select="/.."/>
 	<xsl:param name="show-section-numbers" select="/.."/>
