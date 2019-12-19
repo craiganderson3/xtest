@@ -31,8 +31,9 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 							 exclude-result-prefixes="exsl msxsl v3 xsl xsi str v">
 	<xsl:import href="xml-verbatim.xsl"/>
-<!--	<xsl:import href="mixin.xsl"/> -->
-<!--	<xsl:import href="substance.xsl"/>
+<!-- pmh deprecated unused:
+	<xsl:import href="mixin.xsl"/>
+	<xsl:import href="substance.xsl"/>
 	<xsl:import href="pesticide.xsl"/> -->
 	<xsl:param name="show-subjects-xml" select="1"/>
 	<xsl:param name="show-data" select="/.."/>
@@ -4066,6 +4067,7 @@ token.
 	</tr>
 </xsl:template>
 
+<!-- pmh overriden in spl_canada:
 <xsl:template name="MarketingInfo">
 	<xsl:if test="../v3:subjectOf/v3:approval|../v3:subjectOf/v3:marketingAct">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTableMorePetite">
@@ -4106,7 +4108,7 @@ token.
 			</tr>
 		</table>
 	</xsl:if>
-</xsl:template>	
+</xsl:template>	-->
 
 
 <xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization">	

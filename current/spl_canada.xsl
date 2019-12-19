@@ -668,7 +668,7 @@
 		</xsl:if>
 	</xsl:template>	
 	
-	<!-- This is the main page content, which renders for both screen, with Product Details in front, and print, withe Product Details at end -->	
+	<!-- This is the main page content, which renders for both screen, with Product Details in front, and print, with Product Details at end -->	
 	<xsl:template match="v3:structuredBody" mode="main-document">
 		<main class="col">
 			<div class="container-fluid" id="main">
