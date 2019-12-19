@@ -24,7 +24,7 @@
 		
 	<!-- OVERRIDE FDA STYLES FOR MANUFACTURED PRODUCT DETAILS -->
 	
-	<!-- override FDA company info section -->
+	<!-- override FDA company info section, using Canadian French and English labels -->
 	<xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization">	
 		<xsl:if test="(count(./v3:name)>0)">
 			<table width="100%" cellpadding="3" cellspacing="0" class="formTableMorePetite">
@@ -65,7 +65,6 @@
 			</xsl:if>
 			<tr class="formTableRowAlt">
 				<td class="formItem">		
-<!--				<xsl:apply-templates mode="format" select="v3:addr"/> -->
 					<table>
 						<tr><td><xsl:value-of select="v3:addr/v3:streetAddressLine"/></td></tr>
 						<tr><td>
@@ -170,14 +169,6 @@
 	<xsl:template name="ActiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 			<xsl:call-template name="IngredientHeader"/>
-			<!-- this will never get called unless it is hoisted outside this template
-			<xsl:if test="not(v3:ingredient[starts-with(@classCode, 'ACTI')]|v3:activeIngredient)">
-				<tr>
-					<td colspan="3" class="formItem" align="center">
-						<xsl:value-of select="$labels/noActiveFound[@lang = $lang]"/>
-					</td>
-				</tr>
-			</xsl:if> -->
 			<xsl:for-each select="v3:ingredient[starts-with(@classCode, 'ACTI')]|v3:activeIngredient">
 				<tr>
 					<xsl:attribute name="class">
@@ -207,6 +198,7 @@
 								</xsl:for-each>
 								<xsl:text>) </xsl:text>
 							</xsl:if>
+							<!-- TODO: this logic serves no purpose and can be removed -->
 							<xsl:for-each select="../v3:subjectOf/v3:substanceSpecification/v3:code[@codeSystem = '2.16.840.1.113883.6.69' or @codeSystem = '2.16.840.1.113883.3.6277']/@code">
 								<xsl:text> (Source NDC: </xsl:text>
 								<xsl:value-of select="."/>
@@ -247,14 +239,6 @@
 				</xsl:with-param>
 				<xsl:with-param name="column-count">2</xsl:with-param>
 			</xsl:call-template>
-			<!-- this will never get called unless it gets hoisted outside this template
-			<xsl:if test="not(v3:ingredient[@classCode='IACT']|v3:inactiveIngredient)">
-				<tr>
-					<td colspan="2" class="formItem" align="center">
-						<xsl:value-of select="$labels/noInactiveFound[@lang = $lang]"/>					
-					</td>
-				</tr>
-			</xsl:if> -->
 			<xsl:for-each select="v3:ingredient[@classCode='IACT']|v3:inactiveIngredient">
 				<tr>
 					<xsl:attribute name="class">
@@ -432,13 +416,6 @@
 					<xsl:with-param name="number" select="position()"/>
 				</xsl:call-template>
 			</xsl:for-each>
-<!--			<xsl:if test="not($path/v3:asContent)">
-				<tr>
-					<td colspan="4" class="formTitle">
-						<strong><xsl:value-of select="$labels/noPackageFound[@lang = $lang]"/></strong>
-					</td>
-				</tr>
-			</xsl:if> -->
 		</table>
 	</xsl:template>
 
@@ -457,81 +434,81 @@
 			<th scope="row" class="formItem">
 				<xsl:value-of select="$number"/>
 			</th>
-				<td class="formItem">						
-					<xsl:for-each select="$containerPackagedPath">
-						<xsl:sort select="position()" order="descending"/>
-						<xsl:variable name="current" select="."/>
-						<xsl:for-each select="v3:code[1]/@code">
-							<xsl:if test="not(/v3:document/v3:code/@code = '58474-8')">
-								<xsl:for-each select="$itemCodeSystems/label[@codeSystem = current()/../@codeSystem][approval/@code = current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/../v3:subjectOf/v3:approval/v3:code/@code or @drug = count(current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/v3:asEntityWithGeneric)][1]/@name">
-									<xsl:value-of select="."/>
-									<xsl:text>:</xsl:text>
-								</xsl:for-each>
-							</xsl:if>	
-							<xsl:value-of select="."/>
-						</xsl:for-each>
-						<br/>
-					</xsl:for-each>
-				</td>
-				<td class="formItem">
-					<xsl:for-each select="$containerPackagedPath">
-						<xsl:sort select="position()" order="descending"/>
-						<xsl:variable name="current" select="."/>
-						<xsl:for-each select="../v3:quantity">
-							<xsl:for-each select="v3:numerator">
-								<xsl:value-of select="@value"/>
-								<xsl:text> </xsl:text>
-								<xsl:if test="@unit[. != '1']">
-									<xsl:value-of select="@unit"/>
-								</xsl:if>
+			<td class="formItem">						
+				<xsl:for-each select="$containerPackagedPath">
+					<xsl:sort select="position()" order="descending"/>
+					<xsl:variable name="current" select="."/>
+					<xsl:for-each select="v3:code[1]/@code">
+						<xsl:if test="not(/v3:document/v3:code/@code = '58474-8')">
+							<xsl:for-each select="$itemCodeSystems/label[@codeSystem = current()/../@codeSystem][approval/@code = current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/../v3:subjectOf/v3:approval/v3:code/@code or @drug = count(current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/v3:asEntityWithGeneric)][1]/@name">
+								<xsl:value-of select="."/>
+								<xsl:text>:</xsl:text>
 							</xsl:for-each>
-							<xsl:value-of select="$labels/inConnective[@lang = $lang]"/>
-							<xsl:for-each select="v3:denominator">
-								<xsl:value-of select="@value"/>
-								<xsl:text> </xsl:text>
-							</xsl:for-each>
+						</xsl:if>	
+						<xsl:value-of select="."/>
+					</xsl:for-each>
+					<br/>
+				</xsl:for-each>
+			</td>
+			<td class="formItem">
+				<xsl:for-each select="$containerPackagedPath">
+					<xsl:sort select="position()" order="descending"/>
+					<xsl:variable name="current" select="."/>
+					<xsl:for-each select="../v3:quantity">
+						<xsl:for-each select="v3:numerator">
+							<xsl:value-of select="@value"/>
+							<xsl:text> </xsl:text>
+							<xsl:if test="@unit[. != '1']">
+								<xsl:value-of select="@unit"/>
+							</xsl:if>
 						</xsl:for-each>
-						<xsl:value-of select="v3:formCode/@displayName"/>
-						<xsl:for-each select="../v3:subjectOf/v3:characteristic">
-							<xsl:if test="../../v3:quantity or ../../v3:containerPackagedProduct[v3:formCode[@displayName]] or ../preceding::v3:subjectOf"></xsl:if>
-							<xsl:variable name="def" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]"/>
-							<xsl:variable name="name" select="($def/v3:code/@displayName|$def/v3:code/@p:displayName)[1]" xmlns:p="http://pragmaticdata.com/xforms" />
-							<xsl:variable name="cname" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code]]/v3:value[@code = current()/v3:value/@code]/@displayName"/>
-							<xsl:choose>
-								<xsl:when test="$cname">
-									<xsl:text>; </xsl:text>
-									<xsl:value-of select="$cname" />
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:text>; </xsl:text>
-									<xsl:value-of select="$name"/>
-									<xsl:text> = </xsl:text>
-									<xsl:value-of select="(v3:value[not(../v3:code/@code = 'SPLCMBPRDTP')]/@code|v3:value/@value)[1]"/>
-								</xsl:otherwise>
-							</xsl:choose>						
+						<xsl:value-of select="$labels/inConnective[@lang = $lang]"/>
+						<xsl:for-each select="v3:denominator">
+							<xsl:value-of select="@value"/>
+							<xsl:text> </xsl:text>
 						</xsl:for-each>
-						<br/>
 					</xsl:for-each>
-				</td>
-				<td class="formItem">	
-					<xsl:for-each select="$containerPackagedPath">
-						<xsl:call-template name="string-to-date">
-							<xsl:with-param name="text">
-								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
-							</xsl:with-param>
-						</xsl:call-template>
+					<xsl:value-of select="v3:formCode/@displayName"/>
+					<xsl:for-each select="../v3:subjectOf/v3:characteristic">
+						<xsl:if test="../../v3:quantity or ../../v3:containerPackagedProduct[v3:formCode[@displayName]] or ../preceding::v3:subjectOf"></xsl:if>
+						<xsl:variable name="def" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]"/>
+						<xsl:variable name="name" select="($def/v3:code/@displayName|$def/v3:code/@p:displayName)[1]" xmlns:p="http://pragmaticdata.com/xforms" />
+						<xsl:variable name="cname" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code]]/v3:value[@code = current()/v3:value/@code]/@displayName"/>
+						<xsl:choose>
+							<xsl:when test="$cname">
+								<xsl:text>; </xsl:text>
+								<xsl:value-of select="$cname" />
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:text>; </xsl:text>
+								<xsl:value-of select="$name"/>
+								<xsl:text> = </xsl:text>
+								<xsl:value-of select="(v3:value[not(../v3:code/@code = 'SPLCMBPRDTP')]/@code|v3:value/@value)[1]"/>
+							</xsl:otherwise>
+						</xsl:choose>						
 					</xsl:for-each>
-				</td>
-				<td class="formItem">					
-					<xsl:for-each select="$containerPackagedPath">
-						<xsl:call-template name="string-to-date">
-							<xsl:with-param name="text">
-								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
-							</xsl:with-param>
-						</xsl:call-template>
-					</xsl:for-each>
-				</td>
-			</tr>
+					<br/>
+				</xsl:for-each>
+			</td>
+			<td class="formItem">	
+				<xsl:for-each select="$containerPackagedPath">
+					<xsl:call-template name="string-to-date">
+						<xsl:with-param name="text">
+							<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</xsl:for-each>
+			</td>
+			<td class="formItem">					
+				<xsl:for-each select="$containerPackagedPath">
+					<xsl:call-template name="string-to-date">
+						<xsl:with-param name="text">
+							<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
+						</xsl:with-param>
+					</xsl:call-template>
+				</xsl:for-each>
+			</td>
+		</tr>
 	</xsl:template>
 	
 	<!-- override FDA Part templating -->
