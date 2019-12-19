@@ -851,10 +851,9 @@ be represented
 	font-weight: normal;
 }
 
-/* Health Canade and Aurora Styles
- * The Aurora Swatches should really be called bg-aurora-primary and bg-aurora-accent1
- */
+/* Health Canada and Aurora Specific Styles and Swatches */
 
+/* Centre items on the Title Page for both Screen and Print */
 .title-page p  { text-align: center !important; }
 .title-page h2 { text-align: center !important; }
 
@@ -869,7 +868,7 @@ img { max-width: 100%; height: auto; }
 
 #side .nav-link.active,
 #side .nav-link:hover,
-#side .nav-link:focus{
+#side .nav-link:focus {
 	color: #4D5D6C;
 }
 
@@ -878,10 +877,11 @@ img { max-width: 100%; height: auto; }
 #main { max-width: 1000px; }
 #side { max-width: 420px; min-width: 420px; }
 #navigation-sidebar li { padding-left: 10px !important; }
-#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
+#navigation-scrollbar { height: calc(100vh - 50px); overflow-y: scroll; }
 				
 }
 	
+/* Only pad top and bottom margins for the last table in the main content to prevent double margins */
 .spl table.formTablePetite {
 margin-top: 2ex;
 margin-bottom: 0ex;
@@ -891,9 +891,6 @@ margin-top: 2ex;
 margin-bottom: 2ex;
 }
 
-/* TODO I wonder why my mockup does not require !important to suppress a blank first page?
- * This is partly due to trying to put the first section on its own page.
- */
 @media print {	
 
 .hide-in-print { display: none !important; }		
@@ -902,17 +899,19 @@ margin-bottom: 2ex;
 .card { border-width: 0 !important; }
 .card-header { display: none !important; }
 	
-	/* overriding FDA tables so they look nicer in print */
-	.spl .formTable { 					border: 1px solid #CCCCCC !important;	}
-	.spl .formTablePetite {				border: 1px solid #CCCCCC !important;	}
-	.spl .formTableMorePetite {			border: 1px solid #CCCCCC !important;	}
-	.spl .formTitle {					border: 1px solid #CCCCCC !important;	}
-	.spl .formHeadingReg {				border: 1px solid #CCCCCC !important;	}
-	.spl .formLabel {					border: 1px solid #CCCCCC !important;	}
-	.spl .formItem {					border: 1px solid #CCCCCC !important;	}
+/* override FDA tables so they look nicer in print */
+.spl .formTable, 
+.spl .formTablePetite,
+.spl .formTableMorePetite,
+.spl .formTitle,
+.spl .formHeadingReg,
+.spl .formLabel {
+    border: 1px solid #CCCCCC !important;
+}
 
 	/* table of contents? */
 	@page {
 		margin: 1cm;
 	}
+
 }	
