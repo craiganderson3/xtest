@@ -3584,6 +3584,7 @@ token.
 	</xsl:template>
 	<!-- display the imprint information in the specified order.  a apply-template could be used here but then we would not be able to control what order the
 			 imprint information is displayed in since there isn't a requirement specifying that the characteristic must be programmed in a certain order-->
+	<!-- pmh overridden in spl_canada.xsl:
 	<xsl:template name="characteristics-old">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 			<tr>
@@ -3639,7 +3640,7 @@ token.
 				<xsl:sort select="count($CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]/preceding::*)"/>
 			</xsl:apply-templates>
 		</table>
-	</xsl:template>
+	</xsl:template> -->
 
 	<xsl:template mode="characteristics" match="/|@*|node()">
 		<xsl:apply-templates mode="characteristics" select="@*|node()"/>
@@ -3817,6 +3818,8 @@ token.
 		<xsl:if test="not($path/v3:value)">&#160;&#160;&#160;&#160;</xsl:if>
 	</td>
 </xsl:template>
+	
+<!-- pmh overridden in spl_canada.xsl:
 <xsl:template name="partQuantity">
 	<xsl:param name="path" select="."/>
 	<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
@@ -3857,7 +3860,8 @@ token.
 			</tr>
 		</xsl:for-each>
 	</table>
-</xsl:template>
+</xsl:template> -->
+<!-- pmh overridden in spl-canada.xsl:
 <xsl:template name="packaging">
 	<xsl:param name="path" select="."/>
 	<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
@@ -3885,7 +3889,8 @@ token.
 			</tr>
 		</xsl:if>
 	</table>
-</xsl:template>
+</xsl:template> -->
+<!-- pmh overridden in spl_canada.xsl:
 <xsl:template name="packageInfo">
 	<xsl:param name="path"/>
 	<xsl:param name="number" select="1"/>
@@ -3964,8 +3969,7 @@ token.
 			</td>
 		</tr>
 	</xsl:for-each>
-</xsl:template>
-
+</xsl:template> -->
 
 <!-- MODE: ldd - lot distribution data -->
 <!-- Note: this is a model how to make these tables right, with apply-templates instead of all these call-template. -->
