@@ -3211,7 +3211,7 @@ token.
 			</td>
 		</tr>
 	</xsl:template>
-
+<!-- pmh - overridden in spl_canada.xsl:
 	<xsl:template name="ProductInfoBasic">
 		<tr>
 			<td>
@@ -3223,7 +3223,7 @@ token.
 						<xsl:if test="not(../../v3:part)">
 							<td class="formLabel">Product Type</td>
 							<td class="formItem">
-								<!-- XXX: can't do in XSLT 1.0: xsl:value-of select="replace($documentTypes/v3:document[@code = $root/v3:document/v3:code/@code]/v3:title,'(^| )label( |$)',' ','i')"/ -->
+								<!- - XXX: can't do in XSLT 1.0: xsl:value-of select="replace($documentTypes/v3:document[@code = $root/v3:document/v3:code/@code]/v3:title,'(^| )label( |$)',' ','i')"/ - ->
 								<xsl:value-of select="$documentTypes/v3:document[@code = $root/v3:document/v3:code/@code]/v3:title"/>
 							</td>
 						</xsl:if>
@@ -3298,7 +3298,7 @@ token.
 				</table>
 			</td>
 		</tr>
-	</xsl:template>
+	</xsl:template> -->
 	<xsl:template name="ProductInfoIng">		
 		<xsl:if test="v3:ingredient[starts-with(@classCode,'ACTI')]|v3:activeIngredient">
 			<tr>
@@ -3402,6 +3402,7 @@ token.
 	</xsl:template>
 
 	<!-- display the ingredient information (both active and inactive) -->
+<!-- pmh - overridden in spl_canada.xsl:
 	<xsl:template name="ActiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 			<tr>
@@ -3478,11 +3479,12 @@ token.
 				</tr>
 			</xsl:for-each>
 		</table>
-	</xsl:template>
+	</xsl:template> -->
+	<!-- pmh - overridden in spl_canada.xsl:
 	<xsl:template name="InactiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 			<tr>
-				<!-- see PCR 801, just make the header bigger -->
+				<!- - see PCR 801, just make the header bigger - ->
 				<td colspan="2" class="formHeadingTitle">Inactive Ingredients</td>
 			</tr>
 			<tr>
@@ -3524,7 +3526,7 @@ token.
 				</tr>
 			</xsl:for-each>
 		</table>
-	</xsl:template>
+	</xsl:template> -->
 	<xsl:template name="otherIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 			<tr>
