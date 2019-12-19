@@ -31,7 +31,7 @@
 	<xsl:template match="v3:subject/v3:manufacturedProduct" mode="card">
 		<xsl:variable name="unique-product-id">product-<xsl:value-of select="position()"/></xsl:variable>
 		<section class="card m-2" id="{$unique-product-id}">
-			<h6 class="card-header p-0 bg-aurora-accent2"> <!--  dropdown-toggle below caused problems with rwd, and possibly w-100 -->
+			<h6 class="card-header p-0 bg-aurora-accent2"> <!-- dropdown-toggle below caused problems with rwd, and possibly w-100 -->
 				<button class="btn bg-aurora-accent2 text-white text-left w-100" type="button" 
 				data-toggle="collapse" data-target="#collapse-{$unique-product-id}" 
 				aria-expanded="true" aria-controls="collapse-{$unique-product-id}">
@@ -58,31 +58,6 @@
 		<xsl:value-of select="v3:formCode[@codeSystem='2.16.840.1.113883.2.20.6.3']/@displayName"/>
 	</xsl:template>
 	
-	<!-- extra logic required for URG_PQ or IVL_PQ -->
-	<xsl:template match="v3:quantity/v3:numerator">
-		<xsl:choose>
-			<xsl:when test="v3:low and v3:high">
-				<xsl:value-of select="v3:low/@value"/>					
-				<xsl:value-of select="$labels/toConnective[@lang = $lang]"/>
-				<xsl:value-of select="v3:high/@value"/>&#160;								
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="@value"/>&#160;
-			</xsl:otherwise>
-		</xsl:choose>
-		<xsl:choose>
-			<xsl:when test="v3:low/@unit">
-				<xsl:value-of select="v3:low/@unit"/>
-			</xsl:when>
-			<xsl:when test="v3:high/@unit">
-				<xsl:value-of select="v3:high/@unit"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="@unit"/>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-
 	<!-- This is a fairly decent navigation sidebar menu -->
 	<xsl:template match="v3:structuredBody" mode="sidebar-navigation">
 		<aside class="bg-aurora-light hide-in-print" id="left">

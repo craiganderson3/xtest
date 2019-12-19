@@ -165,6 +165,31 @@
 		</tr>		
 	</xsl:template>	
 	
+	<!-- extra logic required for URG_PQ Active Ingredients -->
+	<xsl:template match="v3:quantity/v3:numerator">
+		<xsl:choose>
+			<xsl:when test="v3:low and v3:high">
+				<xsl:value-of select="v3:low/@value"/>					
+				<xsl:value-of select="$labels/toConnective[@lang = $lang]"/>
+				<xsl:value-of select="v3:high/@value"/>&#160;								
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="@value"/>&#160;
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:choose>
+			<xsl:when test="v3:low/@unit">
+				<xsl:value-of select="v3:low/@unit"/>
+			</xsl:when>
+			<xsl:when test="v3:high/@unit">
+				<xsl:value-of select="v3:high/@unit"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="@unit"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
 	<!-- display the ingredient information (both active and inactive) -->
 	<xsl:template name="ActiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
@@ -653,7 +678,7 @@
 							<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
 							<xsl:variable name="tri-code-value" select="substring(v3:code/@code, string-length(v3:code/@code)-2)"/>
 							<xsl:choose>
-								<xsl:when test="v3:code[@code='1']|v3:code[@code='MP']">
+								<xsl:when test="v3:code[@code='MP']">
 									<!-- PRODUCT DETAIL -->
 									<section class="card mb-2 hide-in-print" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
