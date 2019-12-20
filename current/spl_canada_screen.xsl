@@ -226,7 +226,7 @@
 				}
 				
 				.recent-changes table {
-					border-style: none;
+					border-style: none !important;
 				}
 
 				<!-- this french language reduction reduces only the top level navigation -->
