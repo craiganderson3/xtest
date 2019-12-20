@@ -730,6 +730,16 @@
 										</div>
 									</section>
 								</xsl:when>
+								<xsl:when test="$tri-code-value = '007'">
+									<section class="card mb-2" id="{$unique-section-id}">
+										<h5 class="card-header text-white bg-aurora-accent1">
+											<xsl:value-of select="v3:code/@displayName"/>
+										</h5>
+										<div class="spl recent-changes">
+											<xsl:apply-templates select="."/>
+										</div>
+									</section>
+								</xsl:when>
 								<xsl:otherwise>
 									<!-- NAVIGATION FOR DIFFERENT PARTS -->								
 									<section class="card mb-2" id="{$unique-section-id}">
