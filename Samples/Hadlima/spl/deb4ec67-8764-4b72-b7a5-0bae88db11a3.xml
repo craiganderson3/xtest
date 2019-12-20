@@ -542,18 +542,46 @@
               <effectiveTime value="20190313"/>
             </section>
           </component>
-		  <component>
-            <section ID="ebc3f3dc-71be-424f-91ef-8aca8c138b21">
-              <id root="efd8c4c1-d0dd-434d-b132-4daa18752fa8"/>
-              <code code="65007" codeSystem="2.16.840.1.113883.2.20.6.65"
-                displayName="RECENT MAJOR LABEL CHANGES"/>
-              <title>RECENT MAJOR LABEL CHANGES</title>
-              <text>
-                <paragraph>example text</paragraph>
-              </text>
-              <effectiveTime value="20190313"/>
-            </section>
-          </component>
+        </section>
+      </component>
+	        <component>
+        <!-- Recent Major Changes -->
+        <section ID="a7cee5c8-7ee9-4fd2-884e-7a50c06b27e1">
+          <id root="dd1e1c43-f0d3-4ba8-b1f5-ad009a5dd5a8"/>
+          <code code="60007" codeSystem="2.16.840.1.113883.2.20.6.60"
+            displayName="RECENT MAJOR LABEL CHANGES"/>
+          <title>RECENT MAJOR LABEL CHANGES</title>
+          <text>
+            <table ID="t6" width="100%">
+              <tbody>
+                <tr>
+                  <td>Indications (1)</td>
+                  <td>05/2018</td>
+                </tr>
+                <tr>
+                  <td>Indications, Pediatrics (1.1)</td>
+                  <td>05/2018</td>
+                </tr>
+                <tr>
+                  <td>Contraindications (2)</td>
+                  <td>04/2018</td>
+                </tr>
+                <tr>
+                  <td>Serious Warning and Precautions Box (3), Lactic Acidosis and Severe Hepatomegaly with Steatosis [Removed]</td>
+                  <td>05/2018</td>
+                </tr>
+                <tr>
+                  <td>Dosage and Administration, Recommended Dose and Dose Adjustment (4.3)</td>
+                  <td>08/2018</td>
+                </tr>
+                <tr>
+                  <td>Warnings and Precautions, Endocrine and Metabolism (7)</td>
+                  <td>05/2018</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <effectiveTime value="20180101"/>
         </section>
       </component>
       <component>
