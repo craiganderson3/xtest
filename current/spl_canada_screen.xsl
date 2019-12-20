@@ -225,11 +225,6 @@
 					top: 0;
 				}
 				
-				.recent-changes table, th, td {
-					border-top-style: none !important;
-					border-bottom-style: none !important;
-					}
-
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 			</style>

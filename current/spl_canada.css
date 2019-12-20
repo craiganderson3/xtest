@@ -421,9 +421,6 @@ be represented
 	font-weight: bold;
 	font-size: 100%
 }
-
-
-
 				
 .spl th, 
 .spl td { 
@@ -853,9 +850,13 @@ be represented
 
 /* Health Canada and Aurora Specific Styles and Swatches */
 
-/* Centre items on the Title Page for both Screen and Print */
+/* Centre items on the Title Page for both Screen and Print, and fix Recent Changes tables */
 .title-page p  { text-align: center !important; }
 .title-page h2 { text-align: center !important; }
+.recent-changes table, th, td {
+	border-top-style: none !important;
+	border-bottom-style: none !important;
+}
 
 /* Image Fix - the FDA breaks out when images are too large */
 img { max-width: 100%; height: auto; }					
