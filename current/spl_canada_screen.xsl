@@ -224,6 +224,10 @@
 					position: sticky;
 					top: 0;
 				}
+				
+				.recent-changes table {
+					border-style: none;
+				}
 
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
