@@ -1316,7 +1316,7 @@
                 displayName="DATE OF INITIAL APPROVAL"/>
               <title>DATE OF INITIAL APPROVAL</title>
               <text>
-                <paragraph>20170101</paragraph>
+                <paragraph>December 20, 2018</paragraph>
               </text>
               <effectiveTime value="20180101"/>
             </section>
@@ -1328,7 +1328,7 @@
                 displayName="DATE OF REVISION"/>
               <title>DATE OF REVISION</title>
               <text>
-                <paragraph>20190807</paragraph>
+                <paragraph>December 20, 2019</paragraph>
               </text>
               <effectiveTime value="20180101"/>
             </section>
@@ -1355,8 +1355,34 @@
             displayName="RECENT MAJOR LABEL CHANGES"/>
           <title>RECENT MAJOR LABEL CHANGES</title>
           <text>
-            <paragraph> Section Heading, Subsection heading (Section or Subsection number), yyyymmdd
-            </paragraph>
+            <table ID="t6" width="100%">
+              <tbody>
+                <tr>
+                  <td>Indications (1)</td>
+                  <td>05/2018</td>
+                </tr>
+                <tr>
+                  <td>Indications, Pediatrics (1.1)</td>
+                  <td>05/2018</td>
+                </tr>
+                <tr>
+                  <td>Contraindications (2)</td>
+                  <td>04/2018</td>
+                </tr>
+                <tr>
+                  <td>Serious Warning and Precautions Box (3), Lactic Acidosis and Severe Hepatomegaly with Steatosis [Removed]</td>
+                  <td>05/2018</td>
+                </tr>
+                <tr>
+                  <td>Dosage and Administration, Recommended Dose and Dose Adjustment (4.3)</td>
+                  <td>08/2018</td>
+                </tr>
+                <tr>
+                  <td>Warnings and Precautions, Endocrine and Metabolism (7)</td>
+                  <td>05/2018</td>
+                </tr>
+              </tbody>
+            </table>
           </text>
           <effectiveTime value="20180101"/>
         </section>
@@ -1375,7 +1401,8 @@
               <code code="60009" codeSystem="2.16.840.1.113883.2.20.6.60" displayName="1 INDICATIONS"/>
               <title>1 INDICATIONS</title>
               <text>
-                <paragraph> sample text </paragraph>
+                <paragraph> sample text 
+				</paragraph>
               </text>
               <effectiveTime value="20180101"/>
               <component>
