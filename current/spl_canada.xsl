@@ -712,6 +712,7 @@
 													</xsl:for-each>
 												</div>
 												<div class="col-6">
+													<!-- TODO - this should probably just render every subsection with position greater than [2] -->
 													<xsl:for-each select="v3:component[3]/v3:section">
 														<xsl:apply-templates select="v3:title"/>
 														<xsl:apply-templates select="v3:text"/>
