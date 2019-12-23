@@ -223,12 +223,6 @@
 								</xsl:for-each>
 								<xsl:text>) </xsl:text>
 							</xsl:if>
-							<!-- TODO: this logic serves no purpose and can be removed -->
-							<xsl:for-each select="../v3:subjectOf/v3:substanceSpecification/v3:code[@codeSystem = '2.16.840.1.113883.6.69' or @codeSystem = '2.16.840.1.113883.3.6277']/@code">
-								<xsl:text> (Source NDC: </xsl:text>
-								<xsl:value-of select="."/>
-								<xsl:text>)</xsl:text>
-							</xsl:for-each>
 						</td>
 						<td class="formItem">
 							<xsl:choose>
@@ -464,13 +458,7 @@
 					<xsl:sort select="position()" order="descending"/>
 					<xsl:variable name="current" select="."/>
 					<xsl:for-each select="v3:code[1]/@code">
-						<!-- TODO: this could be a lot simpler now that it is not constrained by controlled vocabulary
-						<xsl:if test="not(/v3:document/v3:code/@code = '58474-8')">
-							<xsl:for-each select="$itemCodeSystems/label[@codeSystem = current()/../@codeSystem][approval/@code = current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/../v3:subjectOf/v3:approval/v3:code/@code or @drug = count(current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/v3:asEntityWithGeneric)][1]/@name">
-								<xsl:value-of select="."/>
-								<xsl:text>:</xsl:text>
-							</xsl:for-each>
-						</xsl:if>	-->
+						<!-- TODO: this could be a lot simpler now that it is not constrained by controlled vocabulary -->
 						<xsl:value-of select="."/>
 					</xsl:for-each>
 					<br/>
@@ -636,10 +624,8 @@
 				<tr>
 					<th scope="col" class="formTitle"><xsl:value-of select="$labels/marketingCategory[@lang = $lang]"/></th>
 					<th scope="col" class="formTitle"><xsl:value-of select="$labels/applicationNumber[@lang = $lang]"/></th>
-					<xsl:if test="not($root/v3:document/v3:code/@code = '73815-3')">
-						<th scope="col" class="formTitle"><xsl:value-of select="$labels/approvalDate[@lang = $lang]"/></th>
-						<th scope="col" class="formTitle"><xsl:value-of select="$labels/cancellationDate[@lang = $lang]"/></th>
-					</xsl:if>
+					<th scope="col" class="formTitle"><xsl:value-of select="$labels/approvalDate[@lang = $lang]"/></th>
+					<th scope="col" class="formTitle"><xsl:value-of select="$labels/cancellationDate[@lang = $lang]"/></th>
 				</tr>
 				<tr class="formTableRowAlt">
 					<td class="formItem">
@@ -648,22 +634,20 @@
 					<td class="formItem">
 						<xsl:value-of select="../v3:subjectOf/v3:approval/v3:id/@extension"/>
 					</td>
-					<xsl:if test="not($root/v3:document/v3:code/@code = '73815-3')">
-						<td class="formItem">						
-							<xsl:call-template name="string-to-date">
-								<xsl:with-param name="text">
-									<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
-								</xsl:with-param>
-							</xsl:call-template>
-						</td>
-						<td class="formItem">					
-							<xsl:call-template name="string-to-date">
-								<xsl:with-param name="text">
-									<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
-								</xsl:with-param>
-							</xsl:call-template>
-						</td>
-					</xsl:if>
+					<td class="formItem">						
+						<xsl:call-template name="string-to-date">
+							<xsl:with-param name="text">
+								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
+							</xsl:with-param>
+						</xsl:call-template>
+					</td>
+					<td class="formItem">					
+						<xsl:call-template name="string-to-date">
+							<xsl:with-param name="text">
+								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
+							</xsl:with-param>
+						</xsl:call-template>
+					</td>
 				</tr>
 			</table>
 		</xsl:if>
