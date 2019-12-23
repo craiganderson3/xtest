@@ -41,8 +41,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:param name="update-check-url-base" select="/.."/>
 	<xsl:param name="standardSections" select="document('plr-sections.xml')/*"/>
 <!-- pmh deprecated unused:
-	<xsl:param name="itemCodeSystems" select="document('item-code-systems.xml')/*"/> -->
-	<xsl:param name="disclaimers" select="document('disclaimers.xml')/*"/>
+	<xsl:param name="itemCodeSystems" select="document('item-code-systems.xml')/*"/>
+	<xsl:param name="disclaimers" select="document('disclaimers.xml')/*"/> -->
 	<xsl:param name="documentTypes" select="document('doc-types.xml')/*"/>
 	<xsl:param name="indexingDocumentTypes" select="document('indexing-doc-types.xml')/*"/>
 	<xsl:param name="root" select="/"/>
