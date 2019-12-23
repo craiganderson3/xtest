@@ -749,6 +749,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</html>
 	</xsl:template>
 	<!--INDEXING - PESTICIDE RESIDUE TOLERANCE Start -->
+<!-- pmh deprecate anything that refers to pesticides:
 	<xsl:template match="v3:subject[v3:identifiedSubstance][/v3:document/v3:code/@code = '3565717']">
 			<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
 				<tr>
@@ -804,7 +805,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 					</td>
 				</tr>
 			</table>
-	</xsl:template>
+	</xsl:template> -->
 	<xsl:template match="v3:observationCriterion">
 			<tr>
 				<xsl:attribute name="class">
@@ -859,6 +860,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	</xsl:template>
 	<!--INDEXING - PESTICIDE RESIDUE TOLERANCE End -->
 	<!-- Pesticide Labeling Start-->
+<!-- pmh deprecate anything related to pesticides:
 	<xsl:template match="v3:subject/v3:manufacturedProduct/v3:manufacturedProduct[/v3:document/v3:code/@code = '3565715'] | v3:subject/v3:substanceAdministration1[/v3:document/v3:code/@code = '3565715']">
 		<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
 			<xsl:if test="../../../v3:code/@code = '3144190'">
@@ -1041,7 +1043,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				</tr>
 			</xsl:if>
 		</table>
-	</xsl:template>
+	</xsl:template> -->
 	<!-- Pesticide Labeling End-->
 	<!-- REMS templates start -->
 	<xsl:template match="v3:subject2[v3:substanceAdministration/v3:subjectOf/v3:issue]">
