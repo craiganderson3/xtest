@@ -4116,7 +4116,7 @@ token.
 	</xsl:if>
 </xsl:template>	-->
 
-
+<!-- pmh this template has been moved to spl_canada.xsl:
 <xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization">	
 	<xsl:if test="(count(./v3:name)>0)">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTableMorePetite">
@@ -4160,7 +4160,7 @@ token.
 			<xsl:call-template name="data-contactParty"/>
 		</table>
 	</xsl:if>
-</xsl:template>	
+</xsl:template>	-->
 <xsl:template name="data-contactParty">
 	<xsl:for-each select="v3:contactParty">
 		<xsl:if test="position() = 1">
@@ -4197,6 +4197,7 @@ token.
 	</xsl:for-each>
 </xsl:template>
 
+<!-- pmh - this template has been overridden in spl_canada.xsl:
 <xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization/v3:assignedEntity/v3:assignedOrganization">	
 	<xsl:if test="./v3:name">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTableMorePetite">
@@ -4213,7 +4214,7 @@ token.
 			<xsl:call-template name="data-contactParty"/>
 		</table>
 	</xsl:if>
-</xsl:template>	
+</xsl:template>	-->
 
 <xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization/v3:assignedEntity/v3:assignedOrganization/v3:assignedEntity/v3:assignedOrganization">	
 	<xsl:if test="./v3:name">
