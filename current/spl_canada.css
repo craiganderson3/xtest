@@ -420,7 +420,9 @@ be represented
 	margin-top: 10px; /* Gecko needs this, IE doesn't add any extra */
 	text-align: center;
 	font-weight: bold;
-	font-size: 100%
+	font-size: 100%;
+    /* Override Bootstrap default to put captions below tables */
+    caption-side: top;
 }
 				
 .spl th, 
