@@ -3357,7 +3357,7 @@ token.
 
 <!-- pmh - overridden in spl_canada.xsl:
 	<xsl:template mode="subjects" match="v3:part/v3:partProduct|v3:part/v3:partMedicine">
-		<!-- only display the outer part packaging once -->
+		<!- - only display the outer part packaging once - ->
 		<xsl:if test="not(../preceding-sibling::v3:part)">
 			<xsl:if test="../../v3:asContent">
 				<tr>
