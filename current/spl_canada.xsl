@@ -729,8 +729,21 @@
 											</div>
 										</div>
 									</section>
+									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
+									<section class="force-page-break hide-in-screen" id="print-table-of-contents">
+										<div class="spl">
+											TEST TEST TEST POC FOR TABLE OF CONTENTS
+											<ol>
+												<li class="frontmatter"><a href="#pref_01">Preface</a></li>
+												<li class="frontmatter"><a href="#intr_01">Introduction</a></li>
+												<li class="bodymatter"><a href="#chap_01">Chapter One</a></li>
+											</ol>
+										</div>
+									</section>
+									
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '007'">
+									<!-- RECENT MAJOR LABEL CHANGES -->
 									<section class="card mb-2" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>

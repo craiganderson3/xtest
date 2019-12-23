@@ -224,7 +224,11 @@
 					position: sticky;
 					top: 0;
 				}
-				
+
+.frontmatter a::after { content: leader('.') target-counter(attr(href url), page, lower-roman) }
+.bodymatter a::after { content: leader('.') target-counter(attr(href url), page, decimal) }
+
+
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 			</style>
