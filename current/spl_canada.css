@@ -37,11 +37,12 @@ be represented
 @media print {
 @page { 
         size:8.5in 11in; 
-	margin:0pt;
+/* pmh - using default margins - not sure why the margins were set to 0pt for FDA
+    margin:0pt;
 	margin-left:0pt;
 	margin-right:0pt;
 	margin-top:0pt;
-	margin-bottom:0pt;
+	margin-bottom:0pt; */
 	orphans:4; 
 	widows:2;
 }
@@ -909,10 +910,5 @@ margin-bottom: 2ex;
 .spl .formLabel {
     border: 1px solid #CCCCCC !important;
 }
-
-	/* table of contents? */
-	@page {
-		margin: 1cm;
-	}
 
 }	
