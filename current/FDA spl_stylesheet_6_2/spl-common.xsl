@@ -1948,7 +1948,7 @@ token.
 					 </xsl:if> 
 				</b>
 		   </xsl:if>
-			<p>----------</p>
+			<p>- - - - - - - - - -</p>
 		</div>
 	</xsl:template>
 -->
