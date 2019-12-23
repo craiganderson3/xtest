@@ -3355,6 +3355,7 @@ token.
 		</xsl:if>
 	</xsl:template>	
 
+<!-- pmh - overridden in spl_canada.xsl:
 	<xsl:template mode="subjects" match="v3:part/v3:partProduct|v3:part/v3:partMedicine">
 		<!-- only display the outer part packaging once -->
 		<xsl:if test="not(../preceding-sibling::v3:part)">
@@ -3399,7 +3400,7 @@ token.
 				<xsl:call-template name="MarketingInfo"/>
 			</td>
 		</tr>
-	</xsl:template>
+	</xsl:template> -->
 
 	<!-- display the ingredient information (both active and inactive) -->
 <!-- pmh - overridden in spl_canada.xsl:
@@ -4161,6 +4162,8 @@ token.
 		</table>
 	</xsl:if>
 </xsl:template>	-->
+
+<!-- pmh - this template has been overridden in spl_canada.xsl:
 <xsl:template name="data-contactParty">
 	<xsl:for-each select="v3:contactParty">
 		<xsl:if test="position() = 1">
@@ -4195,7 +4198,7 @@ token.
 			</td>
 		</tr>
 	</xsl:for-each>
-</xsl:template>
+</xsl:template> -->
 
 <!-- pmh - this template has been overridden in spl_canada.xsl:
 <xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization/v3:assignedEntity/v3:assignedOrganization">	
