@@ -464,12 +464,13 @@
 					<xsl:sort select="position()" order="descending"/>
 					<xsl:variable name="current" select="."/>
 					<xsl:for-each select="v3:code[1]/@code">
+						<!-- TODO: this could be a lot simpler now that it is not constrained by controlled vocabulary
 						<xsl:if test="not(/v3:document/v3:code/@code = '58474-8')">
 							<xsl:for-each select="$itemCodeSystems/label[@codeSystem = current()/../@codeSystem][approval/@code = current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/../v3:subjectOf/v3:approval/v3:code/@code or @drug = count(current()/ancestor::*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine or self::v3:partProduct or self::v3:partMedicine][1]/v3:asEntityWithGeneric)][1]/@name">
 								<xsl:value-of select="."/>
 								<xsl:text>:</xsl:text>
 							</xsl:for-each>
-						</xsl:if>	
+						</xsl:if>	-->
 						<xsl:value-of select="."/>
 					</xsl:for-each>
 					<br/>
