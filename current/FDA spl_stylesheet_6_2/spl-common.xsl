@@ -40,7 +40,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:param name="show-section-numbers" select="/.."/>
 	<xsl:param name="update-check-url-base" select="/.."/>
 	<xsl:param name="standardSections" select="document('plr-sections.xml')/*"/>
-	<xsl:param name="itemCodeSystems" select="document('item-code-systems.xml')/*"/>
+<!-- pmh deprecated unused:
+	<xsl:param name="itemCodeSystems" select="document('item-code-systems.xml')/*"/> -->
 	<xsl:param name="disclaimers" select="document('disclaimers.xml')/*"/>
 	<xsl:param name="documentTypes" select="document('doc-types.xml')/*"/>
 	<xsl:param name="indexingDocumentTypes" select="document('indexing-doc-types.xml')/*"/>
@@ -1837,6 +1838,7 @@ token.
 	</xsl:template>
 	<!-- DOCUMENT MODEL -->
 
+<!-- pmh can we remove this and the related controlled vocabulary?
 	<xsl:template mode="title" match="/|@*|node()"/>
 	<xsl:template mode="title" match="v3:document">
 		<div class="DocumentTitle">
@@ -1849,7 +1851,7 @@ token.
 					<xsl:text>User Profile</xsl:text>
 				</xsl:if>
 				<xsl:apply-templates select="./title/@*"/>
-				<!-- loop through all of the subject elements -->			
+				<!- - loop through all of the subject elements - ->			
 				<xsl:for-each select=".//v3:subject[not(/v3:document/v3:code/@code = '77648-4')][v3:manufacturedProduct[v3:manufacturedProduct|v3:manufacturedMedicine]]">
 					<xsl:variable name="prevProductHeaderString">
 						<xsl:for-each select="preceding::v3:manufacturedProduct/*[self::v3:manufacturedProduct or self::v3:manufacturedMedicine]">
@@ -1863,7 +1865,7 @@ token.
 						<xsl:when test="position() > 1 and contains($prevProductHeaderString, $curProductHeaderString)">
 
 						</xsl:when>
-						<!-- otherwise display all the information for this subject -->
+						<!- - otherwise display all the information for this subject - ->
 						<xsl:otherwise>
 							<xsl:if test="position() > 1">
 								<br/>
@@ -1949,7 +1951,7 @@ token.
 			<p>----------</p>
 		</div>
 	</xsl:template>
-
+-->
 	<xsl:template match="v3:relatedDocument[not(/v3:document/v3:code/@code = '82351-8')][@typeCode = 'DRIV' or @typeCode = 'RPLC']/v3:relatedDocument/v3:setId/@root[string-length(.) = 36]"> 
 		<xsl:text>Reference Label Set Id: </xsl:text>
 		<a href="{concat('../', ., '.view')}"><xsl:value-of select="."/></a>
