@@ -756,10 +756,11 @@ be represented
 	background-color: #FFFFFF;
 }
 .spl .formTableRowAlt {
-/* pmh this is the white banding
- 	background-color: #FFFFFF; */
-/* pmh - removed the banding the FDA was using for this */
+ pmh this is the white banding
+ 	background-color: #FFFFFF;
+/* pmh - removed the banding the FDA was using for this 
   background-color: #F2F2F2;
+ */
 }
 .spl .formLabel {
 	border: 1px solid #FFFFFF;
@@ -852,9 +853,13 @@ be represented
 /* Health Canada and Aurora Specific Styles and Swatches */
 
 /* Centre items on the Title Page for both Screen and Print, and fix Recent Changes tables */
-.title-page p  { text-align: center !important; }
-.title-page h2 { text-align: center !important; }
-.recent-changes table, th, td {
+.title-page, 
+.title-page h2 { 
+    text-align: center !important; 
+}
+.recent-changes table, 
+.recent-changes th, 
+.recent-changes td {
 	border-top-style: none !important;
 	border-bottom-style: none !important;
 }
