@@ -227,10 +227,9 @@
 
 /* pmh - I do not think this is going to work 
 .frontmatter a::after { content: leader('.') target-counter(attr(href url), page, lower-roman) }
-.bodymatter a::after { content: leader('.') target-counter(attr(href url), page, decimal) } */
+.bodymatter a::after { content: leader('.') target-counter(attr(href url), page, decimal) }
 @page { counter-increment: page }
-#pageNumber { content: counter(page) }
-
+#pageNumber { content: counter(page) } */
 
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
