@@ -9,8 +9,16 @@
 	<xsl:import href="spl_canada_screen.xsl"/>
 	<xsl:import href="spl_canada_i18n.xsl"/>
 	
+	<!-- pmh retaining all of these unused parameters for future use -->
+	<!-- Whether to show the clickable XML, set to "/.." instead of "1" to turn off -->
+	<xsl:param name="show-subjects-xml" select="/.."/>
+	<!-- Whether to show the data elements in special tables etc., set to "/.." instead of "1" to turn off -->
+	<xsl:param name="show-data" select="/.."/>
+	<!-- Whether to show section numbers, set to 1 to enable and "/.." to turn off-->
+	<xsl:param name="show-section-numbers" select="/.."/>	
 	<!-- This is the CSS link put into the output -->
 	<xsl:param name="css">http://cease353.github.io/xtest/current/spl_canada.css</xsl:param>
+
 	<xsl:variable name="lang">
 		<xsl:choose>
 			<xsl:when test="v3:document/v3:languageCode[@code='1']">en</xsl:when>
@@ -786,6 +794,11 @@
 	<xsl:template match="v3:author/v3:assignedEntity/v3:representedOrganization" mode="print">
 		<xsl:apply-templates mode="subjects" select="."/>
 		<xsl:apply-templates mode="subjects" select="v3:assignedEntity/v3:assignedOrganization"/>	
+	</xsl:template>
+
+	<!-- NULL ROOT TEMPLATE - MIXIN SUPPORT DISABLED -->
+	<xsl:template match="/" priority="1">
+		<xsl:apply-templates select="/v3:document"/>
 	</xsl:template>
 
 	<!-- MAIN HTML PAGE TEMPLATING -->

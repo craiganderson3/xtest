@@ -2259,6 +2259,7 @@ token.
 	<xsl:variable name="unnumberedSectionCodes" select="$standardSections//v3:section[not(number(@number) > 0) and not(@numbered='yes')]/@code"/>
 
 	<!-- SECTION MODEL -->
+	<!-- pmh - section model is overridden in spl_canada.xsl:
 	<xsl:template match="v3:section">
 		<xsl:param name="standardSection" select="$standardSections//v3:section[@code=current()/v3:code/descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1']/@code]"/>
 		<xsl:param name="sectionLevel" select="count(ancestor-or-self::v3:section)"/>
@@ -2290,7 +2291,7 @@ token.
 				<xsl:call-template name="flushSectionTitleFootnotes"/>
 			</div>
 		</xsl:if>
-	</xsl:template>
+	</xsl:template> -->
 	<xsl:template match="v3:section[v3:code[descendant-or-self::*[self::v3:code or self::v3:translation][@codeSystem='2.16.840.1.113883.6.1' and @code='34066-1']]]" priority="2">
 		<!-- boxed warning -->
 		<xsl:param name="standardSection" select="$standardSections//v3:section[@code=current()/v3:code/descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1']/@code]"/>
