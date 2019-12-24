@@ -653,6 +653,12 @@
 		</xsl:if>
 	</xsl:template>	
 	
+	<!-- Shallow null-transform for anything but sections - this is highly simplified from the original FDA template -->
+	<xsl:template mode="sectionNumber" match="/|@*|node()"/>
+	<xsl:template mode="sectionNumber" match="v3:section">
+		<xsl:value-of select="concat('.',count(parent::v3:component/preceding-sibling::v3:component[v3:section[not(v3:code[@code=$unnumberedSectionCodes])]])+1)"/>
+	</xsl:template> 
+		
 	<!-- This is the main page content, which renders for both screen, with Product Details in front, and print, with Product Details at end -->	
 	<xsl:template match="v3:structuredBody" mode="main-document">
 		<main class="col">

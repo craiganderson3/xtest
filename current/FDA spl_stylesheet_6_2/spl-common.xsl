@@ -2234,9 +2234,10 @@ token.
 	<!-- SECTION NUMBER MODE -->
 	<!-- Special mode to construct a section number. Apply to a sequence of sections on the ancestor-or-self axis. -->
 	<!-- Shallow null-transform for anything but sections. -->
+	<!-- pmh - moved to spl_canada.xsl and simplified:
 	<xsl:template mode="sectionNumber" match="/|@*|node()"/>
 	<xsl:template mode="sectionNumber" match="v3:section">
-		<!-- Using Standard Section Numbers can be confusing if the sections are mixed standard/non-stancard
+		<!- - Using Standard Section Numbers can be confusing if the sections are mixed standard/non-stancard
 				 Example: 8.1 / 8.3 / 8.4 / 8.5 standard, then 8.6 non-standard, because 8.2 was missing, now 8.6 gets numbered as 8.5 
 
          xsl:param name="standardSection"
@@ -2246,12 +2247,12 @@ token.
 			<xsl:when test="$standardSectionNumber">
 				<xsl:value-of select="concat('.',$standardSectionNumber)"/>
 			</xsl:when>
-			<xsl:otherwise -->
-		<!-- but when not using standard section numbers, we will count main sections wrong. We shall not count boxed WARNING and Recent Major Changes. -->
+			<xsl:otherwise - ->
+		<!- - but when not using standard section numbers, we will count main sections wrong. We shall not count boxed WARNING and Recent Major Changes. - ->
 		<xsl:value-of select="concat('.',count(parent::v3:component/preceding-sibling::v3:component[v3:section[not(v3:code[@code=$unnumberedSectionCodes])]])+1)"/>
-		<!-- /xsl:otherwise>
-		</xsl:choose -->
-	</xsl:template> 
+		<!- - /xsl:otherwise>
+		</xsl:choose - ->
+	</xsl:template> -->
 	<xsl:variable name="unnumberedSectionCodes" select="$standardSections//v3:section[not(number(@number) > 0) and not(@numbered='yes')]/@code"/>
 
 	<!-- SECTION MODEL -->
