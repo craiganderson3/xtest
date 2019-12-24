@@ -136,6 +136,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<!-- GS: the document title should not be processed in normal mode. 
 			 This is really should be revisited when the top-level template gets refactored. --> 
 	<xsl:template match="/v3:document/v3:title" priority="1"/>
+	<!-- pmh - commenting all of the main document targets for now, since spl_canada has its own:
 	<xsl:template mode="user-management" match="/v3:document">
 		<html>
 			<head>
@@ -143,7 +144,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				<meta name="documentSetId" content="{/v3:document/v3:setId/@root}"/>
 				<meta name="documentVersionNumber" content="{/v3:document/v3:versionNumber/@value}"/>
 				<meta name="documentEffectiveTime" content="{/v3:document/v3:effectiveTime/@value}"/>
-				<title><!-- GS: this isn't right because the title can have markup -->
+				<title><!- - GS: this isn't right because the title can have markup - ->
 					<xsl:value-of select="v3:title"/>
 				</title>
 				<link rel="stylesheet" type="text/css" href="{$css}"/>
@@ -260,16 +261,17 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				</xsl:if>
 			</body>
 		</html>
-	</xsl:template>
+	</xsl:template> -->
+	<!-- pmh - commenting all of the main document targets for now, since spl_canada has its own:
 	<xsl:template mode="form3911" match="/v3:document">
-		<!-- GS: this template needs thorough refactoring -->
+		<!- - GS: this template needs thorough refactoring - ->
 		<html>
 			<head>
 				<meta name="documentId" content="{/v3:document/v3:id/@root}"/>
 				<meta name="documentSetId" content="{/v3:document/v3:setId/@root}"/>
 				<meta name="documentVersionNumber" content="{/v3:document/v3:versionNumber/@value}"/>
 				<meta name="documentEffectiveTime" content="{/v3:document/v3:effectiveTime/@value}"/>
-				<title><!-- GS: this isn't right because the title can have markup -->
+				<title><!- - GS: this isn't right because the title can have markup - ->
 					<xsl:value-of select="v3:title"/>
 				</title>
 				<link rel="stylesheet" type="text/css" href="{$css}"/>
@@ -344,7 +346,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 											</xsl:if>
 										</xsl:when>
 										<xsl:otherwise>
-											<!-- XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ -->
+											<!- - XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ - ->
 											<xsl:message terminate="yes">required function node-set is not available, this XSLT processor cannot handle the transform</xsl:message>
 										</xsl:otherwise>
 									</xsl:choose>
@@ -389,7 +391,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 											</xsl:if>
 										</xsl:when>
 										<xsl:otherwise>
-											<!-- XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ -->
+											<!- - XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ - ->
 											<xsl:message terminate="yes">required function node-set is not available, this XSLT processor cannot handle the transform</xsl:message>
 										</xsl:otherwise>
 									</xsl:choose>
@@ -574,7 +576,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 											</xsl:if>
 										</xsl:when>
 										<xsl:otherwise>
-											<!-- XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ -->
+											<!- - XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ - ->
 											<xsl:message terminate="yes">required function node-set is not available, this XSLT processor cannot handle the transform</xsl:message>
 										</xsl:otherwise>
 									</xsl:choose>
@@ -628,14 +630,14 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</html>
 	</xsl:template>	
 	<xsl:template match="/v3:document">
-		<!-- GS: this template needs thorough refactoring -->
+		<!- - GS: this template needs thorough refactoring - ->
 		<html>
 			<head>
 				<meta name="documentId" content="{/v3:document/v3:id/@root}"/>
 				<meta name="documentSetId" content="{/v3:document/v3:setId/@root}"/>
 				<meta name="documentVersionNumber" content="{/v3:document/v3:versionNumber/@value}"/>
 				<meta name="documentEffectiveTime" content="{/v3:document/v3:effectiveTime/@value}"/>
-				<title><!-- GS: this isn't right because the title can have markup -->
+				<title><!- - GS: this isn't right because the title can have markup - ->
 					<xsl:value-of select="v3:title"/>
 				</title>
 				<link rel="stylesheet" type="text/css" href="{$css}"/>
@@ -667,7 +669,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 								<xsl:message terminate="yes">required function node-set is not available, this XSLT processor cannot handle the transform</xsl:message>
 							</xsl:otherwise>
 						</xsl:choose>
-						<!-- Generate the Table of Contents only if the SPL is PLR. -->
+						<!- - Generate the Table of Contents only if the SPL is PLR. - ->
 						<xsl:variable name="indexRtf">
 							<xsl:apply-templates mode="index" select="."/>
 						</xsl:variable>
@@ -701,7 +703,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				<xsl:if test="boolean($show-data)">
 					<div class="DataElementsTables">
 						<xsl:call-template name="PLRIndications"/>
-						<!--xsl:call-template name="PLRInteractions"/-->
+						<!- -xsl:call-template name="PLRInteractions"/- ->
 						<xsl:if test="//v3:*[self::v3:ingredientSubstance[starts-with(../@classCode,'ACTI')] or self::v3:identifiedSubstance[not($root/v3:document/v3:code/@code = '64124-1')]]">
 							<xsl:call-template name="PharmacologicalClass"/>
 						</xsl:if>
@@ -747,7 +749,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				</xsl:if>
 			</body>
 		</html>
-	</xsl:template>
+	</xsl:template> -->
 	<!--INDEXING - PESTICIDE RESIDUE TOLERANCE Start -->
 <!-- pmh deprecate anything that refers to pesticides:
 	<xsl:template match="v3:subject[v3:identifiedSubstance][/v3:document/v3:code/@code = '3565717']">
@@ -1319,6 +1321,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			<xsl:when test="position() &lt; last() - 1">, </xsl:when>
 		</xsl:choose>
 	</xsl:template>
+	<!-- pmh - moved this into a localization file spl_canada_i18n.xsl to support international requirements
 	<xsl:template name="string-to-date">
 		<xsl:param name="text"/>
 		<xsl:param name="displayMonth">true</xsl:param>
@@ -1329,7 +1332,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			<xsl:variable name="year" select="substring($text,1,4)"/>
 			<xsl:variable name="month" select="substring($text,5,2)"/>
 			<xsl:variable name="day" select="substring($text,7,2)"/>
-			<!-- changed by Brian Suggs 11-13-05.  Changes made to display date in MM/DD/YYYY format instead of DD/MM/YYYY format -->
+			<!- - changed by Brian Suggs 11-13-05.  Changes made to display date in MM/DD/YYYY format instead of DD/MM/YYYY format - ->
 			<xsl:if test="$displayMonth = 'true'">
 				<xsl:value-of select="$month"/>
 				<xsl:value-of select="$delimiter"/>
@@ -1342,7 +1345,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				<xsl:value-of select="$year"/>
 			</xsl:if>
 		</xsl:if>
-	</xsl:template>
+	</xsl:template> -->
 	<xsl:template name="recent-effectiveDate">
 		<xsl:param name="effectiveDateSequence" />
 		<xsl:for-each select="$effectiveDateSequence[string-length(.) &gt; 7]">
