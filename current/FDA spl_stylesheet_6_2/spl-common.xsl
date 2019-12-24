@@ -2234,10 +2234,10 @@ token.
 	<!-- SECTION NUMBER MODE -->
 	<!-- Special mode to construct a section number. Apply to a sequence of sections on the ancestor-or-self axis. -->
 	<!-- Shallow null-transform for anything but sections. -->
-	<!-- pmh - moved to spl_canada.xsl and simplified:
+	<!-- pmh - we could move this to spl_canada.xsl, but it contains child apply-templates -->
 	<xsl:template mode="sectionNumber" match="/|@*|node()"/>
 	<xsl:template mode="sectionNumber" match="v3:section">
-		<!- - Using Standard Section Numbers can be confusing if the sections are mixed standard/non-stancard
+		<!-- Using Standard Section Numbers can be confusing if the sections are mixed standard/non-stancard
 				 Example: 8.1 / 8.3 / 8.4 / 8.5 standard, then 8.6 non-standard, because 8.2 was missing, now 8.6 gets numbered as 8.5 
 
          xsl:param name="standardSection"
@@ -2247,12 +2247,12 @@ token.
 			<xsl:when test="$standardSectionNumber">
 				<xsl:value-of select="concat('.',$standardSectionNumber)"/>
 			</xsl:when>
-			<xsl:otherwise - ->
-		<!- - but when not using standard section numbers, we will count main sections wrong. We shall not count boxed WARNING and Recent Major Changes. - ->
+			<xsl:otherwise -->
+		<!-- but when not using standard section numbers, we will count main sections wrong. We shall not count boxed WARNING and Recent Major Changes. -->
 		<xsl:value-of select="concat('.',count(parent::v3:component/preceding-sibling::v3:component[v3:section[not(v3:code[@code=$unnumberedSectionCodes])]])+1)"/>
-		<!- - /xsl:otherwise>
-		</xsl:choose - ->
-	</xsl:template> -->
+		<!-- /xsl:otherwise>
+		</xsl:choose -->
+	</xsl:template>
 	<xsl:variable name="unnumberedSectionCodes" select="$standardSections//v3:section[not(number(@number) > 0) and not(@numbered='yes')]/@code"/>
 
 	<!-- SECTION MODEL -->
@@ -2316,6 +2316,7 @@ token.
 	<xsl:template match="v3:section[v3:code[descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1' and @code='43683-2']]]" priority="2">
 		<!-- don't display the Recent Major Change section within the FPI -->
 	</xsl:template>
+	<!-- pmh - we could move this to spl_canada.xsl, but it has child apply-templates -->
 	<xsl:template match="v3:title">
 		<xsl:param name="sectionLevel" select="count(ancestor::v3:section)"/>
 		<xsl:param name="sectionNumber" select="/.."/>
@@ -2333,6 +2334,7 @@ token.
 			<xsl:apply-templates mode="mixed" select="node()"/>
 		</xsl:element>	
 	</xsl:template>
+	<!-- pmh - we could move this to spl_canada.xsl, but it contains child apply-templates -->
 	<xsl:template match="v3:text[not(parent::v3:observationMedia)]">
 		<xsl:apply-templates select="@*"/>
 		<xsl:apply-templates mode="mixed" select="node()"/>
