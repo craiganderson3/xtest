@@ -225,8 +225,11 @@
 					top: 0;
 				}
 
-/* pmh - I do not think this is going to work 
-.frontmatter a::after { content: leader('.') target-counter(attr(href url), page, lower-roman) }
+/* pmh - I do not think this is going to work: */
+a::after {
+content: ", page " target-counter(attr(href), page );
+}
+/*.frontmatter a::after { content: leader('.') target-counter(attr(href url), page, lower-roman) }
 .bodymatter a::after { content: leader('.') target-counter(attr(href url), page, decimal) }
 @page { counter-increment: page }
 #pageNumber { content: counter(page) } */
@@ -250,6 +253,7 @@
 			  console.log(e)
 			}
 		</script>
+		<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 	</xsl:template>
 	
 </xsl:transform>
