@@ -723,7 +723,7 @@
 										</div>
 									</section>
 									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
-									<!-- pmh - I do not think this is going to work -->
+									<!-- pmh - I do not think this is going to work
 									<section class="force-page-break hide-in-screen" id="print-table-of-contents">
 										<div class="spl">
 											TEST TEST TEST POC FOR TABLE OF CONTENTS from Hadlima deb4ec67-8764-4b72-b7a5-0bae88db11a3
@@ -733,7 +733,7 @@
 												<li class="bodymatter"><a href="#baa4d498-0fc3-4e44-b4b6-550140d4de5d">Part threebody</a></li>
 											</ol>
 										</div>
-									</section>
+									</section> -->
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '007'">
 									<!-- RECENT MAJOR LABEL CHANGES -->
