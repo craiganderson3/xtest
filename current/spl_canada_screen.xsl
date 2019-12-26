@@ -253,7 +253,6 @@ content: ", page " target-counter(attr(href), page );
 			  console.log(e)
 			}
 		</script>
-<!--		<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script> -->
 	</xsl:template>
 	
 </xsl:transform>
