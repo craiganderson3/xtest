@@ -226,10 +226,9 @@
 				}
 
 /* pmh - I do not think this is going to work: */
-a::after {
+/*a::after {
 content: ", page " target-counter(attr(href), page );
 }
-/*
 .frontmatter a::after { content: leader('.') target-counter(attr(href url), page, lower-roman) }
 .bodymatter a::after { content: leader('.') target-counter(attr(href url), page, decimal) }
 @page { counter-increment: page }
