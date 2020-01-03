@@ -232,12 +232,12 @@
 					top: 0;
 				}
 
-/* pmh - WeasyPrint Bootstrap 4 column hack - see https://github.com/Kozea/WeasyPrint/issues/697 */
+/* pmh - WeasyPrint Bootstrap 4 column hack - see https://github.com/Kozea/WeasyPrint/issues/697:
 @media print {
 	.col, *[class^="col-"] {		
 		max-width: none !important; 
 	}
-}
+} */
 
 
 /* pmh - I do not think this is going to work: */
