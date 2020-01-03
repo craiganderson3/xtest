@@ -60,7 +60,7 @@
 	
 	<!-- This is a fairly decent navigation sidebar menu -->
 	<xsl:template match="v3:structuredBody" mode="sidebar-navigation">
-		<aside class="bg-aurora-light hide-in-print" id="left">
+		<aside class="bg-aurora-light hide-in-print mb-2" id="left">
 			<div class="sticky-top sticky d-none d-md-block hide-in-print" id="side">
 				<section class="card">
 					<h5 class="card-header text-white bg-aurora-accent1">

@@ -748,7 +748,7 @@
 								</xsl:when>
 								<xsl:otherwise>
 									<!-- NAVIGATION FOR DIFFERENT PARTS -->								
-									<section class="card mb-2" id="{$unique-section-id}">
+									<section class="card mb-2 pb-2" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
