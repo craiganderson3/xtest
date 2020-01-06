@@ -491,10 +491,11 @@
 						</xsl:for-each>
 					</xsl:for-each>
 					<xsl:value-of select="v3:formCode/@displayName"/>
+					<!-- pmh remove old references to FDA characteristic controlled vocabulary:
 					<xsl:for-each select="../v3:subjectOf/v3:characteristic">
 						<xsl:if test="../../v3:quantity or ../../v3:containerPackagedProduct[v3:formCode[@displayName]] or ../preceding::v3:subjectOf"></xsl:if>
-						<xsl:variable name="def" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]"/>
 						<xsl:variable name="name" select="($def/v3:code/@displayName|$def/v3:code/@p:displayName)[1]" xmlns:p="http://pragmaticdata.com/xforms" />
+						<xsl:variable name="def" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]"/>
 						<xsl:variable name="cname" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code]]/v3:value[@code = current()/v3:value/@code]/@displayName"/>
 						<xsl:choose>
 							<xsl:when test="$cname">
@@ -508,7 +509,7 @@
 								<xsl:value-of select="(v3:value[not(../v3:code/@code = 'SPLCMBPRDTP')]/@code|v3:value/@value)[1]"/>
 							</xsl:otherwise>
 						</xsl:choose>						
-					</xsl:for-each>
+					</xsl:for-each> -->
 					<br/>
 				</xsl:for-each>
 			</td>

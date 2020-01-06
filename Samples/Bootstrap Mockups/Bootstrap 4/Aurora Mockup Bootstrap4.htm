@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aurora Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--  <link rel="stylesheet" type="text/css" href="./aurora.css"/> -->
+  <style>
+	/* ScrollSpy and Navigation */
+  
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	#side .nav-link.active,
+	#side .nav-link:hover,
+	#side .nav-link:focus{
+		color: #AF3C43;
+	}  
+	
+	.sticky {
+	  position: -webkit-sticky;
+	  position: sticky;
+	  top: 0;
+	}
+
+	/* added for hc */
+
+	/*!
+	 * Fix word wrap for buttons and centering for Title Page
+	 */		
+
+	.bg-aurora-accent1 { background-color: #26374A; }
+	.bg-aurora-accent2 { background-color: #AF3C43; }
+	.bg-aurora-light   { background-color: #F5F5F5;	}
+
+	@media print {		
+		.hide-in-print { display: none; }
+		.card { border-width: 0; }
+		.card-header { display: none; }
+	}
+	
+	@media screen {
+		.hide-in-screen { display: none; }
+/*		#side { max-width: 400px; min-width: 400px; padding: 12px; } */
+		#side { max-width: 420px; min-width: 420px; }
+		#navigation-sidebar li { padding-left: 10px !important; }
+		#navigation-scrollbar {	height: calc(100vh - 50px); overflow-y: scroll; }
+		.Section > h1 {display: none; }
+
+	}
+	
+  </style>
+</head>
+<body data-spy="scroll" data-target="#navigation-sidebar" data-offset="1">
+	<!-- should this be wrapped in a separate container-fluid? why or why not? -->
+	<div class="bg-aurora-accent1 hide-in-print">
+		<h1 class="text-white text-center">Clarithromycin <br/>Clarithromycin, Tablet</h1>
+	</div>
+	<div class="container-fluid position-relative" id="content">
+		<div class="row h-100">
+			<aside class="bg-aurora-light hide-in-print" id="left">
+				<div class="sticky-top sticky d-none d-md-block hide-in-print" id="side">
+<section class="card">
+					<h5 class="card-header text-white bg-aurora-accent1">TABLE OF CONTENTS</h5>
+<div style="transform: scaleX(-1);" id="navigation-scrollbar">
+						<ul class="navbar-nav" id="navigation-sidebar" style="transform: scaleX(-1); ">
+						<li class="nav-item"><!-- removed and then added back "drop-" from href and id below -->
+							<a href="#drop-f6ac9de5-be91-442c-9579-5bc9ebd36902" 
+							   class="nav-link dropdown-toggle" data-toggle="collapse">PRODUCT DETAILS</a>
+							<ul id="drop-f6ac9de5-be91-442c-9579-5bc9ebd36902" class="navbar-nav collapse small">
+								<li class="nav-item"><a href="#company-details" class="nav-link active">Company Details</a></li>
+								<li class="nav-item"><a href="#product-1" class="nav-link">Product #1 - messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo.</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="#sec2" class="nav-link">Title Page</a></li>
+						<li class="nav-item"><a href="#sec3" class="nav-link">Recent Major Label Changes</a></li>
+						<li class="nav-item"><!-- removed "drop-" from href and id below -->
+							<a href="#sec4" class="nav-link dropdown-toggle" data-toggle="collapse">PART I: HEALTH PROFESSIONAL INFORMATION</a>
+							<ul id="sec4" class="navbar-nav small collapse">
+<!--							<a href="#sec4" class="nav-link">PART I: HEALTH PROFESSIONAL INFORMATION</a>
+							<ul id="sec4" class="navbar-nav small"> -->
+								<li class="nav-item"><a href="#sec4a" class="nav-link">INDICATIONS AND CLINICAL USE</a></li>
+								<li class="nav-item"><a href="#sec4b" class="nav-link">CONTRAINDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec4c" class="nav-link">INDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec4d" class="nav-link">CONTRAINDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec4e" class="nav-link">CLINICAL USE</a></li>
+								<li class="nav-item"><a href="#sec4f" class="nav-link">CONTRA</a></li>
+								<li class="nav-item"><a href="#sec4g" class="nav-link">INDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec4h" class="nav-link">CONTRAINDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec4i" class="nav-link">CLINICAL USE</a></li>
+								<li class="nav-item"><a href="#sec4j" class="nav-link">CONTRAINDICATIONS</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><!-- removed "drop-" from href and id below -->
+							<a href="#sec5" class="nav-link dropdown-toggle" data-toggle="collapse">PART II: PATIENT INFORMATION</a>
+							<ul id="sec5" class="navbar-nav small collapse">
+								<li class="nav-item"><a href="#sec5a" class="nav-link">INDICATIONS AND CLINICAL USE</a></li>
+								<li class="nav-item"><a href="#sec5b" class="nav-link">CONTRAINDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec5c" class="nav-link">INDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec5d" class="nav-link">CONTRAINDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec5e" class="nav-link">CLINICAL USE</a></li>
+								<li class="nav-item"><a href="#sec5f" class="nav-link">CONTRA</a></li>
+								<li class="nav-item"><a href="#sec5g" class="nav-link">INDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec5h" class="nav-link">CONTRAINDICATIONS</a></li>
+								<li class="nav-item"><a href="#sec5i" class="nav-link">CLINICAL USE</a></li>
+								<li class="nav-item"><a href="#sec5j" class="nav-link">CONTRAINDICATIONS</a></li>
+							</ul>
+						</li>
+					</ul>
+</div>
+</section>
+				</div>
+			</aside>
+			<main class="col">
+				<div class="row position-relative">
+					<div class="col">
+						<section class="hide-in-print card m-2" id="f6ac9de5-be91-442c-9579-5bc9ebd36902">
+							<h5 class="card-header text-white bg-aurora-accent1">PRODUCT DETAILS</h5>
+							<div id="product-accordion">
+							<section class="card m-2" id="company-details">
+								<h6 class="card-header p-0 bg-aurora-accent2">
+									<button class="btn bg-aurora-accent2 text-white text-left w-100" type="button" 
+									data-toggle="collapse" data-target="#collapse-company-details" 
+									aria-expanded="true" aria-controls="collapseOne">
+										COMPANY DETAILS
+									</button>
+								</h6>
+								<div id="collapse-company-details" class="collapse show" data-parent="#product-accordion">
+									<div class="row">
+										<div class="col-2">
+<!--											<h5>CONTACT</h5> --><br/><br/>
+											<h6>Market Authorization Holder:</h6>
+											<br/>
+											<h6>Canadian Importer/Distributor:</h6>
+										</div>
+										<div class="col-6 text-center">
+											<h5>COMPANY NAME AND ADDRESS</h5>
+											<p>SAMSUNG BIOEPIS<br/>107, Cheomdan-daero, Yeonsu-gu, Incheon, 21987,<br/>Republic of Korea</p>
+											<p>Distributed by:<br/>Merck Canada Inc.<br/>Kirkland QC Canada H9H 4M7</p>
+										</div>
+										<div class="col-4">
+											<!-- <h5>ADDITIONAL</h5> --><br/><br/>
+											<p>Tel: 123-4567<br/>Web: http://samsung-biopepsis.com</p>
+											<p>Tel: 555-9876<br/>Web: http://merck-canada.com</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="card m-2" id="product-1">
+								<h6 class="card-header p-0 bg-aurora-accent2">
+									<button class="btn bg-aurora-accent2 text-white text-left w-100" type="button" 
+									data-toggle="collapse" data-target="#collapse-product-1" 
+									aria-expanded="true" aria-controls="collapseOne">
+										PRODUCT #1 - PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies
+									</button>
+								</h6>
+								<div id="collapse-product-1" class="collapse" data-parent="#product-accordion">
+									PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+								</div>
+							</section>
+							</div>
+						</section>
+
+						<section class="card m-2" id="sec2">
+							<h5 class="card-header text-white bg-aurora-accent1">TITLE PAGE</h5>
+							<p class="text-center">Intelligentsia salvia mustache 90's code editing brunch. <br/> Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy
+								messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. <br/>Forage Shoreditch tousled aesthetic irony, <br/>street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby
+								messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. <br/>Forage Shoreditch tousled aesthetic irony, <br/>street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby
+								messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. <br/>Forage Shoreditch tousled aesthetic irony, <br/>street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby
+								messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. <br/>Forage Shoreditch tousled aesthetic irony, <br/>street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby
+								messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. <br/>Forage Shoreditch tousled aesthetic irony, <br/>street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby
+							</p>
+						</section>
+
+						<section class="card m-2" id="sec3">
+							<h5 class="card-header text-white bg-aurora-accent1">RECENT MAJOR LABEL CHANGES</h5>
+							<p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+							</p>
+						</section>
+
+						<section class="card m-2" id="sec4">
+							<h5 class="card-header text-white bg-aurora-accent1">PART I: HEALTH PROFESSIONAL INFORMATION</h5>
+							<section id="sec4a">
+								<h6>Four A</h6>
+								<p>PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								</p>
+							</section>
+							<section id="sec4b">
+								<h6>Four B</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. 
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								</p>
+							</section>
+							<section id="sec4c">
+								<h6>Four C</h6>
+								<p>PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!</p>
+							</section>
+							<section id="sec4d">
+								<h6>Four D</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec4e">
+								<h6>Four E</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec4f">
+								<h6>Four F</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. 
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.								
+								</p>
+							</section>
+							<section id="sec4g">
+								<h6>Four G</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec4h">
+								<h6>Four H</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec4i">
+								<h6>Four I</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec4j">
+								<h6>Four J</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+						</section>
+
+						<section class="card m-2" id="sec5">
+							<h5 class="card-header text-white bg-aurora-accent1">PART II: PATIENT INFORMATION</h5>
+							<section id="sec5a">
+								<h6>Four A</h6>
+								<p>PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								</p>
+							</section>
+							<section id="sec5b">
+								<h6>Four B</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. 
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								</p>
+							</section>
+							<section id="sec5c">
+								<h6>Four C</h6>
+								<p>PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!</p>
+							</section>
+							<section id="sec5d">
+								<h6>Four D</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec5e">
+								<h6>Four E</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec5f">
+								<h6>Four F</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. 
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.
+								slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi
+								McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.								
+								</p>
+							</section>
+							<section id="sec5g">
+								<h6>Four G</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec5h">
+								<h6>Four H</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec5i">
+								<h6>Four I</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+							<section id="sec5j">
+								<h6>Four J</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland. PBR narwhal sustainable mixtape swag wolf squid tote bag. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. </p>
+							</section>
+						</section>
+
+						<section class="hide-in-screen card" id="sec1">
+							<h5 class="card-header text-white">1 PRODUCT DETAILS</h5>
+							<p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg</p>
+							<section class="card" id="sec1a">
+								<h6 class="card-header text-white">PRODUCT #1</h6>
+								<p>PBR narwhal sustainable mixtape swag wolf squid tote bag plus and them then Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.								</p>
+							</section>
+							<section class="card" id="sec1b">
+								<h6 class="card-header text-white">PRODUCT #2</h6>
+								<p>Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland. REALLY<br/>LONG<br/>TO<br/>GO<br/>TO<br/>THE<br/>NEXT<br/>PAGE.
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									forage fingerstache food truck occupy YOLO Pitchfork fixie MDO of twitter fame iPhone fanny pack art party Portland. dd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
+									artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan!
+									Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+									art party Portland.Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack
+								</p>
+							</section>
+						</section>
+
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<!-- perhaps Stickyfill should have cross origin integrity? Bootstrap Bundle contains Popper, and 4.1.3 is the current "Aurora" version of Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.0.5/stickyfill.min.js"></script>
+	<script>
+		try {
+		  var elements = document.querySelectorAll('.sticky');
+		  Stickyfill.add(elements);
+		} catch (e) {
+		  console.log(e)
+		}
+	</script>
+</body>
+</html>

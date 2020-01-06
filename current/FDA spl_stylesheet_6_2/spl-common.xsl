@@ -2959,6 +2959,7 @@ token.
 		</table>
 	</xsl:template>
 	<!-- Note: This template is also used for top level Product Concept which does not have v3:asEquivalentEntity -->
+	<!-- pmh - I don't think Canada requires abstract product concept, so I am removing this, at least for now, because it uses the FDA Characteristics controlled vocabulary: -->
 	<xsl:template mode="subjects" match="v3:section/v3:subject/v3:manufacturedProduct/*[self::v3:manufacturedProduct[v3:name or v3:formCode] or self::v3:manufacturedMedicine][not(v3:asEquivalentEntity/v3:definingMaterialKind[/v3:document/v3:code/@code = '73815-3'])]|v3:section/v3:subject/v3:identifiedSubstance/v3:identifiedSubstance">
 		<xsl:if test="not($root/v3:document/v3:code/@code = '3565717') and not($root/v3:document/v3:code/@code = '3565715')">
 			<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
@@ -3109,6 +3110,7 @@ token.
 						<th style="text-align:center;font-size: 100%;font-weight: bold;">Amount Per Serving</th>
 						<th style="text-align:center;font-size: 100%;font-weight: bold;">% Daily Value</th>
 					</tr>
+					<!-- pmh - I don't think Canada requires abstract product concept, so I am removing this, at least for now, because it uses the FDA Characteristics controlled vocabulary: 
 					<xsl:for-each select="../v3:subjectOf/v3:characteristic[not(v3:code/@code = '101.9(b)/1') and not(v3:code/@code = '101.9(b)/2') and not(v3:code/@code = '101.9(b)(8)')]">
 						<xsl:variable name="def" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]"/>
 						<tr>	
@@ -3127,7 +3129,7 @@ token.
 								</xsl:if>
 							</td>
 						</tr>
-					</xsl:for-each>
+					</xsl:for-each> -->
 				</table>
 			</xsl:if>
 		</xsl:if>
@@ -3656,6 +3658,7 @@ token.
 		</table>
 	</xsl:template> -->
 
+	<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 	<xsl:template mode="characteristics" match="/|@*|node()">
 		<xsl:apply-templates mode="characteristics" select="@*|node()"/>
 	</xsl:template>
@@ -3682,7 +3685,7 @@ token.
 				</td>
 			</xsl:if>
 		</tr>
-	</xsl:template>
+	</xsl:template> -->
 	<xsl:template mode="characteristics" match="v3:value[@xsi:type = 'ST']">
 		<td class="formItem" colspan="2"><xsl:value-of select="text()"/></td>
 	</xsl:template>
@@ -3734,6 +3737,7 @@ token.
 
 
 <!-- display the imprint characteristic color -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="color">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Color</td>
@@ -3745,8 +3749,9 @@ token.
 		</xsl:for-each>
 		<xsl:if test="not($path/v3:value)">&#160;&#160;&#160;&#160;</xsl:if>
 	</td>
-</xsl:template>
+</xsl:template> -->
 <!-- display the imprint characteristic score -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="score">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Score</td>
@@ -3758,8 +3763,9 @@ token.
 			<xsl:otherwise><xsl:value-of select="$path/v3:value/@value"/> pieces</xsl:otherwise>
 		</xsl:choose>
 	</td>
-</xsl:template>
+</xsl:template> -->
 <!-- display the imprint characteristic shape -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="shape">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Shape</td>
@@ -3767,8 +3773,9 @@ token.
 		<xsl:value-of select="$path/v3:value/@displayName"/>
 		<xsl:if test="normalize-space($path/v3:value/v3:originalText)"> (<xsl:value-of select="$path/v3:value/v3:originalText"/>) </xsl:if>
 	</td>
-</xsl:template>
+</xsl:template> -->
 <!-- display the imprint characteristic flavor -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="flavor">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Flavor</td>
@@ -3779,16 +3786,18 @@ token.
 			<xsl:if test="normalize-space(./v3:originalText)"> (<xsl:value-of select="./v3:originalText"/>) </xsl:if>
 		</xsl:for-each>
 	</td>
-</xsl:template>
+</xsl:template> -->
 <!-- display the imprint characteristic code -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="imprintCode">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Imprint Code</td>
 	<td class="formItem">
 		<xsl:value-of select="$path[v3:value/@xsi:type='ST']"/>
 	</td>
-</xsl:template>
+</xsl:template> -->
 <!-- display the imprint characteristic size -->
+	<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="size">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Size</td>
@@ -3796,23 +3805,25 @@ token.
 		<xsl:value-of select="$path/v3:value/@value"/>
 		<xsl:value-of select="$path/v3:value/@unit"/>
 	</td>
-</xsl:template>
+</xsl:template> -->
 <!-- display the imprint characteristic symbol -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="symbol">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Symbol</td>
 	<td class="formItem">
 		<xsl:value-of select="$path/v3:value/@value"/>
 	</td>
-</xsl:template>
+</xsl:template>	-->
 <!-- display the imprint characteristic coating -->
+<!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
 <xsl:template name="coating">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Coating</td>
 	<td class="formItem">
 		<xsl:value-of select="$path/v3:value/@value"/>
 	</td>
-</xsl:template>	
+</xsl:template>	-->
 <xsl:template name="image">
 	<xsl:param name="path" select="."/>
 	<xsl:if test="string-length($path/v3:value/v3:reference/@value) > 0">
