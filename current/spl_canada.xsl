@@ -100,7 +100,7 @@
 		</xsl:for-each>
 	</xsl:template>	
 	
-	<!-- override FDA Product Info section, using Canadian French and English labels -->
+	<!-- override FDA Product Info section, using Canadian French and English labels - note, we could drop the Alt class for row banding -->
 	<xsl:template name="ProductInfoBasic">
 		<tr>
 			<td>
