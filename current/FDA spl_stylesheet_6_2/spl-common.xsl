@@ -1300,9 +1300,10 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			</xsl:apply-templates>
 		</xsl:copy>
 	</xsl:template>
+	<!-- pmh - this is not a bad idea, but currently unnecessary if we primarily rely on Bootstrap js:
 	<xsl:template name="include-custom-items">
 		<script src="{$resourcesdir}spl.js" type="text/javascript" charset="utf-8">/* */</script>
-	</xsl:template>
+	</xsl:template> -->
 
 	<xsl:template name="string-lowercase">
 		<!--** Convert the input text that is passed in as a parameter to lower case  -->

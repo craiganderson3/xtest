@@ -26,9 +26,10 @@
 		</xsl:choose>
 	</xsl:variable>
 	<xsl:output method="html" encoding="UTF-8" version="4.0" doctype-public="-//W3C//DTD HTML 4.01//EN" indent="no"/>
-    <xsl:variable name="upper" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
+<!-- pmh: these are no longer used, and there are templates for upper and lower casing strings in spl_common    
+	<xsl:variable name="upper" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
     <xsl:variable name="lower" select="'abcdefghijklmnopqrstuvwxyz'"/>
-	<xsl:variable name="alphanumeric" select="'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-'"/>
+	<xsl:variable name="alphanumeric" select="'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-'"/> -->
 		
 	<!-- OVERRIDE FDA STYLES FOR MANUFACTURED PRODUCT DETAILS -->
 	
