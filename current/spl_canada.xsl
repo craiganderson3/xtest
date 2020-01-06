@@ -363,6 +363,18 @@
 		</tr>
 	</xsl:template>
 
+<!-- pmh - CV template from FDA:
+	<xsl:template mode="characteristics" match="v3:value[@xsi:type = 'CV' or @xsi:type = 'CE' or @xsi:type = 'CE']">
+		<td class="formItem">
+			<xsl:value-of select=".//@displayName[1]"/>
+		</td>
+		<td class="formItem">
+			<xsl:value-of select=".//@code[1]"/>
+		</td>
+	</xsl:template>
+-->
+
+
 	<xsl:template name="characteristics-old">
 		<table class="formTablePetite" cellSpacing="0" cellPadding="3" width="100%">
 			<tbody>

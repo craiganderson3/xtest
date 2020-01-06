@@ -3686,6 +3686,7 @@ token.
 			</xsl:if>
 		</tr>
 	</xsl:template> -->
+<!-- pmh: I would prefer to do something similar to this in spl_canada.xsl, based on xsi:type:
 	<xsl:template mode="characteristics" match="v3:value[@xsi:type = 'ST']">
 		<td class="formItem" colspan="2"><xsl:value-of select="text()"/></td>
 	</xsl:template>
@@ -3734,7 +3735,7 @@ token.
 	</td>
 	<td class="formItem"><xsl:value-of select="v3:low/@unit"/></td>
 </xsl:template>
-
+-->
 
 <!-- display the imprint characteristic color -->
 <!-- pmh - all of the characteristics using FDA controlled vocabulary have been simplified and moved to spl_canada.xsl:
