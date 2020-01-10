@@ -30,7 +30,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 							 xmlns:msxsl="urn:schemas-microsoft-com:xslt" 
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 							 exclude-result-prefixes="exsl msxsl v3 xsl xsi str v">
-	<xsl:import href="xml-verbatim.xsl"/>
+<!--	<xsl:import href="xml-verbatim.xsl"/> -->
 <!-- pmh deprecated unused:
 	<xsl:import href="mixin.xsl"/>
 	<xsl:import href="substance.xsl"/>
