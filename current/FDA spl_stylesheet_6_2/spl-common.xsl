@@ -39,8 +39,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:param name="show-data" select="/.."/>
 	<xsl:param name="show-section-numbers" select="/.."/>
 	<xsl:param name="update-check-url-base" select="/.."/>
+	<!-- pmh deprecated unused:
 	<xsl:param name="standardSections" select="document('plr-sections.xml')/*"/>
-<!-- pmh deprecated unused:
 	<xsl:param name="itemCodeSystems" select="document('item-code-systems.xml')/*"/>
 	<xsl:param name="disclaimers" select="document('disclaimers.xml')/*"/>
 	<xsl:param name="documentTypes" select="document('doc-types.xml')/*"/>
@@ -2244,9 +2244,10 @@ token.
 	<!-- Special mode to construct a section number. Apply to a sequence of sections on the ancestor-or-self axis. -->
 	<!-- Shallow null-transform for anything but sections. -->
 	<!-- pmh - we could move this to spl_canada.xsl, but it contains child apply-templates -->
+	<!-- can we just deprecate these two templates completely?
 	<xsl:template mode="sectionNumber" match="/|@*|node()"/>
 	<xsl:template mode="sectionNumber" match="v3:section">
-		<!-- Using Standard Section Numbers can be confusing if the sections are mixed standard/non-stancard
+		<!- - Using Standard Section Numbers can be confusing if the sections are mixed standard/non-stancard
 				 Example: 8.1 / 8.3 / 8.4 / 8.5 standard, then 8.6 non-standard, because 8.2 was missing, now 8.6 gets numbered as 8.5 
 
          xsl:param name="standardSection"
@@ -2256,14 +2257,14 @@ token.
 			<xsl:when test="$standardSectionNumber">
 				<xsl:value-of select="concat('.',$standardSectionNumber)"/>
 			</xsl:when>
-			<xsl:otherwise -->
-		<!-- but when not using standard section numbers, we will count main sections wrong. We shall not count boxed WARNING and Recent Major Changes. -->
+			<xsl:otherwise - ->
+		<!- - but when not using standard section numbers, we will count main sections wrong. We shall not count boxed WARNING and Recent Major Changes. - ->
 		<xsl:value-of select="concat('.',count(parent::v3:component/preceding-sibling::v3:component[v3:section[not(v3:code[@code=$unnumberedSectionCodes])]])+1)"/>
-		<!-- /xsl:otherwise>
-		</xsl:choose -->
+		<!- - /xsl:otherwise>
+		</xsl:choose - ->
 	</xsl:template>
 	<xsl:variable name="unnumberedSectionCodes" select="$standardSections//v3:section[not(number(@number) > 0) and not(@numbered='yes')]/@code"/>
-
+-->
 	<!-- SECTION MODEL -->
 	<!-- pmh - section model is overridden in spl_canada.xsl:
 	<xsl:template match="v3:section">
@@ -2298,8 +2299,9 @@ token.
 			</div>
 		</xsl:if>
 	</xsl:template> -->
+	<!-- pmh commenting out section model now - unused?
 	<xsl:template match="v3:section[v3:code[descendant-or-self::*[self::v3:code or self::v3:translation][@codeSystem='2.16.840.1.113883.6.1' and @code='34066-1']]]" priority="2">
-		<!-- boxed warning -->
+		<!- - boxed warning - ->
 		<xsl:param name="standardSection" select="$standardSections//v3:section[@code=current()/v3:code/descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1']/@code]"/>
 		<xsl:param name="sectionLevel" select="count(ancestor-or-self::v3:section)"/>		
 		<xsl:variable name="sectionNumberSequence">
@@ -2315,7 +2317,7 @@ token.
 			</xsl:for-each>
 			<a name="section-{substring($sectionNumberSequence,2)}"/>
 			<p/>
-			<!-- this funny p is used to prevent melting two sub-sections together in condensed style -->
+			<!- - this funny p is used to prevent melting two sub-sections together in condensed style - ->
 			<xsl:apply-templates select="v3:title">
 				<xsl:with-param name="sectionLevel" select="$sectionLevel"/>
 				<xsl:with-param name="sectionNumber" select="substring($sectionNumberSequence,2)"/>
@@ -2324,8 +2326,8 @@ token.
 		</div>
 	</xsl:template>
 	<xsl:template match="v3:section[v3:code[descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1' and @code='43683-2']]]" priority="2">
-		<!-- don't display the Recent Major Change section within the FPI -->
-	</xsl:template>
+		<!- - don't display the Recent Major Change section within the FPI - ->
+	</xsl:template> -->
 	<!-- pmh - we could move this to spl_canada.xsl, but it has child apply-templates -->
 	<xsl:template match="v3:title">
 		<xsl:param name="sectionLevel" select="count(ancestor::v3:section)"/>
@@ -4414,6 +4416,8 @@ token.
 			 5. imprint information
 			 6. packaging information
 	-->
+
+<!-- pmh comment out PLRIndications:
 <xsl:template name="PLRIndications" mode="indication" match="v3:section [v3:code [descendant-or-self::* [(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1' and @code='34067-9'] ] ]">
 	<xsl:if test="count(//v3:reason) > 0">
 		<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
@@ -4435,7 +4439,7 @@ token.
 									<td class="formTitle">Maximum Dose</td>
 									<td class="formTitle" colSpan="4">Conditions &amp; Limitations Of Use</td>
 								</tr>
-								<!-- Repeat Me -->
+								<!- - Repeat Me - ->
 								<xsl:for-each select="$indicationSection//v3:excerpt/v3:highlight/v3:subject">
 									<tr class="formTableRowAlt">
 										<td class="formItem" valign="top">
@@ -4473,16 +4477,16 @@ token.
 														<td class="formTitle">Precondition</td>
 														<td class="formTitle">Labeling Section</td>
 													</tr>
-													<!-- Repeat Each precondition for the indication subject -->
-													<!-- PCR 593 Displaying all the preconditions that are specifict to this indication and those that may be in other sections such
+													<!- - Repeat Each precondition for the indication subject - ->
+													<!- - PCR 593 Displaying all the preconditions that are specifict to this indication and those that may be in other sections such
 																 as the Dosage forms and Strengths.
-														-->
-													<!-- PCR 593 Displaying all the preconditions that are specifict to this indication and those that may be in other sections such
+														- ->
+													<!- - PCR 593 Displaying all the preconditions that are specifict to this indication and those that may be in other sections such
 																 as the Dosage forms and Strengths.
-														-->
-													<!-- PCR 606 In order to remove the duplicates each section whose ancestor is anything other than $indicationSectionCode.
+														- ->
+													<!- - PCR 606 In order to remove the duplicates each section whose ancestor is anything other than $indicationSectionCode.
 																 A not (!) in the predicate will not do since a precondition axis can have multiple section tags as ancestors, of which any may be an Indication Section.
-														-->
+														- ->
 													<xsl:for-each select="./v3:substanceAdministration/v3:precondition">
 														<xsl:call-template name="displayConditionsOfUse"> </xsl:call-template>
 													</xsl:for-each>
@@ -4517,7 +4521,7 @@ token.
 															</td>
 														</tr>
 													</xsl:for-each>
-													<!-- end repeat -->
+													<!- - end repeat - ->
 													<tr>
 														<td>&#160;</td>
 													</tr>
@@ -4530,12 +4534,12 @@ token.
 														<td class="formTitle">Precondition</td>
 														<td class="formTitle">Labeling Section</td>
 													</tr>
-													<!-- Repeat Each Limitation of Use -->
-													<!-- apply all limitation of use templates for issues within this subject -->
-													<!-- now apply all limitation of use templates for issues that are NOT within any indication section or subsection -->
-													<!-- PCR 593 Since the limitation of use can have multiple ancestors called section, we process all children limitations of the current context.
+													<!- - Repeat Each Limitation of Use - ->
+													<!- - apply all limitation of use templates for issues within this subject - ->
+													<!- - now apply all limitation of use templates for issues that are NOT within any indication section or subsection - ->
+													<!- - PCR 593 Since the limitation of use can have multiple ancestors called section, we process all children limitations of the current context.
 																 and then all other limitations with specified named ancestors. All possible ancestors other than indication section are used in the predicate.  
-																 Also made a call to a named template in a loop rather than a matched template-->
+																 Also made a call to a named template in a loop rather than a matched template- ->
 													<xsl:for-each select="./v3:substanceAdministration/v3:subjectOf/v3:issue">
 														<xsl:call-template name="displayLimitationsOfUse"> </xsl:call-template>
 													</xsl:for-each>
@@ -4544,14 +4548,14 @@ token.
 															<xsl:call-template name="displayLimitationsOfUse"> </xsl:call-template>
 														</xsl:if>
 													</xsl:for-each>
-													<!-- end repeat -->
+													<!- - end repeat - ->
 												</tbody>
 											</table>
 										</td>
 									</tr>
 								</xsl:for-each>
-								<!--/xsl:for-each-->
-								<!-- end repeat -->
+								<!- -/xsl:for-each- ->
+								<!- - end repeat - ->
 							</tbody>
 						</table>
 					</td>
@@ -4559,7 +4563,7 @@ token.
 			</tbody>
 		</table>
 	</xsl:if>
-</xsl:template>
+</xsl:template> -->
 <xsl:template mode="indication" match="v3:value[@xsi:type='IVL_PQ']">
 	<xsl:choose>
 		<xsl:when test="v3:low and v3:high">

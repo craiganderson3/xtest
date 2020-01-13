@@ -155,7 +155,7 @@
 		
 	<!-- SECTION MODEL - is this kludgey to just override this? -->
 	<xsl:template match="v3:section">
-		<xsl:param name="standardSection" select="$standardSections//v3:section[@code=current()/v3:code/descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1']/@code]"/>
+<!--		<xsl:param name="standardSection" select="$standardSections//v3:section[@code=current()/v3:code/descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1']/@code]"/> -->
 		<xsl:param name="sectionLevel" select="count(ancestor-or-self::v3:section)"/>
 		<xsl:variable name="sectionNumberSequence">
 			<xsl:apply-templates mode="sectionNumber" select="ancestor-or-self::v3:section"/>
