@@ -4566,6 +4566,7 @@ token.
 		</table>
 	</xsl:if>
 </xsl:template> -->
+<!-- pmh - commenting out Indications, Display Conditions of Use and Display Conditions of Use:
 <xsl:template mode="indication" match="v3:value[@xsi:type='IVL_PQ']">
 	<xsl:choose>
 		<xsl:when test="v3:low and v3:high">
@@ -4608,8 +4609,8 @@ token.
 			</xsl:when>
 		</xsl:choose>
 		<td class="formItem">
-			<!--PCR 593 Instead of using the variable $indicationSection the section number is being uniquely determined. for conditionsl of use.
-				-->
+			<!- -PCR 593 Instead of using the variable $indicationSection the section number is being uniquely determined. for conditionsl of use.
+				- ->
 			<xsl:variable name="sectionNumberSequence">
 				<xsl:apply-templates mode="sectionNumber" select="ancestor::v3:section[parent::v3:component[parent::v3:structuredBody]]"/>
 			</xsl:variable>
@@ -4619,8 +4620,8 @@ token.
 		</td>
 	</tr>
 </xsl:template>
-<!-- PCR593 Using a named template instead of a matched template for  v3:issue[v3:subject/v3:observationCriterion] See where it is
-			 being called from, for more details.-->
+<!- - PCR593 Using a named template instead of a matched template for  v3:issue[v3:subject/v3:observationCriterion] See where it is
+			 being called from, for more details.- ->
 <xsl:template name="displayLimitationsOfUse">
 	<tr>
 		<xsl:attribute name="class">
@@ -4655,8 +4656,9 @@ token.
 			</a>
 		</td>
 	</tr>
-</xsl:template>
+</xsl:template> -->
 <!-- Interactions template -->
+<!-- pmh commenting out Interactions template:
 <xsl:template mode="interactions" match="v3:issue[v3:subject[v3:substanceAdministrationCriterion]]">
 	<tr>
 		<xsl:attribute name="class">
@@ -4692,8 +4694,9 @@ token.
 			</a>
 		</td>
 	</tr>
-</xsl:template>
+</xsl:template> -->
 <!-- Adverse Reactions template -->
+<!-- pmh commenting out Adverse Reactions:
 <xsl:template mode="adverseReactions" match="v3:issue[not(./v3:subject) and v3:risk]">
 	<xsl:param name="addEmptyTd">false</xsl:param>
 	<tr>
@@ -4729,8 +4732,9 @@ token.
 			</a>
 		</td>
 	</tr>
-</xsl:template>
+</xsl:template> -->
 <!-- Other Interaction template -->
+<!-- pmh commenting out Other Indication:
 <xsl:template mode="otherInteraction" match="v3:issue">
 	<xsl:param name="addEmptyTd">false</xsl:param>
 	<tr>
@@ -4761,7 +4765,8 @@ token.
 			</a>
 		</td>
 	</tr>
-</xsl:template>
+</xsl:template> -->
+<!-- pmh commenting out Pharmacological Class:
 <xsl:template name="PharmacologicalClass">
 	<xsl:if test="//v3:generalizedMaterialKind[v3:code/@codeSystem='2.16.840.1.113883.3.26.1.5']">
 		<table cellSpacing="0" cellPadding="3" width="100%" class="formTablePetite">
@@ -4808,5 +4813,5 @@ token.
 			</tbody>
 		</table>
 	</xsl:if>
-</xsl:template>
+</xsl:template> -->
 </xsl:transform>
