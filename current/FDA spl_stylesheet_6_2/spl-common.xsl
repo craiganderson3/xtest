@@ -46,7 +46,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:param name="documentTypes" select="document('doc-types.xml')/*"/>
 	<xsl:param name="indexingDocumentTypes" select="document('indexing-doc-types.xml')/*"/> -->
 	<xsl:param name="root" select="/"/>
-	<xsl:param name="css" select="'./spl.css'"/>
+<!--	<xsl:param name="css" select="'./spl.css'"/> -->
 	<xsl:param name="process-mixins" select="/.."/>
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="no" doctype-public="-"/>
 	<xsl:strip-space elements="*"/>
@@ -65,12 +65,13 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			<unit UCUM="a" singular="year" plural="years"/>
 		</unitsMapping>
 	</xsl:variable>
+	<!-- pmh commenting out maxSection17 and maxStdSectionNumber after removing all references:
 	<xsl:variable name="maxStdSectionNumber">
 		<xsl:call-template name="max">
 			<xsl:with-param name="sequence" select="$standardSections/v3:section[@code = $root/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:code/@code]/@number[. &lt;= 17]" />
 		</xsl:call-template>
 	</xsl:variable>
-	<xsl:variable name="maxSection17" select="$standardSections/v3:section[@number = $maxStdSectionNumber]" />
+	<xsl:variable name="maxSection17" select="$standardSections/v3:section[@number = $maxStdSectionNumber]" /> -->
 	<xsl:variable name="drugNotificationList">
 		<code code="C121834" displayName="Counterfeit"/>
 		<code code="C121835" displayName="Diverted"/>
@@ -1408,6 +1409,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			 just make reference to any of these 3 sub-sections - any $standardSection/*[@patsec]
 			 it should not labeled as section "17" if it isn't 17 
 	-->
+	<!-- pmh: commenting out highlights completely for now:
 	<xsl:template mode="highlights" match="/|@*|node()">
 		<xsl:apply-templates mode="highlights" select="@*|node()"/>
 	</xsl:template>
@@ -1434,7 +1436,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</div>
 	</xsl:template>
 	<xsl:template mode="highlights" match="v3:structuredBody">
-		<!-- here is where we undertake some hard re-ordering -->
+		<!- - here is where we undertake some hard re-ordering - ->
 		<xsl:variable name="body" select="."/>
 		<xsl:variable name="pullUpSections" select="$standardSections//v3:section[@highlightfrontmatter]"/>
 		<xsl:variable name="pullDownSections" select="$standardSections//v3:section[@highlightbackmatter]"/>
@@ -1483,11 +1485,11 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		<xsl:if test="$patsecs">
 			<p class="HighlightsSeeReference">
 				<xsl:text>See </xsl:text>
-				<!-- XXX: this hard reference to section 17 is not always right, 
+				<!- - XXX: this hard reference to section 17 is not always right, 
 						 but we got pushback on our attempt to use the actual reference, 
-						 hence I am moving it back to hard coded "17" for now. -->
+						 hence I am moving it back to hard coded "17" for now. - ->
 				<xsl:text>17</xsl:text>
-				<!-- xsl:for-each select="$patsecs">
+				<!- - xsl:for-each select="$patsecs">
 						 <xsl:variable name="sectionNumber">
 						 <xsl:apply-templates mode="sectionNumber" select="."/>
 						 </xsl:variable>
@@ -1505,11 +1507,11 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 						 <a href="#section-{substring($sectionNumber,2)}">
 						 <xsl:value-of select="substring($sectionNumber,2)"/>
 						 </a>
-						 </xsl:for-each -->
+						 </xsl:for-each - ->
 				<xsl:text> for </xsl:text>
 				<xsl:for-each select="$patsecs">
 					<xsl:if test="not($patsecs[generate-id(.) = generate-id(current()/../..)])">
-						<!-- preventing sub-sections in a patient section to be mentioned -->
+						<!- - preventing sub-sections in a patient section to be mentioned - ->
 						<xsl:choose>
 							<xsl:when test="position() > 1 and  position() = last()">
 								<xsl:text> and </xsl:text>
@@ -1587,7 +1589,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			</div>
 		</xsl:if>
 	</xsl:template>
-	<xsl:template mode="highlights" match="v3:section[v3:code[@codeSystem='2.16.840.1.113883.6.1' and @code='34066-1']][v3:excerpt]">	<!-- BOXED WARNING -->
+	<xsl:template mode="highlights" match="v3:section[v3:code[@codeSystem='2.16.840.1.113883.6.1' and @code='34066-1']][v3:excerpt]">	<!- - BOXED WARNING - ->
 		<xsl:param name="doNotSuppressFrontOrBackMatter" select="/.."/>
 		<xsl:if test="$doNotSuppressFrontOrBackMatter">
 			<div class="Warning">
@@ -1644,7 +1646,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 
 	<xsl:template mode="mixed" match="v3:highlight//v3:paragraph">
 		<p class="Highlights{@styleCode}">
-			<!-- TESTME!!! The above funky class literal was here, why? It should have been call template to styleCodeAttr -->
+			<!- - TESTME!!! The above funky class literal was here, why? It should have been call template to styleCodeAttr - ->
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode" select="'Highlighta'"/>
@@ -1664,8 +1666,10 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			<xsl:call-template name="highlightsAutoLink"/>
 		</p>
 	</xsl:template>
+	pmh commented out all of highlights section -->
 
 	<!-- MODE index -->
+	<!-- pmh commenting out index mode for now:
 	<xsl:template mode="index" match="/|@*|node()">
 		<xsl:apply-templates mode="index" select="@*|node()"/>
 	</xsl:template>
@@ -1678,8 +1682,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 					</td>
 					<td width="50%" align="left" valign="top">
 						<div>
-							<h1 class="Colspan">FULL PRESCRIBING INFORMATION: CONTENTS<!-- do not allow a space here 
-            --><a href="#footnote-content" name="footnote-reference-content">*</a></h1>
+							<h1 class="Colspan">FULL PRESCRIBING INFORMATION: CONTENTS<!- - do not allow a space here 
+            - -><a href="#footnote-content" name="footnote-reference-content">*</a></h1>
 							<xsl:apply-templates mode="index" select="@*|node()" />
 							<dl class="Footnote">
 								<dt>
@@ -1694,7 +1698,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</div>
 	</xsl:template>
 	<xsl:template mode="index" match="v3:section/v3:component/v3:section/v3:component/v3:section" priority="1">
-		<!-- per FDA PCR 575: only include sections and first level of subsections in the contents -->
+		<!- - per FDA PCR 575: only include sections and first level of subsections in the contents - ->
 	</xsl:template>
 	<xsl:template mode="index" match="v3:section[v3:title and descendant::v3:text[parent::v3:section]]" priority="0">
 		<xsl:param name="sectionLevel" select="count(ancestor::v3:section)+1"/>
@@ -1709,7 +1713,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				<a href="#section-{substring($sectionNumberSequence,2)}">
 					<xsl:attribute name="class">toc</xsl:attribute>
 					<xsl:apply-templates select="@*"/>
-					<!-- PCR 601 Not displaying foonote mark inside a table of content -->
+					<!- - PCR 601 Not displaying foonote mark inside a table of content - ->
 					<xsl:apply-templates mode="mixed" select="./v3:title/node()">
 						<xsl:with-param name="isTableOfContent" select="'yes'"/>
 					</xsl:apply-templates>
@@ -1718,6 +1722,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</xsl:if>	
 		<xsl:apply-templates mode="index" select="@*|node()"/>
 	</xsl:template>
+	-->
 
 	<!-- MODE: reference -->
 	<!-- Create a section number reference such as (13.2) -->
