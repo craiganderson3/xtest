@@ -809,6 +809,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				</tr>
 			</table>
 	</xsl:template> -->
+	<!-- pmh - commenting out observation Criterion and Analyte
 	<xsl:template match="v3:observationCriterion">
 			<tr>
 				<xsl:attribute name="class">
@@ -860,7 +861,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				<xsl:text>)</xsl:text>
 			</td>
 		</xsl:if>
-	</xsl:template>
+	</xsl:template> -->
 	<!--INDEXING - PESTICIDE RESIDUE TOLERANCE End -->
 	<!-- Pesticide Labeling Start-->
 <!-- pmh deprecate anything related to pesticides:
@@ -1049,6 +1050,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	</xsl:template> -->
 	<!-- Pesticide Labeling End-->
 	<!-- REMS templates start -->
+<!-- pmh - commenting out REMS templates:
 	<xsl:template match="v3:subject2[v3:substanceAdministration/v3:subjectOf/v3:issue]">
 		<xsl:if test="count(//v3:issue[v3:subject[v3:substanceAdministrationCriterion]]) > 0 or count(//v3:issue[not(v3:subject) and v3:risk]) > 0">
 			<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
@@ -1069,8 +1071,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 										<td class="formTitle">Consequence</td>
 										<td class="formTitle">Labeling Section</td>
 									</tr>
-									<!-- only select those issues that have the proper interactions code of 'C54708' -->
-									<!-- all others will be placed in a table with a title "UN-CODED INTERACTIONS OR ADVERSE REACTIONS" -->
+									<!- - only select those issues that have the proper interactions code of 'C54708' - ->
+									<!- - all others will be placed in a table with a title "UN-CODED INTERACTIONS OR ADVERSE REACTIONS" - ->
 									<xsl:apply-templates mode="interactions" select="//v3:issue[v3:code/@code = 'C54708']"/>
 								</tbody>
 							</table>
@@ -1088,8 +1090,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 										<td class="formTitle">Consequence</td>
 										<td class="formTitle">Labeling Section</td>
 									</tr>
-									<!-- only select those issues that have the proper adverse reactions code of 'C41332' -->
-									<!-- all others will be placed in a table with a title "UN-CODED INTERACTIONS OR ADVERSE REACTIONS" -->
+									<!- - only select those issues that have the proper adverse reactions code of 'C41332' - ->
+									<!- - all others will be placed in a table with a title "UN-CODED INTERACTIONS OR ADVERSE REACTIONS" - ->
 									<xsl:apply-templates mode="adverseReactions" select="//v3:issue[v3:code/@code = 'C41332']"/>
 								</tbody>
 							</table>
@@ -1108,9 +1110,9 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 										<td class="formTitle">Consequence</td>
 										<td class="formTitle">Labeling Section</td>
 									</tr>
-									<!-- apply the interaction sections that are improperly coded -->
+									<!- - apply the interaction sections that are improperly coded - ->
 									<xsl:apply-templates mode="otherInteraction" select="//v3:issue[v3:code/@code != 'C54708' and v3:code/@code != 'C41332']"/>
-									<!-- apply the adverse reaction sections that are imprperly code -->
+									<!- - apply the adverse reaction sections that are imprperly code - ->
 								</tbody>
 							</table>
 						</td>
@@ -1146,7 +1148,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			<td class="formItem">
 				<xsl:choose>
 					<xsl:when test="number(v3:sequenceNumber/@value) &lt; number(ancestor::v3:componentOf[1]/v3:sequenceNumber/@value)">
-						<xsl:for-each select="ancestor::v3:componentOf[1]/v3:pauseQuantity[@value and @unit][1]"><!-- remember that the before case is different from during and after, see  -->
+						<xsl:for-each select="ancestor::v3:componentOf[1]/v3:pauseQuantity[@value and @unit][1]"><!- - remember that the before case is different from during and after, see  - ->
 							<xsl:call-template name="time-value"/>
 							<xsl:text> </xsl:text>							
 						</xsl:for-each>
@@ -1289,7 +1291,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				</xsl:choose>
 			</xsl:when>
 		</xsl:choose> 
-	</xsl:template>
+	</xsl:template>  -->
 	<!-- REMS templates end -->
 	<!-- helper templates -->
 	<xsl:template priority="2" match="v3:highlight//@width[not(contains(.,'%'))]" /> <!-- This would avoid things moving out of 2-column view -->
