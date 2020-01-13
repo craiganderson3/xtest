@@ -4251,7 +4251,7 @@ token.
 		</table>
 	</xsl:if>
 </xsl:template>	-->
-
+<!-- pmh comment out older templating for Establishment/Organization:
 <xsl:template mode="subjects" match="//v3:author/v3:assignedEntity/v3:representedOrganization/v3:assignedEntity/v3:assignedOrganization/v3:assignedEntity/v3:assignedOrganization">	
 	<xsl:if test="./v3:name">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTableMorePetite">
@@ -4279,7 +4279,7 @@ token.
 				<td class="formItem">	
 					<xsl:apply-templates mode="format" select="./v3:addr"/>	
 				</td>
-				<!-- root = "1.3.6.1.4.1.519.1" -->
+				<!- - root = "1.3.6.1.4.1.519.1" - ->
 				<td class="formItem">
 					<xsl:value-of select="./v3:id[@root='1.3.6.1.4.1.519.1']/@extension"/><xsl:if test="./v3:id[@root='1.3.6.1.4.1.519.1']/@extension and ./v3:id[not(@root='1.3.6.1.4.1.519.1')]/@extension">/</xsl:if><xsl:value-of select="./v3:id[not(@root='1.3.6.1.4.1.519.1')]/@extension"/>
 				</td>
@@ -4370,7 +4370,7 @@ token.
 					</td>
 				</tr>
 			</xsl:for-each>
-			<!-- 53617 changed to 73599 -->
+			<!- - 53617 changed to 73599 - ->
 			<xsl:for-each select="./v3:assignedEntity[v3:performance/v3:actDefinition/v3:code/@code='C73599']/v3:assignedOrganization">	
 				<xsl:if test="position() = 1">
 					<tr>
@@ -4408,7 +4408,7 @@ token.
 		</table>
 	</xsl:if>
 </xsl:template>	
-
+-->
 
 <!-- Start PLR Information templates
 			 1. product code
