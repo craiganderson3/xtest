@@ -4008,11 +4008,12 @@ token.
 </xsl:template> -->
 
 <!-- MODE: ldd - lot distribution data -->
-<!-- Note: this is a model how to make these tables right, with apply-templates instead of all these call-template. -->
+	<!-- pmh - commenting out all of the ldd and fill/bulk/label:
+<!- - Note: this is a model how to make these tables right, with apply-templates instead of all these call-template. - ->
 <xsl:template mode="ldd" match="/|node()|@*">
 	<xsl:apply-templates mode="ldd" select="@*|node()"/>
 </xsl:template>
-<!-- FILL LOT -->
+<!- - FILL LOT - ->
 <xsl:template mode="ldd" match="v3:instanceOfKind[not(preceding-sibling::v3:instanceOfKind)]/v3:productInstance" priority="2">
 	<tr>
 		<td colspan="2" class="formHeadingTitle">Lot Distribution Data</td>
@@ -4036,7 +4037,7 @@ token.
 	<xsl:apply-templates mode="ldd" select="v3:ingredient"/>
 	<xsl:apply-templates mode="ldd" select="*[not(self::v3:ingredient)]"/>
 </xsl:template>
-<!-- BULK LOT -->
+<!- - BULK LOT - ->
 <xsl:template mode="ldd" name="bulk" match="v3:productInstance/v3:ingredient/v3:ingredientProductInstance" priority="1">
 	<tr>
 		<td class="formItem"><xsl:value-of select="v3:id/@extension"/></td>
@@ -4046,7 +4047,7 @@ token.
 		<td class="formItem"><xsl:value-of select="../v3:subjectOf/v3:productEvent[v3:code[@code='C43360' and @codeSystem='2.16.840.1.113883.3.26.1.1']]/v3:performer/v3:assignedEntity/v3:representedOrganization/v3:id/@extension"/></td>
 	</tr>
 </xsl:template>
-<!-- LABEL LOT -->
+<!- - LABEL LOT - ->
 <xsl:template mode="ldd" match="v3:productInstance/v3:member[not(preceding-sibling::v3:member)]/v3:memberProductInstance/v3:asContent/v3:container" priority="2">
 	<tr>
 		<td class="formTitle">Final Container Lot Number</td>
@@ -4106,7 +4107,7 @@ token.
 		<td class="formItem"><xsl:value-of select="../../../v3:subjectOf/v3:productEvent[v3:code[@code='C43360' and @codeSystem='2.16.840.1.113883.3.26.1.1']]/v3:performer/v3:assignedEntity/v3:representedOrganization/v3:id/@extension"/></td>
 	</tr>
 </xsl:template>
-
+-->
 <!-- pmh overriden in spl_canada:
 <xsl:template name="MarketingInfo">
 	<xsl:if test="../v3:subjectOf/v3:approval|../v3:subjectOf/v3:marketingAct">
