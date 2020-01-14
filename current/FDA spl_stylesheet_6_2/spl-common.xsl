@@ -51,9 +51,10 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="no" doctype-public="-"/>
 	<xsl:strip-space elements="*"/>
 	<!-- The indication secction variable contains the actual Indication Section node-->
+	<!-- pmh deprecated unused:
 	<xsl:variable name="indicationSection" select="/v3:document/v3:component/v3:structuredBody/v3:component//v3:section [v3:code [descendant-or-self::* [(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1' and @code='34067-9'] ] ]"/>
 	<xsl:variable name="indicationSectionCode">34067-9</xsl:variable>
-	<xsl:variable name="dosageAndAdministrationSectionCode">34068-7</xsl:variable>
+	<xsl:variable name="dosageAndAdministrationSectionCode">34068-7</xsl:variable> -->
 	<xsl:variable name="timeUnitsList">
 		<unitsMapping>
 			<unit UCUM="s" singular="second" plural="seconds"/>

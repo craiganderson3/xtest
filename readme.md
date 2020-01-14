@@ -60,7 +60,12 @@ be internationalized. These are necessary for any fields that are Required but n
    currently using BS4. They provide different kinds of compatability with modern and older browsers.
    
  - We are currently importing the FDA XSL into our transformation, and we may eventually no longer
-   require any of the common FDA elements. These should be decoupled.
+   require any of the common FDA elements. These should be decoupled. 
+   In addition to templates that have been overridden by SPL Canada, the following areas have been unused:
+   Mixins, Pesticides, Substances, PLR Sections, Indication Sections, Document Types, Other Ingredients,
+   Observation Criterion and Analytes, REMS templates, Highlights and Disclaimers, Indexes, Document Model, 
+   Cross Reference Model, Complicated Section Numbering and Effective Date templates, Pharmacological Class,
+   LDD/BULK/FILL/LABEL, Display Limitations and Conditions of Use, Interactions and Adverse Reactions,  
    
  - We are currently referencing a copy of the FDA spl.css, called spl_canada.css, the Bootstrap CSS,
    and some local CSS. The local CSS will be merged into spl_canada.css. In the final version, there will 
@@ -79,4 +84,7 @@ be internationalized. These are necessary for any fields that are Required but n
  using Oxygen or a similar tool. If we host our XSL on Github Pages, there is a limitation for Chrome, 
  because Chrome serves XSL as application/xml,rather than text/xml, as described at the bottom of this thread:
  https://stackoverflow.com/questions/2981524/how-can-i-make-xslt-work-in-chrome
+ 
+ Using WeasyPrint Service from Docker Container from BC Gov:
+ curl -v -X POST -d @test.htm -JLO http://127.0.0.1:5002/pdf?filename=result.pdf
  
