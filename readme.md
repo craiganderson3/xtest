@@ -61,11 +61,15 @@ be internationalized. These are necessary for any fields that are Required but n
    
  - We are currently importing the FDA XSL into our transformation, and we may eventually no longer
    require any of the common FDA elements. These should be decoupled. 
-   In addition to templates that have been overridden by SPL Canada, the following areas have been unused:
+   
+ - In addition to templates that have been overridden by SPL Canada, the following areas have been unused:
    Mixins, Pesticides, Substances, PLR Sections, Indication Sections, Document Types, Other Ingredients,
    Observation Criterion and Analytes, REMS templates, Highlights and Disclaimers, Indexes, Document Model, 
    Cross Reference Model, Complicated Section Numbering and Effective Date templates, Pharmacological Class,
    LDD/BULK/FILL/LABEL, Display Limitations and Conditions of Use, Interactions and Adverse Reactions
+    
+ - The following FDA XSL files have been unused: mixins, pesticides, substance, and the following FDA XML files have been unused: 
+   characteristic, disclaimers, doc-types, indexing, item code systems, PLR sections.
 
  - Still need to completely remove process mixins, and then move spl_common out of FDA subdirectory.   
    
