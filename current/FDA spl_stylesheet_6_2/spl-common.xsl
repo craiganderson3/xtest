@@ -72,6 +72,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</xsl:call-template>
 	</xsl:variable>
 	<xsl:variable name="maxSection17" select="$standardSections/v3:section[@number = $maxStdSectionNumber]" /> -->
+	<!-- pmh - commenting out a number of unused variables
 	<xsl:variable name="drugNotificationList">
 		<code code="C121834" displayName="Counterfeit"/>
 		<code code="C121835" displayName="Diverted"/>
@@ -92,6 +93,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	</xsl:variable>
 	<xsl:variable name="indicationSection1" select="/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:subject/v3:manufacturedProduct/v3:manufacturedProduct/v3:instanceOfKind/v3:productInstance/v3:ingredient/v3:subjectOf"/>
 	<xsl:variable name="indicationSection2" select="/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:subject/v3:manufacturedProduct/v3:manufacturedProduct"/>
+	-->
 	<!-- Process mixins if they exist -->
 	<xsl:template match="/" priority="1">
 		<xsl:choose>
@@ -2184,6 +2186,7 @@ token.
 	<xsl:template mode="footnote" match="v3:section|v3:table"/>
 
 	<!-- CROSS REFERENCE linkHtml -->
+	<!-- pmh commenting out cross-refernce linkHtml:
 	<xsl:template name="reference" mode="mixed" match="v3:linkHtml[@href]">
 		<xsl:param name="current" select="current()"/>
 		<xsl:param name="href" select="$current/@href"/>
@@ -2196,7 +2199,7 @@ token.
 					<xsl:apply-templates mode="mixed" select="$current/node()"/>
 				</a>
 			</xsl:when>
-			<!-- see PCR 793, we don't generate anchor anymore, we just use what's in the spl -->
+			<!- - see PCR 793, we don't generate anchor anymore, we just use what's in the spl - ->
 			<xsl:otherwise>
 				<xsl:variable name="sectionNumberSequence">
 					<xsl:apply-templates mode="sectionNumber" select="$target/ancestor-or-self::v3:section"/>
@@ -2218,7 +2221,7 @@ token.
 						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:variable>
-				<!-- XXX: can we match the style of the headings? -->
+				<!- - XXX: can we match the style of the headings? - ->
 				<a href="{$nhref}">
 					<xsl:if test="contains($styleCode,'MainTitle') and $target/ancestor-or-self::v3:section[last()]/v3:title">
 						<xsl:value-of select="$target/ancestor-or-self::v3:section[last()]/v3:title"/>
@@ -2240,7 +2243,7 @@ token.
 				</a>
 			</xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>
+	</xsl:template> -->
 
 	<!-- SECTION NUMBER MODE -->
 	<!-- Special mode to construct a section number. Apply to a sequence of sections on the ancestor-or-self axis. -->
