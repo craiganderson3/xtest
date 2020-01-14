@@ -2889,16 +2889,17 @@ token.
 			<xsl:apply-templates mode="data" select="v3:denominator"/>
 		</xsl:if>
 	</xsl:template>
+	<!-- pmh - canada uses simplified Effective Date:
 	<xsl:template name="effectiveDate">
 		<div class="EffectiveDate">
-			<!-- changed by Brian Suggs 11-13-05. Added the Effective Date: text back in so that people will know what this date is for. -->
-			<!-- changed by Brian Suggs 08-18-06. Modified text to state "Revised:" as per PCR 528 -->
-			<!-- GS: adding support for availabilityTime here -->
+			<!- - changed by Brian Suggs 11-13-05. Added the Effective Date: text back in so that people will know what this date is for. - ->
+			<!- - changed by Brian Suggs 08-18-06. Modified text to state "Revised:" as per PCR 528 - ->
+			<!- - GS: adding support for availabilityTime here - ->
 			<xsl:variable name="revisionTimeCandidates" select="v3:effectiveTime|v3:availabilityTime"/>
 			<xsl:variable name="revisionTime" select="$revisionTimeCandidates[@value != ''][last()]"/>
 			<xsl:if test="$revisionTime">
 				<xsl:text>Revised: </xsl:text>
-				<!-- changed by Brian Suggs 08-18-06. The effective date will now only display the month and year in the following format MM/YYYY (e.g. 08/2006). Code changed per PCR 528 -->
+				<!- - changed by Brian Suggs 08-18-06. The effective date will now only display the month and year in the following format MM/YYYY (e.g. 08/2006). Code changed per PCR 528 - ->
 				<xsl:apply-templates mode="data" select="$revisionTime">
 					<xsl:with-param name="displayMonth">true</xsl:with-param>
 					<xsl:with-param name="displayDay">false</xsl:with-param>
@@ -2947,14 +2948,15 @@ token.
 				</div>
 			</xsl:if>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
+	<!-- pmh - Canada has it's own template for distributor name:
 	<xsl:template name="distributorName">
 		<div class="DistributorName">				
 			<xsl:if test="v3:author/v3:assignedEntity/v3:representedOrganization/v3:name != ''">					
 				<xsl:value-of select="v3:author/v3:assignedEntity/v3:representedOrganization/v3:name"/>
 			</xsl:if>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
 	<!-- block at sections unless handled specially -->
 	<xsl:template mode="data" match="v3:section"/>
 	<!-- This section will display all of the subject information in one easy to read table. This view is replacing the previous display of the data elements. -->
@@ -3841,7 +3843,7 @@ token.
 		<img alt="Image of Product" style="width:100%;" src="{$path/v3:value/v3:reference/@value}"/>
 	</xsl:if>
 </xsl:template>
-
+<!-- pmh - this was replaced when characteristics were moved to spl_canada.xsl
 <xsl:template name="contains">
 	<xsl:param name="path" select="."/>
 	<td class="formLabel">Contains</td>
@@ -3853,7 +3855,7 @@ token.
 		</xsl:for-each>
 		<xsl:if test="not($path/v3:value)">&#160;&#160;&#160;&#160;</xsl:if>
 	</td>
-</xsl:template>
+</xsl:template>-->
 	
 <!-- pmh overridden in spl_canada.xsl:
 <xsl:template name="partQuantity">
