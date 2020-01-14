@@ -65,12 +65,12 @@ be internationalized. These are necessary for any fields that are Required but n
    Mixins, Pesticides, Substances, PLR Sections, Indication Sections, Document Types, Other Ingredients,
    Observation Criterion and Analytes, REMS templates, Highlights and Disclaimers, Indexes, Document Model, 
    Cross Reference Model, Complicated Section Numbering and Effective Date templates, Pharmacological Class,
-   LDD/BULK/FILL/LABEL, Display Limitations and Conditions of Use, Interactions and Adverse Reactions,  
+   LDD/BULK/FILL/LABEL, Display Limitations and Conditions of Use, Interactions and Adverse Reactions
+
+ - Still need to completely remove process mixins, and then move spl_common out of FDA subdirectory.   
    
- - We are currently referencing a copy of the FDA spl.css, called spl_canada.css, the Bootstrap CSS,
-   and some local CSS. The local CSS will be merged into spl_canada.css. In the final version, there will 
-   only be a requirement for two CSS files, the bootstrap.css, and a separate spl_canada.css file, 
-   which blends .spl classes with aurora classes and some scaffolding for our screen and print views.
+ - We are currently referencing a fork of the FDA spl css, called spl_canada.css, the Bootstrap CSS,
+   and some local CSS.
    
  - We are currently working with CSS3 Paged Media to support a print view, as opposed to using XSL:FO
    to generate a separate PDF document. Both are viable options, but Paged Media is a simplied approach.
