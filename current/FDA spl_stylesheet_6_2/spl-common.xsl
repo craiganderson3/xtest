@@ -96,6 +96,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:variable name="indicationSection2" select="/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:subject/v3:manufacturedProduct/v3:manufacturedProduct"/>
 	-->
 	<!-- Process mixins if they exist -->
+<!--
 	<xsl:template match="/" priority="1">
 		<xsl:choose>
 			<xsl:when test="boolean($process-mixins) and *[v3:relatedDocument[@typeCode='APND' and v3:relatedDocument[v3:id/@root or v3:setId/@root]]]">
@@ -110,7 +111,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 						<xsl:apply-templates select="msxsl:node-set($mixinRtf)/*"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<!-- XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ -->
+						<!- - XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ - ->
 						<xsl:message terminate="yes">required function node-set is not available, this XSLT processor cannot handle the transform</xsl:message>
 					</xsl:otherwise>
 				</xsl:choose>
@@ -131,7 +132,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 				 		
 			</xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>
+	</xsl:template> -->
 
 	<!-- MAIN MODE based on the deep null-transform -->
 	<xsl:template match="/|@*|node()">

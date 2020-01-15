@@ -57,7 +57,7 @@ be internationalized. These are necessary for any fields that are Required but n
 6. Decisions Required
 
  - There are advantages to using Bootstrap 3 vs. Bootstrap 4. Both are viable options and we are 
-   currently using BS4. They provide different kinds of compatability with modern and older browsers.
+   currently using BS4. They provide different kinds of compatibility with modern and older browsers.
    
  - We are currently importing the FDA XSL into our transformation, and we may eventually no longer
    require any of the common FDA elements. These should be decoupled. 
@@ -77,7 +77,7 @@ be internationalized. These are necessary for any fields that are Required but n
    and some local CSS.
    
  - We are currently working with CSS3 Paged Media to support a print view, as opposed to using XSL:FO
-   to generate a separate PDF document. Both are viable options, but Paged Media is a simplied approach.
+   to generate a separate PDF document. Both are viable options, but Paged Media is a simplified approach.
 
 7. Known Issues
 
