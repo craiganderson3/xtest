@@ -694,8 +694,8 @@
 									</section>
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '001'">
-									<!-- TITLE PAGE - Note: force-page-break here does not work on FireFox -->
-									<section class="card mb-2 force-page-break" id="{$unique-section-id}">
+									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
+									<section class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
@@ -769,7 +769,8 @@
 							</xsl:choose>
 						</xsl:for-each>
 						<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
-						<section class="hide-in-screen force-page-break card" id="print-product-details">
+						<!-- TODO: might be useful to force a page break before here -->
+						<section class="hide-in-screen force-page-break-before card" id="print-product-details">
 							<h5 class="card-header text-white">
 								<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
 							</h5>
