@@ -790,9 +790,17 @@
 			<div class="Section">
 				<p></p>
 				<h2>
-					<xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
+					<!-- this appears to also underline, which may be okay: -->
+					<xsl:call-template name="string-uppercase">
+						<xsl:with-param name="text">
+							<xsl:copy><xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
+								<xsl:with-param name="position"><xsl:value-of select="position()"/></xsl:with-param>
+							</xsl:apply-templates></xsl:copy>
+						</xsl:with-param>
+					</xsl:call-template>
+<!--					<xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
 						<xsl:with-param name="position"><xsl:value-of select="position()"/></xsl:with-param>
-					</xsl:apply-templates>
+					</xsl:apply-templates> -->
 				</h2>
 				<xsl:apply-templates mode="subjects" select="."/>			
 			</div>
