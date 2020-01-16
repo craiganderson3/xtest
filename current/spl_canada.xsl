@@ -771,9 +771,16 @@
 						<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
 						<!-- TODO: might be useful to force a page break before here -->
 						<section class="hide-in-screen force-page-break-before card" id="print-product-details">
-							<h5 class="card-header text-white">
+							<h2>
+								<xsl:call-template name="string-uppercase">
+									<xsl:with-param name="text">
+										<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
+									</xsl:with-param>
+								</xsl:call-template>
+							</h2>
+<!--						<h5 class="card-header text-white">
 								<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
-							</h5>
+							</h5> -->
 							<div class="spl">
 								<xsl:apply-templates mode="print" select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization"/>
 								<xsl:apply-templates mode="print" select="//v3:subject/v3:manufacturedProduct"/>
@@ -791,7 +798,6 @@
 			<div class="Section">
 				<p></p>
 				<h2>
-					<!-- this appears to also underline, which may be okay: -->
 					<xsl:call-template name="string-uppercase">
 						<xsl:with-param name="text">
 							<xsl:copy><xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
