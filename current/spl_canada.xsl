@@ -769,7 +769,7 @@
 							</xsl:choose>
 						</xsl:for-each>
 						<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
-						<section class="hide-in-screen card" id="print-product-details">
+						<section class="hide-in-screen force-page-break card" id="print-product-details">
 							<h5 class="card-header text-white">
 								<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
 							</h5>
