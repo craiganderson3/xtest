@@ -774,7 +774,7 @@
 								<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
 							</h5>
 							<div class="spl">
-								<xsl:apply-templates mode="print" select="v3:author/v3:assignedEntity/v3:representedOrganization"/>
+								<xsl:apply-templates mode="print" select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization"/>
 								<xsl:apply-templates mode="print" select="//v3:subject/v3:manufacturedProduct"/>
 							</div>
 						</section>
