@@ -160,7 +160,7 @@
 		<xsl:variable name="sectionNumberSequence">
 			<xsl:apply-templates mode="sectionNumber" select="ancestor-or-self::v3:section"/>
 		</xsl:variable>
-		<xsl:if test="not(v3:code/@code = '48780-1')">
+<!--		<xsl:if test="not(v3:code/@code = '48780-1')"> -->
 			<div class="Section">
 				<xsl:for-each select="v3:code">
 					<xsl:attribute name="data-sectionCode"><xsl:value-of select="@code"/></xsl:attribute>
@@ -175,9 +175,10 @@
 					<xsl:with-param name="additionalStyleCode" select="'Section'"/>
 				</xsl:call-template>
 				<xsl:for-each select="@ID">
-					<a name="{.}"/>
+					<a name="{.}"><xsl:text> </xsl:text></a>
 				</xsl:for-each>
-				<a name="section-{substring($sectionNumberSequence,2)}"/>
+<!-- pmh TODO do not use this anchor unless it is absolutely necessary and actually works as expeceted
+				<a name="section-{substring($sectionNumberSequence,2)}"/> -->
 				<p/>
 				<xsl:apply-templates select="v3:title">
 					<xsl:with-param name="sectionLevel" select="$sectionLevel"/>
@@ -187,9 +188,9 @@
 					<xsl:apply-templates mode="data" select="."/>
 				</xsl:if>
 				<xsl:apply-templates select="@*|node()[not(self::v3:title)]"/>
-				<xsl:call-template name="flushSectionTitleFootnotes"/>
+<!--				<xsl:call-template name="flushSectionTitleFootnotes"/> -->
 			</div>
-		</xsl:if>
+<!--		</xsl:if> -->
 	</xsl:template>
 
 	<xsl:template match="v3:document" mode="html-head">
