@@ -769,14 +769,14 @@
 							</xsl:choose>
 						</xsl:for-each>
 						<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
-						<section class="hide-in-screen force-page-break-before card" id="print-product-details">
-							<h5>
+						<section class="hide-in-screen force-page-break-before card spl" id="print-product-details">
+							<h2>
 								<xsl:call-template name="string-uppercase">
 									<xsl:with-param name="text">
 										<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
 									</xsl:with-param>
 								</xsl:call-template>
-							</h5>
+							</h2>
 							<div class="spl">
 								<xsl:apply-templates mode="print" select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization"/>
 								<xsl:apply-templates mode="print" select="//v3:subject/v3:manufacturedProduct"/>
