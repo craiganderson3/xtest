@@ -177,8 +177,8 @@
 				<xsl:for-each select="@ID">
 					<a name="{.}"><xsl:text> </xsl:text></a>
 				</xsl:for-each>
-<!-- pmh TODO do not use this anchor unless it is absolutely necessary and actually works as expeceted
-				<a name="section-{substring($sectionNumberSequence,2)}"/> -->
+<!-- pmh TODO do not use this anchor unless it is absolutely necessary and actually works as expected -->
+				<a name="section-{substring($sectionNumberSequence,2)}"><xsl:text> </xsl:text></a>
 				<p/>
 				<xsl:apply-templates select="v3:title">
 					<xsl:with-param name="sectionLevel" select="$sectionLevel"/>
