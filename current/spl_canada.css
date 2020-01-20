@@ -38,6 +38,7 @@ be represented
 @page { 
     size: 8.5in 11in; 
 	margin-top: 0.5in;
+	margin-bottom: 0.5in;
 	orphans: 4; 
 	widows: 2;
 }
