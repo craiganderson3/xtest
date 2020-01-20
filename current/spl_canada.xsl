@@ -672,6 +672,7 @@
 	</xsl:template>	
 			
 	<!-- This is the main page content, which renders for both screen, with Product Details in front, and print, with Product Details at end -->	
+	<!-- pmh - replaced card level sections with divs to resolve odd behaviour in XML Notepad -->
 	<xsl:template match="v3:structuredBody" mode="main-document">
 		<main class="col">
 			<div class="container-fluid" id="main">
@@ -683,8 +684,8 @@
 							<xsl:choose>
 								<xsl:when test="v3:code[@code='MP']">
 									<!-- PRODUCT DETAIL -->
-									<section class="card mb-2 hide-in-print" id="{$unique-section-id}">
-										<h5 class="card-header text-white bg-aurora-accent1">
+									<div class="card mb-2 hide-in-print" id="{$unique-section-id}">
+										<h5 class="card-header text-white bg-aurora-accent1"> 
 											<xsl:value-of select="$labels/productDetails[@lang = $lang]"/>
 										</h5>
 										<!-- Company Details and Product Details Accordion Cards -->
@@ -692,11 +693,11 @@
 											<xsl:apply-templates select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization" mode="card"/>
 											<xsl:apply-templates select="v3:subject/v3:manufacturedProduct" mode="card"/>
 										</div>
-									</section>
+									</div>
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '001'">
 									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
-									<section class="card mb-2 force-page-break-after" id="{$unique-section-id}">
+									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
@@ -731,7 +732,7 @@
 												</div>
 											</div>
 										</div>
-									</section>
+									</div>
 									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
 									<!-- pmh - I do not think this is going to work
 									<section class="force-page-break hide-in-screen" id="print-table-of-contents">
@@ -747,30 +748,30 @@
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '007'">
 									<!-- RECENT MAJOR LABEL CHANGES -->
-									<section class="card mb-2" id="{$unique-section-id}">
+									<div class="card mb-2" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
 										<div class="spl recent-changes">
 											<xsl:apply-templates select="."/>
 										</div>
-									</section>
+									</div>
 								</xsl:when>
 								<xsl:otherwise>
 									<!-- NAVIGATION FOR DIFFERENT PARTS -->								
-									<section class="card mb-2 pb-2" id="{$unique-section-id}">
+									<div class="card mb-2 pb-2" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
 										<div class="spl">
 											<xsl:apply-templates select="."/>
 										</div>
-									</section>
+									</div>
 								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:for-each>
 						<!-- PRINT VERSION OF MANUFACTURED PRODUCT -->
-						<section class="hide-in-screen force-page-break-before card spl" id="print-product-details">
+						<div class="hide-in-screen force-page-break-before card spl" id="print-product-details">
 							<h2>
 								<xsl:call-template name="string-uppercase">
 									<xsl:with-param name="text">
@@ -782,7 +783,7 @@
 								<xsl:apply-templates mode="print" select="/v3:document/v3:author/v3:assignedEntity/v3:representedOrganization"/>
 								<xsl:apply-templates mode="print" select="//v3:subject/v3:manufacturedProduct"/>
 							</div>
-						</section>
+						</div>
 					</div>
 				</div>				
 			</div>
