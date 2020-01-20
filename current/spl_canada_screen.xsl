@@ -198,7 +198,7 @@
 					<xsl:apply-templates mode="data" select="."/>
 				</xsl:if>
 				<xsl:apply-templates select="@*|node()[not(self::v3:title)]"/>
-<!--				<xsl:call-template name="flushSectionTitleFootnotes"/> -->
+				<xsl:call-template name="flushSectionTitleFootnotes"/>
 			</div>
 <!--		</xsl:if> -->
 	</xsl:template>
