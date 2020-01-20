@@ -37,7 +37,7 @@ be represented
 @media print {
 @page { 
     size: 8.5in 11in; 
-	margin-top: 1in;
+	margin-top: 0.5in;
 	orphans: 4; 
 	widows: 2;
 }
