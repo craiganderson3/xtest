@@ -221,13 +221,6 @@
 				<xsl:attribute name="content"><xsl:value-of select="v3:effectiveTime/@value"/></xsl:attribute>
 			</meta>
 			<title><xsl:value-of select="v3:title"/></title>
-<!-- pmh - these are inherited Government of Canada Styles for Headers and Footers -->
-<!--			<link rel="stylesheet" href="https://canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css"/>
-			<link rel="stylesheet" href="https://canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-			<link href="https://canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon"/>
-			<noscript><link rel="stylesheet" href="https://canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"/></noscript> -->
-			
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><xsl:text> </xsl:text></link>
 			<link rel="stylesheet" href="{$css}"><xsl:text> </xsl:text></link>
 			<style>

@@ -24,7 +24,6 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 <xsl:transform version="1.0" 
 							 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 							 xmlns:v3="urn:hl7-org:v3" 
-							 xmlns:v="http://validator.pragmaticdata.com/result" 
 							 xmlns:str="http://exslt.org/strings" 
 							 xmlns:exsl="http://exslt.org/common" 
 							 xmlns:msxsl="urn:schemas-microsoft-com:xslt" 
@@ -46,8 +45,8 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 	<xsl:param name="documentTypes" select="document('doc-types.xml')/*"/>
 	<xsl:param name="indexingDocumentTypes" select="document('indexing-doc-types.xml')/*"/> -->
 	<xsl:param name="root" select="/"/>
-<!--	<xsl:param name="css" select="'./spl.css'"/> -->
-	<xsl:param name="process-mixins" select="/.."/>
+<!--	<xsl:param name="css" select="'./spl.css'"/>
+	<xsl:param name="process-mixins" select="/.."/> -->
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="no" doctype-public="-"/>
 	<xsl:strip-space elements="*"/>
 	<!-- The indication secction variable contains the actual Indication Section node-->
