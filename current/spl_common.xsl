@@ -73,66 +73,7 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 		</xsl:call-template>
 	</xsl:variable>
 	<xsl:variable name="maxSection17" select="$standardSections/v3:section[@number = $maxStdSectionNumber]" /> -->
-	<!-- pmh - commenting out a number of unused variables
-	<xsl:variable name="drugNotificationList">
-		<code code="C121834" displayName="Counterfeit"/>
-		<code code="C121835" displayName="Diverted"/>
-		<code code="C121836" displayName="Stolen"/>
-		<code code="C121837" displayName="Intentional adulteration"/>
-		<code code="C121838" displayName="Unfit for distribution"/>
-		<code code="C121839" displayName="Fraudulent transaction"/>
-	</xsl:variable>
-	<xsl:variable name="drugUseList">
-		<code code="C121840" displayName="Human use"/>
-		<code code="C121841" displayName="Other"/>
-	</xsl:variable>
-	<xsl:variable name="companyCategoryList">
-		<code code="CC0001" displayName="Manufacturer"/>
-		<code code="CC0002" displayName="Wholsale distributor"/>
-		<code code="CC0003" displayName="Dispenser (Pharmacy)"/>
-		<code code="CC0004" displayName="Repackager"/>
-	</xsl:variable>
-	<xsl:variable name="indicationSection1" select="/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:subject/v3:manufacturedProduct/v3:manufacturedProduct/v3:instanceOfKind/v3:productInstance/v3:ingredient/v3:subjectOf"/>
-	<xsl:variable name="indicationSection2" select="/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:subject/v3:manufacturedProduct/v3:manufacturedProduct"/>
-	-->
-	<!-- Process mixins if they exist -->
-<!--
-	<xsl:template match="/" priority="1">
-		<xsl:choose>
-			<xsl:when test="boolean($process-mixins) and *[v3:relatedDocument[@typeCode='APND' and v3:relatedDocument[v3:id/@root or v3:setId/@root]]]">
-				<xsl:variable name="mixinRtf">
-					<xsl:apply-templates mode="mixin" select="."/>
-				</xsl:variable>
-				<xsl:choose>
-					<xsl:when test="function-available('exsl:node-set')">
-						<xsl:apply-templates select="exsl:node-set($mixinRtf)/*"/>
-					</xsl:when>
-					<xsl:when test="function-available('msxsl:node-set')">
-						<xsl:apply-templates select="msxsl:node-set($mixinRtf)/*"/>
-					</xsl:when>
-					<xsl:otherwise>
-						<!- - XSLT 2 would be thus: xsl:apply-templates select="$mixinRtf/*"/ - ->
-						<xsl:message terminate="yes">required function node-set is not available, this XSLT processor cannot handle the transform</xsl:message>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:if test="not(/v3:document/v3:code/@code = '77289-7|user-profile')">	
-					<xsl:if test="not(/v3:document/v3:code/@code = 'XXXXX-2')">	
-						<xsl:apply-templates select="*"/>
-					</xsl:if>
-					<xsl:if test="/v3:document/v3:code/@code = 'XXXXX-2'">
-						<xsl:apply-templates mode="EPA" select="/v3:document"/>
-					</xsl:if>
-				</xsl:if>
-				<xsl:if test="/v3:document/v3:code/@code = '77289-7'">				    
-					<xsl:apply-templates mode="form3911" select="/v3:document"/>
-				</xsl:if>
-				 <xsl:apply-templates mode="user-management" select="/v3:document[v3:code/@code = 'user-profile']"/>
-				 		
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template> -->
+	<!-- pmh - commenting out a number of unused variables, and process mixins -->
 
 	<!-- MAIN MODE based on the deep null-transform -->
 	<xsl:template match="/|@*|node()">
