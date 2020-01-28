@@ -30,31 +30,14 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 							 xmlns:msxsl="urn:schemas-microsoft-com:xslt" 
 							 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 							 exclude-result-prefixes="exsl msxsl v3 xsl xsi str v">
-<!--	<xsl:import href="xml-verbatim.xsl"/> -->
-<!-- pmh deprecated unused:
-	<xsl:import href="mixin.xsl"/>
-	<xsl:import href="substance.xsl"/>
-	<xsl:import href="pesticide.xsl"/> -->
 	<xsl:param name="show-subjects-xml" select="1"/>
 	<xsl:param name="show-data" select="/.."/>
 	<xsl:param name="show-section-numbers" select="/.."/>
 	<xsl:param name="update-check-url-base" select="/.."/>
-	<!-- pmh deprecated unused:
-	<xsl:param name="standardSections" select="document('plr-sections.xml')/*"/>
-	<xsl:param name="itemCodeSystems" select="document('item-code-systems.xml')/*"/>
-	<xsl:param name="disclaimers" select="document('disclaimers.xml')/*"/>
-	<xsl:param name="documentTypes" select="document('doc-types.xml')/*"/>
-	<xsl:param name="indexingDocumentTypes" select="document('indexing-doc-types.xml')/*"/> -->
 	<xsl:param name="root" select="/"/>
-<!--	<xsl:param name="css" select="'./spl.css'"/> -->
 	<xsl:param name="process-mixins" select="/.."/>
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="no" doctype-public="-"/>
 	<xsl:strip-space elements="*"/>
-	<!-- The indication secction variable contains the actual Indication Section node-->
-	<!-- pmh deprecated unused:
-	<xsl:variable name="indicationSection" select="/v3:document/v3:component/v3:structuredBody/v3:component//v3:section [v3:code [descendant-or-self::* [(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1' and @code='34067-9'] ] ]"/>
-	<xsl:variable name="indicationSectionCode">34067-9</xsl:variable>
-	<xsl:variable name="dosageAndAdministrationSectionCode">34068-7</xsl:variable> -->
 	<xsl:variable name="timeUnitsList">
 		<unitsMapping>
 			<unit UCUM="s" singular="second" plural="seconds"/>
@@ -66,13 +49,6 @@ TODO: Implementation guide needs to define linkHtml styleCodes.
 			<unit UCUM="a" singular="year" plural="years"/>
 		</unitsMapping>
 	</xsl:variable>
-	<!-- pmh commenting out maxSection17 and maxStdSectionNumber after removing all references:
-	<xsl:variable name="maxStdSectionNumber">
-		<xsl:call-template name="max">
-			<xsl:with-param name="sequence" select="$standardSections/v3:section[@code = $root/v3:document/v3:component/v3:structuredBody/v3:component/v3:section/v3:code/@code]/@number[. &lt;= 17]" />
-		</xsl:call-template>
-	</xsl:variable>
-	<xsl:variable name="maxSection17" select="$standardSections/v3:section[@number = $maxStdSectionNumber]" /> -->
 	<!-- pmh - commenting out a number of unused variables, and process mixins -->
 
 	<!-- MAIN MODE based on the deep null-transform -->
