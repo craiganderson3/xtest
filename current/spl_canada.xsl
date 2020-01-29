@@ -100,6 +100,51 @@
 			</tr>
 		</xsl:for-each>
 	</xsl:template>	
+
+	<!-- Note: This template is also used for top level Product Concept which does not have v3:asEquivalentEntity -->
+	<!-- pmh - I don't think Canada requires abstract product concept, so I am removing this, at least for now, because it uses the FDA Characteristics controlled vocabulary: -->
+	<xsl:template mode="subjects" match="v3:section/v3:subject/v3:manufacturedProduct/*[self::v3:manufacturedProduct[v3:name or v3:formCode] or self::v3:manufacturedMedicine][not(v3:asEquivalentEntity/v3:definingMaterialKind[/v3:document/v3:code/@code = '73815-3'])]|v3:section/v3:subject/v3:identifiedSubstance/v3:identifiedSubstance">
+		<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
+			<tbody>
+				<xsl:call-template name="piMedNames"/>
+				<xsl:apply-templates mode="substance" select="v3:moiety"/>
+				<xsl:call-template name="ProductInfoBasic"/>
+				
+				<xsl:choose>
+					<!-- if this is a multi-component subject then call to parts template -->
+					<xsl:when test="v3:part">
+						<xsl:apply-templates mode="subjects" select="v3:part"/>
+					</xsl:when>
+					<!-- otherwise it is a single product and we simply need to display the ingredients, imprint and packaging. -->
+					<xsl:otherwise>
+						<xsl:call-template name="ProductInfoIng"/>
+					</xsl:otherwise>
+				</xsl:choose>
+				<tr>
+					<td>						
+						<xsl:call-template name="image">
+							<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='SPLIMAGE']"/>
+						</xsl:call-template>
+					</td>
+				</tr>
+				<tr>
+					<td class="normalizer">
+						<xsl:call-template name="MarketingInfo"/>
+					</td>
+				</tr>
+				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks somuch like copy&paste and makes maintenance difficult -->
+				<xsl:if test="v3:instanceOfKind">
+					<tr>
+						<td colspan="4">
+							<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
+								<xsl:apply-templates mode="ldd" select="v3:instanceOfKind"/>
+							</table>
+						</td>
+					</tr>
+				</xsl:if>				
+			</tbody>
+		</table>
+	</xsl:template>
 	
 	<!-- override FDA Product Info section, using Canadian French and English labels - note, we could drop the Alt class for row banding -->
 	<xsl:template name="ProductInfoBasic">
