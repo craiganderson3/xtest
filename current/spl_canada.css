@@ -852,14 +852,14 @@ be represented
 /* Centre items on the Title Page for both Screen and Print, and fix Recent Changes tables */
 .title-page, 
 .title-page h2 { 
-    padding: 25px;
+    padding: 0.5in;
     text-align: center !important; 
 }
 .title-page-row {
     display: flex;
 }
 .title-page-column {
-    padding: 25px;
+    padding: 0.5in;
     flex: 50%;
 }
 
