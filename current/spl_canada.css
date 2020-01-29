@@ -857,12 +857,12 @@ be represented
 }
 /* non-Bootstrap styles for XML Notepad and DocuBridge */
 .title-page-left {
-    padding: 0.5in;
+/*     padding: 0.5in; */
     float: left;
     width: 50%;
 }
 .title-page-right {
-    padding: 0.5in;
+/*     padding: 0.5in; */
     margin-left: 50%;
 }
 
