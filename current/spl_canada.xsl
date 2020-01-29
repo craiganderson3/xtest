@@ -755,8 +755,8 @@
 												<xsl:apply-templates select="v3:text"/>
 											</xsl:for-each>
 										</div>
-<!--										<div class="spl container p-5">
-											<div class="spl title-page-row"> -->
+<!--										<div class="spl container p-5"> -->
+											<div class="spl">
 												<div class="title-page-left">
 													<xsl:for-each select="v3:component[2]/v3:section">
 														<xsl:apply-templates select="v3:title"/>
@@ -778,8 +778,8 @@
 														<xsl:apply-templates select="v3:text"/>
 													</xsl:for-each>
 												</div>
-										<!--											</div>
-										</div> -->
+											</div>
+<!--										</div> -->
 									</div>
 									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
 									<!-- pmh - I do not think this is going to work
