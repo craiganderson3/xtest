@@ -855,10 +855,11 @@ be represented
     text-align: center !important; 
 }
 .title-page-row {
-  display: flex;
+    display: flex;
 }
-.title-pagecolumn {
-  flex: 50%;
+.title-page-column {
+    padding: 25px;
+    flex: 50%;
 }
 
 .recent-changes table, 

@@ -748,21 +748,22 @@
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
-										<div class="spl title-page p-5">
+										<!-- pmh remove all the bootstrap from the "print" version -->
+										<div class="spl title-page">
 											<xsl:for-each select="v3:component[1]/v3:section">
 												<xsl:apply-templates select="v3:title"/>
 												<xsl:apply-templates select="v3:text"/>
 											</xsl:for-each>
 										</div>
-										<div class="spl container p-5">
-											<div class="row">
-												<div class="col-6">
+<!--										<div class="spl container p-5"> -->
+											<div class="spl title-page-row">
+												<div class="title-page-column">
 													<xsl:for-each select="v3:component[2]/v3:section">
 														<xsl:apply-templates select="v3:title"/>
 														<xsl:apply-templates select="v3:text"/>
 													</xsl:for-each>
 												</div>
-												<div class="col-6">
+												<div class="title-page-column">
 													<!-- TODO - this should probably just render every subsection with position greater than [2] -->
 													<xsl:for-each select="v3:component[3]/v3:section">
 														<xsl:apply-templates select="v3:title"/>
@@ -778,7 +779,7 @@
 													</xsl:for-each>
 												</div>
 											</div>
-										</div>
+<!--										</div> -->
 									</div>
 									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
 									<!-- pmh - I do not think this is going to work
