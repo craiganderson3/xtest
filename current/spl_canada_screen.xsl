@@ -254,18 +254,6 @@ content: ", page " target-counter(attr(href), page );
 @page { counter-increment: page }
 #pageNumber { content: counter(page) } */
 
-
-.title-page-left {
-background-color: Red;
-float: left;
-width: 50%;
-}
-
-.title-page-right {
-background-color: Aqua;
-margin-left: 50%;
-}
-
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 			</style>
