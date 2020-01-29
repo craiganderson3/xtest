@@ -856,6 +856,19 @@ be represented
     text-align: center !important; 
 }
 
+				/* non-Bootstrap styles for XML Notepad and DocuBridge */
+				.title-page-column {
+					padding: 0.5in;
+					float: left;
+					width: 50%;
+				}
+				/* Clear floats after the columns */
+				.title-page-row:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+
 /* flex may not work on XML Notepad or DocuBridge
 .title-page-row {
     display: flex;
