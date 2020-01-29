@@ -852,6 +852,7 @@ be represented
 /* Centre items on the Title Page for both Screen and Print, and fix Recent Changes tables */
 .title-page, 
 .title-page h2 { 
+    padding: 25px;
     text-align: center !important; 
 }
 .title-page-row {
