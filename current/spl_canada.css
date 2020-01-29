@@ -854,6 +854,13 @@ be represented
 .title-page h2 { 
     text-align: center !important; 
 }
+.title-page-row {
+  display: flex;
+}
+.title-pagecolumn {
+  flex: 50%;
+}
+
 .recent-changes table, 
 .recent-changes th, 
 .recent-changes td {
