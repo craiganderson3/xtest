@@ -757,13 +757,13 @@
 										</div>
 <!--										<div class="spl container p-5"> -->
 											<div class="spl title-page-row">
-												<div class="title-page-column">
+												<div class="title-page-column title-page-left">
 													<xsl:for-each select="v3:component[2]/v3:section">
 														<xsl:apply-templates select="v3:title"/>
 														<xsl:apply-templates select="v3:text"/>
 													</xsl:for-each>
 												</div>
-												<div class="title-page-column">
+												<div class="title-page-column title-page-right">
 													<!-- TODO - this should probably just render every subsection with position greater than [2] -->
 													<xsl:for-each select="v3:component[3]/v3:section">
 														<xsl:apply-templates select="v3:title"/>
