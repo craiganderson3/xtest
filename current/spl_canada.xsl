@@ -103,6 +103,7 @@
 
 	<!-- Note: This template is also used for top level Product Concept which does not have v3:asEquivalentEntity -->
 	<!-- pmh - I don't think Canada requires abstract product concept, so I am removing this, at least for now, because it uses the FDA Characteristics controlled vocabulary: -->
+	<!-- todo: remove the FDA specific codes in this xpath -->
 	<xsl:template mode="subjects" match="v3:section/v3:subject/v3:manufacturedProduct/*[self::v3:manufacturedProduct[v3:name or v3:formCode] or self::v3:manufacturedMedicine][not(v3:asEquivalentEntity/v3:definingMaterialKind[/v3:document/v3:code/@code = '73815-3'])]|v3:section/v3:subject/v3:identifiedSubstance/v3:identifiedSubstance">
 		<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
 			<tbody>
