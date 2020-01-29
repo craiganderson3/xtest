@@ -755,27 +755,29 @@
 												<xsl:apply-templates select="v3:text"/>
 											</xsl:for-each>
 										</div>
-										<div class="spl title-page-left">
-											<xsl:for-each select="v3:component[2]/v3:section">
-												<xsl:apply-templates select="v3:title"/>
-												<xsl:apply-templates select="v3:text"/>
-											</xsl:for-each>
-										</div>
-										<div class="spl title-page-right">
-											<!-- TODO - this should probably just render every subsection with position greater than [2] -->
-											<xsl:for-each select="v3:component[3]/v3:section">
-												<xsl:apply-templates select="v3:title"/>
-												<xsl:apply-templates select="v3:text"/>
-											</xsl:for-each>
-											<xsl:for-each select="v3:component[4]/v3:section">
-												<xsl:apply-templates select="v3:title"/>
-												<xsl:apply-templates select="v3:text"/>
-											</xsl:for-each>
-											<xsl:for-each select="v3:component[5]/v3:section">
-												<xsl:apply-templates select="v3:title"/>
-												<xsl:apply-templates select="v3:text"/>
-											</xsl:for-each>
-										</div>
+										<div class="spl">
+											<div class="title-page-left">
+												<xsl:for-each select="v3:component[2]/v3:section">
+													<xsl:apply-templates select="v3:title"/>
+													<xsl:apply-templates select="v3:text"/>
+												</xsl:for-each>
+											</div>
+											<div class="title-page-right">
+												<!-- TODO - this should probably just render every subsection with position greater than [2] -->
+												<xsl:for-each select="v3:component[3]/v3:section">
+													<xsl:apply-templates select="v3:title"/>
+													<xsl:apply-templates select="v3:text"/>
+												</xsl:for-each>
+												<xsl:for-each select="v3:component[4]/v3:section">
+													<xsl:apply-templates select="v3:title"/>
+													<xsl:apply-templates select="v3:text"/>
+												</xsl:for-each>
+												<xsl:for-each select="v3:component[5]/v3:section">
+													<xsl:apply-templates select="v3:title"/>
+													<xsl:apply-templates select="v3:text"/>
+												</xsl:for-each>
+											</div>
+										</div>											
 									</div>
 									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
 									<!-- pmh - I do not think this is going to work
