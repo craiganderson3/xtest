@@ -254,18 +254,19 @@ token.
 		</xsl:choose>
 	</xsl:template>
 	
-	<!-- todo - can any of this be removed -->
+	<!-- pmh - quite sure we do not need this template
 	<xsl:template match="v3:relatedDocument[not(/v3:document/v3:code/@code = '82351-8')][@typeCode = 'DRIV' or @typeCode = 'RPLC']/v3:relatedDocument/v3:setId/@root[string-length(.) = 36]"> 
 		<xsl:text>Reference Label Set Id: </xsl:text>
 		<a href="{concat('../', ., '.view')}"><xsl:value-of select="."/></a>
 		<br/> 
-	</xsl:template>
-	
+	</xsl:template> -->
+
+<!-- pmh - quite sure we do not need this template
 	<xsl:template match="v3:relatedDocument[@typeCode = 'XFRM']/v3:relatedDocument/v3:id/@extension"> 
 		<xsl:text>Docket Number: </xsl:text>
 			<xsl:value-of select="."/>
 		<br/> 
-	</xsl:template>
+	</xsl:template> -->
 
 	<xsl:template name="headerString">
 		<xsl:param name="curProduct">.</xsl:param>
