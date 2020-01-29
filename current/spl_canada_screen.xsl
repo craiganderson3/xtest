@@ -237,6 +237,16 @@
 					top: 0;
 				}
 
+				/* non-Bootstrap styles for XML Notepad and DocuBridge */
+				.title-page-row {
+					display: flex;
+				}
+				.title-page-column {
+					padding: 0.5in;
+					flex: 50%;
+				}
+
+
 /* pmh - WeasyPrint Bootstrap 4 column hack - see https://github.com/Kozea/WeasyPrint/issues/697:
 @media print {
 	.col, *[class^="col-"] {		
