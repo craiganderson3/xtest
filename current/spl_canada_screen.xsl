@@ -238,14 +238,17 @@
 				}
 
 				/* non-Bootstrap styles for XML Notepad and DocuBridge */
-				.title-page-row {
-					display: flex;
-				}
 				.title-page-column {
 					padding: 0.5in;
-					flex: 50%;
+					float: left;
+					width: 50%;
 				}
-
+				/* Clear floats after the columns */
+				.title-page-row:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
 
 /* pmh - WeasyPrint Bootstrap 4 column hack - see https://github.com/Kozea/WeasyPrint/issues/697:
 @media print {

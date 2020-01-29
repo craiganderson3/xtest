@@ -855,13 +855,15 @@ be represented
     padding: 0.5in;
     text-align: center !important; 
 }
+
+/* flex may not work on XML Notepad or DocuBridge
 .title-page-row {
     display: flex;
 }
 .title-page-column {
     padding: 0.5in;
     flex: 50%;
-}
+} */
 
 .recent-changes table, 
 .recent-changes th, 
