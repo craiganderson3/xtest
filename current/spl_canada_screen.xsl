@@ -11,6 +11,7 @@
 	<xsl:template match="//v3:author/v3:assignedEntity/v3:representedOrganization" mode="card">
 		<section class="card m-2" id="company-details">
 			<h6 class="card-header p-0 bg-aurora-accent2">
+				<!-- pmh - this is how one might make product accordions optional -->
 <!--				<div class="text-white text-left d-none d-md-block p-2">
 					<xsl:value-of select="$labels/companyDetails[@lang = $lang]"/>
 				</div> --> <!--  dropdown-toggle below caused problems with rwd, and possibly w-100 -->
@@ -165,12 +166,10 @@
 		
 	<!-- SECTION MODEL - is this kludgey to just override this? -->
 	<xsl:template match="v3:section">
-<!--		<xsl:param name="standardSection" select="$standardSections//v3:section[@code=current()/v3:code/descendant-or-self::*[(self::v3:code or self::v3:translation) and @codeSystem='2.16.840.1.113883.6.1']/@code]"/> -->
 		<xsl:param name="sectionLevel" select="count(ancestor-or-self::v3:section)"/>
 		<xsl:variable name="sectionNumberSequence">
 			<xsl:apply-templates mode="sectionNumber" select="ancestor-or-self::v3:section"/>
 		</xsl:variable>
-<!--		<xsl:if test="not(v3:code/@code = '48780-1')"> -->
 			<div class="Section">
 				<xsl:for-each select="v3:code">
 					<xsl:attribute name="data-sectionCode"><xsl:value-of select="@code"/></xsl:attribute>
@@ -200,7 +199,6 @@
 				<xsl:apply-templates select="@*|node()[not(self::v3:title)]"/>
 				<xsl:call-template name="flushSectionTitleFootnotes"/>
 			</div>
-<!--		</xsl:if> -->
 	</xsl:template>
 
 	<xsl:template match="v3:document" mode="html-head">
@@ -237,23 +235,6 @@
 					top: 0;
 				}
 
-/* pmh - WeasyPrint Bootstrap 4 column hack - see https://github.com/Kozea/WeasyPrint/issues/697:
-@media print {
-	.col, *[class^="col-"] {		
-		max-width: none !important; 
-	}
-} */
-
-
-/* pmh - I do not think this is going to work: */
-/*a::after {
-content: ", page " target-counter(attr(href), page );
-}
-.frontmatter a::after { content: leader('.') target-counter(attr(href url), page, lower-roman) }
-.bodymatter a::after { content: leader('.') target-counter(attr(href url), page, decimal) }
-@page { counter-increment: page }
-#pageNumber { content: counter(page) } */
-
 				<!-- this french language reduction reduces only the top level navigation -->
 				<xsl:if test="$lang='fr'">#side .nav-top { font-size: 75%; }</xsl:if>				
 			</style>
@@ -262,7 +243,6 @@ content: ", page " target-counter(attr(href), page );
 	
 	<xsl:template name="canada-screen-body-footer">
 		<!-- perhaps Stickyfill should have cross origin integrity? 4.1.3 is the current "Aurora" version of Bootstrap, and I have upgraded to the latest, 4.4.1 -->
-		<!-- <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script> -->
 		<xsl:text disable-output-escaping="yes">
 &lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"&gt;&lt;/script&gt;

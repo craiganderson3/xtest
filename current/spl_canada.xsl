@@ -5,7 +5,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" 
 	exclude-result-prefixes="exsl msxsl v3 xsl xsi str">
-<!--	<xsl:import href="FDA spl_stylesheet_6_2/spl-common.xsl"/> -->
 	<xsl:import href="spl_common.xsl"/>
 	<xsl:import href="spl_canada_screen.xsl"/>
 	<xsl:import href="spl_canada_i18n.xsl"/>
@@ -102,7 +101,7 @@
 	</xsl:template>	
 
 	<!-- Note: This template is also used for top level Product Concept which does not have v3:asEquivalentEntity -->
-	<!-- pmh - I don't think Canada requires abstract product concept, so I am removing this, at least for now, because it uses the FDA Characteristics controlled vocabulary: -->
+	<!-- pmh - Canada does not currently require equivalent or abstract product concept -->
 	<!-- todo: remove the FDA specific codes in this xpath -->
 	<xsl:template mode="subjects" match="v3:section/v3:subject/v3:manufacturedProduct/*[self::v3:manufacturedProduct[v3:name or v3:formCode] or self::v3:manufacturedMedicine][not(v3:asEquivalentEntity/v3:definingMaterialKind[/v3:document/v3:code/@code = '73815-3'])]|v3:section/v3:subject/v3:identifiedSubstance/v3:identifiedSubstance">
 		<table class="contentTablePetite" cellSpacing="0" cellPadding="3" width="100%">
@@ -133,7 +132,7 @@
 						<xsl:call-template name="MarketingInfo"/>
 					</td>
 				</tr>
-				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks somuch like copy&paste and makes maintenance difficult -->
+				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks so much like copy&paste and makes maintenance difficult -->
 				<xsl:if test="v3:instanceOfKind">
 					<tr>
 						<td colspan="4">
@@ -406,18 +405,6 @@
 		</tr>
 	</xsl:template>
 
-<!-- pmh - CV template from FDA:
-	<xsl:template mode="characteristics" match="v3:value[@xsi:type = 'CV' or @xsi:type = 'CE' or @xsi:type = 'CE']">
-		<td class="formItem">
-			<xsl:value-of select=".//@displayName[1]"/>
-		</td>
-		<td class="formItem">
-			<xsl:value-of select=".//@code[1]"/>
-		</td>
-	</xsl:template>
--->
-
-
 	<xsl:template name="characteristics-old">
 		<table class="formTablePetite" cellSpacing="0" cellPadding="3" width="100%">
 			<tbody>
@@ -546,25 +533,6 @@
 						</xsl:for-each>
 					</xsl:for-each>
 					<xsl:value-of select="v3:formCode/@displayName"/>
-					<!-- pmh remove old references to FDA characteristic controlled vocabulary:
-					<xsl:for-each select="../v3:subjectOf/v3:characteristic">
-						<xsl:if test="../../v3:quantity or ../../v3:containerPackagedProduct[v3:formCode[@displayName]] or ../preceding::v3:subjectOf"></xsl:if>
-						<xsl:variable name="name" select="($def/v3:code/@displayName|$def/v3:code/@p:displayName)[1]" xmlns:p="http://pragmaticdata.com/xforms" />
-						<xsl:variable name="def" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code and @codeSystem = current()/v3:code/@codeSystem]][1]"/>
-						<xsl:variable name="cname" select="$CHARACTERISTICS/*/*/v3:characteristic[v3:code[@code = current()/v3:code/@code]]/v3:value[@code = current()/v3:value/@code]/@displayName"/>
-						<xsl:choose>
-							<xsl:when test="$cname">
-								<xsl:text>; </xsl:text>
-								<xsl:value-of select="$cname" />
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:text>; </xsl:text>
-								<xsl:value-of select="$name"/>
-								<xsl:text> = </xsl:text>
-								<xsl:value-of select="(v3:value[not(../v3:code/@code = 'SPLCMBPRDTP')]/@code|v3:value/@value)[1]"/>
-							</xsl:otherwise>
-						</xsl:choose>						
-					</xsl:for-each> -->
 					<br/>
 				</xsl:for-each>
 			</td>
@@ -778,18 +746,6 @@
 											</div>
 										</div>											
 									</div>
-									<!-- PRINT ONLY TOC ON A SEPARATE PAGE -->
-									<!-- pmh - I do not think this is going to work
-									<section class="force-page-break hide-in-screen" id="print-table-of-contents">
-										<div class="spl">
-											TEST TEST TEST POC FOR TABLE OF CONTENTS from Hadlima deb4ec67-8764-4b72-b7a5-0bae88db11a3
-											<ol>
-												<li class="frontmatter"><a href="#a16a94eb-e2be-45c0-8b2e-15d0d0eebea8">Part one</a></li>
-												<li class="frontmatter"><a href="#d6a947eb-e2be-45c0-8b2e-15d0d0eebed8">Part two</a></li>
-												<li class="bodymatter"><a href="#baa4d498-0fc3-4e44-b4b6-550140d4de5d">Part threebody</a></li>
-											</ol>
-										</div>
-									</section> -->
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '007'">
 									<!-- RECENT MAJOR LABEL CHANGES -->
@@ -848,9 +804,6 @@
 							</xsl:apply-templates></xsl:copy>
 						</xsl:with-param>
 					</xsl:call-template>
-<!--					<xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
-						<xsl:with-param name="position"><xsl:value-of select="position()"/></xsl:with-param>
-					</xsl:apply-templates> -->
 				</h2>
 				<xsl:apply-templates mode="subjects" select="."/>			
 			</div>
