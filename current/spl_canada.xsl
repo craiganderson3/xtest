@@ -748,7 +748,7 @@
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
-										<div class="spl title-page title-page-row">
+										<div class="spl title-page">
 											<xsl:for-each select="v3:component[1]/v3:section">
 												<xsl:apply-templates select="v3:title"/>
 												<xsl:apply-templates select="v3:text"/>
