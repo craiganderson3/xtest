@@ -748,14 +748,13 @@
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
-										<!-- pmh remove all the bootstrap from the "print" version -->
-										<div class="spl title-page">
+										<div class="spl title-page title-page-row">
 											<xsl:for-each select="v3:component[1]/v3:section">
 												<xsl:apply-templates select="v3:title"/>
 												<xsl:apply-templates select="v3:text"/>
 											</xsl:for-each>
 										</div>
-										<div class="spl">
+										<div class="spl title-page-row">
 											<div class="title-page-left">
 												<xsl:for-each select="v3:component[2]/v3:section">
 													<xsl:apply-templates select="v3:title"/>

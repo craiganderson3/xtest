@@ -852,17 +852,17 @@ be represented
 /* Centre items on the Title Page for both Screen and Print, and fix Recent Changes tables */
 .title-page, 
 .title-page h2 { 
-    padding: 0.5in;
     text-align: center !important; 
 }
-/* non-Bootstrap styles for XML Notepad and DocuBridge, and possibly the padding is a problem */
+/* non-Bootstrap styles for XML Notepad and DocuBridge */
+.title-page-row {
+    padding: 0.5in;
+}
 .title-page-left {
-/*     padding: 0.5in; */
     float: left;
     width: 50%;
 }
 .title-page-right {
-/*     padding: 0.5in; */
     margin-left: 50%;
 }
 
