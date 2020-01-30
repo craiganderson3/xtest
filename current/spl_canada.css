@@ -855,7 +855,7 @@ be represented
     padding: 0.5in;
     text-align: center !important; 
 }
-/* non-Bootstrap styles for XML Notepad and DocuBridge */
+/* non-Bootstrap styles for XML Notepad and DocuBridge, and possibly the padding is a problem */
 .title-page-left {
 /*     padding: 0.5in; */
     float: left;
