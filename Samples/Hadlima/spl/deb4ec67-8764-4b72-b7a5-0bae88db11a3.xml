@@ -69,7 +69,7 @@
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
-                <code code="12345612" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <code code="12345612"/>
                 <!-- DIN Number -->
                 <name>HADLIMA PUSHTOUCH</name>
                 <formCode code="11201000" codeSystem="2.16.840.1.113883.2.20.6.3"
@@ -173,7 +173,6 @@
                         <marketingAct>
                           <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11"
                             displayName="APPROVED"/>
-                          <statusCode code="ACTIVE"/>
                           <effectiveTime>
                             <!-- regulatory status of this package -->
                             <low value="20190313"/>
@@ -187,7 +186,7 @@
               <subjectOf>
                 <!--Regulatory Activity associated with this products status-->
                 <approval>
-                  <id extension="222615" root="2.16.840.1.113883.2.20.6.49"/>
+                  <id extension="222615"/>
                   <!-- Control Number -->
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
                   <author>
@@ -204,7 +203,6 @@
                 <!--Regulatory status of this product-->
                 <marketingAct>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
-                  <statusCode code="ACTIVE"/>
                   <effectiveTime>
                     <low value="20190313"/>
                     <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
@@ -264,7 +262,7 @@
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
-                <code code="12343356" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <code code="12343356"/>
                 <!-- DIN Number -->
                 <name>HADLIMA</name>
                 <formCode code="11201000" codeSystem="2.16.840.1.113883.2.20.6.3"
@@ -368,7 +366,6 @@
                         <marketingAct>
                           <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11"
                             displayName="APPROVED"/>
-                          <statusCode code="ACTIVE"/>
                           <effectiveTime>
                             <!-- regulatory status of this package -->
                             <low value="20190313"/>
@@ -382,7 +379,7 @@
               <subjectOf>
                 <!--Regulatory Activity associated with this products status-->
                 <approval>
-                  <id extension="222615" root="2.16.840.1.113883.2.20.6.49"/>
+                  <id extension="222615"/>
                   <!-- Control Number -->
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
                   <author>
@@ -399,7 +396,6 @@
                 <!--Regulatory status of this product-->
                 <marketingAct>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
-                  <statusCode code="ACTIVE"/>
                   <effectiveTime>
                     <low value="20190313"/>
                     <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
