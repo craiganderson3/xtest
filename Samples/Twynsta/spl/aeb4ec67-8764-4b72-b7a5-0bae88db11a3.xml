@@ -50,7 +50,7 @@
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
-                <code code="02371022" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <code code="02371022"/>
                 <!-- DIN Number -->
                 <name>Twynsta</name>
                 <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
@@ -211,7 +211,6 @@
                         <marketingAct>
                           <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
                           <!-- regulatory status of this package -->
-                          <statusCode code="ACTIVE"/>
                           <effectiveTime>
                             <low value="20190807"/>
                             <!-- Date of initial approval -->
@@ -225,7 +224,7 @@
               <subjectOf>
                 <!--Regulatory Activity associated with this products status-->
                 <approval>
-                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <id extension="225785"/>
                   <!-- Control Number -->
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
                   <author>
@@ -242,7 +241,6 @@
                 <!--Regulatory status of this product-->
                 <marketingAct>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
-                  <statusCode code="ACTIVE"/>
                   <effectiveTime>
                     <low value="20190807"/>
                     <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
@@ -356,7 +354,7 @@
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
-                <code code="02371030" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <code code="02371030"/>
                 <!-- DIN Number -->
                 <name>Twynsta</name>
                 <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
@@ -517,7 +515,6 @@
                          <marketingAct>
                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
                          <!-- regulatory status of this package -->
-                         <statusCode code="ACTIVE"/>
                             <effectiveTime>
                                <low value="20190807"/>
                                <!-- Date of initial approval -->
@@ -531,7 +528,7 @@
               <subjectOf>
                 <!--Regulatory Activity associated with this products status-->
                 <approval>
-                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <id extension="225785"/>
                   <!-- Control Number -->
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
                   <author>
@@ -548,7 +545,6 @@
                 <!--Regulatory status of this product-->
                 <marketingAct>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
-                  <statusCode code="ACTIVE"/>
                   <effectiveTime>
                     <low value="20190807"/>
                     <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
@@ -662,7 +658,7 @@
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
-                <code code="02371049" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <code code="02371049"/>
                 <!-- DIN Number -->
                 <name>Twynsta</name>
                 <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
@@ -823,7 +819,6 @@
                          <marketingAct>
                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
                          <!-- regulatory status of this package -->
-                         <statusCode code="ACTIVE"/>
                             <effectiveTime>
                                <low value="20190807"/>
                                <!-- Date of initial approval -->
@@ -837,7 +832,7 @@
               <subjectOf>
                 <!--Regulatory Activity associated with this products status-->
                 <approval>
-                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <id extension="225785"/>
                   <!-- Control Number -->
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
                   <author>
@@ -854,7 +849,6 @@
                 <!--Regulatory status of this product-->
                 <marketingAct>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
-                  <statusCode code="ACTIVE"/>
                   <effectiveTime>
                     <low value="20190807"/>
                     <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
@@ -968,7 +962,7 @@
           <subject>
             <manufacturedProduct>
               <manufacturedProduct>
-                <code code="02371057" codeSystem="2.16.840.1.113883.2.20.6.42"/>
+                <code code="02371057"/>
                 <!-- DIN Number -->
                 <name>Twynsta</name>
                 <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TABLET"/>
@@ -1129,7 +1123,6 @@
                          <marketingAct>
                          <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
                          <!-- regulatory status of this package -->
-                         <statusCode code="ACTIVE"/>
                             <effectiveTime>
                                <low value="20190807"/>
                                <!-- Date of initial approval -->
@@ -1143,7 +1136,7 @@
               <subjectOf>
                 <!--Regulatory Activity associated with this products status-->
                 <approval>
-                  <id extension="225785" root="2.16.840.1.113883.2.20.6.49"/>
+                  <id extension="225785"/>
                   <!-- Control Number -->
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.37" displayName="NDS"/>
                   <author>
@@ -1160,7 +1153,6 @@
                 <!--Regulatory status of this product-->
                 <marketingAct>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.11" displayName="APPROVED"/>
-                  <statusCode code="ACTIVE"/>
                   <effectiveTime>
                     <low value="20190807"/>
                     <!-- Date of initial approval. Include high value=yyyymmdd if cancelled -->
