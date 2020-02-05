@@ -220,7 +220,8 @@
 			</meta>
 			<title><xsl:value-of select="v3:title"/></title>
 			<link href="http://canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon"><xsl:text> </xsl:text></link>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><xsl:text> </xsl:text></link>
+			<link rel="stylesheet" href="https://cease353.github.io/xtest/current/aurora/bootstrap.min.css"><xsl:text> </xsl:text></link>
+<!--			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><xsl:text> </xsl:text></link> -->
 			<link rel="stylesheet" href="{$css}"><xsl:text> </xsl:text></link>
 			<style>
 				/* ScrollSpy, Stickiness/Affix, and French Navigation Reduction */
@@ -243,12 +244,19 @@
 	
 	<xsl:template name="canada-screen-body-footer">
 		<!-- perhaps Stickyfill should have cross origin integrity? 4.1.3 is the current "Aurora" version of Bootstrap, and I have upgraded to the latest, 4.4.1 -->
+		https://cease353.github.io/xtest/current/aurora/
 		<xsl:text disable-output-escaping="yes">
+&lt;script src="https://cease353.github.io/xtest/current/aurora/jquery-3.4.1.slim.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cease353.github.io/xtest/current/aurora/popper.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cease353.github.io/xtest/current/aurora/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cease353.github.io/xtest/current/aurora/stickyfill.min.js"&gt;&lt;/script&gt;
+		</xsl:text>		
+<!--		<xsl:text disable-output-escaping="yes">
 &lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.0.5/stickyfill.min.js"&gt;&lt;/script&gt;
-		</xsl:text>
+		</xsl:text> -->
 		<script>
 			try {
 			  var elements = document.querySelectorAll('.sticky');
