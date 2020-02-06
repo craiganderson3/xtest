@@ -712,27 +712,22 @@
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '001'">
 									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
+									<!-- also, simplifying the templating, and still needs registered trademark line -->
 									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
 										<div class="spl title-page title-page-row">
 											<xsl:apply-templates select="v3:component[1]/v3:section"/>
-<!--											<xsl:for-each select="v3:component[1]/v3:section">
-												<xsl:apply-templates select="v3:title"/>
-												<xsl:apply-templates select="v3:text"/>
-											</xsl:for-each> -->
 										</div>
 										<div class="spl title-page-row">
 											<div class="title-page-left">
-												<xsl:for-each select="v3:component[2]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
+												<xsl:apply-templates select="v3:component[2]/v3:section"/>
 											</div>
 											<div class="title-page-right">
+												<xsl:apply-templates select="v3:component[position() &gt; 2]/v3:section"/>
 												<!-- TODO - this should probably just render every subsection with position greater than [2] -->
-												<xsl:for-each select="v3:component[3]/v3:section">
+<!--												<xsl:for-each select="v3:component[3]/v3:section">
 													<xsl:apply-templates select="v3:title"/>
 													<xsl:apply-templates select="v3:text"/>
 												</xsl:for-each>
@@ -743,7 +738,7 @@
 												<xsl:for-each select="v3:component[5]/v3:section">
 													<xsl:apply-templates select="v3:title"/>
 													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
+												</xsl:for-each> -->
 											</div>
 										</div>											
 									</div>
