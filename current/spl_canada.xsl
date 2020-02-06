@@ -255,7 +255,7 @@
 					<xsl:for-each select="(v3:ingredientSubstance|v3:activeIngredientSubstance)[1]">
 						<td class="formItem">
 							<strong>
-								<xsl:value-of select="@displayName"/>
+								<xsl:value-of select="v3:code/@displayName"/>
 							</strong>
 							<xsl:text> (</xsl:text>
 							<xsl:for-each select="v3:code/@code">
@@ -277,13 +277,13 @@
 						<td class="formItem">
 							<xsl:choose>
 								<xsl:when test="../@classCode='ACTIR'">
-									<xsl:value-of select="v3:asEquivalentSubstance/v3:definingSubstance/@displayName"/>
+									<xsl:value-of select="v3:asEquivalentSubstance/v3:definingSubstance/v3:code/@displayName"/>
 								</xsl:when>
 								<xsl:when test="../@classCode='ACTIB'">
-									<xsl:value-of select="@displayName"/>
+									<xsl:value-of select="v3:code/@displayName"/>
 								</xsl:when>
 								<xsl:when test="../@classCode='ACTIM'">
-									<xsl:value-of select="v3:activeMoiety/v3:activeMoiety/@displayName"/>
+									<xsl:value-of select="v3:activeMoiety/v3:activeMoiety/v3:code/@displayName"/>
 								</xsl:when>
 							</xsl:choose>
 						</td>
