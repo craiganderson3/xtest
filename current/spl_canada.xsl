@@ -717,10 +717,11 @@
 											<xsl:value-of select="v3:code/@displayName"/>
 										</h5>
 										<div class="spl title-page title-page-row">
-											<xsl:for-each select="v3:component[1]/v3:section">
+											<xsl:apply-templates select="3:component[1]/v3:section"/>
+<!--											<xsl:for-each select="v3:component[1]/v3:section">
 												<xsl:apply-templates select="v3:title"/>
 												<xsl:apply-templates select="v3:text"/>
-											</xsl:for-each>
+											</xsl:for-each> -->
 										</div>
 										<div class="spl title-page-row">
 											<div class="title-page-left">
