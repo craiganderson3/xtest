@@ -725,22 +725,12 @@
 												<xsl:apply-templates select="v3:component[2]/v3:section"/>
 											</div>
 											<div class="title-page-right">
-												<xsl:apply-templates select="v3:component[position() &gt; 2]/v3:section"/>
-												<!-- TODO - this should probably just render every subsection with position greater than [2] -->
-<!--												<xsl:for-each select="v3:component[3]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
-												<xsl:for-each select="v3:component[4]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each>
-												<xsl:for-each select="v3:component[5]/v3:section">
-													<xsl:apply-templates select="v3:title"/>
-													<xsl:apply-templates select="v3:text"/>
-												</xsl:for-each> -->
+												<xsl:apply-templates select="v3:component[position() &gt; 2 and position() &lt; last()]/v3:section"/>
 											</div>
 										</div>											
+										<div class="spl title-page title-page-row">
+											<xsl:apply-templates select="v3:component[position()=last()]/v3:section"/>
+										</div>
 									</div>
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '007'">
