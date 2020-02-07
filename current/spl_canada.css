@@ -861,8 +861,8 @@ be represented
 .title-page-rule
 {
     /* todo: this should only apply to the middle row on the title page */
-    border-top: 5px solid; 
-    border-bottom: 5px solid;
+    border-top: 1px solid; 
+    border-bottom: 1px solid;
 }
 .title-page-left {
     float: left;
