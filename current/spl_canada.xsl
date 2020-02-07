@@ -720,7 +720,7 @@
 										<div class="spl title-page title-page-row">
 											<xsl:apply-templates select="v3:component[1]/v3:section"/>
 										</div>
-										<div class="spl title-page-row">
+										<div class="spl title-page-row title-page-rule">
 											<div class="title-page-left">
 												<xsl:apply-templates select="v3:component[2]/v3:section"/>
 											</div>

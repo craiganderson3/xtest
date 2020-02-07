@@ -858,6 +858,12 @@ be represented
 .title-page-row {
     padding: 0.5in;
 }
+.title-page-rule
+{
+    /* todo: this should only apply to the middle row on the title page */
+    border-top: 5px solid; 
+    border-bottom: 5px solid;
+}
 .title-page-left {
     float: left;
     width: 50%;
