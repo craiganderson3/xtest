@@ -729,7 +729,7 @@
 											</div>
 										</div>											
 										<div class="spl title-page title-page-row">
-											<xsl:apply-templates select="v3:component[position()=last()]/v3:section"/>
+											<xsl:apply-templates select="v3:component[position()=last()]/v3:section/v3:text"/>
 										</div>
 									</div>
 								</xsl:when>
