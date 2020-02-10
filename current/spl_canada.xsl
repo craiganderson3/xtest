@@ -715,7 +715,6 @@
 									<!-- also, simplifying the templating, and still needs registered trademark line -->
 									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
-<!-- <xsl:value-of select="v3:code/@displayName"/> -->
 											<xsl:value-of select="v3:title"/>
 										</h5>
 										<div class="spl title-page title-page-row">
@@ -738,7 +737,6 @@
 									<!-- RECENT MAJOR LABEL CHANGES -->
 									<div class="card mb-2" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
-<!-- <xsl:value-of select="v3:code/@displayName"/> -->
 											<xsl:value-of select="v3:title"/>
 										</h5>
 										<div class="spl recent-changes">
@@ -750,7 +748,6 @@
 									<!-- NAVIGATION FOR DIFFERENT PARTS -->								
 									<div class="card mb-2 pb-2" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
-<!-- <xsl:value-of select="v3:code/@displayName"/> -->
 											<xsl:value-of select="v3:title"/>
 										</h5>
 										<div class="spl">
