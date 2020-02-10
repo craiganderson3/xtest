@@ -95,7 +95,8 @@
 									<xsl:when test="$tri-code-value = '001' or $tri-code-value = '007'">
 										<li class="nav-item">
 											<a href="#{$unique-section-id}" class="nav-link nav-top">
-												<xsl:value-of select="v3:code/@displayName"/>
+<!-- <xsl:value-of select="v3:code/@displayName"/> -->
+												<xsl:value-of select="v3:title"/>
 											</a>
 										</li>
 									</xsl:when>
@@ -103,7 +104,8 @@
 									<xsl:when test="v3:code[@code='TP']|v3:code[@code='RMLC']">
 										<li class="nav-item">
 											<a href="#{$unique-section-id}" class="nav-link nav-top">
-												<xsl:value-of select="v3:code/@displayName"/>
+<!-- <xsl:value-of select="v3:code/@displayName"/> -->
+												<xsl:value-of select="v3:title"/>
 											</a>
 										</li>
 									</xsl:when>
@@ -111,7 +113,8 @@
 										<!-- NAVIGATION FOR DIFFERENT PARTS -->
 										<li class="nav-item">
 											<a href="#drop-{$unique-section-id}" class="nav-link nav-top dropdown-toggle" data-toggle="collapse">
-												<xsl:value-of select="v3:code/@displayName"/>
+<!-- <xsl:value-of select="v3:code/@displayName"/> -->
+												<xsl:value-of select="v3:title"/>
 											</a>
 											<xsl:if test="v3:component/v3:section">
 											<ul id="drop-{$unique-section-id}" class="navbar-nav small collapse">
@@ -133,7 +136,8 @@
 		<xsl:variable name="unique-subsection-id"><xsl:value-of select="@ID"/></xsl:variable>
 		<li class="nav-item">
 			<a href="#{$unique-subsection-id}" class="nav-link">
-				<xsl:value-of select="v3:code/@displayName"/>
+<!-- xsl:value-of select="v3:code/@displayName"/> -->
+				<xsl:value-of select="v3:title"/>				
 			</a>
 			<xsl:if test="v3:component/v3:section">
 				<ul class="navbar-nav">
