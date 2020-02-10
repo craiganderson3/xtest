@@ -712,7 +712,6 @@
 								</xsl:when>
 								<xsl:when test="$tri-code-value = '001'">
 									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
-									<!-- also, simplifying the templating, and still needs registered trademark line -->
 									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1">
 											<xsl:value-of select="v3:title"/>
