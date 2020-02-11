@@ -713,7 +713,7 @@
 								<xsl:when test="$tri-code-value = '001'">
 									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
 									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
-										<h5 class="card-header text-white bg-aurora-accent1">
+										<h5 class="card-header text-white bg-aurora-accent1 hide-in-print">
 											<xsl:value-of select="v3:title"/>
 										</h5>
 										<div class="spl title-page title-page-row">
