@@ -720,10 +720,19 @@
 										</div>
 										<div class="spl title-page-row title-page-rule">
 											<div class="title-page-left">
-												<xsl:apply-templates select="v3:component[2]/v3:section"/>
+												<xsl:apply-templates select="v3:component[2]/v3:section"/>	
+												<div class="Section">
+													<br/>
+													<xsl:for-each select="v3:component[position() = last()-1]/v3:section">
+														<h2 style="display: inline;">
+															<xsl:value-of select="v3:title"/>:
+														</h2>
+														<xsl:value-of select="v3:text/v3:paragraph"/>
+													</xsl:for-each>
+												</div>
 											</div>
 											<div class="title-page-right">
-												<xsl:apply-templates select="v3:component[position() &gt; 2 and position() &lt; last()]/v3:section"/>
+												<xsl:apply-templates select="v3:component[position() &gt; 2 and position() &lt; last()-1]/v3:section"/>
 											</div>
 										</div>											
 										<div class="spl title-page title-page-row">
