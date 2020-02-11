@@ -714,10 +714,9 @@
 									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
 									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1 hide-in-print">
-											<xsl:value-of select="v3:title"/>
-										</h5>
+											<xsl:value-of select="v3:title"/>										</h5>
 										<div class="spl title-page title-page-row">
-											<xsl:apply-templates select="v3:component[1]/v3:section"/>
+											<xsl:apply-templates select="v3:component[1]/v3:section/v3:text"/>
 										</div>
 										<div class="spl title-page-row title-page-rule">
 											<div class="title-page-left">
