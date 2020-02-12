@@ -197,6 +197,17 @@
 			<xsl:call-template name="flushSectionTitleFootnotes"/>
 		</div>
 	</xsl:template>
+	
+	<!-- this template is only used on the Title Page to show Control Number on a single line -->
+	<xsl:template match="v3:section" mode="inline-title">
+		<div class="Section">
+			<br/>
+			<h2 style="display: inline;">
+				<xsl:value-of select="v3:title"/>:
+			</h2>
+			<xsl:value-of select="v3:text/v3:paragraph"/>
+		</div>
+	</xsl:template>
 
 	<xsl:template match="v3:document" mode="html-head">
 		<head>
