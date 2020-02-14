@@ -842,10 +842,10 @@
 }
 .title-page-left {
     float: left;
-    width: 65%;
+    width: 60%;
 }
 .title-page-right {
-    margin-left: 35%;
+    margin-left: 40%;
 }
 
 .recent-changes table, 
