@@ -440,11 +440,12 @@
 	border-bottom-width: thin;
 }
 
+/* Removing the heavy top and bottom table rule
 .spl thead tr.First td,
 .spl thead tr.First th {
     border-top-style: solid;
 	border-top-width: medium;
-}
+} */
 
 .spl thead tr.Botrule td,
 .spl thead tr.Botrule th {
@@ -483,12 +484,12 @@
 	border-bottom-width: thin;
 }	 
 
-
+/* Removing the heavy top and bottom table rule
 .spl tbody tr.Last td,
 .spl tbody tr.Last th { 
 	border-bottom-style: solid;
 	border-bottom-width: medium;
-}
+} */
 
 .spl tbody tr td.Last,
 .spl tbody tr th.Last { 
