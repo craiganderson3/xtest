@@ -32,8 +32,9 @@
 	<xsl:template match="v3:subject/v3:manufacturedProduct" mode="card">
 		<xsl:variable name="unique-product-id">product-<xsl:value-of select="position()"/></xsl:variable>
 		<section class="card m-2" id="{$unique-product-id}">
-			<h6 class="card-header p-0 bg-aurora-accent2"> <!-- dropdown-toggle below caused problems with rwd, and possibly w-100 -->
-				<button class="btn bg-aurora-accent2 text-white text-left w-100" type="button" 
+			<h6 class="card-header p-0 bg-light"> <!-- dropped bg-aurora-accent2 from h6 and button -->
+				<!-- dropdown-toggle below caused problems with rwd, and possibly w-100 -->
+				<button class="btn bg-light text-left w-100" type="button" 
 				data-toggle="collapse" data-target="#collapse-{$unique-product-id}" 
 				aria-expanded="true" aria-controls="collapse-{$unique-product-id}">
 					<xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
