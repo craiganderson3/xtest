@@ -461,22 +461,23 @@
 
 .spl thead tr.Last td, 
 .spl thead tr.Last th {
-        border-bottom-style: solid;
+    border-bottom-style: solid;
 	border-bottom-width: thin;
   /* rule here might fail with rowspan headers */
 } 
 
 .spl tbody tr.First td, 
 .spl tbody tr.First th  { 
-        border-top-style: solid;
+    border-top-style: solid;
 	border-top-width: thin;
 }	 
 
+/* Removing the heavy top and bottom table rule
 .spl tbody.Headless tr.First td, 
 .spl tbody.Headless tr.First th  { 
-        border-top-style: solid;
+    border-top-style: solid;
 	border-top-width: medium;
-}	 
+} */
 
 .spl tbody tr.Botrule td, 
 .spl tbody tr.Botrule th { 
