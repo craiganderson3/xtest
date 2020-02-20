@@ -1812,7 +1812,7 @@
                                             <id root="a472c162-e176-44d0-b787-2b7b6cf00e43"/>
                                             <code code="pi4.4.3"
                                                 codeSystem="2.16.840.1.113883.2.20.6.60"
-                                                displayName="44.4.3 Directions for Quality Control"/>
+                                                displayName="4.4.3 Directions for Quality Control"/>
                                             <title>4.4.3 Directions for Quality Control</title>
                                             <text>
                                                 <paragraph> sample text </paragraph>
