@@ -865,7 +865,7 @@ img { max-width: 100%; height: auto; }
 
 .bg-aurora-accent1 { background-color: #002D42;	}
 .bg-aurora-accent2 { background-color: #4D5D6C;	}
-.bg-aurora-light   { background-color: #CECECE;	}
+.bg-aurora-light   { background-color: #f8f9fa; } /*  this just bootstrap bg-light #CECECE;	}*/
 
 #side .nav-link.active,
 #side .nav-link:hover,
