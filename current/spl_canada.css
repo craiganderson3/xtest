@@ -850,13 +850,13 @@
     margin-left: 40%;
 }
 
-/* Removing the heavy top and bottom table rule probably fixes this
+/* Removing any top and bottom table rule for this section only */
 .recent-changes table, 
 .recent-changes th, 
 .recent-changes td {
 	border-top-style: none !important;
 	border-bottom-style: none !important;
-} */
+}
 
 /* Image Fix - the FDA breaks out when images are too large */
 img { max-width: 100%; height: auto; }					
