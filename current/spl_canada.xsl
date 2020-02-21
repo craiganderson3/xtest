@@ -695,7 +695,6 @@
 					<div class="col">
 						<xsl:for-each select="v3:component/v3:section">
 							<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
-							<xsl:variable name="tri-code-value" select="substring(v3:code/@code, string-length(v3:code/@code)-2)"/>
 							<xsl:choose>
 								<xsl:when test="v3:code[@code='0MP']">
 									<!-- PRODUCT DETAIL -->
@@ -710,7 +709,7 @@
 										</div>
 									</div>
 								</xsl:when>
-								<xsl:when test="v3:code[@code='0tp']">
+								<xsl:when test="v3:code[@code='0TP']">
 									<!-- TITLE PAGE - Note: force-page-break-after here does not work on FireFox -->
 									<div class="card mb-2 force-page-break-after" id="{$unique-section-id}">
 										<h5 class="card-header text-white bg-aurora-accent1 hide-in-print">
