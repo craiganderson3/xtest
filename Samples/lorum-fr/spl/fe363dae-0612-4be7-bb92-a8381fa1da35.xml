@@ -1034,7 +1034,7 @@
         <!--Title Page section-->
         <section ID="d8d30d86-e343-48f4-9cec-524834b3803b">
           <id root="eed00b53-cdb2-4aa6-9e82-88b7d793b208"/>
-          <code code="0tp" codeSystem="2.16.840.1.113883.2.20.6.60"
+          <code code="0TP" codeSystem="2.16.840.1.113883.2.20.6.60"
             displayName="PAGE - TITRE"/>
           <title>PAGE - TITRE</title>
           <effectiveTime value="20180101"/>
