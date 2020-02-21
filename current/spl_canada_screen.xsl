@@ -15,7 +15,7 @@
 <!--				<div class="text-white text-left d-none d-md-block p-2">
 					<xsl:value-of select="$labels/companyDetails[@lang = $lang]"/>
 				</div> --> <!--  dropdown-toggle below caused problems with rwd, and possibly w-100 -->
-				<button class="btn bg-aurora-light text-left font-weight-bold w-100" type="button" 
+				<button class="btn bg-aurora-light text-left w-100" type="button" 
 				data-toggle="collapse" data-target="#collapse-company-details" 
 				aria-expanded="true" aria-controls="collapse-company-details">
 					<xsl:value-of select="$labels/companyDetails[@lang = $lang]"/>
@@ -34,7 +34,7 @@
 		<section class="card m-2" id="{$unique-product-id}">
 			<h6 class="card-header p-0 bg-aurora-light"> <!-- dropped bg-aurora-accent2 from h6 and button -->
 				<!-- dropdown-toggle below caused problems with rwd, and possibly w-100 -->
-				<button class="btn bg-aurora-light text-left font-weight-bold w-100" type="button" 
+				<button class="btn bg-aurora-light text-left w-100" type="button" 
 				data-toggle="collapse" data-target="#collapse-{$unique-product-id}" 
 				aria-expanded="true" aria-controls="collapse-{$unique-product-id}">
 					<xsl:apply-templates select="v3:manufacturedProduct" mode="generateUniqueLabel">
