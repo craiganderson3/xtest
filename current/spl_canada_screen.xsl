@@ -214,7 +214,11 @@
 		<head>
 			<meta charset="utf-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>   
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+			
+			<!-- pmh - this comes from REP - XML Notepad collapse? -->
+			<meta http-equiv="X-UA-Compatible" content="IE=9">						
+			
 			<meta name="documentId">
 				<xsl:attribute name="content"><xsl:value-of select="v3:id/@root"/></xsl:attribute>
 			</meta>
