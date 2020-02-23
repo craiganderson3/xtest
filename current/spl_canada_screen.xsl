@@ -217,7 +217,7 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
 			
 			<!-- pmh - this comes from REP - XML Notepad collapse? -->
-			<meta http-equiv="X-UA-Compatible" content="IE=9"/>	
+			<meta http-equiv="X-UA-Compatible" content="IE=10"/>	
 			
 			<meta name="documentId">
 				<xsl:attribute name="content"><xsl:value-of select="v3:id/@root"/></xsl:attribute>
