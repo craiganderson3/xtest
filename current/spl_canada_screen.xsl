@@ -73,9 +73,8 @@
 						<ul class="navbar-nav" id="navigation-sidebar" style="transform: scaleX(-1); ">
 							<xsl:for-each select="v3:component/v3:section">
 								<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
-								<xsl:variable name="tri-code-value" select="substring(v3:code/@code, string-length(v3:code/@code)-2)"/>
 								<xsl:choose>
-									<xsl:when test="v3:code[@code='1']|v3:code[@code='MP']">
+									<xsl:when test="v3:code[@code='0MP']">
 										<!-- PRODUCT DETAIL NAVIGATION -->
 										<li class="nav-item">
 											<a href="#drop-{$unique-section-id}" class="nav-link nav-top dropdown-toggle" data-toggle="collapse">
@@ -93,7 +92,7 @@
 										</li>							
 									</xsl:when>
 									<!-- TITLE PAGE OR RECENT MAJOR LABEL CHANGE NAVIGATION -->
-									<xsl:when test="$tri-code-value = '001' or $tri-code-value = '007'">
+									<xsl:when test="v3:code[@code='0TP']v3:code[@code='1RMLC']">
 										<li class="nav-item">
 											<a href="#{$unique-section-id}" class="nav-link nav-top">
 												<xsl:value-of select="v3:title"/>
