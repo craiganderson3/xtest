@@ -205,6 +205,7 @@
 			<h2 style="display: inline;">
 				<!-- pmh the colon in the title is supplied by the controlled vocabulary -->
 				<xsl:value-of select="v3:title"/>
+				<xsl:text> </xsl:text>
 			</h2>
 			<xsl:value-of select="v3:text/v3:paragraph"/>
 		</div>
