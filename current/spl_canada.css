@@ -378,7 +378,8 @@
 	margin-top: 3ex;
 	margin-bottom: 3ex;
 	border-collapse: collapse;
-	border-color: black;
+/*  pmh align border color with Product Detail tables */
+    border-color: #CCCCCC;
 	border-width: thin;
 }
 
