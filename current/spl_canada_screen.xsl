@@ -204,7 +204,8 @@
 		<div class="Section">
 			<br/>
 			<h2 style="display: inline;">
-				<xsl:value-of select="v3:title"/>:
+				<!-- pmh the colon in the title is supplied by the controlled vocabulary -->
+				<xsl:value-of select="v3:title"/>
 			</h2>
 			<xsl:value-of select="v3:text/v3:paragraph"/>
 		</div>
