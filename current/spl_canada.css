@@ -393,8 +393,9 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 100%;
-    /* pmh - override Bootstrap default to put captions below tables */
+    /* pmh - override Bootstrap default to put captions below tables and black instead of dark gray */
     caption-side: top !important;
+    color: black !important; 
 }
 				
 .spl th, 
