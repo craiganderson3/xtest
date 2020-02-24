@@ -397,6 +397,11 @@
     caption-side: top !important;
     color: black !important; 
 }
+
+.spl th {
+    /* pmh always make table headers consistent with Product Detail colour scheme */
+    	background-color: #CCCCCC;
+}
 				
 .spl th, 
 .spl td { 
