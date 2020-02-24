@@ -28,7 +28,7 @@
             <state>Illinois</state>
             <postalCode>60133</postalCode>
             <country code="USA" codeSystem="2.16.840.1.113883.2.20.6.17"
-              displayName="UNITED STATES OF AMERICA (THE)"/>
+              displayName="ÉTATS-UNIS D'AMÉRIQUE (LES)"/>
           </addr>
           <telecom value="tel:+12025550178"/>
           <telecom value="mailto:test@canada.ca"/>
@@ -46,7 +46,7 @@
                 <city>Ottawa</city>
                 <state>Ontario</state>
                 <postalCode>K1Z 6R5</postalCode>
-                <country code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17" displayName="CANADA"/>
+                <country code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17" displayName="CANADA (LE)"/>
               </addr>
               <telecom value="tel:+14165550134"/>
               <telecom value="mailto:test.2@canada.ca"/>
@@ -73,7 +73,7 @@
                 <code code="12345623"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM COMPRIMÉS</name>
-                <formCode code="85" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="COMPRIMÉ"/>
+                <formCode code="10219000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="COMPRIMÉ"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -141,7 +141,7 @@
                   <containerPackagedProduct>
                     <code code="ABC-1234"/>
                     <!--company defined pack code-->
-                    <formCode code="5" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="BOUTEILLE"
+                    <formCode code="30024000" codeSystem="2.16.840.1.113883.2.20.6.32" displayName="BOUTEILLE"
                     />
                   </containerPackagedProduct>
                   <subjectOf>
@@ -167,8 +167,8 @@
                   <containerPackagedProduct>
                     <code code="ABC-5678"/>
                     <!--company defined pack code-->
-                    <formCode code="4" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="PLAQUETTES ALVÉOLAIRES"/>
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="PLAQUETTE"/>
                     <asContent>
                       <quantity>
                         <numerator value="4" unit="1"/>
@@ -204,7 +204,7 @@
                     <territorialAuthority>
                       <territory>
                         <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
-                          displayName="CANADA"/>
+                          displayName="CANADA (LE)"/>
                       </territory>
                     </territorialAuthority>
                   </author>
@@ -224,7 +224,7 @@
               <subjectOf>
                 <characteristic>
                   <code code="1" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="TYPE DE PRODUIT"/>
-                  <value code="2" codeSystem="2.16.840.1.113883.2.20.6.53"
+                  <value code="1" codeSystem="2.16.840.1.113883.2.20.6.53"
                     displayName="PHARMACEUTIQUE" xsi:type="CV">
                     <originalText>PHARMACEUTIQUE</originalText>
                   </value>
@@ -255,13 +255,13 @@
               <subjectOf>
                 <characteristic>
                   <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="RAINURE"/>
-                  <value code="0" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="NON RAINURE"
+                  <value code="0" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="NON COMPRIMÉS"
                     xsi:type="CV"> </value>
                 </characteristic>
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRINER"/>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="EMPREINTE"/>
                   <value xsi:type="ST">A;45</value>
                 </characteristic>
               </subjectOf>
@@ -282,7 +282,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PROGRAMME"/>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="ANNEXE"/>
                   <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
                     xsi:type="CV"/>
                 </characteristic>
@@ -290,14 +290,14 @@
               <subjectOf>
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                    displayName="CLASSE THERAPEUTIQUE"/>
+                    displayName="CLASSE THÉRAPEUTIQUE"/>
                   <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="ANALGÉSIQUE"
                     xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="56" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORALE"/>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="VOIE ORALE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -308,7 +308,7 @@
                 <code code="45612300"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM CAPSULE</name>
-                <formCode code="5" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="CAPSULE"/>
+                <formCode code="10210000" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="GÉLULE"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -376,8 +376,8 @@
                   <containerPackagedProduct>
                     <code code="ABC-5678"/>
                     <!--company defined pack code-->
-                    <formCode code="4" codeSystem="2.16.840.1.113883.2.20.6.32"
-                      displayName="PLAQUETTES ALVÉOLAIRES"/>
+                    <formCode code="30007000" codeSystem="2.16.840.1.113883.2.20.6.32"
+                      displayName="PLAQUETTE"/>
                     <asContent>
                       <quantity>
                         <numerator value="4" unit="1"/>
@@ -413,7 +413,7 @@
                     <territorialAuthority>
                       <territory>
                         <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
-                          displayName="CANADA"/>
+                          displayName="CANADA (LE)"/>
                       </territory>
                     </territorialAuthority>
                   </author>
@@ -473,13 +473,13 @@
               <subjectOf>
                 <characteristic>
                   <code code="5" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="RAINURE"/>
-                  <value code="0" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="NON RAINURE"
+                  <value code="0" codeSystem="2.16.840.1.113883.2.20.6.4" displayName="NON COMPRIMÉS"
                     xsi:type="CV"> </value>
                 </characteristic>
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="IMPRIMER"/>
+                  <code code="6" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="EMPREINTE"/>
                   <value xsi:type="ST">L;200</value>
                 </characteristic>
               </subjectOf>
@@ -500,7 +500,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PROGRAMME"/>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="ANNEXE"/>
                   <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
                     xsi:type="CV"/>
                 </characteristic>
@@ -508,14 +508,14 @@
               <subjectOf>
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                    displayName="CLASSE THERAPEUTIQUE"/>
+                    displayName="CLASSE THÉRAPEUTIQUE"/>
                   <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="ANALGÉSIQUE"
                     xsi:type="CV"/>
                 </characteristic>
               </subjectOf>
               <consumedIn>
                 <substanceAdministration>
-                  <routeCode code="56" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="ORALE"/>
+                  <routeCode code="20053000" codeSystem="2.16.840.1.113883.2.20.6.7" displayName="VOIE ORALE"/>
                 </substanceAdministration>
               </consumedIn>
             </manufacturedProduct>
@@ -526,8 +526,8 @@
                 <code code="65432122"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM POUDRE</name>
-                <formCode code="126" codeSystem="2.16.840.1.113883.2.20.6.3"
-                  displayName="POUDRE POUR SOLUTION"/>
+                <formCode code="10110000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                  displayName="POUDRE POUR SOLUTION BUVABLE"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -605,7 +605,7 @@
                       <containerPackagedProduct>
                         <code code="1212"/>
                         <!--company defined pack code-->
-                        <formCode code="55" codeSystem="2.16.840.1.113883.2.20.6.32"
+                        <formCode code="C53438" codeSystem="2.16.840.1.113883.2.20.6.32"
                           displayName="PLATEAU"/>
                         <asContent>
                           <quantity>
@@ -645,7 +645,7 @@
                     <territorialAuthority>
                       <territory>
                         <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
-                          displayName="CANADA"/>
+                          displayName="CANADA (LE)"/>
                       </territory>
                     </territorialAuthority>
                   </author>
@@ -688,7 +688,7 @@
               </subjectOf>
               <subjectOf>
                 <characteristic>
-                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="PROGRAMME"/>
+                  <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23" displayName="ANNEXE"/>
                   <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="PRESCRIPTION"
                     xsi:type="CV"/>
                 </characteristic>
@@ -696,7 +696,7 @@
               <subjectOf>
                 <characteristic>
                   <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                    displayName="CLASSE THERAPEUTIQUE"/>
+                    displayName="CLASSE THÉRAPEUTIQUE"/>
                   <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6" displayName="ANALGESIC"
                     xsi:type="CV"/>
                 </characteristic>
@@ -715,7 +715,7 @@
                 <code code="61325422"/>
                 <!-- DIN Number -->
                 <name>LORUM IPSUM TROUSSE</name>
-                <formCode code="32" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TROUSSES"/>
+                <formCode code="C43197" codeSystem="2.16.840.1.113883.2.20.6.3" displayName="TROUSSES"/>
                 <asEntityWithGeneric>
                   <genericMedicine>
                     <name>acetaminophen</name>
@@ -741,8 +741,8 @@
                     <code code="02490064"/>
                     <!-- DIN Number -->
                     <name>LORUM IPSUM TROUSSE POUDRE</name>
-                    <formCode code="56" codeSystem="2.16.840.1.113883.2.20.6.3"
-                      displayName="POUDRE POUR SOLUTION"/>
+                    <formCode code="10110000" codeSystem="2.16.840.1.113883.2.20.6.3"
+                      displayName="POUDRE POUR SOLUTION BUVABLE"/>
                     <asEntityWithGeneric>
                       <genericMedicine>
                         <name>acetaminophen</name>
@@ -825,7 +825,7 @@
                         <territorialAuthority>
                           <territory>
                             <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
-                              displayName="CANADA"/>
+                              displayName="CANADA (LE)"/>
                           </territory>
                         </territorialAuthority>
                       </author>
@@ -860,7 +860,7 @@
                   <subjectOf>
                     <characteristic>
                       <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="PROGRAMME"/>
+                        displayName="ANNEXE"/>
                       <value code="6" codeSystem="2.16.840.1.113883.2.20.6.2"
                         displayName="PRESCRIPTION" xsi:type="CV"/>
                     </characteristic>
@@ -868,15 +868,15 @@
                   <subjectOf>
                     <characteristic>
                       <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="CLASSE THERAPEUTIQUE"/>
+                        displayName="CLASSE THÉRAPEUTIQUE"/>
                       <value code="772" codeSystem="2.16.840.1.113883.2.20.6.6"
                         displayName="ANALGÉSIQUE" xsi:type="CV"/>
                     </characteristic>
                   </subjectOf>
                   <consumedIn>
                     <substanceAdministration>
-                      <routeCode code="49" codeSystem="2.16.840.1.113883.2.20.6.7"
-                        displayName="INTRAVEINEUSE"/>
+                      <routeCode code="20045000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                        displayName="VOIE INTRAVEINEUSE"/>
                     </substanceAdministration>
                   </consumedIn>
                 </part>
@@ -948,7 +948,7 @@
                         <territorialAuthority>
                           <territory>
                             <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
-                              displayName="CANADA"/>
+                              displayName="CANADA (LE)"/>
                           </territory>
                         </territorialAuthority>
                       </author>
@@ -983,7 +983,7 @@
                   <subjectOf>
                     <characteristic>
                       <code code="10" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="PROGRAMME"/>
+                        displayName="ANNEXE"/>
                       <value code="5" codeSystem="2.16.840.1.113883.2.20.6.2" displayName="EN VENTE LIBRE"
                         xsi:type="CV"/>
                     </characteristic>
@@ -991,15 +991,15 @@
                   <subjectOf>
                     <characteristic>
                       <code code="11" codeSystem="2.16.840.1.113883.2.20.6.23"
-                        displayName="CLASSE THERAPEUTIQUE"/>
+                        displayName="CLASSE THÉRAPEUTIQUE"/>
                       <value code="43385" codeSystem="2.16.840.1.113883.2.20.6.6"
                         displayName="ANALGÉSIQUE" xsi:type="CV"/>
                     </characteristic>
                   </subjectOf>
                   <consumedIn>
                     <substanceAdministration>
-                      <routeCode code="49" codeSystem="2.16.840.1.113883.2.20.6.7"
-                        displayName="INTRAVEINEUSE"/>
+                      <routeCode code="20045000" codeSystem="2.16.840.1.113883.2.20.6.7"
+                        displayName="VOIE INTRAVEINEUSE"/>
                     </substanceAdministration>
                   </consumedIn>
                 </part>
@@ -1012,7 +1012,7 @@
                     <territorialAuthority>
                       <territory>
                         <code code="CAN" codeSystem="2.16.840.1.113883.2.20.6.17"
-                          displayName="CANADA"/>
+                          displayName="CANADA (LE)"/>
                       </territory>
                     </territorialAuthority>
                   </author>
