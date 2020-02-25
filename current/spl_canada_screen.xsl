@@ -99,14 +99,6 @@
 											</a>
 										</li>
 									</xsl:when>
-									<!-- LEGACY - REMOVE WHEN THESE CODES ARE FULLY DEPRECATED -->
-									<xsl:when test="v3:code[@code='TP']|v3:code[@code='RMLC']">
-										<li class="nav-item">
-											<a href="#{$unique-section-id}" class="nav-link nav-top">
-												<xsl:value-of select="v3:title"/>
-											</a>
-										</li>
-									</xsl:when>
 									<xsl:otherwise>
 										<!-- NAVIGATION FOR DIFFERENT PARTS -->
 										<li class="nav-item">
