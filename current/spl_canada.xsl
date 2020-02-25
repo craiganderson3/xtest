@@ -176,12 +176,12 @@
 						<td class="formLabel"> <!-- Product Substance Administration Route -->
 							<xsl:value-of select="$labels/adminRoute[@lang = $lang]"/>
 						</td>
-						<td class="formItem">
+						<td class="formItem"> <!-- may have multiple supported administration routes -->
 							<xsl:for-each select="../v3:consumedIn/v3:substanceAdministration/v3:routeCode">
 								<xsl:value-of select="@displayName"/>
 								<xsl:if test="position()!=last()">, </xsl:if>
 							</xsl:for-each>
-<!--							<xsl:value-of select="../v3:consumedIn/v3:substanceAdministration/v3:routeCode/@displayName"/></td> --></td>
+						</td>
 					</tr>
 					<tr class="formTableRowAlt">
 						<td class="formLabel"> <!-- Product Dosage Form -->
