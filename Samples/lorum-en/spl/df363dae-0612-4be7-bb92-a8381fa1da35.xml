@@ -352,14 +352,7 @@
                                 <substanceAdministration>
                                     <routeCode code="20053000"
                                         codeSystem="2.16.840.1.113883.2.20.6.7"
-                                        displayName="ORAL USE1"/>
-                                </substanceAdministration>
-                            </consumedIn>
-                            <consumedIn>
-                                <substanceAdministration>
-                                    <routeCode code="20053000"
-                                        codeSystem="2.16.840.1.113883.2.20.6.7"
-                                        displayName="ORAL USE2"/>
+                                        displayName="ORAL USE"/>
                                 </substanceAdministration>
                             </consumedIn>
                         </manufacturedProduct>
