@@ -481,6 +481,7 @@
 				<th scope="col" width="1" class="formTitle">#</th>
 				<th scope="col" class="formTitle"><xsl:value-of select="$labels/itemCode[@lang = $lang]"/></th>
 				<th scope="col" class="formTitle"><xsl:value-of select="$labels/packageDescription[@lang = $lang]"/></th>
+				<th scope="col" class="formTitle"><xsl:value-of select="$labels/packageRegStatus[@lang = $lang]"/></th>
 				<th scope="col" class="formTitle"><xsl:value-of select="$labels/approvalDate[@lang = $lang]"/></th>
 				<th scope="col" class="formTitle"><xsl:value-of select="$labels/cancellationDate[@lang = $lang]"/></th>
 			</tr>
@@ -538,6 +539,13 @@
 						</xsl:for-each>
 					</xsl:for-each>
 					<xsl:value-of select="v3:formCode/@displayName"/>
+					<br/>
+				</xsl:for-each>
+			</td>
+			<td class="formItem">	
+				<xsl:for-each select="$containerPackagedPath">
+					<xsl:sort select="position()" order="descending"/>
+					<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:code/@displayName"/>
 					<br/>
 				</xsl:for-each>
 			</td>
@@ -666,6 +674,7 @@
 				<tr>
 					<th scope="col" class="formTitle"><xsl:value-of select="$labels/marketingCategory[@lang = $lang]"/></th>
 					<th scope="col" class="formTitle"><xsl:value-of select="$labels/applicationNumber[@lang = $lang]"/></th>
+					<th scope="col" class="formTitle"><xsl:value-of select="$labels/productRegStatus[@lang = $lang]"/></th>
 					<th scope="col" class="formTitle"><xsl:value-of select="$labels/approvalDate[@lang = $lang]"/></th>
 					<th scope="col" class="formTitle"><xsl:value-of select="$labels/cancellationDate[@lang = $lang]"/></th>
 				</tr>
@@ -675,6 +684,9 @@
 					</td>
 					<td class="formItem">
 						<xsl:value-of select="../v3:subjectOf/v3:approval/v3:id/@extension"/>
+					</td>
+					<td class="formItem">						
+					<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:code/@displayName"/>
 					</td>
 					<td class="formItem">						
 						<xsl:call-template name="string-to-date">
