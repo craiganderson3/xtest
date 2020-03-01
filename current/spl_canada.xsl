@@ -581,6 +581,7 @@
 			<xsl:if test="../../v3:asContent">
 				<tr>
 					<td>
+						<xsl:comment>packaging</xsl:comment>
 						<xsl:call-template name="packaging">
 							<xsl:with-param name="path" select="../.."/>
 						</xsl:call-template>
@@ -589,6 +590,7 @@
 			</xsl:if>
 			<tr>
 				<td>
+					<xsl:comment>part quantity</xsl:comment>
 					<xsl:call-template name="partQuantity">
 						<xsl:with-param name="path" select="../.."/>
 					</xsl:call-template>
@@ -597,11 +599,14 @@
 		</xsl:if>
 		<tr>
 			<td>
+				<xsl:comment>parts</xsl:comment>
 				<table width="100%" cellspacing="0" cellpadding="5">
 					<tr>
 						<td class="contentTableTitle"><xsl:value-of select="$labels/part[@lang = $lang]"/> <xsl:value-of select="count(../preceding-sibling::v3:part)+1"/><xsl:value-of select="$labels/ofConnective[@lang = $lang]"/><xsl:value-of select="count(../../v3:part)"/></td>
 					</tr>
+					<xsl:comment>piMedNames before</xsl:comment>
 					<xsl:call-template name="piMedNames"/>
+					<xsl:comment>piMedNames after</xsl:comment>
 				</table>
 			</td>
 		</tr>
@@ -609,6 +614,7 @@
 			<xsl:call-template name="ProductInfoIng"/>
 		<tr>
 			<td>
+				<xsl:comment>image</xsl:comment>
 				<xsl:call-template name="image">
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='SPLIMAGE']"/>
 				</xsl:call-template>
@@ -616,6 +622,7 @@
 		</tr>
 		<tr>
 			<td><!-- pmh class="normalizer" is an artifact from FDA, removing -->
+				<xsl:comment>marketing info</xsl:comment>
 				<xsl:call-template name="MarketingInfo"/>
 			</td>
 		</tr>
