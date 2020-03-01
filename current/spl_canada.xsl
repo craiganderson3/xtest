@@ -548,6 +548,7 @@
 							<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
 						</xsl:with-param>
 					</xsl:call-template>
+					<br/>
 				</xsl:for-each>
 			</td>
 			<td class="formItem">					
@@ -557,6 +558,7 @@
 							<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
 						</xsl:with-param>
 					</xsl:call-template>
+					<br/>
 				</xsl:for-each>
 			</td>
 		</tr>
