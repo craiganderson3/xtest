@@ -125,7 +125,10 @@
 		<xsl:variable name="unique-subsection-id"><xsl:value-of select="@ID"/></xsl:variable>
 		<li class="nav-item">
 			<a href="#{$unique-subsection-id}" class="nav-link">
-				<xsl:if test="not(normalize-space(v3:title))">&lt;&lt;MISSING INFORMATION&gt;&gt;</xsl:if>
+				<xsl:if test="not(normalize-space(v3:title))">
+					<xsl:attribute name="style">color: red;</xsl:attribute>
+					&lt;&lt;MISSING INFORMATION&gt;&gt;
+				</xsl:if>
 				<xsl:value-of select="v3:title"/>				
 			</a>
 			<xsl:if test="v3:component/v3:section">
