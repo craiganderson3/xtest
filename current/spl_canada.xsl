@@ -120,13 +120,13 @@
 						<xsl:call-template name="ProductInfoIng"/>
 					</xsl:otherwise>
 				</xsl:choose>
-				<tr>
+				<!-- pmh removing unused templating for characteristic SPL IMAGE, which leaves an empty table row<tr>
 					<td>						
 						<xsl:call-template name="image">
 							<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='SPLIMAGE']"/>
 						</xsl:call-template>
 					</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
 						<xsl:call-template name="MarketingInfo"/>
