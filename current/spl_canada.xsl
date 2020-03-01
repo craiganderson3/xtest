@@ -128,7 +128,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="normalizer">
+					<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
 						<xsl:call-template name="MarketingInfo"/>
 					</td>
 				</tr>
@@ -615,7 +615,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="normalizer">
+			<td><!-- pmh class="normalizer" is an artifact from FDA, removing -->
 				<xsl:call-template name="MarketingInfo"/>
 			</td>
 		</tr>
