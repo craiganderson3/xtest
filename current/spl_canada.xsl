@@ -543,6 +543,7 @@
 			</td>
 			<td class="formItem">	
 				<xsl:for-each select="$containerPackagedPath">
+					<xsl:sort select="position()" order="descending"/>
 					<xsl:call-template name="string-to-date">
 						<xsl:with-param name="text">
 							<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
@@ -553,6 +554,7 @@
 			</td>
 			<td class="formItem">					
 				<xsl:for-each select="$containerPackagedPath">
+					<xsl:sort select="position()" order="descending"/>
 					<xsl:call-template name="string-to-date">
 						<xsl:with-param name="text">
 							<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
