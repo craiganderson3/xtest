@@ -666,10 +666,10 @@
 	</xsl:template>
 
 	<xsl:template name="MarketingInfo">
+		<!-- TODO - this was formTableMorePetite and formHeadingReg - aligning with the rest of the Product Details -->
 		<xsl:if test="../v3:subjectOf/v3:approval|../v3:subjectOf/v3:marketingAct">
-			<table width="100%" cellpadding="3" cellspacing="0" class="formTableMorePetite">
+			<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 				<tr>
-<!--				<td colspan="5" class="formHeadingReg"><span class="formHeadingTitle" ><xsl:value-of select="$labels/marketingInfo[@lang = $lang]"/></span></td> -->
 					<td colspan="5" class="formHeadingTitle"><xsl:value-of select="$labels/marketingInfo[@lang = $lang]"/></td>
 				</tr>
 				<tr>
