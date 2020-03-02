@@ -126,11 +126,7 @@
 						</xsl:call-template>
 					</td>
 				</tr> -->
-				<tr>
-					<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
-						<xsl:call-template name="MarketingInfo"/>
-					</td>
-				</tr> 
+				<xsl:call-template name="MarketingInfo"/>
 				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks so much like copy&paste and makes maintenance difficult -->
 				<xsl:if test="v3:instanceOfKind">
 					<tr>
@@ -614,11 +610,7 @@
 				</xsl:call-template>
 			</td>
 		</tr>  -->
-		<tr>
-			<td><!-- pmh class="normalizer" is an artifact from FDA, removing -->
-				<xsl:call-template name="MarketingInfo"/>
-			</td>
-		</tr>
+		<xsl:call-template name="MarketingInfo"/>
 	</xsl:template>
 
 	<!-- pmh - for XML Notepad - removed width="5" and colspan="5" -->
@@ -669,43 +661,47 @@
 	<xsl:template name="MarketingInfo">
 		<!-- TODO - this was formTableMorePetite and formHeadingReg - aligning with the rest of the Product Details -->
 		<xsl:if test="../v3:subjectOf/v3:approval|../v3:subjectOf/v3:marketingAct">
-			<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
-				<tr>
-					<td colspan="5" class="formHeadingTitle"><xsl:value-of select="$labels/marketingInfo[@lang = $lang]"/></td>
-				</tr>
-				<tr>
-					<th scope="col" class="formTitle"><xsl:value-of select="$labels/marketingCategory[@lang = $lang]"/></th>
-					<th scope="col" class="formTitle"><xsl:value-of select="$labels/applicationNumber[@lang = $lang]"/></th>
-					<th scope="col" class="formTitle"><xsl:value-of select="$labels/productRegStatus[@lang = $lang]"/></th>
-					<th scope="col" class="formTitle"><xsl:value-of select="$labels/approvalDate[@lang = $lang]"/></th>
-					<th scope="col" class="formTitle"><xsl:value-of select="$labels/cancellationDate[@lang = $lang]"/></th>
-				</tr>
-				<tr class="formTableRowAlt">
-					<td class="formItem">
-						<xsl:value-of select="../v3:subjectOf/v3:approval/v3:code/@displayName"/>
-					</td>
-					<td class="formItem">
-						<xsl:value-of select="../v3:subjectOf/v3:approval/v3:id/@extension"/>
-					</td>
-					<td class="formItem">						
-					<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:code/@displayName"/>
-					</td>
-					<td class="formItem">						
-						<xsl:call-template name="string-to-date">
-							<xsl:with-param name="text">
-								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
-							</xsl:with-param>
-						</xsl:call-template>
-					</td>
-					<td class="formItem">					
-						<xsl:call-template name="string-to-date">
-							<xsl:with-param name="text">
-								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
-							</xsl:with-param>
-						</xsl:call-template>
-					</td>
-				</tr>
-			</table>
+			<tr>
+				<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
+					<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
+						<tr>
+							<td colspan="5" class="formHeadingTitle"><xsl:value-of select="$labels/marketingInfo[@lang = $lang]"/></td>
+						</tr>
+						<tr>
+							<th scope="col" class="formTitle"><xsl:value-of select="$labels/marketingCategory[@lang = $lang]"/></th>
+							<th scope="col" class="formTitle"><xsl:value-of select="$labels/applicationNumber[@lang = $lang]"/></th>
+							<th scope="col" class="formTitle"><xsl:value-of select="$labels/productRegStatus[@lang = $lang]"/></th>
+							<th scope="col" class="formTitle"><xsl:value-of select="$labels/approvalDate[@lang = $lang]"/></th>
+							<th scope="col" class="formTitle"><xsl:value-of select="$labels/cancellationDate[@lang = $lang]"/></th>
+						</tr>
+						<tr class="formTableRowAlt">
+							<td class="formItem">
+								<xsl:value-of select="../v3:subjectOf/v3:approval/v3:code/@displayName"/>
+							</td>
+							<td class="formItem">
+								<xsl:value-of select="../v3:subjectOf/v3:approval/v3:id/@extension"/>
+							</td>
+							<td class="formItem">						
+								<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:code/@displayName"/>
+							</td>
+							<td class="formItem">						
+								<xsl:call-template name="string-to-date">
+									<xsl:with-param name="text">
+										<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:low/@value"/>
+									</xsl:with-param>
+								</xsl:call-template>
+							</td>
+							<td class="formItem">					
+								<xsl:call-template name="string-to-date">
+									<xsl:with-param name="text">
+										<xsl:value-of select="../v3:subjectOf/v3:marketingAct/v3:effectiveTime/v3:high/@value"/>
+									</xsl:with-param>
+								</xsl:call-template>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr> 
 		</xsl:if>
 	</xsl:template>	
 			
