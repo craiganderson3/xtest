@@ -596,7 +596,7 @@
 		<xsl:call-template name="ProductInfoBasic"/>
 		<xsl:call-template name="ProductInfoIng"/>
 		<xsl:call-template name="MarketingInfo">
-			<xsl:with-param name="test-num">PACKAGING TEST!!!</xsl:with-param>
+			<xsl:with-param name="test-num"></xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
