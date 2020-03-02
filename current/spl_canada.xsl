@@ -120,7 +120,7 @@
 					</xsl:otherwise>
 				</xsl:choose>
 				<xsl:call-template name="MarketingInfo">
-					<xsl:with-param name="test-num">1</xsl:with-param>
+					<xsl:with-param name="test-num"></xsl:with-param>
 				</xsl:call-template>
 				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks so much like copy&paste and makes maintenance difficult -->
 				<xsl:if test="v3:instanceOfKind">
@@ -598,7 +598,7 @@
 		<xsl:call-template name="ProductInfoBasic"/>
 		<xsl:call-template name="ProductInfoIng"/>
 		<xsl:call-template name="MarketingInfo">
-			<xsl:with-param name="test-num">2</xsl:with-param>
+			<xsl:with-param name="test-num"></xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
