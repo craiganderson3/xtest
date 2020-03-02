@@ -108,13 +108,7 @@
 			<tbody>
 				<xsl:call-template name="piMedNames"/>
 				<xsl:apply-templates mode="substance" select="v3:moiety"/>
-				<xsl:call-template name="ProductInfoBasic"/>
-				<tr>
-					<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
-						<xsl:call-template name="MarketingInfo"/>
-					</td>
-				</tr>
-				
+				<xsl:call-template name="ProductInfoBasic"/>				
 				<xsl:choose>
 					<!-- if this is a multi-component subject then call to parts template -->
 					<xsl:when test="v3:part">
@@ -671,6 +665,7 @@
 		</table>
 	</xsl:template>
 
+	<!-- TODO most of the other templates contain their own tr and td -->
 	<xsl:template name="MarketingInfo">
 		<!-- TODO - this was formTableMorePetite and formHeadingReg - aligning with the rest of the Product Details -->
 		<xsl:if test="../v3:subjectOf/v3:approval|../v3:subjectOf/v3:marketingAct">
