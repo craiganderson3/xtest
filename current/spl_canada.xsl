@@ -109,6 +109,11 @@
 				<xsl:call-template name="piMedNames"/>
 				<xsl:apply-templates mode="substance" select="v3:moiety"/>
 				<xsl:call-template name="ProductInfoBasic"/>
+				<tr>
+					<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
+						<xsl:call-template name="MarketingInfo"/>
+					</td>
+				</tr>
 				
 				<xsl:choose>
 					<!-- if this is a multi-component subject then call to parts template -->
@@ -131,7 +136,7 @@
 					<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
 						<xsl:call-template name="MarketingInfo"/>
 					</td>
-				</tr>
+				</tr> 
 				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks so much like copy&paste and makes maintenance difficult -->
 				<xsl:if test="v3:instanceOfKind">
 					<tr>
