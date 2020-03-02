@@ -119,13 +119,7 @@
 						<xsl:call-template name="ProductInfoIng"/>
 					</xsl:otherwise>
 				</xsl:choose>
-				<!-- pmh removing unused templating for characteristic SPL IMAGE, which leaves an empty table row<tr>
-					<td>						
-						<xsl:call-template name="image">
-							<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='SPLIMAGE']"/>
-						</xsl:call-template>
-					</td>
-				</tr> -->
+				<div>Marketing Info 1</div>
 				<xsl:call-template name="MarketingInfo"/>
 				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks so much like copy&paste and makes maintenance difficult -->
 				<xsl:if test="v3:instanceOfKind">
@@ -600,16 +594,9 @@
 				</table>
 			</td>
 		</tr>
-			<xsl:call-template name="ProductInfoBasic"/>
-			<xsl:call-template name="ProductInfoIng"/>
-		<!-- pmh todo we do not use characteristic imaging, remove and confirm - leaves empty table row
-		<tr>
-			<td>
-				<xsl:call-template name="image">
-					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='SPLIMAGE']"/>
-				</xsl:call-template>
-			</td>
-		</tr>  -->
+		<xsl:call-template name="ProductInfoBasic"/>
+		<xsl:call-template name="ProductInfoIng"/>
+		<div>Marketing Info 2</div>
 		<xsl:call-template name="MarketingInfo"/>
 	</xsl:template>
 
