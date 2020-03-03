@@ -110,25 +110,17 @@
 				<xsl:apply-templates mode="substance" select="v3:moiety"/>
 				<xsl:call-template name="ProductInfoBasic"/>				
 				<xsl:choose>
-					<!-- if this is a multi-component subject then call to parts template -->
+					<!-- if this is a multi-component subject then call to parts template, and display Product Status from within this template -->
 					<xsl:when test="v3:part">
-<!--						<xsl:call-template name="MarketingInfo">
-							<xsl:with-param name="test-num"></xsl:with-param>
-						</xsl:call-template> -->
 						<xsl:apply-templates mode="subjects" select="v3:part"/>
 					</xsl:when>
 					<!-- otherwise it is a single product and we simply need to display the ingredients, imprint and packaging. -->
-					<!-- this is okay, the Product Status is between Product Info and Ingredients, with Packaging Status at the bottom -->
+					<!-- in this case, the Product Status is between Product Info and Ingredients, with Packaging Status at the bottom -->
 					<xsl:otherwise>
 						<xsl:call-template name="ProductInfoIng"/>
-						<xsl:call-template name="MarketingInfo">
-							<xsl:with-param name="test-num"></xsl:with-param>
-						</xsl:call-template>
+						<xsl:call-template name="MarketingInfo"/>
 					</xsl:otherwise>
 				</xsl:choose>
-<!--				<xsl:call-template name="MarketingInfo">
-					<xsl:with-param name="test-num"></xsl:with-param>
-				</xsl:call-template> -->
 				<!-- FIXME: there seem to be so many different places where the instanceOfKind, that looks so much like copy&paste and makes maintenance difficult -->
 				<xsl:if test="v3:instanceOfKind">
 					<tr>
@@ -584,10 +576,9 @@
 					</td>
 				</tr>
 			</xsl:if>
+			<!-- todo - pmh this might be cleaner as an applied template rather than a called template -->
 			<xsl:for-each select="../..">
-				<xsl:call-template name="MarketingInfo">
-					<xsl:with-param name="test-num"></xsl:with-param>
-				</xsl:call-template>
+				<xsl:call-template name="MarketingInfo"/>
 			</xsl:for-each>
 			<tr>
 				<td>
@@ -609,9 +600,7 @@
 		</tr>
 		<xsl:call-template name="ProductInfoBasic"/>
 		<xsl:call-template name="ProductInfoIng"/>
-		<xsl:call-template name="MarketingInfo">
-			<xsl:with-param name="test-num"></xsl:with-param>
-		</xsl:call-template>
+		<xsl:call-template name="MarketingInfo"/>
 	</xsl:template>
 
 	<!-- pmh - for XML Notepad - removed width="5" and colspan="5" -->
@@ -660,12 +649,10 @@
 
 	<!-- TODO most of the other templates contain their own tr and td -->
 	<xsl:template name="MarketingInfo">
-		<xsl:param name="test-num"></xsl:param>
 		<!-- TODO - this was formTableMorePetite and formHeadingReg - aligning with the rest of the Product Details -->
 		<xsl:if test="../v3:subjectOf/v3:approval|../v3:subjectOf/v3:marketingAct">
 			<tr>
 				<td><!-- pmh class="normalizer" is an artifact from FDA, removing --> 
-					<xsl:value-of select="$test-num"/>
 					<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
 						<tr>
 							<td colspan="5" class="formHeadingTitle"><xsl:value-of select="$labels/marketingInfo[@lang = $lang]"/></td>
