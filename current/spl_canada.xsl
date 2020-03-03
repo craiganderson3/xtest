@@ -584,6 +584,11 @@
 					</td>
 				</tr>
 			</xsl:if>
+			<xsl:for-each select="../..">
+				<xsl:call-template name="MarketingInfo">
+					<xsl:with-param name="test-num">HELLO</xsl:with-param>
+				</xsl:call-template>
+			</xsl:for-each>
 			<tr>
 				<td>
 					<xsl:call-template name="partQuantity">
