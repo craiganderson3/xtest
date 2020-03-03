@@ -118,10 +118,11 @@
 						<xsl:apply-templates mode="subjects" select="v3:part"/>
 					</xsl:when>
 					<!-- otherwise it is a single product and we simply need to display the ingredients, imprint and packaging. -->
+					<!-- this is okay, the Product Status is between Product Info and Ingredients, with Packaging Status at the bottom -->
 					<xsl:otherwise>
 						<xsl:call-template name="ProductInfoIng"/>
 						<xsl:call-template name="MarketingInfo">
-							<xsl:with-param name="test-num">2</xsl:with-param>
+							<xsl:with-param name="test-num"></xsl:with-param>
 						</xsl:call-template>
 					</xsl:otherwise>
 				</xsl:choose>
