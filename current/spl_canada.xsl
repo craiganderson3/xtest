@@ -599,10 +599,10 @@
 			</td>
 		</tr>
 		<xsl:call-template name="ProductInfoBasic"/>
+		<xsl:call-template name="ProductInfoIng"/>
 		<xsl:call-template name="MarketingInfo">
 			<xsl:with-param name="test-num"></xsl:with-param>
 		</xsl:call-template>
-		<xsl:call-template name="ProductInfoIng"/>
 	</xsl:template>
 
 	<!-- pmh - for XML Notepad - removed width="5" and colspan="5" -->
