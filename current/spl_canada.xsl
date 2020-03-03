@@ -112,9 +112,9 @@
 				<xsl:choose>
 					<!-- if this is a multi-component subject then call to parts template -->
 					<xsl:when test="v3:part">
-						<xsl:call-template name="MarketingInfo">
+<!--						<xsl:call-template name="MarketingInfo">
 							<xsl:with-param name="test-num"></xsl:with-param>
-						</xsl:call-template>
+						</xsl:call-template> -->
 						<xsl:apply-templates mode="subjects" select="v3:part"/>
 					</xsl:when>
 					<!-- otherwise it is a single product and we simply need to display the ingredients, imprint and packaging. -->
@@ -586,7 +586,7 @@
 			</xsl:if>
 			<xsl:for-each select="../..">
 				<xsl:call-template name="MarketingInfo">
-					<xsl:with-param name="test-num">HELLO</xsl:with-param>
+					<xsl:with-param name="test-num"></xsl:with-param>
 				</xsl:call-template>
 			</xsl:for-each>
 			<tr>
