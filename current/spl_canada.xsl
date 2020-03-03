@@ -113,7 +113,7 @@
 					<!-- if this is a multi-component subject then call to parts template -->
 					<xsl:when test="v3:part">
 						<xsl:call-template name="MarketingInfo">
-							<xsl:with-param name="test-num"></xsl:with-param>
+							<xsl:with-param name="test-num">1</xsl:with-param>
 						</xsl:call-template>
 						<xsl:apply-templates mode="subjects" select="v3:part"/>
 					</xsl:when>
@@ -121,7 +121,7 @@
 					<xsl:otherwise>
 						<xsl:call-template name="ProductInfoIng"/>
 						<xsl:call-template name="MarketingInfo">
-							<xsl:with-param name="test-num"></xsl:with-param>
+							<xsl:with-param name="test-num">2</xsl:with-param>
 						</xsl:call-template>
 					</xsl:otherwise>
 				</xsl:choose>
@@ -604,7 +604,7 @@
 		<xsl:call-template name="ProductInfoBasic"/>
 		<xsl:call-template name="ProductInfoIng"/>
 		<xsl:call-template name="MarketingInfo">
-			<xsl:with-param name="test-num"></xsl:with-param>
+			<xsl:with-param name="test-num">3</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
