@@ -109,17 +109,20 @@
 				<xsl:call-template name="piMedNames"/>
 				<xsl:apply-templates mode="substance" select="v3:moiety"/>
 				<xsl:call-template name="ProductInfoBasic"/>				
-				<xsl:call-template name="MarketingInfo">
-					<xsl:with-param name="test-num"></xsl:with-param>
-				</xsl:call-template>
 				<xsl:choose>
 					<!-- if this is a multi-component subject then call to parts template -->
 					<xsl:when test="v3:part">
+						<xsl:call-template name="MarketingInfo">
+							<xsl:with-param name="test-num">1</xsl:with-param>
+						</xsl:call-template>
 						<xsl:apply-templates mode="subjects" select="v3:part"/>
 					</xsl:when>
 					<!-- otherwise it is a single product and we simply need to display the ingredients, imprint and packaging. -->
 					<xsl:otherwise>
 						<xsl:call-template name="ProductInfoIng"/>
+						<xsl:call-template name="MarketingInfo">
+							<xsl:with-param name="test-num">2</xsl:with-param>
+						</xsl:call-template>
 					</xsl:otherwise>
 				</xsl:choose>
 <!--				<xsl:call-template name="MarketingInfo">
@@ -601,7 +604,7 @@
 		<xsl:call-template name="ProductInfoBasic"/>
 		<xsl:call-template name="ProductInfoIng"/>
 		<xsl:call-template name="MarketingInfo">
-			<xsl:with-param name="test-num"></xsl:with-param>
+			<xsl:with-param name="test-num">3</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
