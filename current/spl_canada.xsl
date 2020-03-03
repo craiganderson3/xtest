@@ -119,10 +119,10 @@
 					</xsl:when>
 					<!-- otherwise it is a single product and we simply need to display the ingredients, imprint and packaging. -->
 					<xsl:otherwise>
-						<xsl:call-template name="ProductInfoIng"/>
 						<xsl:call-template name="MarketingInfo">
 							<xsl:with-param name="test-num">2</xsl:with-param>
 						</xsl:call-template>
+						<xsl:call-template name="ProductInfoIng"/>
 					</xsl:otherwise>
 				</xsl:choose>
 <!--				<xsl:call-template name="MarketingInfo">
@@ -602,10 +602,10 @@
 			</td>
 		</tr>
 		<xsl:call-template name="ProductInfoBasic"/>
-		<xsl:call-template name="ProductInfoIng"/>
 		<xsl:call-template name="MarketingInfo">
 			<xsl:with-param name="test-num">3</xsl:with-param>
 		</xsl:call-template>
+		<xsl:call-template name="ProductInfoIng"/>
 	</xsl:template>
 
 	<!-- pmh - for XML Notepad - removed width="5" and colspan="5" -->
