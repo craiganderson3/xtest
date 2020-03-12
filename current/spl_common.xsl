@@ -929,12 +929,12 @@ token.
 		</xsl:if>
 		<xsl:choose>
 			<xsl:when test="boolean(//v3:observationMedia[@ID=$reference]//v3:text)">
-				<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+				<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 					<xsl:apply-templates select="@*"/>
 				</img>
 			</xsl:when>
 			<xsl:when test="not(boolean(//v3:observationMedia[@ID=$reference]//v3:text))">
-				<img alt="Image from Drug Label Content" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+				<img alt="Image from Drug Label Content" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 					<xsl:apply-templates select="@*"/>
 				</img>
 			</xsl:when>
@@ -957,12 +957,12 @@ token.
 
 			<xsl:choose>
 				<xsl:when test="boolean(//v3:observationMedia[@ID=$reference]//v3:text)">
-					<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+					<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 						<xsl:apply-templates select="@*"/>
 					</img>
 				</xsl:when>
 				<xsl:when test="not(boolean(//v3:observationMedia[@ID=$reference]//v3:text))">
-					<img alt="Image from Drug Label Content" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+					<img alt="Image from Drug Label Content" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 						<xsl:apply-templates select="@*"/>
 					</img>
 				</xsl:when>
@@ -1345,7 +1345,7 @@ token.
 <xsl:template name="image">
 	<xsl:param name="path" select="."/>
 	<xsl:if test="string-length($path/v3:value/v3:reference/@value) > 0">
-		<img alt="Image of Product" style="width:100%;" src="{$base-path}{$path/v3:value/v3:reference/@value}"/>
+		<img alt="Image of Product" style="width:100%;" src="{$path/v3:value/v3:reference/@value}"/>
 	</xsl:if>
 </xsl:template>
 <!-- pmh - this was replaced when characteristics were moved to spl_canada.xsl
