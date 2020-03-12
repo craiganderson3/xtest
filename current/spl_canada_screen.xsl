@@ -231,7 +231,7 @@
 			<link rel="stylesheet" href="{$css}"><xsl:text> </xsl:text></link>
 			<style>
 				/* ScrollSpy, Stickiness/Affix, and French Navigation Reduction */
-			  	
+			  
 				html {
 					scroll-behavior: smooth;
 				}

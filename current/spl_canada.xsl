@@ -19,8 +19,6 @@
 	<!-- This is the CSS link put into the output -->
 	<xsl:param name="css">https://cease353.github.io/xtest/current/spl_canada.css</xsl:param>
 
-	<xsl:variable name="base-path" select="replace(base-uri(),'(.*/)[^/]+?.xml','$1')"/>
-
 	<xsl:variable name="lang">
 		<xsl:choose>
 			<xsl:when test="v3:document/v3:languageCode[@code='1']">en</xsl:when>
