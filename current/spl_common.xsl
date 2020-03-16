@@ -656,6 +656,10 @@ token.
 			<a name="{@ID}"/>
 		</xsl:if>
 		<table>
+			<!--pmh we can maybe fix this?-->
+			<xsl:if test="not(@width)">
+				<xsl:attribute name="width">100%</xsl:attribute>
+			</xsl:if>
 			<xsl:apply-templates select="@*|node()"/>
 		</table>
 	</xsl:template>
