@@ -367,6 +367,9 @@
 }
 
 .spl table	{
+/* always 100%*/
+    width: 100%;
+
 	white-space: wrap;
 	font-size: 100%;
 /*
