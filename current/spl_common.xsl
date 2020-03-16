@@ -929,12 +929,12 @@ token.
 		</xsl:if>
 		<xsl:choose>
 			<xsl:when test="boolean(//v3:observationMedia[@ID=$reference]//v3:text)">
-				<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+				<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 					<xsl:apply-templates select="@*"/>
 				</img>
 			</xsl:when>
 			<xsl:when test="not(boolean(//v3:observationMedia[@ID=$reference]//v3:text))">
-				<img alt="Image from Drug Label Content" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+				<img alt="Image from Drug Label Content" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 					<xsl:apply-templates select="@*"/>
 				</img>
 			</xsl:when>
@@ -957,12 +957,12 @@ token.
 
 			<xsl:choose>
 				<xsl:when test="boolean(//v3:observationMedia[@ID=$reference]//v3:text)">
-					<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+					<img alt="{//v3:observationMedia[@ID=$reference]//v3:text}" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 						<xsl:apply-templates select="@*"/>
 					</img>
 				</xsl:when>
 				<xsl:when test="not(boolean(//v3:observationMedia[@ID=$reference]//v3:text))">
-					<img alt="Image from Drug Label Content" src="{$base-path}{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
+					<img alt="Image from Drug Label Content" src="{//v3:observationMedia[@ID=$reference]//v3:reference/@value}">
 						<xsl:apply-templates select="@*"/>
 					</img>
 				</xsl:when>
