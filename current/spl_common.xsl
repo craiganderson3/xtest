@@ -649,20 +649,8 @@ token.
 			<xsl:apply-templates mode="mixed" select="node()"/>
 		</p>
 	</xsl:template>
-	<!-- TABLE MODEL -->
-	<xsl:template match="v3:table">
-		<!-- see note anchoring and PCR 793 -->
-		<xsl:if test="@ID">
-			<a name="{@ID}"/>
-		</xsl:if>
-		<table>
-			<!--pmh we can maybe fix this?-->
-			<xsl:if test="not(@width)">
-				<xsl:attribute name="width">100%</xsl:attribute>
-			</xsl:if>
-			<xsl:apply-templates select="@*|node()"/>
-		</table>
-	</xsl:template>
+	
+	<!-- TABLE MODEL - the main table template has been moved to spl_canada.xsl -->
 	<xsl:template match="v3:table/@summary|v3:table/@width|v3:table/@border|v3:table/@frame|v3:table/@rules|v3:table/@cellspacing|v3:table/@cellpadding">
 		<xsl:copy-of select="."/>
 	</xsl:template>

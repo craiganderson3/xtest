@@ -815,6 +815,21 @@
 		<xsl:apply-templates select="/v3:document"/>
 	</xsl:template>
 
+	<!-- TABLE MODEL -->
+	<xsl:template match="v3:table">
+		<!-- see note anchoring and PCR 793 -->
+		<xsl:if test="@ID">
+			<a name="{@ID}"/>
+		</xsl:if>
+		<table>
+			<!-- Default to 100% table width if none is specified -->
+			<xsl:if test="not(@width)">
+				<xsl:attribute name="width">100%</xsl:attribute>
+			</xsl:if>
+			<xsl:apply-templates select="@*|node()"/>
+		</table>
+	</xsl:template>
+	
 	<!-- MAIN HTML PAGE TEMPLATING -->
 	<xsl:template match="/v3:document" priority="1">
 		<html>
