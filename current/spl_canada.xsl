@@ -434,7 +434,7 @@
 					<xsl:with-param name="label" select="$labels/imprint[@lang = $lang]"/>
 					<xsl:with-param name="class">formTableRowAlt</xsl:with-param>
 				</xsl:call-template>
-				<xsl:call-template name="listedCharacteristicRow"> <!-- Flavour is CV -->
+				<xsl:call-template name="listedCharacteristicRow"> <!-- Flavour is CV Listed -->
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='7']"/>
 					<xsl:with-param name="label" select="$labels/flavor[@lang = $lang]"/>
 				</xsl:call-template>
@@ -443,16 +443,16 @@
 					<xsl:with-param name="label" select="$labels/combinationProduct[@lang = $lang]"/>
 					<xsl:with-param name="class">formTableRowAlt</xsl:with-param>
 				</xsl:call-template>
-				<xsl:call-template name="codedCharacteristicRow"> <!-- Pharmaceutical Standard is CV -->
+				<xsl:call-template name="codedCharacteristicRow"> <!-- Pharmaceutical Standard is CV Listed -->
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='9']"/>
 					<xsl:with-param name="label" select="$labels/pharmaStandard[@lang = $lang]"/>
 				</xsl:call-template>
-				<xsl:call-template name="listedCharacteristicRow"> <!-- Schedule is CV, Listed? -->
+				<xsl:call-template name="listedCharacteristicRow"> <!-- Schedule is CV Listed -->
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='10']"/>
 					<xsl:with-param name="label" select="$labels/schedule[@lang = $lang]"/>
 					<xsl:with-param name="class">formTableRowAlt</xsl:with-param>
 				</xsl:call-template>
-				<xsl:call-template name="listedCharacteristicRow"> <!-- Therapeutic Class, Listed? -->
+				<xsl:call-template name="listedCharacteristicRow"> <!-- Therapeutic Class Listed -->
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='11']"/>
 					<xsl:with-param name="label" select="$labels/therapeuticClass[@lang = $lang]"/>
 				</xsl:call-template>
