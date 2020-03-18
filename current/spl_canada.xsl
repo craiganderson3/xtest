@@ -443,7 +443,7 @@
 					<xsl:with-param name="label" select="$labels/combinationProduct[@lang = $lang]"/>
 					<xsl:with-param name="class">formTableRowAlt</xsl:with-param>
 				</xsl:call-template>
-				<xsl:call-template name="codedCharacteristicRow"> <!-- Pharmaceutical Standard is CV Listed -->
+				<xsl:call-template name="listedCharacteristicRow"> <!-- Pharmaceutical Standard is CV Listed -->
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='9']"/>
 					<xsl:with-param name="label" select="$labels/pharmaStandard[@lang = $lang]"/>
 				</xsl:call-template>
