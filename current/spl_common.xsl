@@ -762,8 +762,8 @@ token.
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
-					<!-- pmh added hacky support for table rules=all -->
 					<xsl:choose>
+						<!-- pmh added hacky support for table rules=all -->
 						<xsl:when test="ancestor::v3:table/@rules='all'">
 							<xsl:text> Lrule Rrule </xsl:text>
 						</xsl:when>						
@@ -796,8 +796,8 @@ token.
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
-					<!-- pmh added hacky support for table rules=all -->
 					<xsl:choose>
+						<!-- pmh added hacky support for table rules=all -->
 						<xsl:when test="ancestor::v3:table/@rules='all'">
 							<xsl:text> Lrule Rrule </xsl:text>
 						</xsl:when>
