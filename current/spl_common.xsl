@@ -767,15 +767,15 @@ token.
 						<xsl:when test="ancestor::v3:table/@rules='all'">
 							<xsl:text> Lrule Rrule </xsl:text>
 						</xsl:when>						
+						<xsl:otherwise>
+							<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Lrule') and not($associatedCol/preceding-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Lrule'))">
+								<xsl:text> Lrule </xsl:text>
+							</xsl:if>
+							<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Rrule') and not($associatedCol/following-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Rrule'))">
+								<xsl:text> Rrule </xsl:text>
+							</xsl:if>						
+						</xsl:otherwise>
 					</xsl:choose>
-					<xsl:otherwise>
-						<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Lrule') and not($associatedCol/preceding-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Lrule'))">
-							<xsl:text> Lrule </xsl:text>
-						</xsl:if>
-						<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Rrule') and not($associatedCol/following-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Rrule'))">
-							<xsl:text> Rrule </xsl:text>
-						</xsl:if>						
-					</xsl:otherwise>
 				</xsl:with-param>
 			</xsl:call-template>
 			<xsl:call-template name="additionalStyleAttr"/>
