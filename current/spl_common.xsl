@@ -778,11 +778,11 @@ token.
 	<xsl:template match="v3:td">
 		<!-- determine our position to find out the associated col -->
 		<xsl:param name="position" select="1+count(preceding-sibling::v3:td[not(@colspan[number(.) > 0])]|preceding-sibling::v3:th[not(@colspan[number(.) > 0])])+sum(preceding-sibling::v3:td/@colspan[number(.) > 0]|preceding-sibling::v3:th/@colspan[number(.) > 0])"/>
-
-
 		<xsl:param name="associatedCol" select="(ancestor::v3:table/v3:colgroup/v3:col|ancestor::v3:table/v3:col)[$position]"/>
 		<xsl:param name="associatedColgroup" select="$associatedCol/parent::v3:colgroup"/>
 		<td>
+			<!-- pmh todo remove -->
+			<xsl:attribute name="test" select="$position"/>
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
