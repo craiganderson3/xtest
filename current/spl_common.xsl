@@ -782,7 +782,11 @@ token.
 		<xsl:param name="associatedColgroup" select="$associatedCol/parent::v3:colgroup"/>
 		<td>
 			<!-- pmh todo remove -->
-			<xsl:attribute name="test" select="$position"/>
+			<xsl:attribute name="test1" select="$position"/>
+			<xsl:attribute name="test2" select="not(ancestor::v3:tfoot)"/>
+			<xsl:attribute name="test3" select="contains($associatedColgroup/@styleCode,'Lrule')"/>
+			<xsl:attribute name="test4" select="not($associatedCol/preceding-sibling::v3:col)"/>
+			<xsl:attribute name="test4" select="contains($associatedCol/@styleCode, 'Lrule')"/>
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
