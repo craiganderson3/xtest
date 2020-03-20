@@ -784,9 +784,12 @@ token.
 			<!-- pmh todo remove -->
 			<xsl:attribute name="test1" select="$position"/>
 			<xsl:attribute name="test2"><xsl:value-of select="not(ancestor::v3:tfoot)"/></xsl:attribute>
-			<xsl:attribute name="test3"><xsl:value-of select="contains($associatedColgroup/@styleCode,'Lrule')"/></xsl:attribute>
-			<xsl:attribute name="test4"><xsl:value-of select="not($associatedCol/preceding-sibling::v3:col)"/></xsl:attribute>
+			<xsl:attribute name="test3"><xsl:value-of select="$associatedCol"/></xsl:attribute>
+			<xsl:attribute name="test4"><xsl:value-of select="$associatedColGroup"/></xsl:attribute>
 			<xsl:attribute name="test5"><xsl:value-of select="contains($associatedCol/@styleCode, 'Lrule')"/></xsl:attribute>
+			<xsl:attribute name="test6"><xsl:value-of select="contains($associatedColgroup/@styleCode,'Lrule')"/></xsl:attribute>
+			<xsl:attribute name="test7"><xsl:value-of select="not($associatedCol/preceding-sibling::v3:col)"/></xsl:attribute>
+			<xsl:attribute name="test8"><xsl:value-of select="contains($associatedCol/@styleCode, 'Lrule')"/></xsl:attribute>
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
