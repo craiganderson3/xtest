@@ -727,6 +727,10 @@ token.
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
 					<xsl:choose>
+						<!-- pmh added hacky support for table rules=all -->
+						<xsl:when test="ancestor::v3:table/@rules='all'">
+							<xsl:text> Toprule Botrule</xsl:text>
+						</xsl:when>
 						<xsl:when test="contains(ancestor::v3:table/@styleCode, 'Noautorules') or contains(ancestor::v3:section/v3:code/@code, '43683-2') and not(@styleCode)">
 							<xsl:text></xsl:text>
 						</xsl:when>
@@ -758,12 +762,20 @@ token.
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
-					<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Lrule') and not($associatedCol/preceding-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Lrule'))">
-						<xsl:text> Lrule </xsl:text>
-					</xsl:if>
-					<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Rrule') and not($associatedCol/following-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Rrule'))">
-						<xsl:text> Rrule </xsl:text>
-					</xsl:if>
+					<!-- pmh added hacky support for table rules=all -->
+					<xsl:choose>
+						<xsl:when test="ancestor::v3:table/@rules='all'">
+							<xsl:text> Lrule Rrule </xsl:text>
+						</xsl:when>						
+					</xsl:choose>
+					<xsl:otherwise>
+						<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Lrule') and not($associatedCol/preceding-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Lrule'))">
+							<xsl:text> Lrule </xsl:text>
+						</xsl:if>
+						<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Rrule') and not($associatedCol/following-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Rrule'))">
+							<xsl:text> Rrule </xsl:text>
+						</xsl:if>						
+					</xsl:otherwise>
 				</xsl:with-param>
 			</xsl:call-template>
 			<xsl:call-template name="additionalStyleAttr"/>
@@ -781,24 +793,23 @@ token.
 		<xsl:param name="associatedCol" select="(ancestor::v3:table/v3:colgroup/v3:col|ancestor::v3:table/v3:col)[$position]"/>
 		<xsl:param name="associatedColgroup" select="$associatedCol/parent::v3:colgroup"/>
 		<td>
-			<!-- pmh todo remove -->
-			<xsl:attribute name="test1" select="$position"/>
-			<xsl:attribute name="test2"><xsl:value-of select="$associatedCol"/></xsl:attribute>
-			<xsl:attribute name="test3"><xsl:value-of select="$associatedColgroup"/></xsl:attribute>
-			<xsl:attribute name="test4"><xsl:value-of select="not(ancestor::v3:tfoot)"/></xsl:attribute>
-			<xsl:attribute name="test5"><xsl:value-of select="contains($associatedCol/@styleCode, 'Lrule')"/></xsl:attribute>
-			<xsl:attribute name="test6"><xsl:value-of select="contains($associatedColgroup/@styleCode,'Lrule')"/></xsl:attribute>
-			<xsl:attribute name="test7"><xsl:value-of select="not($associatedCol/preceding-sibling::v3:col)"/></xsl:attribute>
-			<xsl:attribute name="test8"><xsl:value-of select="contains($associatedCol/@styleCode, 'Lrule')"/></xsl:attribute>
 			<xsl:call-template name="styleCodeAttr">
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode">
-					<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Lrule') and not($associatedCol/preceding-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Lrule'))">
-						<xsl:text> Lrule </xsl:text>
-					</xsl:if>
-					<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Rrule') and not($associatedCol/following-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Rrule'))">
-						<xsl:text> Rrule </xsl:text>
-					</xsl:if>
+					<!-- pmh added hacky support for table rules=all -->
+					<xsl:choose>
+						<xsl:when test="ancestor::v3:table/@rules='all'">
+							<xsl:text> Lrule Rrule </xsl:text>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Lrule') and not($associatedCol/preceding-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Lrule'))">
+								<xsl:text> Lrule </xsl:text>
+							</xsl:if>
+							<xsl:if test="not(ancestor::v3:tfoot) and ((contains($associatedColgroup/@styleCode,'Rrule') and not($associatedCol/following-sibling::v3:col)) or contains($associatedCol/@styleCode, 'Rrule'))">
+								<xsl:text> Rrule </xsl:text>
+							</xsl:if>
+						</xsl:otherwise>
+					</xsl:choose>
 				</xsl:with-param>
 			</xsl:call-template>
 			<xsl:call-template name="additionalStyleAttr"/>
