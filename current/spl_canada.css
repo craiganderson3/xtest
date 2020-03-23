@@ -919,10 +919,4 @@ margin-bottom: 2ex;
     border: 1px solid #CCCCCC !important;
 }
 
-th {
-    /* Make all Print table headers consistent with SPL/Aurora colour scheme (light grey) */
-    	background-color: #EAEAEA;
-}
-
-
 }	
