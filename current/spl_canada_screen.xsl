@@ -233,7 +233,9 @@
 				/* ScrollSpy, Stickiness/Affix, and French Navigation Reduction */
 			  
 				html {
+/* disable smooth scrolling
 					scroll-behavior: smooth;
+*/
 				}
 								
 				.sticky {
