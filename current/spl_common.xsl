@@ -57,16 +57,7 @@
 		<script src="{$resourcesdir}spl.js" type="text/javascript" charset="utf-8">/* */</script>
 	</xsl:template> -->
 
-	<xsl:template name="string-lowercase">
-		<!--** Convert the input text that is passed in as a parameter to lower case  -->
-		<xsl:param name="text"/>
-		<xsl:value-of select="translate($text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
-	</xsl:template>
-	<xsl:template name="string-uppercase">
-		<!--** Convert the input text that is passed in as a parameter to upper case  -->
-		<xsl:param name="text"/>
-		<xsl:value-of select="translate($text,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-	</xsl:template>
+	<!-- pmh moved string-lowercase and string-uppercase templates into internationalization file to support French language characters -->
 	<xsl:template name="printSeperator">
 		<xsl:param name="lastDelimiter"><xsl:if test="last() > 2">,</xsl:if> and </xsl:param>
 		<xsl:choose>

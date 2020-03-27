@@ -113,8 +113,18 @@
 		<toConnective lang="fr">&#160;-&#160;</toConnective>
 	</my:texts>
 	<xsl:variable name="labels" select="document('')/*/my:texts"/>
-	
-	<!-- global templates like date formatting may be specialized for different regions -->
+		
+	<!-- global templates like date and string cd formatting may be specialized for different regions -->
+	<xsl:template name="string-lowercase">
+		<!--** Convert the input text that is passed in as a parameter to lower case  -->
+		<xsl:param name="text"/>
+		<xsl:value-of select="translate($text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
+	</xsl:template>
+	<xsl:template name="string-uppercase">
+		<!--** Convert the input text that is passed in as a parameter to upper case  -->
+		<xsl:param name="text"/>
+		<xsl:value-of select="translate($text,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+	</xsl:template>
 	<xsl:template name="string-to-date">
 		<xsl:param name="text"/>
 		<xsl:param name="displayMonth">true</xsl:param>
