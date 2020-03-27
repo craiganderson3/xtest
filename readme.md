@@ -24,29 +24,44 @@ Once you change the stylesheet processing instruction in one of the SPM XML file
 you should be able to transform it into HTML using Oxygen or a similar XML tool, and then render it 
 using your local browser.
 
-3. JavaScript Technology Stack
+3. Internationalization, Labels and Local Date Formats
+
+Internationalization and local date formatting maintained in the spl_canada_i18n.xsl transform file.
+Where it is possible, Display Names and Titles from within the XML Product Monograph have been used
+in the XSL transforms. Where static labels are required, these have been be internationalized, with
+French and English language versions. 
+
+The spl_canada_i18n.xsl file has been set up so it can be modified easily to change wording or update
+translations. There are two blocks of labels (one in English, followed by one in French), and French
+language characters can be used since the overall encoding of the transforms is UTF-8. In addition,
+this file contains a template which is used to format dates. The same date formatting template is used
+for both languages. It is kept in the internationalization file because it may be jurisdictional.
+
+Separate labels are necessary for any fields that are Required but not Mandatory since they may be
+absent. For instance, not all Product Characteristics are Mandatory.
+
+4. JavaScript Technology Stack (Bootstrap Bundle)
 
  - Bootstrap 4.4.1 (includes ScrollSpy)
  - JQuery 3.4.1
  - Popper 1.16.0
  - StickyFill 2.0.5
 
-Stickyfill is a polyfill which has been used specifically to support IE scrolling.
+Stickyfill is a polyfill which has been used specifically to support IE affix and scrolling.
 
-4. Aurora and FDA Stylesheets
+5. Aurora and FDA Stylesheets
 
-We are currently using the FDA styles for styles within the drug monograph itself, and the Bootstrap
+We are currently using styles based on the FDA styles within the drug monograph itself, and the Bootstrap
 Bundle contained styles. These are similar to the styles referenced in the Aurora Design Guide, although
 we are not using the actual Aurora javascript and css. The Bootstrap 4 Bundle contains the Popper library,
 and we are also using the JQuery Slim version and StickyFill polyfill library.
 
 Bootstrap 4 provides exceptional modern browser support, and aligns closely with Aurora. Alternatively,
-we could use Bootstrap 3, which provides broader support for older browsers. Their are advantages to
-both approaches. We are currently testing with the latest versions of Internet Explorer, Edge and Firefox.
-Future plans involve creating Health Canada specific css which will replace the FDA css, and can then
-be used in conjunction with the Bootstrap css and javascript. The FDA javascript is no longer needed.
+we could use Bootstrap 3, which provides broader support for older browsers. There are advantages to
+both approaches. We are currently testing with the latest versions of Chrome, Internet Explorer, Edge 
+and Mozilla Firefox.
 
-5. Web Navigation and Responsive Design
+6. Web Navigation and Responsive Design
 
 Sidebar navigation is hidden for small screen sizes and can be used on larger screens. Sidebar
 navigation and the accordion collapsing is essentially the same thing: clicking a menu item and
@@ -55,16 +70,6 @@ or hide a section of content.
 
 Bootstrap Scrollspy is a library which synchronizes scrolling and navigation. The navigation menu 
 currently does not extend below the second level of sections.
-
-In the current implementation, the width of the sidebar navigation has been fixed to 400px to
-resolve an issue I discovered with accordion resizing. Realistically, it makes sense to fix the
-sidebar navigation size to always fit the longest expected top level heading.
-
-6. Internationalization, Labels and Local Date Formats
-
-Internationalization and local date formatting maintained in the spl_canada_i18n.xsl transform file.
-Where it is possible, Display Names should be used. Where static labels are required, these need to
-be internationalized. These are necessary for any fields that are Required but not Mandatory.
 
 7. Decisions Required
 
