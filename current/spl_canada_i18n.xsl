@@ -98,7 +98,6 @@
 		<productRegStatus lang="fr">État réglementaire du produit</productRegStatus>
 		<approvalDate lang="fr">Date d’approbation</approvalDate>
 		<cancellationDate lang="fr">Date d’annulation</cancellationDate>
-<!--		<marketingInfo lang="fr">Régime d’emploi homologué</marketingInfo> -->
 		<marketingInfo lang="fr">État du produit</marketingInfo>
 		<marketingCategory lang="fr">Type d’activité de réglementation</marketingCategory>
 		<applicationNumber lang="fr">Numéro de contrôle</applicationNumber>
