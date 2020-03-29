@@ -63,7 +63,7 @@
 		<labeler lang="fr">Détenteur de l’autorisation de mise sur le marché</labeler>
 		<registrant lang="fr">Importateur/distributeur canadien</registrant>
 		<partyAddress lang="fr">Adresse de la personne-ressource</partyAddress>
-		<partyTelephone lang="fr">Autres coordonnées</partyTelephone>
+		<partyAdditional lang="fr">Autres coordonnées</partyAdditional>
 		<partyEmail lang="fr">Couriel&#160;</partyEmail>
 		<partyTel lang="fr">Tél.&#160;</partyTel>
 		<partyWeb lang="fr">Site Web&#160;</partyWeb>
