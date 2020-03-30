@@ -725,19 +725,20 @@
 											<xsl:value-of select="v3:title"/>
 										</h5>
 										<div class="spl title-page title-page-row">
-											<xsl:apply-templates select="v3:component[1]/v3:section/v3:text"/>
+											<xsl:apply-templates select="v3:component/v3:section[v3:code/@code='0tp1.1']/v3:text"/>
 										</div>
 										<div class="spl title-page-row title-page-rule">
 											<div class="title-page-left">
-												<xsl:apply-templates select="v3:component[2]/v3:section"/>	
-												<xsl:apply-templates select="v3:component[position() = last()-1]/v3:section" mode="inline-title"/>
+												<xsl:apply-templates select="v3:component/v3:section[v3:code/@code='0tp1.2']"/>
+												<xsl:apply-templates select="v3:component/v3:section[v3:code/@code='0tp1.5']" mode="inline-title"/>
 											</div>
 											<div class="title-page-right">
-												<xsl:apply-templates select="v3:component[position() &gt; 2 and position() &lt; last()-1]/v3:section"/>
+												<xsl:apply-templates select="v3:component/v3:section[v3:code/@code='0tp1.3']"/>
+												<xsl:apply-templates select="v3:component/v3:section[v3:code/@code='0tp1.4']"/>
 											</div>
 										</div>											
 										<div class="spl title-page title-page-row">
-											<xsl:apply-templates select="v3:component[position()=last()]/v3:section/v3:text"/>
+											<xsl:apply-templates select="v3:component/v3:section[v3:code/@code='0tp1.6']/v3:text"/>
 										</div>
 									</div>
 								</xsl:when>
