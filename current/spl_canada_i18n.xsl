@@ -63,7 +63,7 @@
 		<labeler lang="fr">Détenteur de l’autorisation de mise sur le marché</labeler>
 		<registrant lang="fr">Importateur/distributeur canadien</registrant>
 		<partyAddress lang="fr">Adresse de la personne-ressource</partyAddress>
-		<partyTelephone lang="fr">Autres coordonnées</partyTelephone>
+		<partyAdditional lang="fr">Autres coordonnées</partyAdditional>
 		<partyEmail lang="fr">Couriel&#160;</partyEmail>
 		<partyTel lang="fr">Tél.&#160;</partyTel>
 		<partyWeb lang="fr">Site Web&#160;</partyWeb>
@@ -98,7 +98,6 @@
 		<productRegStatus lang="fr">État réglementaire du produit</productRegStatus>
 		<approvalDate lang="fr">Date d’approbation</approvalDate>
 		<cancellationDate lang="fr">Date d’annulation</cancellationDate>
-<!--		<marketingInfo lang="fr">Régime d’emploi homologué</marketingInfo> -->
 		<marketingInfo lang="fr">État du produit</marketingInfo>
 		<marketingCategory lang="fr">Type d’activité de réglementation</marketingCategory>
 		<applicationNumber lang="fr">Numéro de contrôle</applicationNumber>
