@@ -176,7 +176,7 @@
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode" select="'Section'"/>
 			</xsl:call-template>
-			<xsl:for-each select="@ID">
+			<xsl:for-each select="v3:id/@root"> <!-- pmh was @ID -->
 				<a name="{.}"><xsl:text> </xsl:text></a>
 			</xsl:for-each>
 			<a name="section-{substring($sectionNumberSequence,2)}"><xsl:text> </xsl:text></a>

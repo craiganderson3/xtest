@@ -233,7 +233,15 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	
+
+	<!-- templating for Active Ingredient Basis of Strength -->
+	<xsl:template match="v3:code" mode="active-ingredient-bos">
+		<xsl:value-of select="@displayName"/>
+		<xsl:text> (</xsl:text>
+			<xsl:value-of select="@code"/>
+		<xsl:text>) </xsl:text>		
+	</xsl:template>
+		
 	<!-- display the ingredient information (both active and inactive) -->
 	<xsl:template name="ActiveIngredients">
 		<table width="100%" cellpadding="3" cellspacing="0" class="formTablePetite">
@@ -271,13 +279,13 @@
 						<td class="formItem">
 							<xsl:choose>
 								<xsl:when test="../@classCode='ACTIR'">
-									<xsl:value-of select="v3:asEquivalentSubstance/v3:definingSubstance/v3:code/@displayName"/>
+									<xsl:apply-templates select="v3:asEquivalentSubstance/v3:definingSubstance/v3:code" mode="active-ingredient-bos"/>
 								</xsl:when>
 								<xsl:when test="../@classCode='ACTIB'">
-									<xsl:value-of select="v3:code/@displayName"/>
+									<xsl:apply-templates select="v3:code" mode="active-ingredient-bos"/>
 								</xsl:when>
 								<xsl:when test="../@classCode='ACTIM'">
-									<xsl:value-of select="v3:activeMoiety/v3:activeMoiety/v3:code/@displayName"/>
+									<xsl:apply-templates select="v3:activeMoiety/v3:activeMoiety/v3:code" mode="active-ingredient-bos"/>
 								</xsl:when>
 							</xsl:choose>
 						</td>
@@ -703,7 +711,7 @@
 				<div class="row position-relative">
 					<div class="col">
 						<xsl:for-each select="v3:component/v3:section">
-							<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
+							<xsl:variable name="unique-section-id"><xsl:value-of select="v3:id/@root"/></xsl:variable>
 							<xsl:choose>
 								<xsl:when test="v3:code[@code='0MP']">
 									<!-- PRODUCT DETAIL -->
