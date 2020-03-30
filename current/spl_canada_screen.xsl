@@ -72,7 +72,7 @@
 					<div style="transform: scaleX(-1);" id="navigation-scrollbar">
 						<ul class="navbar-nav" id="navigation-sidebar" style="transform: scaleX(-1); ">
 							<xsl:for-each select="v3:component/v3:section">
-								<xsl:variable name="unique-section-id"><xsl:value-of select="@ID"/></xsl:variable>
+								<xsl:variable name="unique-section-id"><xsl:value-of select="v3:id/@root"/></xsl:variable>
 								<xsl:choose>
 									<xsl:when test="v3:code[@code='0MP']">
 										<!-- PRODUCT DETAIL NAVIGATION -->
