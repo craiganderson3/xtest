@@ -213,12 +213,12 @@
 	<xsl:template match="v3:quantity/v3:numerator">
 		<xsl:choose>
 			<xsl:when test="v3:low and v3:high">
-				<xsl:value-of select="v3:low/@value"/>					
+				<xsl:value-of select="format-number(v3:low/@value, '###,###,###,###.##')"/>					
 				<xsl:value-of select="$labels/toConnective[@lang = $lang]"/>
-				<xsl:value-of select="v3:high/@value"/>&#160;								
+				<xsl:value-of select="format-number(v3:high/@value, '###,###,###,###.##')"/>&#160;								
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="@value"/>&#160;
+				<xsl:value-of select="format-number(@value, '###,###,###,###.##')"/>&#160;
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:choose>

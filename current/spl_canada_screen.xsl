@@ -168,7 +168,7 @@
 				<xsl:attribute name="data-sectionCode"><xsl:value-of select="@code"/></xsl:attribute>
 			</xsl:for-each>
 
-			<xsl:for-each select="@ID"><!-- AURORA SPECIFIC -->
+			<xsl:for-each select="@ID">
 				<xsl:attribute name="id"><xsl:value-of select="."/></xsl:attribute>
 			</xsl:for-each>
 
@@ -176,7 +176,7 @@
 				<xsl:with-param name="styleCode" select="@styleCode"/>
 				<xsl:with-param name="additionalStyleCode" select="'Section'"/>
 			</xsl:call-template>
-			<xsl:for-each select="v3:id/@root"> <!-- pmh was @ID -->
+			<xsl:for-each select="v3:id/@root"> <!-- id/@root is guaranteed to be a GUID -->
 				<a name="{.}"><xsl:text> </xsl:text></a>
 			</xsl:for-each>
 			<a name="section-{substring($sectionNumberSequence,2)}"><xsl:text> </xsl:text></a>
