@@ -130,7 +130,7 @@
 	color: black;
 }
 
-/* pmh - h5 and h6 follow the same pattern as h3 and h4 - plain, then italicized */
+/* pmh - h5 and h6 follow the same pattern as h3 and h4 - plain, and then italicized */
 .spl h5 {	
 	text-indent: 0em;
 	font-size: 100%;
