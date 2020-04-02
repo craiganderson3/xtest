@@ -33,7 +33,7 @@
 		<size lang="en">Size</size>
 		<imprint lang="en">Imprint</imprint>
 		<flavor lang="en">Flavour</flavor>
-		<combinationProduct lang="en">Combination Product</combinationProduct>
+		<combinationProduct lang="en">Combination Product Type</combinationProduct>
 		<pharmaStandard lang="en">Pharmaceutical Standard</pharmaStandard>
 		<schedule lang="en">Schedule</schedule>
 		<therapeuticClass lang="en">Therapeutic Class</therapeuticClass>
