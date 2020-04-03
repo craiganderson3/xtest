@@ -417,6 +417,23 @@
 		</tr>
 	</xsl:template>
 
+	<xsl:template name="spacedCharacteristicRow">
+		<xsl:param name="path" select="."/>
+		<xsl:param name="class">formTableRow</xsl:param>
+		<xsl:param name="label"><xsl:value-of select="$path/v3:code/@displayName"/></xsl:param>
+		<tr class="{$class}">
+			<td class="formLabel">
+				<xsl:value-of select="$label"/>
+			</td>
+			<td class="formItem">			
+				<xsl:for-each select="$path/v3:value">
+					<xsl:if test="position() > 1"><br/></xsl:if>
+					<xsl:value-of select="./@displayName"/>
+				</xsl:for-each>
+			</td>
+		</tr>
+	</xsl:template>	
+
 	<xsl:template name="characteristics-old">
 		<table class="formTablePetite" cellSpacing="0" cellPadding="3" width="100%">
 			<tbody>
@@ -456,7 +473,7 @@
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='7']"/>
 					<xsl:with-param name="label" select="$labels/flavor[@lang = $lang]"/>
 				</xsl:call-template>
-				<xsl:call-template name="codedCharacteristicRow"> <!-- Combination Product is CV -->
+				<xsl:call-template name="spacedCharacteristicRow"> <!-- Combination Product is CV -->
 					<xsl:with-param name="path" select="../v3:subjectOf/v3:characteristic[v3:code/@code='8']"/>
 					<xsl:with-param name="label" select="$labels/combinationProduct[@lang = $lang]"/>
 					<xsl:with-param name="class">formTableRowAlt</xsl:with-param>
