@@ -4,8 +4,8 @@
     xsi:schemaLocation="urn:hl7-org:v3 https://raw.githubusercontent.com/HealthCanada/HPFB/master/product-monograph/schema/SPL.xsd">
     <templateId extension="NDS" root="2.16.840.1.113883.2.20.6.37"/>
     <id root="df363dae-0612-4be7-bb92-a8381fa1da35"/>
-    <code code="1" codeSystem="2.16.840.1.113883.2.20.6.10"
-        displayName="2016 PRODUCT MONOGRAPH TEMPLATE - STANDARD"/>
+    <code code="2" codeSystem="2.16.840.1.113883.2.20.6.10"
+        displayName="2016 PRODUCT MONOGRAPH TEMPLATE - NOTICE OF COMPLIANCE WITH CONDITIONS"/>
     <title>LORUM IPSUM (acetaminophen), TABLET, CAPSULE, POWDER</title>
     <effectiveTime value="20180101">
         <!-- Date of Last Revision or Date of Initial Approval -->
@@ -65,7 +65,7 @@
                 <!-- Manufactured Product Information -->
                 <section ID="f6ac9de5-be91-442c-9579-5bc9ebd36902">
                     <id root="bdeefc11-4315-41e3-8c56-83e8bf4f770b"/>
-                    <code code="0MP" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    <code code="0MP" codeSystem="2.16.840.1.113883.2.20.6.61"
                         displayName="MANUFACTURED PRODUCT"/>
                     <title>MANUFACTURED PRODUCT</title>
                     <effectiveTime value="20170101"/>
@@ -282,20 +282,37 @@
                 <!--Title Page section-->
                 <section ID="d8d30d86-e343-48f4-9cec-524834b3803b">
                     <id root="eed00b53-cdb2-4aa6-9e82-88b7d793b208"/>
-                    <code code="0TP" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    <code code="0TP" codeSystem="2.16.840.1.113883.2.20.6.61"
                         displayName="TITLE PAGE"/>
                     <title>TITLE PAGE</title>
                     <effectiveTime value="20180101"/>
                     <component>
                         <section ID="be75cfb9-3131-4903-800b-267427388a13">
                             <id root="b9db4be0-3f46-437a-bd7b-4a3e010afaad"/>
-                            <code code="0tp1.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="0tp1.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Title"/>
                             <title>Title</title>
                             <text>
                                 <paragraph> Scheduling Symbol, Brand Name, Proper name, Dosage
                                     Form(s), Strength(s) and Route(s) of Administration,
                                     Pharmaceutical Standard, Therapeutic Classification </paragraph>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="left" styleCode="Lrule Rrule Botrule Toprule">									
+                                                <paragraph>&quot;&lt;Brand name&gt;, indicated for:<br/>
+                                                - &lt; &gt;<br/>
+                                                    has been issued marketing authorization with conditions, pending the results of trials to verify
+                                                    its clinical benefit. Patients should be advised of the nature of the authorization. For further
+                                                    information for &lt;Brand name&gt; please refer to Health Canada's <linkHtml href="http://www.hc-sc.gc.ca/dhp-mps/prodpharma/notices-avis/conditions/index-eng.php">Notice of Compliance with conditions - drug products</linkHtml> web site.&quot;<br/><br/>
+                                                    [For market authorizations with conditions]<br/>
+                                                    &quot;&lt;Brand name&gt; indicated for:<br/>
+                                                    - &lt; &gt;<br/>
+                                                    has been issued marketing authorization without conditions.&quot;</paragraph>									
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>  
                             </text>
                             <effectiveTime value="20180101"/>
                         </section>
@@ -303,7 +320,7 @@
                     <component>
                         <section ID="f187daf9-5e75-425a-9de6-f6ce1af2a965">
                             <id root="ac26f58c-721a-4c51-8bbc-c9dddb1f1233"/>
-                            <code code="0tp1.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="0tp1.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Company Name and Address"/>
                             <title>Company Name and Address</title>
                             <text>
@@ -317,7 +334,7 @@
                     <component>
                         <section ID="bf2dab4e-fd04-4ec9-9cdc-247188622d0f">
                             <id root="e5f1dea3-d907-4664-b46f-e1d9736d47af"/>
-                            <code code="0tp1.3" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="0tp1.3" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Date of Initial Approval"/>
                             <title>Date of Initial Approval</title>
                             <text>
@@ -329,7 +346,7 @@
                     <component>
                         <section ID="d0184119-8fd7-4378-af77-b227c39e8445">
                             <id root="ad78301c-29a9-41af-96f8-d58815fed296"/>
-                            <code code="0tp1.4" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="0tp1.4" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Date of Revision"/>
                             <title>Date of Revision</title>
                             <text>
@@ -341,7 +358,7 @@
                     <component>
                         <section ID="ebc3f3dc-71be-424f-91ef-8aca8c138b21">
                             <id root="efd8c4c1-d0dd-434d-b1c2-4daa18752fa8"/>
-                            <code code="0tp1.5" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="0tp1.5" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Submission Control Number:"/>
                             <title>Submission Control Number:</title>
                             <text>
@@ -353,7 +370,7 @@
                     <component>
                         <section ID="e2d4279e-5fca-4d26-898d-02548a217ab9">
                             <id root="f17bc229-d609-460a-b9dc-418008d47c90"/>
-                            <code code="0tp1.6" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="0tp1.6" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Footer"/>
                             <title>Footer</title>
                             <text>
@@ -366,10 +383,63 @@
                 </section>
             </component>
             <component>
+                <!-- Notice of Compliance with Conditions -->
+                <section ID="d7cee5c8-7ee9-4fd2-884e-7a50c06a27e1">
+                    <id root="dd1e1c43-f0d3-4ba8-b1a5-ad009a5dd5a8"/>
+                    <code code="0noc" codeSystem="2.16.840.1.113883.2.20.6.61"
+                        displayName="Notice of Compliance with Conditions"/>
+                    <title>Notice of Compliance with Conditions</title>
+                    <text>
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td align="center" styleCode="Lrule Rrule Botrule Toprule">									
+                                        <content styleCode="bold">This product has been authorized under the<br/>
+                                        Notice of Compliance with Conditions (NOC/c)<br/>
+                                            for one or all of its indicated uses.</content>									
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                        
+                        <paragraph><content styleCode="bold">What is a Notice of Compliance with Conditions (NOC/c)?</content></paragraph>    
+                        <paragraph>An NOC/c is form of market approval granted to a product on the basis of<content styleCode="bold"> promising</content> evidence of clinical effectiveness following review of the submission by Health Canada.</paragraph>
+                        <paragraph>Products authorized under Health Canada’s NOC/c policy are intended for the treatment, prevention or diagnosis of a serious, life-threatening or severely debilitating illness.
+                            They have demonstrated promising benefit, are of high quality and possess an acceptable safety profile based on a benefit/risk assessment. In addition, they either respond to a serious
+                            unmet medical need in Canada or have demonstrated a significant improvement in the benefit/risk profile over existing therapies. Health Canada has provided access to this product on the
+                            condition that sponsors carry out additional clinical trials to verify the anticipated benefit within an agreed upon time frame.</paragraph>
+                        
+                        <paragraph><content styleCode="bold">What will be different about this Product Monograph?</content></paragraph>   
+                        
+                        
+                        <paragraph>The following Product Monograph will contain boxed text at the beginning of each major section clearly stating the nature of the market authorization. Sections for which NOC/c status holds
+                            particular significance will be identified in the left margin by the symbol NOC/c. These sections may include, but are not limited to, the following:<br/><br/></paragraph>
+                        
+                        <list listType="unordered">
+                            <item>Indications;</item>
+                            <item>Action and Clinical Pharmacology;</item>
+                            <item>Warnings and Precautions;</item>
+                            <item>Adverse Reactions;</item>
+                            <item>Dosage and Administration; and;</item>
+                            <item>Clinical Trials.</item>
+                        </list>
+                        
+                        
+                        <paragraph><content styleCode="bold">Adverse Drug Reaction Reporting and Re-Issuance of the Product Monograph</content></paragraph>                                         
+                        
+                        
+                        <paragraph>Health care providers are encouraged to report Adverse Drug Reactions associated with normal use of these and all drug products to Health Canada’s Canada Vigilance Program at
+                            1-866-234-2345. The Product Monograph will be re-issued in the event of serious safety concerns previously unidentified or at such time as the sponsor provides the additional data in support of
+                            the product’s clinical benefit. Once the latter has occurred, and in accordance with the NOC/c policy, the conditions associated with market authorization will be removed.</paragraph>
+                    </text>
+                    <effectiveTime value="20180101"/>
+                </section>
+            </component>
+            <component>
                 <!-- Recent Major Changes -->
                 <section ID="d7cee5c8-7ee9-4fd2-884e-7a50c06b27e1">
                     <id root="dd1e1c43-f0d3-4ba8-b1f5-ad009a5dd5a8"/>
-                    <code code="1RMLC" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    <code code="1RMLC" codeSystem="2.16.840.1.113883.2.20.6.61"
                         displayName="RECENT MAJOR LABEL CHANGES"/>
                     <title>RECENT MAJOR LABEL CHANGES</title>
                     <text>
@@ -411,14 +481,14 @@
                 <!-- Part I: Health Professional Information -->
                 <section ID="d6a947eb-e2be-45c0-8b2e-15d0d0eebea8">
                     <id root="e6bb83b9-2602-4f96-9077-b8b9535c254e"/>
-                    <code code="pi00" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    <code code="pi00" codeSystem="2.16.840.1.113883.2.20.6.61"
                         displayName="PART I: HEALTH PROFESSIONAL INFORMATION"/>
                     <title>PART I: HEALTH PROFESSIONAL INFORMATION</title>
                     <effectiveTime value="20180101"/>
                     <component>
                         <section ID="c2ea4fad-2b79-4dbc-8d99-6843adc2dec8">
                             <id root="aa3f869a-7734-425a-85d8-b8bd4d3500a5"/>
-                            <code code="pi01" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi01" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="1 INDICATIONS"/>
                             <title>1 INDICATIONS</title>
                             <text>
@@ -433,7 +503,7 @@
                             <component>
                                 <section ID="f2aa7e0e-2042-4a4c-a783-9ad4e8717a32">
                                     <id root="b9db4ce0-3f46-434a-bd7b-4a3e010adaad"/>
-                                    <code code="pi01.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi01.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="1.1 Pediatrics"/>
                                     <title>1.1 Pediatrics</title>
                                     <text>
@@ -461,7 +531,7 @@
                             <component>
                                 <section ID="be75cfb9-3132-4903-800b-267427388a13">
                                     <id root="b9db4be0-3f46-43fa-bd7b-4a3e010adaad"/>
-                                    <code code="pi01.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi01.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="1.2 Geriatrics"/>
                                     <title>1.2 Geriatrics</title>
                                     <text>
@@ -483,7 +553,7 @@
                     <component>
                         <section ID="be75cfb9-3131-4903-800b-367427388a13">
                             <id root="b90b4be0-3f46-437a-bd7b-4a3e010adaad"/>
-                            <code code="pi02" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi02" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="2 CONTRAINDICATIONS"/>
                             <title>2 CONTRAINDICATIONS</title>
                             <text>
@@ -502,7 +572,7 @@
                     <component>
                         <section ID="be75cfb9-3131-4903-800b-267427398a13">
                             <id root="b9fb4be0-3f46-437a-bd7b-4a3e010adaad"/>
-                            <code code="pi03" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi03" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="3 SERIOUS WARNINGS AND PRECAUTIONS BOX"/>
                             <title>3 SERIOUS WARNINGS AND PRECAUTIONS BOX</title>
                             <text>
@@ -532,14 +602,14 @@
                     <component>
                         <section ID="be75cfb9-3131-4903-800b-267727398a13">
                             <id root="b9db4be0-3f46-434a-bd7b-4a3e010adaad"/>
-                            <code code="pi04" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi04" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="4 DOSAGE AND ADMINISTRATION"/>
                             <title>4 DOSAGE AND ADMINISTRATION</title>
                             <effectiveTime value="20180101"/>
                             <component>
                                 <section ID="be75cfb9-3131-4103-800b-267727398a13">
                                     <id root="b9db4be0-3f46-437a-bd7b-4a3e310adaad"/>
-                                    <code code="pi04.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi04.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="4.1 Dosing Considerations"/>
                                     <title>4.1 Dosing Considerations</title>
                                     <text>
@@ -555,7 +625,7 @@
                             <component>
                                 <section ID="b3d876c1-c36c-4ed5-8993-c507e3ab9f2e">
                                     <id root="da2d22a3-b5c2-4a62-b138-9594dd0491bb"/>
-                                    <code code="pi04.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi04.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="4.2 Recommended Dose and Dosage Adjustment"/>
                                     <title>4.2 Recommended Dose and Dosage Adjustment</title>
                                     <text>
@@ -573,7 +643,7 @@
                             <component>
                                 <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f3a">
                                     <id root="a473c162-f176-44d0-b797-2b7b6cf00e43"/>
-                                    <code code="pi04.3" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi04.3" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="4.3 Administration"/>
                                     <title>4.3 Administration</title>
 									<text>
@@ -585,9 +655,9 @@
                             <component>
                                 <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f4a">
                                     <id root="a473c162-e176-44d0-b797-2b7b6cf0ae43"/>
-                                    <code code="pi04.4" codeSystem="2.16.840.1.113883.2.20.6.60"
-                                        displayName="4.4 Administration"/>
-                                    <title>4.4 Administration</title>
+                                    <code code="pi04.4" codeSystem="2.16.840.1.113883.2.20.6.61"
+                                        displayName="4.4 Reconstitution"/>
+                                    <title>4.4 Reconstitution</title>
                                     <text>
                                         <paragraph>Oral Solutions: &lt;text and/or table&gt;</paragraph>
 										<paragraph>Parenteral Products: &lt;text and/or table&gt;</paragraph>
@@ -616,7 +686,7 @@
                             <component>
                                 <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f5a">
                                     <id root="a473c162-e176-44d0-b797-2b7b6cf00e33"/>
-                                    <code code="pi04.5" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi04.5" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="4.5 Missed Dose"/>
                                     <title>4.5 Missed Dose</title>
                                     <text>
@@ -630,7 +700,7 @@
                     <component>
                         <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f6a">
                             <id root="a473c162-e176-44d0-b797-2b7b6cf20e43"/>
-                            <code code="pi05" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi05" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="5 OVERDOSAGE"/>
                             <title>5 OVERDOSAGE</title>
                             <text>
@@ -649,7 +719,7 @@
                     <component>
                         <section ID="a63c33a5-e08a-472c-b8a2-a12dba105f7a">
                             <id root="a471c162-e176-44d0-b797-2b7b6cf00e43"/>
-                            <code code="pi06" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi06" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="6 DOSAGE FORMS, STRENGTHS, COMPOSITION AND PACKAGING"/>
                             <title>6 DOSAGE FORMS, STRENGTHS, COMPOSITION AND PACKAGING</title>
                             <text>
@@ -676,7 +746,7 @@
                     <component>
                         <section ID="a63c33a5-e08a-472c-b8a2-a12dba115f7a">
                             <id root="a4731162-e176-44d0-b797-2b7b6cf00e43"/>
-                            <code code="pi07" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi07" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="7 WARNINGS AND PRECAUTIONS"/>
                             <title>7 WARNINGS AND PRECAUTIONS</title>
                             <text>
@@ -712,7 +782,7 @@ Professional Information.</paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-472c-b8a2-a12dbc115f7a">
                                     <id root="a473c162-e176-44d0-bb97-2b7b6cf00e43"/>
-                                    <code code="pi07.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi07.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="7.1 Special Populations"/>
                                     <title>7.1 Special Populations</title>
                                     <effectiveTime value="20180101"/>
@@ -720,7 +790,7 @@ Professional Information.</paragraph>
                                         <section ID="a63c33a5-e08a-472c-b8a2-b12dbc115f7a">
                                             <id root="a473c162-e176-4ad0-b797-2b7b6cf00e43"/>
                                             <code code="pi07.1.1"
-                                                codeSystem="2.16.840.1.113883.2.20.6.60"
+                                                codeSystem="2.16.840.1.113883.2.20.6.61"
                                                 displayName="7.1.1 Pregnant Women"/>
                                             <title>7.1.1 Pregnant Women</title>
                                             <text>
@@ -733,7 +803,7 @@ Professional Information.</paragraph>
                                         <section ID="a63c33a5-e08a-472c-b8a2-b12dbd115f7a">
                                             <id root="a473c162-1176-44d0-b797-2b7b6cf00e43"/>
                                             <code code="pi07.1.2"
-                                                codeSystem="2.16.840.1.113883.2.20.6.60"
+                                                codeSystem="2.16.840.1.113883.2.20.6.61"
                                                 displayName="7.1.2 Breast-feeding"/>
                                             <title>7.1.2 Breast-feeding</title>
                                             <text>
@@ -748,7 +818,7 @@ milk precaution should be exercised.<br/></paragraph>
                                         <section ID="a63c33a5-e08a-472c-b8c2-b12dbc115f7a">
                                             <id root="a473c162-e176-44d0-b787-2b7b6cf00e43"/>
                                             <code code="pi07.1.3"
-                                                codeSystem="2.16.840.1.113883.2.20.6.60"
+                                                codeSystem="2.16.840.1.113883.2.20.6.61"
                                                 displayName="7.1.3 Pediatrics"/>
                                             <title>7.1.3 Pediatrics</title>
                                             <text>
@@ -763,7 +833,7 @@ milk precaution should be exercised.<br/></paragraph>
                                         <section ID="a63c33a5-e08a-472c-b8d2-b12dbc115f7a">
                                             <id root="a473c162-e176-44d0-b797-2b7b6df00e43"/>
                                             <code code="pi07.1.4"
-                                                codeSystem="2.16.840.1.113883.2.20.6.60"
+                                                codeSystem="2.16.840.1.113883.2.20.6.61"
                                                 displayName="7.1.4 Geriatrics"/>
                                             <title>7.1.4 Geriatrics</title>
                                             <text>
@@ -779,14 +849,14 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="a63c33a5-e08a-472c-b8a2-b22dbc115f7a">
                             <id root="a473c162-e176-44d0-b797-2b7b6cf11e43"/>
-                            <code code="pi08" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi08" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="8 ADVERSE REACTIONS"/>
                             <title>8 ADVERSE REACTIONS</title>
                             <effectiveTime value="20180101"/>
                             <component>
                                 <section ID="a63c33a5-e08a-472c-b8a2-b12dbd215f7a">
                                     <id root="a473c162-e176-44d0-b797-2b7b6cf12e43"/>
-                                    <code code="pi08.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi08.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="8.1 Adverse Reaction Overview"/>
                                     <title>8.1 Adverse Reaction Overview</title>
                                     <text>
@@ -798,7 +868,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8a2-b12dbd215f7a">
                                     <id root="a473c162-e176-44d0-b797-2b7b6cab0e43"/>
-                                    <code code="pi08.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi08.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="8.2 Clinical Trial Adverse Reactions"/>
                                     <title>8.2 Clinical Trial Adverse Reactions</title>
                                     <text>
@@ -841,7 +911,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8a2-b12dbd315f7a">
                                     <id root="a473c162-e146-44d0-b797-2b7b6cf00e43"/>
-                                    <code code="pi08.3" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi08.3" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="8.3 Less Common Clinical Trial Adverse Reactions"/>
                                     <title>8.3 Less Common Clinical Trial Adverse Reactions</title>
                                     <text>
@@ -853,7 +923,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8a2-b22dbd215f7a">
                                     <id root="a473c162-e176-44d0-be97-2b7b6cf00e43"/>
-                                    <code code="pi08.4" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi08.4" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="8.4 Abnormal Laboratory Findings: Hematologic, Clinical Chemistry and Other Quantitative Data"/>
                                     <title>8.4 Abnormal Laboratory Findings: Hematologic, Clinical Chemistry and Other Quantitative Data</title>
                                     <text>
@@ -865,7 +935,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8a2-b32dbd215f7a">
                                     <id root="a473c162-e176-44c0-b797-2b7b6cf00e43"/>
-                                    <code code="pi08.5" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi08.5" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="8.5 Clinical Trial Adverse Reactions (Pediatrics)"/>
                                     <title>8.5 Clinical Trial Adverse Reactions (Pediatrics)</title>
                                     <text>
@@ -877,7 +947,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8a2-b14dbd215f7a">
                                     <id root="a478c162-e176-44d0-b797-2b7b6cf00e43"/>
-                                    <code code="pi08.6" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi08.6" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="8.6 Post-Market Adverse Reactions"/>
                                     <title>8.6 Post-Market Adverse Reactions</title>
                                     <text>
@@ -891,14 +961,14 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="a63c33a5-e08a-483c-b8a2-b22dbd215f7a">
                             <id root="a473c762-e176-44d0-b797-2b7b6cf00e43"/>
-                            <code code="pi09" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi09" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="9 DRUG INTERACTIONS"/>
                             <title>9 DRUG INTERACTIONS</title>
                             <effectiveTime value="20180101"/>
                             <component>
                                 <section ID="be75cfb9-3131-4903-800b-267527398a13">
                                     <id root="b9db4be0-3f46-437a-bd7b-4a3e01fadaad"/>
-                                    <code code="pi09.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.1 Serious Drug Interactions Box"/>
                                     <title>9.1 Serious Drug Interactions Box</title>
                                     <text>
@@ -925,7 +995,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8a2-b14dbd315f7a">
                                     <id root="a473c162-e176-44d0-b797-2b7b6cf0de43"/>
-                                    <code code="pi09.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.2 Overview"/>
                                     <title>9.2 Overview</title>
                                     <text>
@@ -937,7 +1007,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-473c-b8d2-b14dbd315f7a">
                                     <id root="a473c162-e176-44d0-b497-2b7b6cf00e43"/>
-                                    <code code="pi09.3" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.3" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.3 Drug-Drug Interactions"/>
                                     <title>9.3 Drug-Drug Interactions</title>
                                     <text>
@@ -983,7 +1053,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e0aa-473c-b8a2-b14dbd315f7a">
                                     <id root="a273c162-e176-44d0-b797-2b7b6cf00e43"/>
-                                    <code code="pi09.4" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.4" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.4 Drug-Food Interactions"/>
                                     <title>9.4 Drug-Food Interactions</title>
                                     <text>
@@ -995,7 +1065,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e08a-47bc-b8d2-b14dbd315f7a">
                                     <id root="a473c162-e176-44d0-b997-2b7b6cf00e43"/>
-                                    <code code="pi09.5" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.5" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.5 Drug-Herb Interactions"/>
                                     <title>9.5 Drug-Herb Interactions</title>
                                     <text>
@@ -1007,7 +1077,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="be78cfb9-3131-4903-800b-267527398a13">
                                     <id root="b9db4be0-3f46-437a-bd7b-4a3e01aadaad"/>
-                                    <code code="pi09.6" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.6" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.6 Drug-Laboratory Test Interactions"/>
                                     <title>9.6 Drug-Laboratory Test Interactions</title>
                                     <text>
@@ -1019,7 +1089,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a63c33a5-e0aa-473c-b8a2-b14dcd315f7a">
                                     <id root="a473c162-e176-44e0-b797-2b7b6cf00e43"/>
-                                    <code code="pi09.7" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi09.7" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="9.7 Drug-Lifestyle Interactions"/>
                                     <title>9.7 Drug-Lifestyle Interactions</title>
                                     <text>
@@ -1033,14 +1103,14 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="fa324c26-b939-4c3a-901d-516ccc314522">
                             <id root="dc0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
-                            <code code="pi10" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi10" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="10 ACTION AND CLINICAL PHARMACOLOGY"/>
                             <title>10 ACTION AND CLINICAL PHARMACOLOGY</title>
                             <effectiveTime value="20180101"/>
                             <component>
                                 <section ID="f7a324c26-b939-4c3a-901e-516ccc314522">
                                     <id root="ac0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
-                                    <code code="pi10.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi10.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="10.1 Mechanism of Action"/>
                                     <title>10.1 Mechanism of Action</title>
                                     <text>
@@ -1052,7 +1122,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="da324c26-b939-4d3a-901e-516ccc314522">
                                     <id root="cc0d2dd9-1c53-49dc-bad3-d6b420dc64e9"/>
-                                    <code code="pi10.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi10.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="10.2 Pharmacodynamics"/>
                                     <title>10.2 Pharmacodynamics</title>
                                     <text>
@@ -1064,7 +1134,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="aaa324c26-b939-4d4a-901e-516ccc314522">
                                     <id root="cc0d2dd9-1c53-49dc-bad3-d6b320d064e9"/>
-                                    <code code="pi10.3" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pi10.3" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="10.3 Pharmacokinetics"/>
                                     <title>10.3 Pharmacokinetics</title>
                                     <text>
@@ -1129,7 +1199,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="da324d26-c939-443a-901e-526dcc314522">
                             <id root="cc0d2dd9-1c53-49dc-bad3-d6b420d069e9"/>
-                            <code code="pi11" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi11" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="11 STORAGE, STABILITY AND DISPOSAL"/>
                             <title>11 STORAGE, STABILITY AND DISPOSAL</title>
                             <text>
@@ -1141,7 +1211,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="bba325d26-c939-443a-901e-526dcc314522">
                             <id root="fc0d2dd9-1c53-49dc-bad3-d6b420d064e9"/>
-                            <code code="pi12" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pi12" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="12 SPECIAL HANDLING INSTRUCTIONS"/>
                             <title>12 SPECIAL HANDLING INSTRUCTIONS</title>
                             <text>
@@ -1156,30 +1226,30 @@ milk precaution should be exercised.<br/></paragraph>
                 <!-- Part II: Scientific Information -->
                 <section ID="ab6a947eb-e2be-45c0-8b2e-15d0d0eebed8">
                     <id root="d91389e0-c234-44d9-8327-91b121723a8f"/>
-                    <code code="pii00" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    <code code="pii00" codeSystem="2.16.840.1.113883.2.20.6.61"
                         displayName="PART II: SCIENTIFIC INFORMATION"/>
                     <title>PART II: SCIENTIFIC INFORMATION</title>
                     <effectiveTime value="20170101"/>
                     <component>
                         <section ID="ee2875272-8229-4c12-919e-827854dcd76a">
                             <id root="d134d52c-f9d4-4698-a082-84b29ee3d95a"/>
-                            <code code="pii13" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pii13" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="13 PHARMACEUTICAL INFORMATION"/>
                             <title>13 PHARMACEUTICAL INFORMATION</title>
                             <text>
                                 <table width="100%">
                                     <tbody>
                                         <tr>
-                                            <th styleCode="italics">&quot;&lt;Brand name&gt;, indicated for:<br/>
-                                                -&lt; &gt; <br/>
+                                            <td styleCode="Lrule Rrule Botrule Toprule"><content styleCode="italics">&quot;&lt;Brand name&gt;, indicated for:<br/>
+                                                - &lt; &gt; <br/>
                                                 has been issued marketing authorization with conditions, pending the results of trials to verify its clinical benefit. Patients should be advised of the nature of the authorization. For further
                                                 information for &lt;Brand Name&gt; please refer to Health Canada's Notice of Compliance with conditions - drug products web site:<br/>
                                                 <linkHtml href="http://www.hc-sc.gc.ca/dhp-mps/prodpharma/notices-avis/conditions/index-eng.php">http://www.hc-sc.gc.ca/dhp-mps/prodpharma/notices-avis/conditions/index-eng.php</linkHtml>&quot;<br/><br/>
                                                 [For market authorizations without conditions]<br/>
                                                 &quot;&lt;Brand name&gt; indicated for:<br/>
-                                                -&lt; &gt;<br/>
+                                                - &lt; &gt;<br/>
                                                 has been issued marketing authorization without conditions.&quot;<br/>
-                                            </th>
+                                            </content></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1202,14 +1272,14 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="ab2875272-8229-4c12-919e-827854ddd76a">
                             <id root="c134d52c-f9d4-4698-a082-84b29ee3d95a"/>
-                            <code code="pii14" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pii14" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="14 CLINICAL TRIALS"/>
                             <title>14 CLINICAL TRIALS</title>
                             <effectiveTime value="20170101"/>
                             <component>
                                 <section ID="a2875272-8229-4c12-919e-827854ddd78a">
                                     <id root="e134d52c-f9d4-4698-a082-84b29ee3d95a"/>
-                                    <code code="pii14.1" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pii14.1" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="14.1 Trial Design and Study Demographics"/>
                                     <title>14.1 Trial Design and Study Demographics</title>
                                     <text>
@@ -1249,7 +1319,7 @@ milk precaution should be exercised.<br/></paragraph>
                             <component>
                                 <section ID="a2875272-8229-4a12-919e-827854ddd78a">
                                     <id root="a134d52c-f9d4-4698-a082-84b29ee3d95a"/>
-                                    <code code="pii14.2" codeSystem="2.16.840.1.113883.2.20.6.60"
+                                    <code code="pii14.2" codeSystem="2.16.840.1.113883.2.20.6.61"
                                         displayName="14.2 Study Results"/>
                                     <title>14.2 Study Results</title>
                                     <text>
@@ -1284,7 +1354,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="a2875272-8229-4c12-a19e-827954ddd78a">
                             <id root="e134d52c-f1d4-4698-a082-84b29ee3d95a"/>
-                            <code code="pii15" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pii15" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="15 MICROBIOLOGY"/>
                             <title>15 MICROBIOLOGY</title>
                             <text>
@@ -1296,7 +1366,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="a42a7572-8229-4c12-a19e-827954ddd78a">
                             <id root="c134d52c-f9d4-4698-a082-84b29ee3a95a"/>
-                            <code code="pii16" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pii16" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="16 NON-CLINICAL TOXICOLOGY"/>
                             <title>16 NON-CLINICAL TOXICOLOGY</title>
                             <text>
@@ -1308,7 +1378,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="ef8a4d48-0fc3-4e44-b4b6-550140d4de5d">
                             <id root="be74b6e6-c431-4a5f-a18e-ed3214381456"/>
-                            <code code="pii17" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pii17" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="17 SUPPORTING PRODUCT MONOGRAPHS"/>
                             <title>17 SUPPORTING PRODUCT MONOGRAPHS</title>
                             <text>
@@ -1324,14 +1394,14 @@ milk precaution should be exercised.<br/></paragraph>
                 <!-- Patient Medication Information -->
                 <section ID="baa4d498-0fc3-4e44-b4b6-550140d4de5d">
                     <id root="be74b6e6-c461-4a5f-a18e-ed321b381456"/>
-                    <code code="pmi00" codeSystem="2.16.840.1.113883.2.20.6.60"
+                    <code code="pmi00" codeSystem="2.16.840.1.113883.2.20.6.61"
                         displayName="PATIENT MEDICATION INFORMATION"/>
                     <title>PATIENT MEDICATION INFORMATION</title>
                     <effectiveTime value="20170101"/>
                     <component>
                         <section ID="ea4ec98b-b2d3-4d73-877c-aaa5eb28997d">
                             <id root="067c0a3b-5869-43a7-baff-ce6de72ae1e5"/>
-                            <code code="pmi01" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi01" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="READ THIS FOR SAFE AND EFFECTIVE USE OF YOUR MEDICINE"/>
                             <title>READ THIS FOR SAFE AND EFFECTIVE USE OF YOUR MEDICINE</title>
                             <text>
@@ -1351,16 +1421,17 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="baa4d498-0gc3-4e44-bcb6-550140d4de5d">
                             <id root="be74b6e6-1431-4a5f-a18e-ed321b381456"/>
-                            <code code="pmi02" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi02" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="What is [Brand name] used for?"/>
                             <title>What is &lt;Brand name&gt; used for?</title>
+                            <text>
                             <paragraph>[Briefly summarize the indication(s) and refer to the reader to the NOC/c summary box below for
                                 additional detail.]</paragraph>
-                            <text>
+                            
                                 <table width="100%">
                                     <tbody>
                                         <tr>
-                                            <th>&quot;For the following indication(s) &lt;Brand name&gt; has been approved with conditions (NOC/c).
+                                            <td styleCode="Lrule Rrule Botrule Toprule">&quot;For the following indication(s) &lt;Brand name&gt; has been approved <content styleCode="italics">with conditions</content> (NOC/c).
                                                 This means it has passed Health Canada’s review and can be bought and sold in Canada,
                                                 but the manufacturer has agreed to complete more studies to make sure the drug works the
                                                 way it should. For more information, talk to your healthcare professional.&quot;
@@ -1369,7 +1440,7 @@ milk precaution should be exercised.<br/></paragraph>
                                                 <list><item>&lt;text&gt;</item></list>
                                                 [If the Indications section includes lifestyle recommendations as part of the therapy, they
                                                 should be included here.]<br/><br/>
-                                                &quot;For the following indication(s) &lt;Brand name&gt; has been approved without conditions. This
+                                                &quot;For the following indication(s) &lt;Brand name&gt; has been approved <content styleCode="italics">without conditions</content>. This
                                                 means it has passed Health Canada’s review and can be bought and sold in Canada.&quot;
                                                 <br/><br/>
                                                 [Provide a bullet listing of the indications from Part I.]
@@ -1378,7 +1449,7 @@ milk precaution should be exercised.<br/></paragraph>
                                                 [If the Indications section includes lifestyle recommendations as part of the therapy, they
                                                 should be included here.]
                                                 <br/>
-                                            </th>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1417,7 +1488,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="bca4d498-0gc3-4e44-bcb6-550140d4de5d">
                             <id root="be74b6e6-c431-4adf-a18e-ed321b381456"/>
-                            <code code="pmi03" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi03" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="How does [Brand name] work?"/>
                             <title>How does &lt;Brand name&gt; work?</title>
                             <text>
@@ -1432,7 +1503,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="bca4d498-0gc3-4e44-bcb6-55013024de5d">
                             <id root="be74b6e6-c431-4a5f-a18e-ed321b381756"/>
-                            <code code="pmi04" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi04" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="What are the ingredients in [Brand name]?"/>
                             <title>What are the ingredients in &lt;Brand name&gt;?</title>
                             <text>
@@ -1447,7 +1518,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="bca4d498-0gc3-4e54-bcb6-550130d4de5d">
                             <id root="be74b6e6-c431-4a5f-a18e-ed3a1b381456"/>
-                            <code code="pmi05" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi05" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="[Brand name] comes in the following dosage forms:"/>
                             <title>&lt;Brand name&gt; comes in the following dosage forms:</title>
                             <text>
@@ -1461,7 +1532,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="bca4c498-00c3-4e44-bcb6-550134d4de5d">
                             <id root="be74b6e6-cd31-4a5f-a18e-ed321b381456"/>
-                            <code code="pmi06" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi06" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Do not use [Brand name] if:"/>
                             <title>Do not use &lt;Brand name&gt; if:</title>
                             <text>
@@ -1478,7 +1549,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="b6b37351-bbc9-46d9-b148-27ba3cb0a75e">
                             <id root="be74b6e6-c431-4a5f-a18e-ed32cc381456"/>
-                            <code code="pmi07" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi07" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="To help avoid side effects and ensure proper use, talk to your healthcare professional before you take [Brand name]. Talk about any health conditions or problems you may have, including if you:"/>
                             <title>To help avoid side effects and ensure proper use, talk to your healthcare professional before you take &lt;Brand name]&gt;. Talk about any health conditions or problems you may have, including if you:</title>
                             <text>
@@ -1495,7 +1566,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="edac0d6f-3c91-48b5-99c0-e0f940925d37">
                             <id root="be74bbe6-c431-4a5f-a18e-ed321b381456"/>
-                            <code code="pmi08" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi08" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Other warnings you should know about:"/>
                             <title>Other warnings you should know about:</title>
                             <text>
@@ -1513,7 +1584,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="bca4c498-0ac3-4e44-bcb6-550134d4de5d">
                             <id root="be74b6e6-c431-4a5f-a18e-ed321ab81456"/>
-                            <code code="pmi09" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi09" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="The following may interact with [Brand name]:"/>
                             <title>The following may interact with &lt;Brand name&gt;:</title>
                             <text>
@@ -1527,7 +1598,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="e23321cd-5111-4aa3-b650-74f93bcda261">
                             <id root="be74b6e6-c431-4a5f-a18e-ed3212281456"/>
-                            <code code="pmi10" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi10" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="How to take [Brand name]:"/>
                             <title>How to take &lt;Brand name&gt;:</title>
                             <text>
@@ -1539,7 +1610,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="cd0892a2-0e32-4fb7-9cc9-1bbfff60dee7">
                             <id root="be74b6e6-c431-4a5f-a18e-11321b381456"/>
-                            <code code="pmi11" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi11" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Usual dose:"/>
                             <title>Usual dose:</title>
                             <text>
@@ -1551,7 +1622,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="beaaa5b8-6693-4d4c-a897-fa5c9562b1be">
                             <id root="be74b6e6-c431-4a5f-a18e-ed321b311456"/>
-                            <code code="pmi12" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi12" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Overdose:"/>
                             <title>Overdose:</title>
                             <text>
@@ -1577,7 +1648,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="ffd59b8d-fe66-4d86-a54f-0613d4168199">
                             <id root="be74b6e6-c431-4a5f-a18e-ed321e381456"/>
-                            <code code="pmi13" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi13" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Missed dose:"/>
                             <title>Missed dose:</title>
                             <text>
@@ -1589,7 +1660,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="cb61f530-b95a-4047-b8ea-861c5a7a05e8">
                             <id root="be74b6e6-c431-4a5f-a98e-ed321b381456"/>
-                            <code code="pmi14" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi14" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="What are possible side effects from using [Brand name]?"/>
                             <title>What are possible side effects from using &lt;Brand name&gt;?</title>
                             <text>
@@ -1602,7 +1673,7 @@ milk precaution should be exercised.<br/></paragraph>
                                     serious side effects table. Each side effect should appear only
                                     once, in text or in the table, as duplication generally is not
                                     wanted in Part III.]</paragraph>
-                                <table ID="t8" border="1">
+                                <table ID="t8" rules="all" frame="border">
                                     <caption>Serious side effects and what to do about
                                         them</caption>
                                     <tbody>
@@ -1676,8 +1747,8 @@ milk precaution should be exercised.<br/></paragraph>
                                 <table width="100%">
                                     <tbody>
                                         <tr>
-                                            <th styleCode="Lrule Rrule Toprule">Reporting Side
-                                                Effects</th>
+                                            <td styleCode="Lrule Rrule Toprule bold">Reporting Side
+                                                Effects</td>
                                         </tr>
                                         <tr>
                                             <td styleCode="Lrule Rrule Botrule">
@@ -1685,12 +1756,8 @@ milk precaution should be exercised.<br/></paragraph>
                                                   associated with the use of health products to
                                                   Health Canada by:</paragraph>
                                                 <list styleCode="unordered">
-                                                  <item>Visiting the Web page on Adverse Reaction
-                                                  Reporting <linkHtml
-                                                  href="http://www.hc-sc.gc.ca/dhp-
-                                                            mps/medeff/report-declaration/index-eng.php"
-                                                  >(http://www.hc-sc.gc.ca/dhp-
-                                                  mps/medeff/report-declaration/index-eng.php)</linkHtml>
+                                                    <item>Visiting the Web page on <linkHtml href="https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/adverse-reaction-reporting.html">Adverse Reaction
+                                                        Reporting </linkHtml>
                                                   for information on how to report online, by mail
                                                   or by fax; or</item>
                                                   <item>Calling toll-free at 1-866-234-2345.</item>
@@ -1710,7 +1777,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="c9d75711-2ce9-451e-aa51-91026ec1555e">
                             <id root="be74b6e6-c431-4a5f-a18e-ed321b081456"/>
-                            <code code="pmi15" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi15" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="Storage:"/>
                             <title>Storage:</title>
                             <text>
@@ -1723,7 +1790,7 @@ milk precaution should be exercised.<br/></paragraph>
                     <component>
                         <section ID="f6693e7a-21c9-492f-833b-4e8f3911d3a5">
                             <id root="be74b6e6-c431-4a5f-a18e-ed321b381446"/>
-                            <code code="pmi16" codeSystem="2.16.840.1.113883.2.20.6.60"
+                            <code code="pmi16" codeSystem="2.16.840.1.113883.2.20.6.61"
                                 displayName="If you want more information about [Brand name]:"/>
                             <title>If you want more information about &lt;Brand name&gt;:</title>
                             <text>
@@ -1731,14 +1798,13 @@ milk precaution should be exercised.<br/></paragraph>
                                     <item>Talk to your healthcare professional</item>
                                     <item>Find the full product monograph that is prepared for
                                         healthcare professionals and includes this Patient
-                                        Medication Information by visiting the Health Canada
-                                            website <linkHtml href="http://hc-sc.gc.ca/index-eng.php"
-                                            >(http://hc-sc.gc.ca/index-eng.php)</linkHtml>; the
+                                        Medication Information by visiting the <content styleCode="underline"><linkHtml href="http://hc-sc.gc.ca/index-eng.php">Health Canada
+                                            website</linkHtml></content>; the
                                         manufacturer's website &lt;website&gt;, or by calling 1-800-&lt;phone
                                         number&gt;.</item>
                                 </list>
                                 <paragraph>This leaflet was prepared by &lt;Sponsor Name&gt;</paragraph>
-                                <paragraph>Last Revised (MON-DD-YYYY)</paragraph>
+                                <paragraph>Last Revised &lt;MON-DD-YYYY&gt;</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
