@@ -187,17 +187,7 @@ token.
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
-	<xsl:template name="additionalStyleAttr">
-		<xsl:if test="self::*[self::v3:paragraph]//v3:content[@styleCode[contains(.,'xmChange')]] or v3:content[@styleCode[contains(.,'xmChange')]] and not(ancestor::v3:table)">
-			<xsl:attribute name="style">
-				<xsl:choose>
-					<xsl:when test="ancestor::v3:section[v3:code[@code = '34066-1']]">margin-left:-2em; padding-left:2em; border-left:1px solid; position:relative; zoom: 1;</xsl:when>
-					<xsl:when test="self::*//v3:content/@styleCode[contains(.,'xmChange')] or v3:content/@styleCode[contains(.,'xmChange')]">border-left:1px solid;</xsl:when>
-					<xsl:otherwise>margin-left:-1em; padding-left:1em; border-left:1px solid;</xsl:otherwise>
-				</xsl:choose>
-			</xsl:attribute>
-		</xsl:if>
-	</xsl:template>
+	<!-- pmh moved additionalStyleAttr to spl_canada -->
 	<xsl:template name="uniqueStyleCodes">
 		<xsl:param name="in" select="/.."/>
 		<xsl:for-each select="$in/token[not(preceding::token/@value = @value)]">

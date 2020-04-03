@@ -194,6 +194,13 @@
 		</div>
 	</xsl:template>
 	
+	<!-- this template adds a vertical bar for xmChange, and is simplified from the FDA template substantially -->
+	<xsl:template name="additionalStyleAttr">
+		<xsl:if test="self::*[self::v3:paragraph]//v3:content[@styleCode[contains(.,'xmChange')]] or v3:content[@styleCode[contains(.,'xmChange')]] and not(ancestor::v3:table)">
+			<xsl:attribute name="style">margin-left:-0.5em; padding-left:0.5em; border-left:1px solid;</xsl:attribute>
+		</xsl:if>
+	</xsl:template>
+	
 	<!-- this template is only used on the Title Page to show Control Number on a single line -->
 	<xsl:template match="v3:section" mode="inline-title">
 		<div class="Section">
