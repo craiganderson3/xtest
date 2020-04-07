@@ -575,10 +575,10 @@
 									                <th styleCode="Lrule Rrule Botrule Toprule">Concentration per mL</th>
 									            </tr>
 									            <tr>
-									                <td styleCode="Lrule Rrule Botrule Toprule">&lt;text&gt;</td>
-									                <td styleCode="Lrule Rrule Botrule Toprule">&lt;text&gt;</td>
-									                <td styleCode="Lrule Rrule Botrule Toprule">&lt;text&gt;</td>
-									                <td styleCode="Lrule Rrule Botrule Toprule">&lt;text&gt;</td>
+									                <td styleCode="Lrule Rrule Botrule Toprule">[text]</td>
+									                <td styleCode="Lrule Rrule Botrule Toprule">[text]</td>
+									                <td styleCode="Lrule Rrule Botrule Toprule">[text]</td>
+									                <td styleCode="Lrule Rrule Botrule Toprule">[text]</td>
 									            </tr>
 									        </tbody>
 									    </table>
@@ -1022,7 +1022,7 @@
                                             identifying drug-related adverse events and for
                                             approximating rates.<br/>[Include a brief
                                             description of data sources.]<br/>[text]</paragraph>
-                                        <table ID="t10" border="1">
+                                        <table ID="t8.2" border="1">
                                             <caption>Table [#] [Title of
                                                 Table]</caption>
                                             <tbody>
@@ -1274,7 +1274,7 @@
                                         displayName="9.5 Drug-Food Interactions"/>
                                     <title>9.5 Drug-Food Interactions</title>
                                     <text>
-                                        <paragraph>[e.g. citrus, daily]<br/>[ext]</paragraph>
+                                        <paragraph>[e.g. citrus, daily]<br/>[text]</paragraph>
                                     </text>
                                     <effectiveTime value="20180101"/>
                                 </section>
@@ -1440,10 +1440,13 @@
                                 displayName="13 PHARMACEUTICAL INFORMATION"/>
                             <title>13 PHARMACEUTICAL INFORMATION</title>
                             <text>
-                                <paragraph><content styleCode="bold">Drug Substance</content><br/><br/>Proper name: &lt;text&gt;<br/><br/> Chemical name: &lt;text&gt;<br/><br/> Molecular formula and molecular mass: &lt;text&gt;<br/><br/>Structural
-                                    formula: &lt;text&gt;<br/>
+                                <paragraph><content styleCode="bold">Drug Substance</content><br/><br/>Proper name: [text]<br/><br/> Chemical name: [text]<br/><br/> Molecular formula and molecular mass: [text]<br/><br/>Structural
+                                    formula: [image]<br/>
                                     <renderMultiMedia referencedObject="m1"/><br/><br/>
-                                    Physicochemical properties: &lt;text&gt;</paragraph>
+                                    Physicochemical properties: [text]</paragraph>
+                                <paragraph><content styleCode="bold">Product Characteristics</content><br/>[text]</paragraph>
+                                <paragraph><content styleCode="bold">Viral Inactivation</content><br/>[text]</paragraph>
+                                <paragraph>[For products derived from plasma, detail the viral reduction steps. Include information on selection criteria for donors, if applicable.]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                             <component>
@@ -1462,6 +1465,10 @@
                             <code code="pii14" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="14 CLINICAL TRIALS"/>
                             <title>14 CLINICAL TRIALS</title>
+                            <text>
+                                <paragraph>[Clinical trial information for innovator or comparative trials for similar biological, or &quot;biosimilar&quot; medicine that is similar to another biological medicine that has already been authorised for use. For biosimilars, the information should be consistent with the reference medicinal product; any differences with the reference medicinal product should be justified.]</paragraph>
+                                <paragraph>[For product monographs with multiple indications, the Trial Design and Study Demographics, and Study Results tables should be replicated for each approved indication]</paragraph>
+                            </text>
                             <effectiveTime value="20170101"/>
                             <component>
                                 <section ID="a2875272-8229-4c12-919e-827854ddd78a">
@@ -1470,9 +1477,9 @@
                                         displayName="14.1 Trial Design and Study Demographics"/>
                                     <title>14.1 Trial Design and Study Demographics</title>
                                     <text>
-                                        <table ID="t13">
-                                            <caption>Table &lt;#&gt; - Summary of patient demographics for
-                                                clinical trials in &lt;specific indication&gt;</caption>
+                                        <table ID="t14.1">
+                                            <caption>Table [#] - Summary of patient demographics for
+                                                clinical trials in [specific indication]</caption>
                                             <tbody>
                                                 <tr>
                                                   <th styleCode="Toprule Rrule Lrule Botrule">Study
@@ -1489,16 +1496,16 @@
                                                   >Sex</th>
                                                 </tr>
                                                 <tr>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-												  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-												  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-												  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-												  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-												  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+												  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+												  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+												  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-										<paragraph>[Provide a brief narrative describing the demographic characteristics of the study population:]<br/>&lt;text&gt;</paragraph>
+										<paragraph>[Provide a brief narrative describing the demographic characteristics of the study population:]<br/>[text]</paragraph>
                                     </text>
                                     <effectiveTime value="20170101"/>
                                 </section>
@@ -1510,9 +1517,9 @@
                                         displayName="14.2 Study Results"/>
                                     <title>14.2 Study Results</title>
                                     <text>
-                                        <table ID="t14">
-                                            <caption>Table &lt;#&gt; - Results of study &lt;#&gt; in &lt;specific
-                                                indication&gt;</caption>
+                                        <table ID="t14.2">
+                                            <caption>Table [#] - Results of study [#] in [specific
+                                                indication]</caption>
                                             <tbody>
                                                 <tr>
                                                   <th styleCode="Toprule Rrule Lrule Botrule"
@@ -1525,9 +1532,9 @@
                                                   Placebo or active control</th>
                                                 </tr>
                                                 <tr>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule">&lt;text&gt;</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">[text]</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1542,18 +1549,16 @@
                                         displayName="14.3 Comparative Bioavailability Studies"/>
                                     <title>14.3 Comparative Bioavailability Studies</title>
                                     <text>
-										<paragraph>[Provide a narrative outlining the design of the
-                                            bioequivalence study. The values in the table should be
-                                            based on the measured data from the study. No potency
-                                            correction should be applied.]<br/>&lt;text&gt;</paragraph>
-										<table>
+                                        <paragraph>[Provide a narrative outlining the design of the bioequivalence study. The values in the table should be based on the measured data from the study. No potency correction should be applied]</paragraph>
+                                        <paragraph>[There should be no claims of bioequivalence or clinical equivalence between the biosimilar and the reference biologic drug.]<br/>[text]</paragraph>
+                                        <table>
 										<caption>[Table for single dose studies:]</caption>
 										<tbody>
 											<tr>
-												<td styleCode="Lrule Rrule Botrule Toprule">
-													<paragraph><content styleCode="bold">Analyte Name<br/>(_x_mg)<br/>From measured data<br/><br/>Geometric Mean<br/>Arithmetic Mean (CV %</content>)</paragraph>
+												<th styleCode="Lrule Rrule Botrule Toprule">
+													<paragraph><content styleCode="bold">Analyte Name<br/>(__x__mg)<br/>From measured data<br/>Geometric Mean<br/>Arithmetic Mean (CV %</content>)</paragraph>
                                             
-												</td>
+												</th>
 											</tr>
 										</tbody>
 										</table>
@@ -1561,6 +1566,7 @@
                                             <caption>Table for single dose studies</caption>
                                             <tbody>
                                                 <tr>
+                                    
                                                   <th styleCode="Toprule Rrule Lrule Botrule"
                                                   >Parameter</th>
                                                   <th styleCode="Toprule Rrule Lrule Botrule"
@@ -1601,8 +1607,8 @@
                                                   >C<sub>MAX</sub>(units)</td>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
                                                 </tr>
                                                 <tr>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"
@@ -1709,7 +1715,7 @@
                                 displayName="15 MICROBIOLOGY"/>
                             <title>15 MICROBIOLOGY</title>
                             <text>
-                                <paragraph>&lt;text&gt;<br/>&lt;table&gt;</paragraph>
+                                <paragraph>[text]<br/>[table]<br/>[in the absence of microbiological information include the following statement:]<br/>No microbiological information is required for this product</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1721,7 +1727,7 @@
                                 displayName="16 NON-CLINICAL TOXICOLOGY"/>
                             <title>16 NON-CLINICAL TOXICOLOGY</title>
                             <text>
-                                <paragraph>[Narrative where possible. Include a table only where presentation is made more concise.]<br/>&lt;text&gt;</paragraph>
+                                <paragraph>[Narrative where possible. Include a table only where presentation is made more concise, e.g. no long-term animal studies have been performed to evaluate carcinogenic or mutagenic potential or whether &lt;drug&gt; affects fertility in females or males, there may be increased risk to chromosome damage.]<br/>[text]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1733,8 +1739,9 @@
                                 displayName="17 SUPPORTING PRODUCT MONOGRAPHS"/>
                             <title>17 SUPPORTING PRODUCT MONOGRAPHS</title>
                             <text>
-                                <paragraph>[Where there are no supporting product monographs, this section should be omitted.]</paragraph>
-								<paragraph>[numbered list:]<br/>&lt;Brand name&gt; &lt;(dosage form, strength)&gt;, submission control &lt;number&gt;, Product Monograph, &lt;sponsor&gt;. &lt;(MON, DD, YYYY)&gt;</paragraph>
+                                <paragraph>[List only Health Canada authorized product monographs that were supportive in the development of the product monograph e.g. Canadian Reference Product for a generic or biosimilar product, combination product, or subsequent entry product.  Where there are no such supporting product monographs, this section should be omitted.]</paragraph>
+                                <paragraph>[numbered list:]<br/>[Brand name] [(dosage form, strength)], submission control [number], Product Monograph, [sponsor]. [(MON, DD, YYYY)]</paragraph>
+
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1756,15 +1763,17 @@
                                 displayName="READ THIS FOR SAFE AND EFFECTIVE USE OF YOUR MEDICINE"/>
                             <title>READ THIS FOR SAFE AND EFFECTIVE USE OF YOUR MEDICINE</title>
                             <text>
-                                <paragraph>&lt;BRAND NAME&gt;</paragraph>
-                                <paragraph>&lt;PROPER NAME IN FINAL DOSAGE FORM&gt;</paragraph>
-                                <paragraph>Read this carefully before you start taking <content styleCode="bold">&lt;Brand
-                                    name&gt;</content>
+                                <paragraph><content styleCode="bold">[BRAND NAME]</content></paragraph>
+                                <paragraph><content styleCode="bold">[Proper Name in Final Dosage Form]</content></paragraph>
+                                <paragraph>Read this carefully before you start taking <content styleCode="bold">[Brand
+                                    name]</content>
                                     and each time you get a refill. This leaflet is a summary and
                                     will not tell you everything about this drug. Talk to your
                                     healthcare professional about your medical condition and
-                                    treatment and ask if there is any new information about <content styleCode="bold">&lt;Brand
-                                    name&gt;</content>.</paragraph>
+                                    treatment and ask if there is any new information about <content styleCode="bold">[Brand
+                                    name]</content>.</paragraph>
+                                <paragraph>[delete this box if there are no Serious Warnings and Precautions]</paragraph>
+                                <paragraph>[if applicable, the box should contain a plain language version of the information provided in the Serious Warnings and Precautions box in Part I]</paragraph>
                                 <table width="100%">
                                     <tbody>
                                         <tr>
@@ -1777,8 +1786,8 @@
                                         <tr>
                                             <td styleCode="Lrule Rrule Botrule">
                                                 <list>
-                                                  <item>&lt;text&gt;</item>
-                                                  <item>&lt;text&gt;</item>
+                                                  <item>[text]</item>
+                                                  <item>[text]</item>
                                                 </list>
                                             </td>
                                         </tr>
@@ -1793,11 +1802,11 @@
                             <id root="be74b6e6-1431-4a5f-a18e-ed321b381456"/>
                             <code code="pmi02" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="What is [Brand name] used for?"/>
-                            <title>What is &lt;Brand name&gt; used for?</title>
+                            <title>What is [Brand name] used for?</title>
                             <text>
                                 <list>
-                                    <item>&lt;text&gt;</item>
-                                    <item>&lt;text&gt;</item>
+                                    <item>[text]</item>
+                                    <item>[text]</item>
                                 </list>
                             </text>
                             <effectiveTime value="20170101"/>
@@ -1808,12 +1817,12 @@
                             <id root="be74b6e6-c431-4adf-a18e-ed321b381456"/>
                             <code code="pmi03" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="How does [Brand name] work?"/>
-                            <title>How does &lt;Brand name&gt; work?</title>
+                            <title>How does [Brand name] work?</title>
                             <text>
                                 <paragraph>[At the grade 6-8 reading level, explain the mechanism of
                                     action, in one or two sentences. Indicate how long it takes to
                                     work and how to know if it is working.]</paragraph>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1823,7 +1832,7 @@
                             <id root="be74b6e6-c431-4a5f-a18e-ed321b381756"/>
                             <code code="pmi04" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="What are the ingredients in [Brand name]?"/>
-                            <title>What are the ingredients in &lt;Brand name&gt;?</title>
+                            <title>What are the ingredients in [Brand name]?</title>
                             <text>
                                 <paragraph>Medicinal ingredients: [List all medicinal ingredients
                                     from Part I.]</paragraph>
@@ -1838,11 +1847,11 @@
                             <id root="be74b6e6-c431-4a5f-a18e-ed3a1b381456"/>
                             <code code="pmi05" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="[Brand name] comes in the following dosage forms:"/>
-                            <title>&lt;Brand name&gt; comes in the following dosage forms:</title>
+                            <title>[Brand name] comes in the following dosage forms:</title>
                             <text>
                                 <paragraph>[To maintain brevity, this is the only information
                                     required in this section.]</paragraph>
-                                <paragraph>&lt;dosage form(s) and strength(s)&gt;</paragraph>
+                                <paragraph>[dosage form(s) and strength(s)]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1852,13 +1861,13 @@
                             <id root="be74b6e6-cd31-4a5f-a18e-ed321b381456"/>
                             <code code="pmi06" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="Do not use [Brand name] if:"/>
-                            <title>Do not use &lt;Brand name&gt; if:</title>
+                            <title>Do not use [Brand name] if:</title>
                             <text>
                                 <paragraph>[Enter one point for each contraindication from Part
                                     I.]</paragraph>
                                 <list>
-                                    <item>&lt;text&gt;</item>
-                                    <item>&lt;text&gt;</item>
+                                    <item>[text]</item>
+                                    <item>[text]</item>
                                 </list>
                             </text>
                             <effectiveTime value="20170101"/>
@@ -1869,13 +1878,13 @@
                             <id root="be74b6e6-c431-4a5f-a18e-ed32cc381456"/>
                             <code code="pmi07" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="To help avoid side effects and ensure proper use, talk to your healthcare professional before you take [Brand name]. Talk about any health conditions or problems you may have, including if you:"/>
-                            <title>To help avoid side effects and ensure proper use, talk to your healthcare professional before you take &lt;Brand name]&gt;. Talk about any health conditions or problems you may have, including if you:</title>
+                            <title>To help avoid side effects and ensure proper use, talk to your healthcare professional before you take [Brand name]]. Talk about any health conditions or problems you may have, including if you:</title>
                             <text>
                                 <paragraph>[Enter one point for each warning and precaution from
                                     Part I.]</paragraph>
                                 <list>
-                                    <item>&lt;text&gt;</item>
-                                    <item>&lt;text&gt;</item>
+                                    <item>[text]</item>
+                                    <item>[text]</item>
                                 </list>
                             </text>
                             <effectiveTime value="20170101"/>
@@ -1891,7 +1900,7 @@
                                 <paragraph>[Enter general information that would not appear in the
                                     serious warnings and precautions box or other existing headings.
                                     Otherwise this heading is not required.]</paragraph>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                                 <paragraph><content styleCode="bold">Tell your healthcare professional about all the medicines
                                     you take, including any drugs, vitamins, minerals, natural
                                     supplements or alternative medicines.</content></paragraph>
@@ -1904,10 +1913,10 @@
                             <id root="be74b6e6-c431-4a5f-a18e-ed321ab81456"/>
                             <code code="pmi09" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="The following may interact with [Brand name]:"/>
-                            <title>The following may interact with &lt;Brand name&gt;:</title>
+                            <title>The following may interact with [Brand name]:</title>
                             <text>
                                 <list>
-                                    <item>&lt;list&gt;</item>
+                                    <item>[list]</item>
                                 </list>
                             </text>
                             <effectiveTime value="20170101"/>
@@ -1918,9 +1927,9 @@
                             <id root="be74b6e6-c431-4a5f-a18e-ed3212281456"/>
                             <code code="pmi10" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="How to take [Brand name]:"/>
-                            <title>How to take &lt;Brand name&gt;:</title>
+                            <title>How to take [Brand name]:</title>
                             <text>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1932,7 +1941,7 @@
                                 displayName="Usual dose:"/>
                             <title>Usual dose:</title>
                             <text>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1944,12 +1953,12 @@
                                 displayName="Overdose:"/>
                             <title>Overdose:</title>
                             <text>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                                 <table width="100%">
                                     <tbody>
                                         <tr>
                                             <td styleCode="Lrule Rrule Botrule Toprule">If you think
-                                                you have taken too much &lt;Brand name&gt;, contact your
+                                                you have taken too much [Brand name], contact your
                                                 healthcare professional, hospital emergency
                                                 department or regional poison control centre
                                                 immediately, even if there are no symptoms.</td>
@@ -1970,7 +1979,7 @@
                                 displayName="Missed dose:"/>
                             <title>Missed dose:</title>
                             <text>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
                         </section>
@@ -1980,17 +1989,13 @@
                             <id root="be74b6e6-c431-4a5f-a98e-ed321b381456"/>
                             <code code="pmi14" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="What are possible side effects from using [Brand name]?"/>
-                            <title>What are possible side effects from using &lt;Brand name&gt;?</title>
+                            <title>What are possible side effects from using [Brand name]?</title>
                             <text>
                                 <paragraph>These are not all the possible side effects you may feel
                                     when taking [Brand name]. If you experience any side effects not
                                     listed here, contact your healthcare professional.</paragraph>
-                                <paragraph>&lt;text&gt;</paragraph>
-                                <paragraph>[Self-limiting side effects should be described in the
-                                    text section only. Serious side effects must be listed in the
-                                    serious side effects table. Each side effect should appear only
-                                    once, in text or in the table, as duplication generally is not
-                                    wanted in Part III.]</paragraph>
+                                <paragraph>[text]</paragraph>
+                                <paragraph>[Self-limiting side effects should be described in the text section only. Serious side effects must be listed in the serious side effects table.  Each side effect should appear only once, in text or in the table to avoid duplication.]</paragraph>
                                 <table ID="t8" border="1">
                                     <caption>Serious side effects and what to do about
                                         them</caption>
@@ -2014,44 +2019,44 @@
                                         <tr>
                                             <td styleCode="Toprule Botrule Lrule Rrule"><content
                                                   styleCode="bold">VERY COMMON</content><br/>
-                                                &lt; Condition: symptom / effect&gt;</td>
+                                                [Condition: symptom / effect]</td>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                         </tr>
                                         <tr>
-                                            <td styleCode="Toprule Botrule Lrule Rrule">&lt; Condition:
-                                                symptom / effect&gt;</td>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
-                                        </tr>
-                                        <tr>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"><content
-                                                  styleCode="bold">COMMON</content><br/>&lt; Condition:
-                                                symptom / effect&gt;</td>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
-                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
-                                        </tr>
-                                        <tr>
-                                            <td styleCode="Toprule Botrule Lrule Rrule">&lt; Condition:
-                                                symptom / effect&gt;</td>
+                                            <td styleCode="Toprule Botrule Lrule Rrule">[Condition:
+                                                symptom / effect]</td>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                         </tr>
                                         <tr>
                                             <td styleCode="Toprule Botrule Lrule Rrule"><content
-                                                  styleCode="bold">RARE</content><br/>&lt; Condition:
-                                                symptom / effect&gt;</td>
+                                                  styleCode="bold">COMMON</content><br/>[Condition:
+                                                symptom / effect]</td>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                         </tr>
                                         <tr>
-                                            <td styleCode="Toprule Botrule Lrule Rrule">&lt; Condition:
-                                                symptom / effect&gt;</td>
+                                            <td styleCode="Toprule Botrule Lrule Rrule">[Condition:
+                                                symptom / effect]</td>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
+                                        </tr>
+                                        <tr>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"><content
+                                                  styleCode="bold">RARE</content><br/>[Condition:
+                                                symptom / effect]</td>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
+                                            <td styleCode="Toprule Botrule Lrule Rrule"/>
+                                        </tr>
+                                        <tr>
+                                            <td styleCode="Toprule Botrule Lrule Rrule">[Condition:
+                                                symptom / effect]</td>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
                                             <td styleCode="Toprule Botrule Lrule Rrule"/>
@@ -2062,11 +2067,12 @@
                                     not listed here or becomes bad enough to interfere with your
                                     daily activities, talk to your healthcare
                                     professional.</paragraph>
+                                <paragraph>[Please choose the following reporting box option which is most appropriate for this product.]</paragraph>
                                 <table width="100%">
                                     <tbody>
                                         <tr>
-                                            <th styleCode="Lrule Rrule Toprule">Reporting Side
-                                                Effects</th>
+                                            <td styleCode="Lrule Rrule Toprule bold">Reporting Side
+                                                Effects</td>
                                         </tr>
                                         <tr>
                                             <td styleCode="Lrule Rrule Botrule">
@@ -2084,10 +2090,22 @@
                                                   or by fax; or</item>
                                                   <item>Calling toll-free at 1-866-234-2345.</item>
                                                 </list>
-                                                <paragraph>NOTE: Contact your health professional if
-                                                  you need information about how to manage your side
-                                                  effects. The Canada Vigilance Program does not
-                                                  provide medical advice.<br/></paragraph>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td styleCode="Lrule Rrule Toprule bold">Reporting Suspected Side
+                                                Effects</td>
+                                        </tr>
+                                        <tr>
+                                            <td styleCode="Lrule Rrule Botrule">
+                                                <paragraph><content styleCode="bold"><br/>For the general public: </content>Should you experience a side effect following immunization, please report it to your doctor, nurse, or pharmacist.</paragraph>
+                                                <paragraph><br/>Should you require information related to the management of the side effect, please contact your healthcare provider. The Public Health Agency of Canada, Health Canada and [Sponsor Name] cannot provide medical advice.</paragraph>
+                                                <paragraph><content styleCode="bold"><br/>For healthcare professionals: </content>If a patient experiences a side effect following immunization, please complete the Adverse Events Following Immunization (AEFI) Form appropriate for your province/territory <linkHtml href="http://www.phac-aspc.gc.ca/im/aefi-essi-form-eng.php">(http://www.phac-aspc.gc.ca/im/aefi-essi-form-eng.php)</linkHtml> and send it to your local Health Unit.</paragraph>
+
                                             </td>
                                         </tr>
                                     </tbody>
@@ -2103,7 +2121,7 @@
                                 displayName="Storage:"/>
                             <title>Storage:</title>
                             <text>
-                                <paragraph>&lt;text&gt;</paragraph>
+                                <paragraph>[text]</paragraph>
                                 <paragraph>Keep out of reach and sight of children.</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
@@ -2114,19 +2132,19 @@
                             <id root="be74b6e6-c431-4a5f-a18e-ed321b381446"/>
                             <code code="pmi16" codeSystem="2.16.840.1.113883.2.20.6.60"
                                 displayName="If you want more information about [Brand name]:"/>
-                            <title>If you want more information about &lt;Brand name&gt;:</title>
+                            <title>If you want more information about [Brand name]:</title>
                             <text>
                                 <list listType="unordered">
                                     <item>Talk to your healthcare professional</item>
                                     <item>Find the full product monograph that is prepared for
                                         healthcare professionals and includes this Patient
                                         Medication Information by visiting the Health Canada
-                                            website <linkHtml href="http://hc-sc.gc.ca/index-eng.php"
-                                            >(http://hc-sc.gc.ca/index-eng.php)</linkHtml>; the
-                                        manufacturer's website &lt;website&gt;, or by calling 1-800-&lt;phone
-                                        number&gt;.</item>
+                                        website <linkHtml href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html"
+                                            >(https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html)</linkHtml>; the
+                                        manufacturer's website [website], or by calling 1-800-[phone
+                                        number].</item>
                                 </list>
-                                <paragraph>This leaflet was prepared by &lt;Sponsor Name&gt;</paragraph>
+                                <paragraph>This leaflet was prepared by [Sponsor Name]</paragraph>
                                 <paragraph>Last Revised (MON-DD-YYYY)</paragraph>
                             </text>
                             <effectiveTime value="20170101"/>
