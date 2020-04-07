@@ -296,6 +296,25 @@
                                 <paragraph> Scheduling Symbol, Brand Name, Proper name, Dosage
                                     Form(s), Strength(s) and Route(s) of Administration,
                                     Pharmaceutical Standard, Therapeutic Classification </paragraph>
+                                <paragraph>For products which have been authorized under the Notice of Compliance with Conditions (NOC/c) policy, include the following boxed statement:</paragraph>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td styleCode="Lrule Rrule Botrule Toprule">
+                                                <paragraph>&quot;&lt;Brand name&gt;, indicated for:<br/>- [ ]<br/>
+                                                    has been issued marketing authorization with conditions, pending the results of trials to verify its clinical benefit. Patients should be advised of the nature of the authorization. For further information for &lt;Brand name&gt; please refer to Health Canada’s <linkHtml href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/notice-compliance-conditions.html">Notice of Compliance with conditions - drug products web site.</linkHtml>&quot;<br/>
+                                                    [For market authorizations without conditions]<br/>
+                                                    &quot;[Brand name] indicated for:<br/>
+                                                    - [ ]<br/>
+                                                    has been issued marketing authorization without conditions.&quot;
+                                                
+                                                
+                                                </paragraph>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </text>
                             <effectiveTime value="20180101"/>
                         </section>
@@ -1551,22 +1570,13 @@
                                     <text>
                                         <paragraph>[Provide a narrative outlining the design of the bioequivalence study. The values in the table should be based on the measured data from the study. No potency correction should be applied]</paragraph>
                                         <paragraph>[There should be no claims of bioequivalence or clinical equivalence between the biosimilar and the reference biologic drug.]<br/>[text]</paragraph>
-                                        <table>
-										<caption>[Table for single dose studies:]</caption>
-										<tbody>
-											<tr>
-												<th styleCode="Lrule Rrule Botrule Toprule">
-													<paragraph><content styleCode="bold">Analyte Name<br/>(__x__mg)<br/>From measured data<br/>Geometric Mean<br/>Arithmetic Mean (CV %</content>)</paragraph>
-                                            
-												</th>
-											</tr>
-										</tbody>
-										</table>
                                         <table ID="t15">
                                             <caption>Table for single dose studies</caption>
                                             <tbody>
                                                 <tr>
-                                    
+                                                    <th styleCode="Toprule Rrule Lrule Botrule" colspan="5">Analyte Name<br/>(__x__mg)<br/>From measured data<br/>Geometric Mean<br/>Arithmetic Mean(CV %)</th>
+                                                </tr>
+                                                <tr>
                                                   <th styleCode="Toprule Rrule Lrule Botrule"
                                                   >Parameter</th>
                                                   <th styleCode="Toprule Rrule Lrule Botrule"
@@ -1607,8 +1617,8 @@
                                                   >C<sub>MAX</sub>(units)</td>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
                                                 </tr>
                                                 <tr>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"
@@ -1617,8 +1627,8 @@
                                                   only.</footnote></td>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
                                                 </tr>
                                                 <tr>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"
@@ -1626,25 +1636,19 @@
                                                   arithmetic mean (CV%) only.</footnote></td>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
                                                 </tr>
                                             </tbody>
                                         </table>
-										<table>
-										<caption>[Table for multiple dose studies:]</caption>
-										<tbody>
-											<tr>
-												<td styleCode="Lrule Rrule Botrule Toprule">
-													<paragraph><content styleCode="bold">Analyte Name<br/>(_x_mg)<br/>From measured data<br/><br/>Geometric Mean<br/>Arithmetic Mean (CV %</content>)</paragraph>
-                                            
-												</td>
-											</tr>
-										</tbody>
-										</table>
+
                                         <table ID="t16">
-                                            <caption>Table # - multiple dose studies</caption>
+                                            <caption>Table for multiple dose studies</caption>
                                             <tbody>
+                                                <tr>
+                                                    <th styleCode="Toprule Rrule Lrule Botrule" colspan="5">Analyte Name<br/>(__x__mg)<br/>From measured data<br/>Geometric Mean<br/>Arithmetic Mean(CV %)
+                                                    </th>
+                                                </tr>
                                                 <tr>
                                                   <th styleCode="Toprule Rrule Lrule Botrule"
                                                   >Parameter</th>
@@ -1697,8 +1701,8 @@
                                                   only.</footnote></td>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
                                                   <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
-                                                  <td styleCode="Toprule Rrule Lrule Botrule"/>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
+                                                  <td styleCode="Toprule Rrule Lrule Botrule">Not applicable</td>
                                                 </tr>
                                             </tbody>
                                         </table>
